@@ -11,6 +11,7 @@ coil = "2.7.0"
 playUpdate = "2.1.0"
 gson = "2.11.0"
 appcompat = "1.7.0"
+material = "1.12.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -30,6 +31,7 @@ coil-compose = { group = "io.coil-kt", name = "coil-compose", version.ref = "coi
 play-app-update = { group = "com.google.android.play", name = "app-update", version.ref = "playUpdate" }
 play-app-update-ktx = { group = "com.google.android.play", name = "app-update-ktx", version.ref = "playUpdate" }
 gson = { group = "com.google.code.gson", name = "gson", version.ref = "gson" }
+google-material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
