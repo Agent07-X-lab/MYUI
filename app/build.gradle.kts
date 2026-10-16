@@ -58,6 +58,7 @@ dependencies {
     implementation(libs.play.app.update.ktx)
     implementation(libs.gson)
     implementation(libs.google.material)
+    implementation(libs.androidx.constraintlayout)
 
     debugImplementation(libs.androidx.ui.tooling)
 }
