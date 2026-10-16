@@ -36,7 +36,7 @@
     <string name="app_icon">Icono de la aplicación</string>
     <string name="app_launcher_2_widget_description">Lanzador de aplicaciones 2x1 con texto personalizado</string>
     <string name="app_launcher_widget_description">Lanzador de aplicaciones con emoji personalizado</string>
-    <string name="app_name">Minimal Widgets</string>
+    <string name="app_name">MyUI</string>
     <string name="app_text">Texto personalizado de la aplicación</string>
     <string name="battery5_description">Widget de batería al estilo Nothing con tipografía en negrita y texto de estado de carga</string>
     <string name="battery_glass_widget_description">Widget de batería de cristal con relleno basado en el porcentaje de batería</string>
@@ -135,12 +135,8 @@
     <string name="error_icon_content_description">Error</string>
     <string name="exposed_dropdown_menu_content_description">Mostrar menú desplegable</string>
     <string name="game_snake_description">El clásico juego de la serpiente en tu pantalla de inicio</string>
-    <string name="gcm_defaultSenderId">215566338319</string>
-    <string name="google_api_key">AIzaSyC6QuOrqpYV9Wd1TOJ2dbchfTeRLzVotBE</string>
-    <string name="google_app_id">1:215566338319:android:e7f5b12ab101972b92d67a</string>
     <string name="google_folder_description">Carpeta de aplicaciones de Google categorizadas</string>
     <string name="google_search_bar_description">Barra de búsqueda de Google de acceso rápido</string>
-    <string name="google_storage_bucket">minimal-widgets-582c0.firebasestorage.app</string>
     <string name="google_widget_description">Widget de Google</string>
     <string name="grok_widget_description">Asistente de IA Grok</string>
     <string name="hybrid_clock10_description">Reloj híbrido moderno 10 con visualización de hora centrada</string>
@@ -267,7 +263,7 @@
     <string name="previous_month">Mes anterior</string>
     <string name="project_id">minimal-widgets-582c0</string>
     <string name="reconfigure_widget">Reconfigurar widget</string>
-    <string name="restriction_warning_dialog_body_1">Minimal Widgets necesita ejecutarse en segundo plano para actualizar tus widgets. Solo se ejecuta cuando es necesario, pero si el uso de la batería está configurado como optimizado, Android puede detener la aplicación, lo que hará que los widgets dejen de funcionar correctamente.</string>
+    <string name="restriction_warning_dialog_body_1">MyUI necesita ejecutarse en segundo plano para actualizar tus widgets. Solo se ejecuta cuando es necesario, pero si el uso de la batería está configurado como optimizado, Android puede detener la aplicación, lo que hará que los widgets dejen de funcionar correctamente.</string>
     <string name="restriction_warning_dialog_body_2">Abre la configuración de la aplicación y cambia el uso de batería a Sin restricciones. Si esta opción no está disponible, revisa la configuración de energía del teléfono.</string>
     <string name="restriction_warning_dialog_body_3">Algunos teléfonos son aún más restrictivos y pueden impedir que la aplicación se inicie automáticamente después de un reinicio. La configuración varía según el dispositivo; visita https://dontkillmyapp.com para obtener instrucciones específicas.</string>
     <string name="restriction_warning_dialog_title">Restricciones de trabajo en segundo plano y optimización de batería</string>

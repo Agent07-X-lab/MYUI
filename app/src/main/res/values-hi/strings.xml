@@ -36,7 +36,7 @@
     <string name="app_icon">ऐप आइकन</string>
     <string name="app_launcher_2_widget_description">कस्टम टेक्स्ट के साथ 2x1 ऐप लॉन्चर</string>
     <string name="app_launcher_widget_description">कस्टम इमोजी के साथ ऐप लॉन्चर</string>
-    <string name="app_name">मिनिमल विजेट्स</string>
+    <string name="app_name">MyUI</string>
     <string name="app_text">ऐप कस्टम टेक्स्ट</string>
     <string name="battery5_description">बोल्ड टाइपोग्राफी और चार्जिंग स्टेटस टेक्स्ट के साथ नथिंग-स्टाइल बैटरी विजेट</string>
     <string name="battery_glass_widget_description">बैटरी प्रतिशत पर आधारित ग्लास फिलअप के साथ बैटरी ग्लास विजेट</string>
@@ -135,12 +135,8 @@
     <string name="error_icon_content_description">गड़बड़ी</string>
     <string name="exposed_dropdown_menu_content_description">ड्रॉपडाउन मेन्यू दिखाएं</string>
     <string name="game_snake_description">आपकी होम स्क्रीन पर क्लासिक स्नेक गेम</string>
-    <string name="gcm_defaultSenderId">215566338319</string>
-    <string name="google_api_key">AIzaSyC6QuOrqpYV9Wd1TOJ2dbchfTeRLzVotBE</string>
-    <string name="google_app_id">1:215566338319:android:e7f5b12ab101972b92d67a</string>
     <string name="google_folder_description">वर्गीकृत Google ऐप्स फ़ोल्डर</string>
     <string name="google_search_bar_description">त्वरित एक्सेस गूगल सर्च बार</string>
-    <string name="google_storage_bucket">minimal-widgets-582c0.firebasestorage.app</string>
     <string name="google_widget_description">Google विजेट</string>
     <string name="grok_widget_description">Grok AI असिस्टेंट</string>
     <string name="hybrid_clock10_description">केंद्रित समय प्रदर्शन के साथ आधुनिक हाइब्रिड क्लॉक 10</string>
@@ -267,7 +263,7 @@
     <string name="previous_month">पिछला महीना</string>
     <string name="project_id">minimal-widgets-582c0</string>
     <string name="reconfigure_widget">विजेट को फिर से कॉन्फ़िगर करें</string>
-    <string name="restriction_warning_dialog_body_1">आपके विजेट्स को अपडेट करने के लिए Minimal Widgets को बैकग्राउंड में चलना आवश्यक है। यह केवल जरूरत पड़ने पर चलता है, लेकिन यदि बैटरी उपयोग \'ऑप्टिमाइज्ड\' पर सेट है, तो एंड्रॉइड ऐप को रोक सकता है, जिससे विजेट्स सही ढंग से काम करना बंद कर सकते हैं।</string>
+    <string name="restriction_warning_dialog_body_1">आपके विजेट्स को अपडेट करने के लिए MyUI को बैकग्राउंड में चलना आवश्यक है। यह केवल जरूरत पड़ने पर चलता है, लेकिन यदि बैटरी उपयोग \'ऑप्टिमाइज्ड\' पर सेट है, तो एंड्रॉइड ऐप को रोक सकता है, जिससे विजेट्स सही ढंग से काम करना बंद कर सकते हैं।</string>
     <string name="restriction_warning_dialog_body_2">ऐप सेटिंग्स खोलें और बैटरी उपयोग को \'अनरिस्ट्रिक्टेड\' (अप्रतिबंधित) पर बदलें। यदि यह विकल्प उपलब्ध नहीं है, तो फोन की पावर सेटिंग्स देखें।</string>
     <string name="restriction_warning_dialog_body_3">कुछ फोन और भी अधिक प्रतिबंधात्मक होते हैं और ऐप को रीस्टार्ट के बाद स्वचालित रूप से शुरू होने से रोक सकते हैं। सेटिंग्स डिवाइस के अनुसार अलग-अलग होती हैं — विशिष्ट निर्देशों के लिए https://dontkillmyapp.com पर जाएं।</string>
     <string name="restriction_warning_dialog_title">बैकग्राउंड कार्य प्रतिबंध और बैटरी अनुकूलन</string>

@@ -36,7 +36,7 @@
     <string name="app_icon">ਐਪ ਆਈਕਨ</string>
     <string name="app_launcher_2_widget_description">ਕਸਟਮ ਟੈਕਸਟ ਨਾਲ 2x1 ਐਪ ਲਾਂਚਰ</string>
     <string name="app_launcher_widget_description">ਕਸਟਮ ਇਮੋਜੀ ਨਾਲ ਐਪ ਲਾਂਚਰ</string>
-    <string name="app_name">ਮਿਨੀਮਲ ਵਿਜੇਟਸ</string>
+    <string name="app_name">MyUI</string>
     <string name="app_text">ਐਪ ਕਸਟਮ ਟੈਕਸਟ</string>
     <string name="battery5_description">ਬੋਲਡ ਟਾਈਪੋਗ੍ਰਾਫੀ ਅਤੇ ਚਾਰਜਿੰਗ ਸਥਿਤੀ ਟੈਕਸਟ ਦੇ ਨਾਲ ਨਥਿੰਗ-ਸਟਾਈਲ ਬੈਟਰੀ ਵਿਜੇਟ</string>
     <string name="battery_glass_widget_description">ਬੈਟਰੀ ਪ੍ਰਤੀਸ਼ਤ ਦੇ ਅਧਾਰ ਤੇ ਗਲਾਸ ਫਿਲਅੱਪ ਵਾਲਾ ਬੈਟਰੀ ਗਲਾਸ ਵਿਜੇਟ</string>
@@ -135,12 +135,8 @@
     <string name="error_icon_content_description">ਗੜਬੜ</string>
     <string name="exposed_dropdown_menu_content_description">ਡ੍ਰੌਪ-ਡਾਊਨ ਮੀਨੂ ਦਿਖਾਓ</string>
     <string name="game_snake_description">ਤੁਹਾਡੀ ਹੋਮ ਸਕ੍ਰੀਨ \'ਤੇ ਕਲਾਸਿਕ ਸੱਪ ਗੇਮ</string>
-    <string name="gcm_defaultSenderId">215566338319</string>
-    <string name="google_api_key">AIzaSyC6QuOrqpYV9Wd1TOJ2dbchfTeRLzVotBE</string>
-    <string name="google_app_id">1:215566338319:android:e7f5b12ab101972b92d67a</string>
     <string name="google_folder_description">ਸ਼੍ਰੇਣੀਬੱਧ Google ਐਪਸ ਫੋਲਡਰ</string>
     <string name="google_search_bar_description">ਤੁਰੰਤ ਪਹੁੰਚ ਗੂਗਲ ਸਰਚ ਬਾਰ</string>
-    <string name="google_storage_bucket">minimal-widgets-582c0.firebasestorage.app</string>
     <string name="google_widget_description">Google ਵਿਜੇਟ</string>
     <string name="grok_widget_description">Grok AI ਸਹਾਇਕ</string>
     <string name="hybrid_clock10_description">ਕੇਂਦਰਿਤ ਸਮਾਂ ਡਿਸਪਲੇਅ ਦੇ ਨਾਲ ਆਧੁਨਿਕ ਹਾਈਬ੍ਰਿਡ ਘੜੀ 10</string>

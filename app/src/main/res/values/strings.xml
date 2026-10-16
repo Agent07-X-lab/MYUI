@@ -36,7 +36,7 @@
     <string name="app_icon">App Icon</string>
     <string name="app_launcher_2_widget_description">2x1 App Launcher with Custom Text</string>
     <string name="app_launcher_widget_description">App Launcher with Custom Emoji</string>
-    <string name="app_name">Minimal Widgets</string>
+    <string name="app_name">MyUI</string>
     <string name="app_text">App Custom Text</string>
     <string name="battery5_description">Nothing-styled battery widget with bold typography and charging status text</string>
     <string name="battery_glass_widget_description">Battery Glass Widget with Glass Filliup Based on Battery Percentage</string>
@@ -135,12 +135,8 @@
     <string name="error_icon_content_description">Error</string>
     <string name="exposed_dropdown_menu_content_description">Show dropdown menu</string>
     <string name="game_snake_description">Classic Snake game on your home screen</string>
-    <string name="gcm_defaultSenderId">215566338319</string>
-    <string name="google_api_key">AIzaSyC6QuOrqpYV9Wd1TOJ2dbchfTeRLzVotBE</string>
-    <string name="google_app_id">1:215566338319:android:e7f5b12ab101972b92d67a</string>
     <string name="google_folder_description">Categorized Google apps folder</string>
     <string name="google_search_bar_description">Quick access Google search bar</string>
-    <string name="google_storage_bucket">minimal-widgets-582c0.firebasestorage.app</string>
     <string name="google_widget_description">Google Widget</string>
     <string name="grok_widget_description">Grok AI Assistant</string>
     <string name="hybrid_clock10_description">Modern Hybrid Clock 10 with centered time display</string>
@@ -267,7 +263,7 @@
     <string name="previous_month">Previous month</string>
     <string name="project_id">minimal-widgets-582c0</string>
     <string name="reconfigure_widget">Reconfigure Widget</string>
-    <string name="restriction_warning_dialog_body_1">Minimal Widgets needs to run in the background to update your widgets. It only runs when needed, but if battery usage is set to optimized Android may stop the app, causing widgets to stop working correctly.</string>
+    <string name="restriction_warning_dialog_body_1">MyUI needs to run in the background to update your widgets. It only runs when needed, but if battery usage is set to optimized Android may stop the app, causing widgets to stop working correctly.</string>
     <string name="restriction_warning_dialog_body_2">Open app settings and change the battery usage to Unrestricted. If this option isn\'t available, check the phone\'s power settings.</string>
     <string name="restriction_warning_dialog_body_3">Some phones are even more restrictive and may block the app from starting automatically after a restart. Settings vary by device — visit https://dontkillmyapp.com for specific instructions.</string>
     <string name="restriction_warning_dialog_title">Background work restrictions and battery optimization</string>

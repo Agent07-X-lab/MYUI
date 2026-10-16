@@ -36,7 +36,7 @@
     <string name="app_icon">Икона на приложение</string>
     <string name="app_launcher_2_widget_description">Стартер за приложения 2x1 с персонализиран текст</string>
     <string name="app_launcher_widget_description">Стартер за приложения с персонализирани емоджита</string>
-    <string name="app_name">Минималистични уиджети</string>
+    <string name="app_name">MyUI</string>
     <string name="app_text">Персонализиран текст на приложението</string>
     <string name="battery5_description">Джаджа за батерия в стил Nothing с удебелена типография и текст за състоянието на зареждане</string>
     <string name="battery_glass_widget_description">Джаджа за батерия тип стъкло с пълнене въз основа на процента на батерията</string>
@@ -135,12 +135,8 @@
     <string name="error_icon_content_description">Грешка</string>
     <string name="exposed_dropdown_menu_content_description">Показване на падащото меню</string>
     <string name="game_snake_description">Класическа игра „Змия“ на началния ви екран</string>
-    <string name="gcm_defaultSenderId">215566338319</string>
-    <string name="google_api_key">AIzaSyC6QuOrqpYV9Wd1TOJ2dbchfTeRLzVotBE</string>
-    <string name="google_app_id">1:215566338319:android:e7f5b12ab101972b92d67a</string>
     <string name="google_folder_description">Категоризирана папка с приложения на Google</string>
     <string name="google_search_bar_description">Лента за бързо търсене в Google</string>
-    <string name="google_storage_bucket">minimal-widgets-582c0.firebasestorage.app</string>
     <string name="google_widget_description">Уиджет на Google</string>
     <string name="grok_widget_description">AI асистент Grok</string>
     <string name="hybrid_clock10_description">Модерен хибриден часовник 10 с центриран дисплей за времето</string>
@@ -267,7 +263,7 @@
     <string name="previous_month">Предишен месец</string>
     <string name="project_id">minimal-widgets-582c0</string>
     <string name="reconfigure_widget">Преконфигуриране на уиджет</string>
-    <string name="restriction_warning_dialog_body_1">Minimal Widgets трябва да работи във фонов режим, за да актуализира вашите уиджети. Приложението работи само когато е необходимо, но ако използването на батерията е настроено на „оптимизирано“, Android може да спре приложението, което ще доведе до неправилна работа на уиджетите.</string>
+    <string name="restriction_warning_dialog_body_1">MyUI трябва да работи във фонов режим, за да актуализира вашите уиджети. Приложението работи само когато е необходимо, но ако използването на батерията е настроено на „оптимизирано“, Android може да спре приложението, което ще доведе до неправилна работа на уиджетите.</string>
     <string name="restriction_warning_dialog_body_2">Отворете настройките на приложението и променете използването на батерията на „Без ограничения“. Ако тази опция не е налична, проверете настройките за захранването на телефона.</string>
     <string name="restriction_warning_dialog_body_3">Някои телефони са още по-ограничителни и могат да блокират автоматичното стартиране на приложението след рестартиране. Настройките варират според устройството — посетете https://dontkillmyapp.com за конкретни инструкции.</string>
     <string name="restriction_warning_dialog_title">Ограничения за фонова работа и оптимизация на батерията</string>

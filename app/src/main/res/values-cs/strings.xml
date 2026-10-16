@@ -36,7 +36,7 @@
     <string name="app_icon">Ikona aplikace</string>
     <string name="app_launcher_2_widget_description">Spouštěč aplikací 2x1 s vlastním textem</string>
     <string name="app_launcher_widget_description">Spouštěč aplikací s vlastním emotikonem</string>
-    <string name="app_name">Minimalistické widgety</string>
+    <string name="app_name">MyUI</string>
     <string name="app_text">Vlastní text aplikace</string>
     <string name="battery5_description">Widget baterie ve stylu Nothing s výraznou typografií a textem o stavu nabíjení</string>
     <string name="battery_glass_widget_description">Skleněný widget baterie s výplní podle procenta nabití</string>
@@ -135,12 +135,8 @@
     <string name="error_icon_content_description">Chyba</string>
     <string name="exposed_dropdown_menu_content_description">Zobrazit rozbalovací nabídku</string>
     <string name="game_snake_description">Klasická hra Had na vaší domovské obrazovce</string>
-    <string name="gcm_defaultSenderId">215566338319</string>
-    <string name="google_api_key">AIzaSyC6QuOrqpYV9Wd1TOJ2dbchfTeRLzVotBE</string>
-    <string name="google_app_id">1:215566338319:android:e7f5b12ab101972b92d67a</string>
     <string name="google_folder_description">Složka s kategorizovanými aplikacemi Google</string>
     <string name="google_search_bar_description">Panel rychlého vyhledávání Google</string>
-    <string name="google_storage_bucket">minimal-widgets-582c0.firebasestorage.app</string>
     <string name="google_widget_description">Widget Google</string>
     <string name="grok_widget_description">Grok AI asistent</string>
     <string name="hybrid_clock10_description">Moderní hybridní hodiny 10 se zobrazením času na středu</string>
@@ -267,7 +263,7 @@
     <string name="previous_month">Předchozí měsíc</string>
     <string name="project_id">minimal-widgets-582c0</string>
     <string name="reconfigure_widget">Překonfigurovat widget</string>
-    <string name="restriction_warning_dialog_body_1">Aplikace Minimal Widgets musí běžet na pozadí, aby mohla aktualizovat vaše widgety. Spouští se pouze v případě potřeby, ale pokud je využití baterie nastaveno na optimalizované, systém Android může aplikaci zastavit, což způsobí, že widgety přestanou správně fungovat.</string>
+    <string name="restriction_warning_dialog_body_1">Aplikace MyUI musí běžet na pozadí, aby mohla aktualizovat vaše widgety. Spouští se pouze v případě potřeby, ale pokud je využití baterie nastaveno na optimalizované, systém Android může aplikaci zastavit, což způsobí, že widgety přestanou správně fungovat.</string>
     <string name="restriction_warning_dialog_body_2">Otevřete nastavení aplikace a změňte využití baterie na Neomezené. Pokud tato možnost není k dispozici, zkontrolujte nastavení napájení telefonu.</string>
     <string name="restriction_warning_dialog_body_3">Některé telefony jsou ještě restriktivnější a mohou aplikaci po restartu automaticky zablokovat. Nastavení se liší podle zařízení – konkrétní pokyny naleznete na stránce https://dontkillmyapp.com.</string>
     <string name="restriction_warning_dialog_title">Omezení práce na pozadí a optimalizace baterie</string>

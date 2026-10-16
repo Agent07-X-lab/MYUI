@@ -36,7 +36,7 @@
     <string name="app_icon">Значок додатка</string>
     <string name="app_launcher_2_widget_description">Запуск додатків 2x1 з власним текстом</string>
     <string name="app_launcher_widget_description">Запуск додатків з власними емодзі</string>
-    <string name="app_name">Minimal Widgets</string>
+    <string name="app_name">MyUI</string>
     <string name="app_text">Користувацький текст додатка</string>
     <string name="battery5_description">Віджет акумулятора в стилі Nothing з жирним шрифтом і текстом стану зарядки</string>
     <string name="battery_glass_widget_description">Скляний віджет акумулятора із заповненням залежно від відсотка заряду</string>
@@ -135,12 +135,8 @@
     <string name="error_icon_content_description">Помилка</string>
     <string name="exposed_dropdown_menu_content_description">Показати спадне меню</string>
     <string name="game_snake_description">Класична гра «Змійка» на вашому головному екрані</string>
-    <string name="gcm_defaultSenderId">215566338319</string>
-    <string name="google_api_key">AIzaSyC6QuOrqpYV9Wd1TOJ2dbchfTeRLzVotBE</string>
-    <string name="google_app_id">1:215566338319:android:e7f5b12ab101972b92d67a</string>
     <string name="google_folder_description">Категоризована папка додатків Google</string>
     <string name="google_search_bar_description">Панель швидкого пошуку Google</string>
-    <string name="google_storage_bucket">minimal-widgets-582c0.firebasestorage.app</string>
     <string name="google_widget_description">Віджет Google</string>
     <string name="grok_widget_description">ШІ-помічник Grok</string>
     <string name="hybrid_clock10_description">Сучасний гібридний годинник 10 з відображенням часу по центру</string>
@@ -267,7 +263,7 @@
     <string name="previous_month">Попередній місяць</string>
     <string name="project_id">minimal-widgets-582c0</string>
     <string name="reconfigure_widget">Переналаштувати віджет</string>
-    <string name="restriction_warning_dialog_body_1">Minimal Widgets має працювати у фоновому режимі для оновлення ваших віджетів. Він працює лише тоді, коли це необхідно, але якщо використання акумулятора встановлено на «оптимізоване», Android може зупинити додаток, через що віджети перестануть працювати належним чином.</string>
+    <string name="restriction_warning_dialog_body_1">MyUI має працювати у фоновому режимі для оновлення ваших віджетів. Він працює лише тоді, коли це необхідно, але якщо використання акумулятора встановлено на «оптимізоване», Android може зупинити додаток, через що віджети перестануть працювати належним чином.</string>
     <string name="restriction_warning_dialog_body_2">Відкрийте налаштування додатка та змініть використання акумулятора на «Без обмежень». Якщо цей параметр недоступний, перевірте налаштування живлення телефону.</string>
     <string name="restriction_warning_dialog_body_3">Деякі телефони мають ще суворіші обмеження і можуть блокувати автоматичний запуск додатка після перезавантаження. Налаштування залежать від пристрою — відвідайте https://dontkillmyapp.com для отримання конкретних інструкцій.</string>
     <string name="restriction_warning_dialog_title">Обмеження фонової роботи та оптимізація акумулятора</string>

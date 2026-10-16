@@ -36,7 +36,7 @@
     <string name="app_icon">Ikon Aplikasi</string>
     <string name="app_launcher_2_widget_description">Peluncur Aplikasi 2x1 dengan Teks Kustom</string>
     <string name="app_launcher_widget_description">Peluncur Aplikasi dengan Emoji Kustom</string>
-    <string name="app_name">Widget Minimal</string>
+    <string name="app_name">MyUI</string>
     <string name="app_text">Teks Kustom Aplikasi</string>
     <string name="battery5_description">Widget baterai bergaya Nothing dengan tipografi tebal dan teks status pengisian daya</string>
     <string name="battery_glass_widget_description">Widget Kaca Baterai dengan Pengisian Kaca Berdasarkan Persentase Baterai</string>
@@ -135,12 +135,8 @@
     <string name="error_icon_content_description">Error</string>
     <string name="exposed_dropdown_menu_content_description">Tampilkan menu dropdown</string>
     <string name="game_snake_description">Game Ular klasik di layar utama Anda</string>
-    <string name="gcm_defaultSenderId">215566338319</string>
-    <string name="google_api_key">AIzaSyC6QuOrqpYV9Wd1TOJ2dbchfTeRLzVotBE</string>
-    <string name="google_app_id">1:215566338319:android:e7f5b12ab101972b92d67a</string>
     <string name="google_folder_description">Folder aplikasi Google yang dikategorikan</string>
     <string name="google_search_bar_description">Bilah pencarian Google akses cepat</string>
-    <string name="google_storage_bucket">minimal-widgets-582c0.firebasestorage.app</string>
     <string name="google_widget_description">Widget Google</string>
     <string name="grok_widget_description">Asisten AI Grok</string>
     <string name="hybrid_clock10_description">Jam Hibrida Modern 10 dengan tampilan waktu di tengah</string>
@@ -267,7 +263,7 @@
     <string name="previous_month">Bulan sebelumnya</string>
     <string name="project_id">minimal-widgets-582c0</string>
     <string name="reconfigure_widget">Konfigurasi Ulang Widget</string>
-    <string name="restriction_warning_dialog_body_1">Minimal Widgets perlu berjalan di latar belakang untuk memperbarui widget Anda. Aplikasi ini hanya berjalan saat diperlukan, tetapi jika penggunaan baterai diatur ke dioptimalkan, Android mungkin menghentikan aplikasi, yang menyebabkan widget berhenti berfungsi dengan benar.</string>
+    <string name="restriction_warning_dialog_body_1">MyUI perlu berjalan di latar belakang untuk memperbarui widget Anda. Aplikasi ini hanya berjalan saat diperlukan, tetapi jika penggunaan baterai diatur ke dioptimalkan, Android mungkin menghentikan aplikasi, yang menyebabkan widget berhenti berfungsi dengan benar.</string>
     <string name="restriction_warning_dialog_body_2">Buka pengaturan aplikasi dan ubah penggunaan baterai menjadi Tidak Dibatasi. Jika opsi ini tidak tersedia, periksa pengaturan daya ponsel.</string>
     <string name="restriction_warning_dialog_body_3">Beberapa ponsel lebih restriktif dan mungkin memblokir aplikasi agar tidak dimulai secara otomatis setelah dimulai ulang. Pengaturan bervariasi menurut perangkat — kunjungi https://dontkillmyapp.com untuk instruksi khusus.</string>
     <string name="restriction_warning_dialog_title">Batasan aktivitas latar belakang dan pengoptimalan baterai</string>

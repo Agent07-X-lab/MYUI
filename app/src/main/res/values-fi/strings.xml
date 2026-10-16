@@ -36,7 +36,7 @@
     <string name="app_icon">Sovelluksen kuvake</string>
     <string name="app_launcher_2_widget_description">2x1-sovelluskäynnistin mukautetulla tekstillä</string>
     <string name="app_launcher_widget_description">Sovellusten käynnistin mukautetulla emojilla</string>
-    <string name="app_name">Minimal Widgets</string>
+    <string name="app_name">MyUI</string>
     <string name="app_text">Sovelluksen mukautettu teksti</string>
     <string name="battery5_description">Nothing-tyylinen akkuwidget, jossa on lihavoitu typografia ja lataustilan teksti</string>
     <string name="battery_glass_widget_description">Battery Glass -widget, jossa lasitäyttö perustuu akun varaukseen</string>
@@ -135,12 +135,8 @@
     <string name="error_icon_content_description">Virhe</string>
     <string name="exposed_dropdown_menu_content_description">Näytä avattava valikko</string>
     <string name="game_snake_description">Klassinen matopeli kotinäytölläsi</string>
-    <string name="gcm_defaultSenderId">215566338319</string>
-    <string name="google_api_key">AIzaSyC6QuOrqpYV9Wd1TOJ2dbchfTeRLzVotBE</string>
-    <string name="google_app_id">1:215566338319:android:e7f5b12ab101972b92d67a</string>
     <string name="google_folder_description">Luokiteltu Google-sovelluskansio</string>
     <string name="google_search_bar_description">Pikahaku Googlen hakupalkilla</string>
-    <string name="google_storage_bucket">minimal-widgets-582c0.firebasestorage.app</string>
     <string name="google_widget_description">Google-widget</string>
     <string name="grok_widget_description">Grok AI -avustaja</string>
     <string name="hybrid_clock10_description">Moderni hybridikello 10 keskitetyllä ajan näytöllä</string>
@@ -267,7 +263,7 @@
     <string name="previous_month">Edellinen kuukausi</string>
     <string name="project_id">minimal-widgets-582c0</string>
     <string name="reconfigure_widget">Määritä widget uudelleen</string>
-    <string name="restriction_warning_dialog_body_1">Minimal Widgets tarvitsee taustatoimintoja päivittääkseen widgetit. Se toimii vain tarvittaessa, mutta jos akun käyttö on asetettu optimoiduksi, Android saattaa pysäyttää sovelluksen, jolloin widgetit lakkaavat toimimasta oikein.</string>
+    <string name="restriction_warning_dialog_body_1">MyUI tarvitsee taustatoimintoja päivittääkseen widgetit. Se toimii vain tarvittaessa, mutta jos akun käyttö on asetettu optimoiduksi, Android saattaa pysäyttää sovelluksen, jolloin widgetit lakkaavat toimimasta oikein.</string>
     <string name="restriction_warning_dialog_body_2">Avaa sovelluksen asetukset ja muuta akun käyttöasetukseksi Rajoittamaton. Jos tämä vaihtoehto ei ole käytettävissä, tarkista puhelimen virransäästöasetukset.</string>
     <string name="restriction_warning_dialog_body_3">Jotkin puhelimet ovat vielä rajoittavampia ja saattavat estää sovellusta käynnistymästä automaattisesti uudelleenkäynnistyksen jälkeen. Asetukset vaihtelevat laitteittain – vieraile osoitteessa https://dontkillmyapp.com saadaksesi tarkempia ohjeita.</string>
     <string name="restriction_warning_dialog_title">Taustatyön rajoitukset ja akun optimointi</string>

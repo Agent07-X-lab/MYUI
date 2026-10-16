@@ -36,7 +36,7 @@
     <string name="app_icon">ആപ്പ് ഐക്കൺ</string>
     <string name="app_launcher_2_widget_description">ഇഷ്‌ടാനുസൃത വാചകമുള്ള 2x1 ആപ്പ് ലോഞ്ചർ</string>
     <string name="app_launcher_widget_description">ഇഷ്‌ടാനുസൃത ഇമോജിയുള്ള ആപ്പ് ലോഞ്ചർ</string>
-    <string name="app_name">മിനിമൽ വിജറ്റുകൾ</string>
+    <string name="app_name">MyUI</string>
     <string name="app_text">ആപ്പ് കസ്റ്റം ടെക്സ്റ്റ്</string>
     <string name="battery5_description">ബോൾഡ് ടൈപ്പോഗ്രാഫിയും ചാർജിംഗ് സ്റ്റാറ്റസ് ടെക്സ്റ്റും ഉള്ള നത്തിംഗ്-സ്റ്റൈൽ ബാറ്ററി വിജറ്റ്</string>
     <string name="battery_glass_widget_description">ബാറ്ററി ശതമാനത്തെ അടിസ്ഥാനമാക്കി ഗ്ലാസ് ഫില്ലപ്പ് ഉള്ള ബാറ്ററി ഗ്ലാസ് വിജറ്റ്</string>
@@ -135,12 +135,8 @@
     <string name="error_icon_content_description">പിശക്</string>
     <string name="exposed_dropdown_menu_content_description">ഡ്രോപ്പ്‌ ഡൗൺ മെനു കാണിക്കുക</string>
     <string name="game_snake_description">നിങ്ങളുടെ ഹോം സ്ക്രീനിലെ ക്ലാസിക് സ്നേക്ക് ഗെയിം</string>
-    <string name="gcm_defaultSenderId">215566338319</string>
-    <string name="google_api_key">AIzaSyC6QuOrqpYV9Wd1TOJ2dbchfTeRLzVotBE</string>
-    <string name="google_app_id">1:215566338319:android:e7f5b12ab101972b92d67a</string>
     <string name="google_folder_description">തരംതിരിച്ച ഗൂഗിൾ ആപ്പുകളുടെ ഫോൾഡർ</string>
     <string name="google_search_bar_description">പെട്ടെന്ന് ആക്‌സസ് ചെയ്യാവുന്ന ഗൂഗിൾ സെർച്ച് ബാർ</string>
-    <string name="google_storage_bucket">minimal-widgets-582c0.firebasestorage.app</string>
     <string name="google_widget_description">ഗൂഗിൾ വിജറ്റ്</string>
     <string name="grok_widget_description">ഗ്രോക്ക് എഐ അസിസ്റ്റന്റ്</string>
     <string name="hybrid_clock10_description">സെന്റർ ചെയ്ത സമയ ഡിസ്‌പ്ലേയുള്ള ആധുനിക ഹൈബ്രിഡ് ക്ലോക്ക് 10</string>

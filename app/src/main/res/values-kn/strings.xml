@@ -36,7 +36,7 @@
     <string name="app_icon">ಆ್ಯಪ್ ಐಕಾನ್</string>
     <string name="app_launcher_2_widget_description">ಕಸ್ಟಮ್ ಪಠ್ಯದೊಂದಿಗೆ 2x1 ಆ್ಯಪ್ ಲಾಂಚರ್</string>
     <string name="app_launcher_widget_description">ಕಸ್ಟಮ್ ಎಮೋಜಿಯೊಂದಿಗೆ ಆ್ಯಪ್ ಲಾಂಚರ್</string>
-    <string name="app_name">ಮಿನಿಮಲ್ ವಿಜೆಟ್‌ಗಳು</string>
+    <string name="app_name">MyUI</string>
     <string name="app_text">ಆ್ಯಪ್ ಕಸ್ಟಮ್ ಪಠ್ಯ</string>
     <string name="battery5_description">ದಪ್ಪ ಅಕ್ಷರಶೈಲಿ ಮತ್ತು ಚಾರ್ಜಿಂಗ್ ಸ್ಥಿತಿಯ ಪಠ್ಯವನ್ನು ಹೊಂದಿರುವ ನಥಿಂಗ್-ಶೈಲಿಯ ಬ್ಯಾಟರಿ ವಿಜೆಟ್</string>
     <string name="battery_glass_widget_description">ಬ್ಯಾಟರಿ ಶೇಕಡಾವಾರು ಆಧಾರಿತ ಗ್ಲಾಸ್ ಫಿಲ್-ಅಪ್ ಹೊಂದಿರುವ ಬ್ಯಾಟರಿ ಗ್ಲಾಸ್ ವಿಜೆಟ್</string>
@@ -135,12 +135,8 @@
     <string name="error_icon_content_description">ದೋಷ</string>
     <string name="exposed_dropdown_menu_content_description">ಡ್ರಾಪ್‌ಡೌನ್ ಮೆನು ತೋರಿಸಿ</string>
     <string name="game_snake_description">ನಿಮ್ಮ ಹೋಮ್ ಸ್ಕ್ರೀನ್‌ನಲ್ಲಿ ಕ್ಲಾಸಿಕ್ ಸ್ನೇಕ್ ಗೇಮ್</string>
-    <string name="gcm_defaultSenderId">215566338319</string>
-    <string name="google_api_key">AIzaSyC6QuOrqpYV9Wd1TOJ2dbchfTeRLzVotBE</string>
-    <string name="google_app_id">1:215566338319:android:e7f5b12ab101972b92d67a</string>
     <string name="google_folder_description">ವರ್ಗೀಕರಿಸಿದ ಗೂಗಲ್ ಅಪ್ಲಿಕೇಶನ್‌ಗಳ ಫೋಲ್ಡರ್</string>
     <string name="google_search_bar_description">ತ್ವರಿತ ಪ್ರವೇಶದ ಗೂಗಲ್ ಸರ್ಚ್ ಬಾರ್</string>
-    <string name="google_storage_bucket">minimal-widgets-582c0.firebasestorage.app</string>
     <string name="google_widget_description">Google ವಿಜೆಟ್</string>
     <string name="grok_widget_description">Grok AI ಸಹಾಯಕ</string>
     <string name="hybrid_clock10_description">ಕೇಂದ್ರೀಕೃತ ಸಮಯದ ಪ್ರದರ್ಶನವಿರುವ ಆಧುನಿಕ ಹೈಬ್ರಿಡ್ ಕ್ಲಾಕ್ 10</string>

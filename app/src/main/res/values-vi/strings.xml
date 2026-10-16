@@ -36,7 +36,7 @@
     <string name="app_icon">Biểu tượng ứng dụng</string>
     <string name="app_launcher_2_widget_description">Trình khởi chạy ứng dụng 2x1 với văn bản tùy chỉnh</string>
     <string name="app_launcher_widget_description">Trình khởi chạy ứng dụng với biểu tượng cảm xúc tùy chỉnh</string>
-    <string name="app_name">Minimal Widgets</string>
+    <string name="app_name">MyUI</string>
     <string name="app_text">Văn bản tùy chỉnh ứng dụng</string>
     <string name="battery5_description">Tiện ích pin phong cách Nothing với kiểu chữ đậm và văn bản trạng thái sạc</string>
     <string name="battery_glass_widget_description">Tiện ích pin thủy tinh với hiệu ứng đầy dựa trên phần trăm pin</string>
@@ -135,12 +135,8 @@
     <string name="error_icon_content_description">Lỗi</string>
     <string name="exposed_dropdown_menu_content_description">Hiển thị menu thả xuống</string>
     <string name="game_snake_description">Trò chơi Rắn săn mồi cổ điển trên màn hình chính của bạn</string>
-    <string name="gcm_defaultSenderId">215566338319</string>
-    <string name="google_api_key">AIzaSyC6QuOrqpYV9Wd1TOJ2dbchfTeRLzVotBE</string>
-    <string name="google_app_id">1:215566338319:android:e7f5b12ab101972b92d67a</string>
     <string name="google_folder_description">Thư mục ứng dụng Google được phân loại</string>
     <string name="google_search_bar_description">Thanh tìm kiếm Google truy cập nhanh</string>
-    <string name="google_storage_bucket">minimal-widgets-582c0.firebasestorage.app</string>
     <string name="google_widget_description">Tiện ích Google</string>
     <string name="grok_widget_description">Trợ lý AI Grok</string>
     <string name="hybrid_clock10_description">Đồng hồ lai hiện đại 10 với hiển thị thời gian ở giữa</string>
@@ -267,7 +263,7 @@
     <string name="previous_month">Tháng trước</string>
     <string name="project_id">minimal-widgets-582c0</string>
     <string name="reconfigure_widget">Cấu hình lại tiện ích</string>
-    <string name="restriction_warning_dialog_body_1">Minimal Widgets cần chạy trong nền để cập nhật các tiện ích của bạn. Ứng dụng chỉ chạy khi cần thiết, nhưng nếu cài đặt sử dụng pin được đặt ở chế độ tối ưu hóa, Android có thể dừng ứng dụng, khiến các tiện ích ngừng hoạt động chính xác.</string>
+    <string name="restriction_warning_dialog_body_1">MyUI cần chạy trong nền để cập nhật các tiện ích của bạn. Ứng dụng chỉ chạy khi cần thiết, nhưng nếu cài đặt sử dụng pin được đặt ở chế độ tối ưu hóa, Android có thể dừng ứng dụng, khiến các tiện ích ngừng hoạt động chính xác.</string>
     <string name="restriction_warning_dialog_body_2">Mở cài đặt ứng dụng và thay đổi mức sử dụng pin thành Không hạn chế. Nếu tùy chọn này không khả dụng, hãy kiểm tra cài đặt nguồn của điện thoại.</string>
     <string name="restriction_warning_dialog_body_3">Một số điện thoại có các hạn chế nghiêm ngặt hơn và có thể chặn ứng dụng tự động khởi chạy sau khi khởi động lại. Cài đặt tùy thuộc vào từng thiết bị — hãy truy cập https://dontkillmyapp.com để biết hướng dẫn cụ thể.</string>
     <string name="restriction_warning_dialog_title">Hạn chế hoạt động nền và tối ưu hóa pin</string>

@@ -36,7 +36,7 @@
     <string name="app_icon">Lietotnes ikona</string>
     <string name="app_launcher_2_widget_description">2x1 lietotņu palaidējs ar pielāgotu tekstu</string>
     <string name="app_launcher_widget_description">Lietotņu palaidējs ar pielāgotu emocijzīmi</string>
-    <string name="app_name">Minimālisma logrīki</string>
+    <string name="app_name">MyUI</string>
     <string name="app_text">Lietotnes pielāgotais teksts</string>
     <string name="battery5_description">Nothing stila akumulatora logrīks ar treknu tipogrāfiju un uzlādes statusa tekstu</string>
     <string name="battery_glass_widget_description">Akumulatora stikla logrīks ar stikla aizpildījumu, pamatojoties uz akumulatora procentuālo daudzumu</string>
@@ -135,12 +135,8 @@
     <string name="error_icon_content_description">Kļūda</string>
     <string name="exposed_dropdown_menu_content_description">Rādīt nolaižamo izvēlni</string>
     <string name="game_snake_description">Klasiskā čūskas spēle jūsu sākuma ekrānā</string>
-    <string name="gcm_defaultSenderId">215566338319</string>
-    <string name="google_api_key">AIzaSyC6QuOrqpYV9Wd1TOJ2dbchfTeRLzVotBE</string>
-    <string name="google_app_id">1:215566338319:android:e7f5b12ab101972b92d67a</string>
     <string name="google_folder_description">Kategorizēta Google lietotņu mape</string>
     <string name="google_search_bar_description">Ātrās piekļuves Google meklēšanas josla</string>
-    <string name="google_storage_bucket">minimal-widgets-582c0.firebasestorage.app</string>
     <string name="google_widget_description">Google logrīks</string>
     <string name="grok_widget_description">Grok AI palīgs</string>
     <string name="hybrid_clock10_description">Moderns hibrīdpulkstenis 10 ar centrētu laika rādījumu</string>
@@ -267,7 +263,7 @@
     <string name="previous_month">Iepriekšējais mēnesis</string>
     <string name="project_id">minimal-widgets-582c0</string>
     <string name="reconfigure_widget">Pārkonfigurēt logrīku</string>
-    <string name="restriction_warning_dialog_body_1">Minimal Widgets ir jādarbojas fonā, lai atjauninātu jūsu logrīkus. Tas darbojas tikai tad, kad nepieciešams, taču, ja akumulatora lietojums ir iestatīts uz optimizētu, Android var apturēt lietotni, izraisot logrīku nepareizu darbību.</string>
+    <string name="restriction_warning_dialog_body_1">MyUI ir jādarbojas fonā, lai atjauninātu jūsu logrīkus. Tas darbojas tikai tad, kad nepieciešams, taču, ja akumulatora lietojums ir iestatīts uz optimizētu, Android var apturēt lietotni, izraisot logrīku nepareizu darbību.</string>
     <string name="restriction_warning_dialog_body_2">Atveriet lietotnes iestatījumus un mainiet akumulatora lietojumu uz Neierobežots. Ja šī opcija nav pieejama, pārbaudiet tālruņa enerģijas taupīšanas iestatījumus.</string>
     <string name="restriction_warning_dialog_body_3">Daži tālruņi ir vēl ierobežojošāki un var bloķēt lietotnes automātisku palaišanu pēc restartēšanas. Iestatījumi atšķiras atkarībā no ierīces — apmeklējiet https://dontkillmyapp.com, lai iegūtu konkrētus norādījumus.</string>
     <string name="restriction_warning_dialog_title">Fona darbības ierobežojumi un akumulatora optimizācija</string>

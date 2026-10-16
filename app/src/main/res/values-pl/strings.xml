@@ -36,7 +36,7 @@
     <string name="app_icon">Ikona aplikacji</string>
     <string name="app_launcher_2_widget_description">Program uruchamiający aplikacje 2x1 z własnym tekstem</string>
     <string name="app_launcher_widget_description">Uruchamianie aplikacji z własnym emoji</string>
-    <string name="app_name">Minimalistyczne widżety</string>
+    <string name="app_name">MyUI</string>
     <string name="app_text">Niestandardowy tekst aplikacji</string>
     <string name="battery5_description">Widżet baterii w stylu Nothing z pogrubioną typografią i tekstem stanu ładowania</string>
     <string name="battery_glass_widget_description">Szklany widżet baterii z wypełnieniem opartym na poziomie naładowania</string>
@@ -135,12 +135,8 @@
     <string name="error_icon_content_description">Błąd</string>
     <string name="exposed_dropdown_menu_content_description">Pokaż menu</string>
     <string name="game_snake_description">Klasyczna gra w węża na ekranie głównym</string>
-    <string name="gcm_defaultSenderId">215566338319</string>
-    <string name="google_api_key">AIzaSyC6QuOrqpYV9Wd1TOJ2dbchfTeRLzVotBE</string>
-    <string name="google_app_id">1:215566338319:android:e7f5b12ab101972b92d67a</string>
     <string name="google_folder_description">Folder z kategoryzowanymi aplikacjami Google</string>
     <string name="google_search_bar_description">Pasek szybkiego wyszukiwania Google</string>
-    <string name="google_storage_bucket">minimal-widgets-582c0.firebasestorage.app</string>
     <string name="google_widget_description">Widżet Google</string>
     <string name="grok_widget_description">Asystent AI Grok</string>
     <string name="hybrid_clock10_description">Nowoczesny zegar hybrydowy 10 z wyśrodkowanym wyświetlaniem czasu</string>
@@ -267,7 +263,7 @@
     <string name="previous_month">Poprzedni miesiąc</string>
     <string name="project_id">minimal-widgets-582c0</string>
     <string name="reconfigure_widget">Skonfiguruj ponownie widżet</string>
-    <string name="restriction_warning_dialog_body_1">Minimal Widgets musi działać w tle, aby aktualizować widżety. Działa tylko wtedy, gdy jest to konieczne, ale jeśli użycie baterii jest ustawione na zoptymalizowane, system Android może zatrzymać aplikację, co spowoduje nieprawidłowe działanie widżetów.</string>
+    <string name="restriction_warning_dialog_body_1">MyUI musi działać w tle, aby aktualizować widżety. Działa tylko wtedy, gdy jest to konieczne, ale jeśli użycie baterii jest ustawione na zoptymalizowane, system Android może zatrzymać aplikację, co spowoduje nieprawidłowe działanie widżetów.</string>
     <string name="restriction_warning_dialog_body_2">Otwórz ustawienia aplikacji i zmień użycie baterii na „Bez ograniczeń”. Jeśli ta opcja nie jest dostępna, sprawdź ustawienia zasilania telefonu.</string>
     <string name="restriction_warning_dialog_body_3">Niektóre telefony są jeszcze bardziej restrykcyjne i mogą blokować automatyczne uruchamianie aplikacji po ponownym uruchomieniu. Ustawienia różnią się w zależności od urządzenia — odwiedź stronę https://dontkillmyapp.com, aby uzyskać szczegółowe instrukcje.</string>
     <string name="restriction_warning_dialog_title">Ograniczenia pracy w tle i optymalizacja baterii</string>

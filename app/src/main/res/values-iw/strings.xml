@@ -36,7 +36,7 @@
     <string name="app_icon">אייקון אפליקציה</string>
     <string name="app_launcher_2_widget_description">משגר אפליקציות 2x1 עם טקסט מותאם אישית</string>
     <string name="app_launcher_widget_description">משגר אפליקציות עם אימוג\'י מותאם אישית</string>
-    <string name="app_name">Minimal Widgets</string>
+    <string name="app_name">MyUI</string>
     <string name="app_text">טקסט מותאם אישית לאפליקציה</string>
     <string name="battery5_description">ווידג\'ט סוללה בסגנון Nothing עם טיפוגרפיה מודגשת וטקסט מצב טעינה</string>
     <string name="battery_glass_widget_description">ווידג\'ט סוללה בסגנון זכוכית עם מילוי מבוסס אחוז סוללה</string>
@@ -135,12 +135,8 @@
     <string name="error_icon_content_description">שגיאה</string>
     <string name="exposed_dropdown_menu_content_description">הצגת התפריט הנפתח</string>
     <string name="game_snake_description">משחק הנחש הקלאסי במסך הבית שלך</string>
-    <string name="gcm_defaultSenderId">215566338319</string>
-    <string name="google_api_key">AIzaSyC6QuOrqpYV9Wd1TOJ2dbchfTeRLzVotBE</string>
-    <string name="google_app_id">1:215566338319:android:e7f5b12ab101972b92d67a</string>
     <string name="google_folder_description">תיקיית אפליקציות Google מסווגות</string>
     <string name="google_search_bar_description">סרגל חיפוש מהיר של גוגל</string>
-    <string name="google_storage_bucket">minimal-widgets-582c0.firebasestorage.app</string>
     <string name="google_widget_description">ווידג\'ט גוגל</string>
     <string name="grok_widget_description">עוזר בינה מלאכותית Grok</string>
     <string name="hybrid_clock10_description">שעון היברידי מודרני 10 עם תצוגת זמן ממורכזת</string>
@@ -267,7 +263,7 @@
     <string name="previous_month">החודש הקודם</string>
     <string name="project_id">minimal-widgets-582c0</string>
     <string name="reconfigure_widget">הגדר מחדש את הווידג\'ט</string>
-    <string name="restriction_warning_dialog_body_1">Minimal Widgets צריך לפעול ברקע כדי לעדכן את הווידג\'טים שלך. הוא פועל רק בעת הצורך, אך אם השימוש בסוללה מוגדר כ\'אופטימלי\', ייתכן ש-Android תעצור את האפליקציה, מה שיגרום לווידג\'טים להפסיק לעבוד כראוי.</string>
+    <string name="restriction_warning_dialog_body_1">MyUI צריך לפעול ברקע כדי לעדכן את הווידג\'טים שלך. הוא פועל רק בעת הצורך, אך אם השימוש בסוללה מוגדר כ\'אופטימלי\', ייתכן ש-Android תעצור את האפליקציה, מה שיגרום לווידג\'טים להפסיק לעבוד כראוי.</string>
     <string name="restriction_warning_dialog_body_2">פתח את הגדרות האפליקציה ושנה את השימוש בסוללה ל\'ללא הגבלה\'. אם אפשרות זו אינה זמינה, בדוק את הגדרות החשמל של הטלפון.</string>
     <string name="restriction_warning_dialog_body_3">טלפונים מסוימים מגבילים עוד יותר ועשויים לחסום את האפליקציה מהפעלה אוטומטית לאחר הפעלה מחדש. ההגדרות משתנות בהתאם למכשיר — בקר בכתובת https://dontkillmyapp.com להוראות ספציפיות.</string>
     <string name="restriction_warning_dialog_title">הגבלות עבודה ברקע ואופטימיזציית סוללה</string>

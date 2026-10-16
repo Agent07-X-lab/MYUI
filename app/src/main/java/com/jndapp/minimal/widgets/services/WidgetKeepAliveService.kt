@@ -25,7 +25,7 @@ class WidgetKeepAliveService : Service() {
 
     private fun buildForegroundNotification(): Notification {
         return NotificationCompat.Builder(this, ApplicationClass.CHANNEL_KEEP_ALIVE)
-            .setContentTitle("Minimal Widgets")
+            .setContentTitle("MyUI")
             .setContentText("Keeping widgets synchronized")
             .setSmallIcon(R.mipmap.ic_launcher)
             .setPriority(NotificationCompat.PRIORITY_LOW)

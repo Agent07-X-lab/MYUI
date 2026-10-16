@@ -36,7 +36,7 @@
     <string name="app_icon">Icona de l\'aplicació</string>
     <string name="app_launcher_2_widget_description">Llançador d\'aplicacions 2x1 amb text personalitzat</string>
     <string name="app_launcher_widget_description">Llançador d\'aplicacions amb emoji personalitzat</string>
-    <string name="app_name">Ginys minimalistes</string>
+    <string name="app_name">MyUI</string>
     <string name="app_text">Text personalitzat de l\'aplicació</string>
     <string name="battery5_description">Giny widget de bateria amb tipografia negreta i text d\'estat de càrrega</string>
     <string name="battery_glass_widget_description">Giny de bateria de vidre amb farciment de vidre basat en el percentatge de bateria</string>
@@ -135,12 +135,8 @@
     <string name="error_icon_content_description">Error</string>
     <string name="exposed_dropdown_menu_content_description">Mostra el menú desplegable</string>
     <string name="game_snake_description">Joc clàssic de la serp a la pantalla d\'inici</string>
-    <string name="gcm_defaultSenderId">215566338319</string>
-    <string name="google_api_key">AIzaSyC6QuOrqpYV9Wd1TOJ2dbchfTeRLzVotBE</string>
-    <string name="google_app_id">1:215566338319:android:e7f5b12ab101972b92d67a</string>
     <string name="google_folder_description">Carpeta d\'aplicacions de Google categoritzades</string>
     <string name="google_search_bar_description">Barra de cerca de Google d\'accés ràpid</string>
-    <string name="google_storage_bucket">minimal-widgets-582c0.firebasestorage.app</string>
     <string name="google_widget_description">Giny de Google</string>
     <string name="grok_widget_description">Assistent d\'IA Grok</string>
     <string name="hybrid_clock10_description">Rellotge híbrid modern 10 amb visualització de l\'hora centrada</string>
@@ -267,7 +263,7 @@
     <string name="previous_month">Mes anterior</string>
     <string name="project_id">minimal-widgets-582c0</string>
     <string name="reconfigure_widget">Reconfigura el giny</string>
-    <string name="restriction_warning_dialog_body_1">Minimal Widgets necessita executar-se en segon pla per actualitzar els ginys. Només s\'executa quan és necessari, però si l\'ús de la bateria està configurat com a optimitzat, Android pot aturar l\'aplicació, fent que els ginys deixin de funcionar correctament.</string>
+    <string name="restriction_warning_dialog_body_1">MyUI necessita executar-se en segon pla per actualitzar els ginys. Només s\'executa quan és necessari, però si l\'ús de la bateria està configurat com a optimitzat, Android pot aturar l\'aplicació, fent que els ginys deixin de funcionar correctament.</string>
     <string name="restriction_warning_dialog_body_2">Obre la configuració de l\'aplicació i canvia l\'ús de la bateria a Sense restriccions. Si aquesta opció no està disponible, comprova la configuració d\'energia del telèfon.</string>
     <string name="restriction_warning_dialog_body_3">Alguns telèfons són encara més restrictius i poden bloquejar l\'inici automàtic de l\'aplicació després de reiniciar. La configuració varia segons el dispositiu; visiteu https://dontkillmyapp.com per obtenir instruccions específiques.</string>
     <string name="restriction_warning_dialog_title">Restriccions de treball en segon pla i optimització de la bateria</string>

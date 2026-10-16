@@ -36,7 +36,7 @@
     <string name="app_icon">آیکون برنامه</string>
     <string name="app_launcher_2_widget_description">لانچر برنامه ۲ در ۱ با متن سفارشی</string>
     <string name="app_launcher_widget_description">راه‌انداز برنامه با ایموجی سفارشی</string>
-    <string name="app_name">ویجت‌های مینیمال</string>
+    <string name="app_name">MyUI</string>
     <string name="app_text">متن سفارشی برنامه</string>
     <string name="battery5_description">ویجت باتری با سبک Nothing و تایپوگرافی برجسته و متن وضعیت شارژ</string>
     <string name="battery_glass_widget_description">ویجت شیشه‌ای باتری با پر شدن شیشه‌ای بر اساس درصد باتری</string>
@@ -135,12 +135,8 @@
     <string name="error_icon_content_description">خطا</string>
     <string name="exposed_dropdown_menu_content_description">نمایش منوی کرکره‌ای</string>
     <string name="game_snake_description">بازی کلاسیک مار در صفحه اصلی شما</string>
-    <string name="gcm_defaultSenderId">215566338319</string>
-    <string name="google_api_key">AIzaSyC6QuOrqpYV9Wd1TOJ2dbchfTeRLzVotBE</string>
-    <string name="google_app_id">1:215566338319:android:e7f5b12ab101972b92d67a</string>
     <string name="google_folder_description">پوشه برنامه‌های دسته‌بندی‌شده گوگل</string>
     <string name="google_search_bar_description">نوار جستجوی سریع گوگل</string>
-    <string name="google_storage_bucket">minimal-widgets-582c0.firebasestorage.app</string>
     <string name="google_widget_description">ویجت گوگل</string>
     <string name="grok_widget_description">دستیار هوش مصنوعی Grok</string>
     <string name="hybrid_clock10_description">ساعت هیبریدی مدرن ۱۰ با نمایش زمان در مرکز</string>
@@ -267,7 +263,7 @@
     <string name="previous_month">ماه قبل</string>
     <string name="project_id">minimal-widgets-582c0</string>
     <string name="reconfigure_widget">پیکربندی مجدد ویجت</string>
-    <string name="restriction_warning_dialog_body_1">برنامه Minimal Widgets برای به‌روزرسانی ویجت‌های شما نیاز دارد در پس‌زمینه اجرا شود. این برنامه فقط در صورت نیاز اجرا می‌شود، اما اگر مصرف باتری روی حالت بهینه تنظیم شده باشد، اندروید ممکن است برنامه را متوقف کند که باعث می‌شود ویجت‌ها به‌درستی کار نکنند.</string>
+    <string name="restriction_warning_dialog_body_1">برنامه MyUI برای به‌روزرسانی ویجت‌های شما نیاز دارد در پس‌زمینه اجرا شود. این برنامه فقط در صورت نیاز اجرا می‌شود، اما اگر مصرف باتری روی حالت بهینه تنظیم شده باشد، اندروید ممکن است برنامه را متوقف کند که باعث می‌شود ویجت‌ها به‌درستی کار نکنند.</string>
     <string name="restriction_warning_dialog_body_2">تنظیمات برنامه را باز کرده و میزان استفاده از باتری را به «بدون محدودیت» تغییر دهید. اگر این گزینه در دسترس نیست، تنظیمات برق گوشی را بررسی کنید.</string>
     <string name="restriction_warning_dialog_body_3">برخی گوشی‌ها محدودیت‌های بیشتری دارند و ممکن است از اجرای خودکار برنامه پس از راه‌اندازی مجدد جلوگیری کنند. تنظیمات بسته به دستگاه متفاوت است — برای دستورالعمل‌های خاص به https://dontkillmyapp.com مراجعه کنید.</string>
     <string name="restriction_warning_dialog_title">محدودیت‌های فعالیت در پس‌زمینه و بهینه‌سازی باتری</string>

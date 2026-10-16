@@ -36,7 +36,7 @@
     <string name="app_icon">ไอคอนแอป</string>
     <string name="app_launcher_2_widget_description">ตัวเปิดแอป 2x1 พร้อมข้อความที่กำหนดเอง</string>
     <string name="app_launcher_widget_description">ตัวเรียกใช้งานแอปพร้อมอิโมจิแบบกำหนดเอง</string>
-    <string name="app_name">Minimal Widgets</string>
+    <string name="app_name">MyUI</string>
     <string name="app_text">ข้อความแอปที่กำหนดเอง</string>
     <string name="battery5_description">วิดเจ็ตแบตเตอรี่สไตล์ Nothing พร้อมตัวอักษรหนาและข้อความสถานะการชาร์จ</string>
     <string name="battery_glass_widget_description">วิดเจ็ตแบตเตอรี่แบบแก้วพร้อมการเติมเต็มตามเปอร์เซ็นต์แบตเตอรี่</string>
@@ -135,12 +135,8 @@
     <string name="error_icon_content_description">ข้อผิดพลาด</string>
     <string name="exposed_dropdown_menu_content_description">แสดงเมนูแบบเลื่อนลง</string>
     <string name="game_snake_description">เกมงูสุดคลาสสิกบนหน้าจอหลักของคุณ</string>
-    <string name="gcm_defaultSenderId">215566338319</string>
-    <string name="google_api_key">AIzaSyC6QuOrqpYV9Wd1TOJ2dbchfTeRLzVotBE</string>
-    <string name="google_app_id">1:215566338319:android:e7f5b12ab101972b92d67a</string>
     <string name="google_folder_description">โฟลเดอร์แอป Google ที่จัดหมวดหมู่ไว้</string>
     <string name="google_search_bar_description">แถบค้นหา Google แบบเข้าถึงด่วน</string>
-    <string name="google_storage_bucket">minimal-widgets-582c0.firebasestorage.app</string>
     <string name="google_widget_description">วิดเจ็ต Google</string>
     <string name="grok_widget_description">ผู้ช่วย AI Grok</string>
     <string name="hybrid_clock10_description">นาฬิกาไฮบริด 10 ทันสมัยพร้อมการแสดงเวลาตรงกลาง</string>
@@ -267,7 +263,7 @@
     <string name="previous_month">เดือนก่อนหน้า</string>
     <string name="project_id">minimal-widgets-582c0</string>
     <string name="reconfigure_widget">กำหนดค่าวิดเจ็ตใหม่</string>
-    <string name="restriction_warning_dialog_body_1">Minimal Widgets จำเป็นต้องทำงานในพื้นหลังเพื่ออัปเดตวิดเจ็ตของคุณ โดยจะทำงานเฉพาะเมื่อจำเป็นเท่านั้น แต่หากการใช้งานแบตเตอรี่ถูกตั้งค่าเป็นปรับให้เหมาะสม Android อาจหยุดแอป ทำให้วิดเจ็ตหยุดทำงานอย่างถูกต้อง</string>
+    <string name="restriction_warning_dialog_body_1">MyUI จำเป็นต้องทำงานในพื้นหลังเพื่ออัปเดตวิดเจ็ตของคุณ โดยจะทำงานเฉพาะเมื่อจำเป็นเท่านั้น แต่หากการใช้งานแบตเตอรี่ถูกตั้งค่าเป็นปรับให้เหมาะสม Android อาจหยุดแอป ทำให้วิดเจ็ตหยุดทำงานอย่างถูกต้อง</string>
     <string name="restriction_warning_dialog_body_2">เปิดการตั้งค่าแอปและเปลี่ยนการใช้งานแบตเตอรี่เป็น ไม่จำกัด หากไม่มีตัวเลือกนี้ ให้ตรวจสอบการตั้งค่าพลังงานของโทรศัพท์</string>
     <string name="restriction_warning_dialog_body_3">โทรศัพท์บางรุ่นมีข้อจำกัดมากกว่าปกติและอาจบล็อกไม่ให้แอปเริ่มทำงานโดยอัตโนมัติหลังจากรีสตาร์ท การตั้งค่าจะแตกต่างกันไปตามอุปกรณ์ โปรดไปที่ https://dontkillmyapp.com เพื่อดูคำแนะนำเฉพาะ</string>
     <string name="restriction_warning_dialog_title">ข้อจำกัดการทำงานเบื้องหลังและการเพิ่มประสิทธิภาพแบตเตอรี่</string>

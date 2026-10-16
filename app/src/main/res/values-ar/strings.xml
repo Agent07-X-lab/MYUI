@@ -36,7 +36,7 @@
     <string name="app_icon">أيقونة التطبيق</string>
     <string name="app_launcher_2_widget_description">مشغل تطبيقات 2x1 مع نص مخصص</string>
     <string name="app_launcher_widget_description">مشغل تطبيقات مع رموز تعبيرية مخصصة</string>
-    <string name="app_name">أدوات بسيطة</string>
+    <string name="app_name">MyUI</string>
     <string name="app_text">نص مخصص للتطبيق</string>
     <string name="battery5_description">أداة بطارية بنمط Nothing مع خط عريض ونص لحالة الشحن</string>
     <string name="battery_glass_widget_description">أداة بطارية زجاجية مع تعبئة زجاجية بناءً على نسبة البطارية</string>
@@ -135,12 +135,8 @@
     <string name="error_icon_content_description">خطأ</string>
     <string name="exposed_dropdown_menu_content_description">عرض القائمة المنسدلة</string>
     <string name="game_snake_description">لعبة الثعبان الكلاسيكية على شاشتك الرئيسية</string>
-    <string name="gcm_defaultSenderId">215566338319</string>
-    <string name="google_api_key">AIzaSyC6QuOrqpYV9Wd1TOJ2dbchfTeRLzVotBE</string>
-    <string name="google_app_id">1:215566338319:android:e7f5b12ab101972b92d67a</string>
     <string name="google_folder_description">مجلد تطبيقات Google مصنف</string>
     <string name="google_search_bar_description">شريط بحث Google للوصول السريع</string>
-    <string name="google_storage_bucket">minimal-widgets-582c0.firebasestorage.app</string>
     <string name="google_widget_description">أداة Google</string>
     <string name="grok_widget_description">مساعد Grok الذكي</string>
     <string name="hybrid_clock10_description">ساعة هجينة عصرية 10 مع عرض الوقت في المنتصف</string>
@@ -267,7 +263,7 @@
     <string name="previous_month">الشهر السابق</string>
     <string name="project_id">minimal-widgets-582c0</string>
     <string name="reconfigure_widget">إعادة تهيئة الأداة</string>
-    <string name="restriction_warning_dialog_body_1">يحتاج تطبيق Minimal Widgets للعمل في الخلفية لتحديث أدواتك. يعمل فقط عند الحاجة، ولكن إذا تم ضبط استخدام البطارية على الوضع المحسن، فقد يقوم نظام أندرويد بإيقاف التطبيق، مما يؤدي إلى توقف الأدوات عن العمل بشكل صحيح.</string>
+    <string name="restriction_warning_dialog_body_1">يحتاج تطبيق MyUI للعمل في الخلفية لتحديث أدواتك. يعمل فقط عند الحاجة، ولكن إذا تم ضبط استخدام البطارية على الوضع المحسن، فقد يقوم نظام أندرويد بإيقاف التطبيق، مما يؤدي إلى توقف الأدوات عن العمل بشكل صحيح.</string>
     <string name="restriction_warning_dialog_body_2">افتح إعدادات التطبيق وقم بتغيير استخدام البطارية إلى \"غير مقيد\". إذا لم يكن هذا الخيار متاحًا، تحقق من إعدادات الطاقة في الهاتف.</string>
     <string name="restriction_warning_dialog_body_3">بعض الهواتف أكثر تقييدًا وقد تمنع التطبيق من البدء تلقائيًا بعد إعادة التشغيل. تختلف الإعدادات حسب الجهاز - تفضل بزيارة https://dontkillmyapp.com للحصول على تعليمات محددة.</string>
     <string name="restriction_warning_dialog_title">قيود العمل في الخلفية وتحسين البطارية</string>

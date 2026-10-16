@@ -36,7 +36,7 @@
     <string name="app_icon">యాప్ ఐకాన్</string>
     <string name="app_launcher_2_widget_description">కస్టమ్ టెక్స్ట్‌తో కూడిన 2x1 యాప్ లాంచర్</string>
     <string name="app_launcher_widget_description">కస్టమ్ ఎమోజితో కూడిన యాప్ లాంచర్</string>
-    <string name="app_name">మినిమల్ విడ్జెట్‌లు</string>
+    <string name="app_name">MyUI</string>
     <string name="app_text">యాప్ కస్టమ్ టెక్స్ట్</string>
     <string name="battery5_description">బోల్డ్ టైపోగ్రఫీ మరియు ఛార్జింగ్ స్టేటస్ టెక్స్ట్‌తో కూడిన నథింగ్-స్టైల్ బ్యాటరీ విడ్జెట్</string>
     <string name="battery_glass_widget_description">బ్యాటరీ శాతం ఆధారంగా గ్లాస్ ఫిల్-అప్‌తో కూడిన బ్యాటరీ గ్లాస్ విడ్జెట్</string>
@@ -135,12 +135,8 @@
     <string name="error_icon_content_description">ఎర్రర్</string>
     <string name="exposed_dropdown_menu_content_description">డ్రాప్‌డౌన్ మెనూను చూపు</string>
     <string name="game_snake_description">మీ హోమ్ స్క్రీన్‌పై క్లాసిక్ స్నేక్ గేమ్</string>
-    <string name="gcm_defaultSenderId">215566338319</string>
-    <string name="google_api_key">AIzaSyC6QuOrqpYV9Wd1TOJ2dbchfTeRLzVotBE</string>
-    <string name="google_app_id">1:215566338319:android:e7f5b12ab101972b92d67a</string>
     <string name="google_folder_description">వర్గీకరించబడిన Google యాప్‌ల ఫోల్డర్</string>
     <string name="google_search_bar_description">త్వరిత యాక్సెస్ గూగుల్ సెర్చ్ బార్</string>
-    <string name="google_storage_bucket">minimal-widgets-582c0.firebasestorage.app</string>
     <string name="google_widget_description">Google విడ్జెట్</string>
     <string name="grok_widget_description">గ్రోక్ AI అసిస్టెంట్</string>
     <string name="hybrid_clock10_description">సెంటర్డ్ టైమ్ డిస్‌ప్లేతో కూడిన ఆధునిక హైబ్రిడ్ క్లాక్ 10</string>
@@ -267,7 +263,7 @@
     <string name="previous_month">గత నెల</string>
     <string name="project_id">minimal-widgets-582c0</string>
     <string name="reconfigure_widget">విడ్జెట్‌ను రీకాన్ఫిగర్ చేయండి</string>
-    <string name="restriction_warning_dialog_body_1">మీ విడ్జెట్‌లను అప్‌డేట్ చేయడానికి మినిమల్ విడ్జెట్స్ (Minimal Widgets) బ్యాక్‌గ్రౌండ్‌లో రన్ అవ్వాలి. ఇది అవసరమైనప్పుడు మాత్రమే రన్ అవుతుంది, కానీ బ్యాటరీ వినియోగం ఆప్టిమైజ్ చేయబడితే, ఆండ్రాయిడ్ యాప్‌ను ఆపివేయవచ్చు, దీనివల్ల విడ్జెట్‌లు సరిగ్గా పనిచేయవు.</string>
+    <string name="restriction_warning_dialog_body_1">మీ విడ్జెట్‌లను అప్‌డేట్ చేయడానికి మినిమల్ విడ్జెట్స్ (MyUI) బ్యాక్‌గ్రౌండ్‌లో రన్ అవ్వాలి. ఇది అవసరమైనప్పుడు మాత్రమే రన్ అవుతుంది, కానీ బ్యాటరీ వినియోగం ఆప్టిమైజ్ చేయబడితే, ఆండ్రాయిడ్ యాప్‌ను ఆపివేయవచ్చు, దీనివల్ల విడ్జెట్‌లు సరిగ్గా పనిచేయవు.</string>
     <string name="restriction_warning_dialog_body_2">యాప్ సెట్టింగ్‌లను తెరిచి, బ్యాటరీ వినియోగాన్ని \'అన్‌రెస్ట్రిక్టెడ్\' (Unrestricted)కి మార్చండి. ఈ ఎంపిక అందుబాటులో లేకపోతే, ఫోన్ పవర్ సెట్టింగ్‌లను తనిఖీ చేయండి.</string>
     <string name="restriction_warning_dialog_body_3">కొన్ని ఫోన్‌లు మరింత కఠినంగా ఉంటాయి మరియు రీస్టార్ట్ తర్వాత యాప్ ఆటోమేటిక్‌గా ప్రారంభం కాకుండా నిరోధించవచ్చు. సెట్టింగ్‌లు పరికరాన్ని బట్టి మారుతుంటాయి — నిర్దిష్ట సూచనల కోసం https://dontkillmyapp.com ని సందర్శించండి.</string>
     <string name="restriction_warning_dialog_title">బ్యాక్‌గ్రౌండ్ వర్క్ పరిమితులు మరియు బ్యాటరీ ఆప్టిమైజేషన్</string>

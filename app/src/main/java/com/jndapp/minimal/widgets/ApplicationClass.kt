@@ -20,7 +20,7 @@ class ApplicationClass : Application() {
             notificationManager?.let { manager ->
                 val keepAliveChannel = NotificationChannel(
                     CHANNEL_KEEP_ALIVE,
-                    "Widget Keep Alive Service",
+                    "MyUI Widget Service",
                     NotificationManager.IMPORTANCE_LOW
                 ).apply {
                     description = "Keeps widgets synchronized and updated in background"

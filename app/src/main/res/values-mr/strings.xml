@@ -36,7 +36,7 @@
     <string name="app_icon">ॲप आयकॉन</string>
     <string name="app_launcher_2_widget_description">सानुकूल मजकुरासह 2x1 ॲप लाँचर</string>
     <string name="app_launcher_widget_description">सानुकूल इमोजीसह ॲप लाँचर</string>
-    <string name="app_name">मिनिमल विजेट्स</string>
+    <string name="app_name">MyUI</string>
     <string name="app_text">ॲप कस्टम मजकूर</string>
     <string name="battery5_description">ठळक टायपोग्राफी आणि चार्जिंग स्थिती मजकुरासह नथिंग-स्टाईल बॅटरी विजेट</string>
     <string name="battery_glass_widget_description">बॅटरी टक्केवारीवर आधारित ग्लास फिलअपसह बॅटरी ग्लास विजेट</string>
@@ -135,12 +135,8 @@
     <string name="error_icon_content_description">एरर</string>
     <string name="exposed_dropdown_menu_content_description">ड्रॉपडाउन मेनू दाखवा</string>
     <string name="game_snake_description">तुमच्या होम स्क्रीनवर क्लासिक स्नेक गेम</string>
-    <string name="gcm_defaultSenderId">215566338319</string>
-    <string name="google_api_key">AIzaSyC6QuOrqpYV9Wd1TOJ2dbchfTeRLzVotBE</string>
-    <string name="google_app_id">1:215566338319:android:e7f5b12ab101972b92d67a</string>
     <string name="google_folder_description">वर्गीकृत Google ॲप्स फोल्डर</string>
     <string name="google_search_bar_description">गुगल सर्च बारमध्ये त्वरित प्रवेश</string>
-    <string name="google_storage_bucket">minimal-widgets-582c0.firebasestorage.app</string>
     <string name="google_widget_description">गुगल विजेट</string>
     <string name="grok_widget_description">ग्रोक एआय असिस्टंट</string>
     <string name="hybrid_clock10_description">मध्यवर्ती वेळ प्रदर्शनासह आधुनिक हायब्रिड क्लॉक १०</string>

@@ -12,7 +12,7 @@ class NotificationAccessDialog : Activity() {
 
         AlertDialog.Builder(this)
             .setTitle("Notification Access Required")
-            .setMessage("Allow Minimal Widgets notification access to display currently playing music track title and artist.")
+            .setMessage("Allow MyUI notification access to display currently playing music track title and artist.")
             .setPositiveButton("Open Settings") { _, _ ->
                 startActivity(Intent("android.settings.ACTION_NOTIFICATION_LISTENER_SETTINGS"))
                 finish()

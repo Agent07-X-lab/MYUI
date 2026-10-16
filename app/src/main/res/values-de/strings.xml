@@ -36,7 +36,7 @@
     <string name="app_icon">App-Symbol</string>
     <string name="app_launcher_2_widget_description">2x1 App-Starter mit benutzerdefiniertem Text</string>
     <string name="app_launcher_widget_description">App-Launcher mit benutzerdefiniertem Emoji</string>
-    <string name="app_name">Minimal Widgets</string>
+    <string name="app_name">MyUI</string>
     <string name="app_text">Benutzerdefinierter App-Text</string>
     <string name="battery5_description">Akkulade-Widget im Nothing-Stil mit fetter Typografie und Ladestatus-Text</string>
     <string name="battery_glass_widget_description">Batterie-Glas-Widget mit Glasfüllung basierend auf dem Batteriestand</string>
@@ -135,12 +135,8 @@
     <string name="error_icon_content_description">Fehler</string>
     <string name="exposed_dropdown_menu_content_description">Drop-down-Menü anzeigen</string>
     <string name="game_snake_description">Klassisches Snake-Spiel auf Ihrem Startbildschirm</string>
-    <string name="gcm_defaultSenderId">215566338319</string>
-    <string name="google_api_key">AIzaSyC6QuOrqpYV9Wd1TOJ2dbchfTeRLzVotBE</string>
-    <string name="google_app_id">1:215566338319:android:e7f5b12ab101972b92d67a</string>
     <string name="google_folder_description">Kategorisierter Google-Apps-Ordner</string>
     <string name="google_search_bar_description">Google-Suchleiste für schnellen Zugriff</string>
-    <string name="google_storage_bucket">minimal-widgets-582c0.firebasestorage.app</string>
     <string name="google_widget_description">Google-Widget</string>
     <string name="grok_widget_description">Grok KI-Assistent</string>
     <string name="hybrid_clock10_description">Moderne Hybrid-Uhr 10 mit zentrierter Zeitanzeige</string>
@@ -267,7 +263,7 @@
     <string name="previous_month">Vorheriger Monat</string>
     <string name="project_id">minimal-widgets-582c0</string>
     <string name="reconfigure_widget">Widget neu konfigurieren</string>
-    <string name="restriction_warning_dialog_body_1">Minimal Widgets muss im Hintergrund ausgeführt werden, um Ihre Widgets zu aktualisieren. Es wird nur bei Bedarf ausgeführt, aber wenn die Akkunutzung auf optimiert eingestellt ist, kann Android die App beenden, wodurch Widgets möglicherweise nicht mehr korrekt funktionieren.</string>
+    <string name="restriction_warning_dialog_body_1">MyUI muss im Hintergrund ausgeführt werden, um Ihre Widgets zu aktualisieren. Es wird nur bei Bedarf ausgeführt, aber wenn die Akkunutzung auf optimiert eingestellt ist, kann Android die App beenden, wodurch Widgets möglicherweise nicht mehr korrekt funktionieren.</string>
     <string name="restriction_warning_dialog_body_2">Öffnen Sie die App-Einstellungen und ändern Sie die Akkunutzung auf Unbeschränkt. Wenn diese Option nicht verfügbar ist, überprüfen Sie die Energieeinstellungen des Telefons.</string>
     <string name="restriction_warning_dialog_body_3">Einige Telefone sind noch restriktiver und blockieren möglicherweise den automatischen Start der App nach einem Neustart. Die Einstellungen variieren je nach Gerät – besuchen Sie https://dontkillmyapp.com für spezifische Anweisungen.</string>
     <string name="restriction_warning_dialog_title">Einschränkungen für Hintergrundaktivitäten und Akkuoptimierung</string>

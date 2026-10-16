@@ -36,7 +36,7 @@
     <string name="app_icon">App-ikon</string>
     <string name="app_launcher_2_widget_description">2x1 appstarter med tilpasset tekst</string>
     <string name="app_launcher_widget_description">Appstarter med tilpasset emoji</string>
-    <string name="app_name">Minimal Widgets</string>
+    <string name="app_name">MyUI</string>
     <string name="app_text">Egendefinert apptekst</string>
     <string name="battery5_description">Nothing-stilet batteri-widget med fet typografi og ladestatustekst</string>
     <string name="battery_glass_widget_description">Batteriglass-widget med glassfylling basert på batteriprosent</string>
@@ -135,12 +135,8 @@
     <string name="error_icon_content_description">Feil</string>
     <string name="exposed_dropdown_menu_content_description">Vis nedtrekksmeny</string>
     <string name="game_snake_description">Klassisk Snake-spill på startskjermen din</string>
-    <string name="gcm_defaultSenderId">215566338319</string>
-    <string name="google_api_key">AIzaSyC6QuOrqpYV9Wd1TOJ2dbchfTeRLzVotBE</string>
-    <string name="google_app_id">1:215566338319:android:e7f5b12ab101972b92d67a</string>
     <string name="google_folder_description">Kategorisert mappe for Google-apper</string>
     <string name="google_search_bar_description">Hurtigtilgang til Google-søkefelt</string>
-    <string name="google_storage_bucket">minimal-widgets-582c0.firebasestorage.app</string>
     <string name="google_widget_description">Google-widget</string>
     <string name="grok_widget_description">Grok AI-assistent</string>
     <string name="hybrid_clock10_description">Moderne hybridklokke 10 med sentrert tidsvisning</string>
@@ -267,7 +263,7 @@
     <string name="previous_month">Forrige måned</string>
     <string name="project_id">minimal-widgets-582c0</string>
     <string name="reconfigure_widget">Konfigurer widget på nytt</string>
-    <string name="restriction_warning_dialog_body_1">Minimal Widgets må kjøre i bakgrunnen for å oppdatere widgetene dine. Den kjører bare når det er nødvendig, men hvis batteribruken er satt til optimalisert, kan Android stoppe appen, noe som fører til at widgetene slutter å fungere korrekt.</string>
+    <string name="restriction_warning_dialog_body_1">MyUI må kjøre i bakgrunnen for å oppdatere widgetene dine. Den kjører bare når det er nødvendig, men hvis batteribruken er satt til optimalisert, kan Android stoppe appen, noe som fører til at widgetene slutter å fungere korrekt.</string>
     <string name="restriction_warning_dialog_body_2">Åpne appinnstillinger og endre batteribruken til Ubegrenset. Hvis dette alternativet ikke er tilgjengelig, sjekk telefonens strøminnstillinger.</string>
     <string name="restriction_warning_dialog_body_3">Noen telefoner er enda mer restriktive og kan blokkere appen fra å starte automatisk etter en omstart. Innstillingene varierer fra enhet til enhet – besøk https://dontkillmyapp.com for spesifikke instruksjoner.</string>
     <string name="restriction_warning_dialog_title">Begrensninger for bakgrunnsarbeid og batterioptimalisering</string>

@@ -36,7 +36,7 @@
     <string name="app_icon">Εικονίδιο εφαρμογής</string>
     <string name="app_launcher_2_widget_description">Εκκινητής εφαρμογών 2x1 με προσαρμοσμένο κείμενο</string>
     <string name="app_launcher_widget_description">Εκκινητής εφαρμογών με προσαρμοσμένο Emoji</string>
-    <string name="app_name">Minimal Widgets</string>
+    <string name="app_name">MyUI</string>
     <string name="app_text">Προσαρμοσμένο κείμενο εφαρμογής</string>
     <string name="battery5_description">Γραφικό στοιχείο μπαταρίας σε στυλ Nothing με έντονη τυπογραφία και κείμενο κατάστασης φόρτισης</string>
     <string name="battery_glass_widget_description">Γραφικό στοιχείο γυάλινης μπαταρίας με γέμισμα βάσει ποσοστού μπαταρίας</string>
@@ -135,12 +135,8 @@
     <string name="error_icon_content_description">Σφάλμα</string>
     <string name="exposed_dropdown_menu_content_description">Εμφάνιση αναπτυσσόμενου μενού</string>
     <string name="game_snake_description">Κλασικό παιχνίδι φιδάκι στην αρχική σας οθόνη</string>
-    <string name="gcm_defaultSenderId">215566338319</string>
-    <string name="google_api_key">AIzaSyC6QuOrqpYV9Wd1TOJ2dbchfTeRLzVotBE</string>
-    <string name="google_app_id">1:215566338319:android:e7f5b12ab101972b92d67a</string>
     <string name="google_folder_description">Φάκελος κατηγοριοποιημένων εφαρμογών Google</string>
     <string name="google_search_bar_description">Γραμμή αναζήτησης Google για γρήγορη πρόσβαση</string>
-    <string name="google_storage_bucket">minimal-widgets-582c0.firebasestorage.app</string>
     <string name="google_widget_description">Widget Google</string>
     <string name="grok_widget_description">Βοηθός AI Grok</string>
     <string name="hybrid_clock10_description">Μοντέρνο υβριδικό ρολόι 10 με κεντραρισμένη ένδειξη ώρας</string>
@@ -267,7 +263,7 @@
     <string name="previous_month">Προηγούμενος μήνας</string>
     <string name="project_id">minimal-widgets-582c0</string>
     <string name="reconfigure_widget">Αναδιαμόρφωση γραφικού στοιχείου</string>
-    <string name="restriction_warning_dialog_body_1">Το Minimal Widgets πρέπει να εκτελείται στο παρασκήνιο για να ενημερώνει τα γραφικά στοιχεία σας. Εκτελείται μόνο όταν χρειάζεται, αλλά αν η χρήση μπαταρίας είναι ρυθμισμένη σε βελτιστοποιημένη, το Android ενδέχεται να σταματήσει την εφαρμογή, προκαλώντας τη δυσλειτουργία των γραφικών στοιχείων.</string>
+    <string name="restriction_warning_dialog_body_1">Το MyUI πρέπει να εκτελείται στο παρασκήνιο για να ενημερώνει τα γραφικά στοιχεία σας. Εκτελείται μόνο όταν χρειάζεται, αλλά αν η χρήση μπαταρίας είναι ρυθμισμένη σε βελτιστοποιημένη, το Android ενδέχεται να σταματήσει την εφαρμογή, προκαλώντας τη δυσλειτουργία των γραφικών στοιχείων.</string>
     <string name="restriction_warning_dialog_body_2">Ανοίξτε τις ρυθμίσεις της εφαρμογής και αλλάξτε τη χρήση μπαταρίας σε «Χωρίς περιορισμούς». Εάν αυτή η επιλογή δεν είναι διαθέσιμη, ελέγξτε τις ρυθμίσεις ισχύος του τηλεφώνου.</string>
     <string name="restriction_warning_dialog_body_3">Ορισμένα τηλέφωνα είναι ακόμα πιο περιοριστικά και ενδέχεται να εμποδίζουν την αυτόματη εκκίνηση της εφαρμογής μετά από επανεκκίνηση. Οι ρυθμίσεις διαφέρουν ανά συσκευή — επισκεφθείτε τη διεύθυνση https://dontkillmyapp.com για συγκεκριμένες οδηγίες.</string>
     <string name="restriction_warning_dialog_title">Περιορισμοί εργασίας στο παρασκήνιο και βελτιστοποίηση μπαταρίας</string>

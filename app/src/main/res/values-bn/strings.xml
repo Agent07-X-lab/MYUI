@@ -36,7 +36,7 @@
     <string name="app_icon">অ্যাপ আইকন</string>
     <string name="app_launcher_2_widget_description">কাস্টম টেক্সট সহ ২x১ অ্যাপ লঞ্চার</string>
     <string name="app_launcher_widget_description">কাস্টম ইমোজি সহ অ্যাপ লঞ্চার</string>
-    <string name="app_name">মিনিমাল উইজেটস</string>
+    <string name="app_name">MyUI</string>
     <string name="app_text">অ্যাপ কাস্টম টেক্সট</string>
     <string name="battery5_description">বোল্ড টাইপোগ্রাফি এবং চার্জিং স্ট্যাটাস টেক্সট সহ নাথিং-স্টাইল ব্যাটারি উইজেট</string>
     <string name="battery_glass_widget_description">ব্যাটারি শতাংশের উপর ভিত্তি করে গ্লাস ফিলআপ সহ ব্যাটারি গ্লাস উইজেট</string>
@@ -135,12 +135,8 @@
     <string name="error_icon_content_description">সমস্যা</string>
     <string name="exposed_dropdown_menu_content_description">ড্রপ-ডাউন মেনু দেখুন</string>
     <string name="game_snake_description">আপনার হোম স্ক্রিনে ক্লাসিক স্নেক গেম</string>
-    <string name="gcm_defaultSenderId">215566338319</string>
-    <string name="google_api_key">AIzaSyC6QuOrqpYV9Wd1TOJ2dbchfTeRLzVotBE</string>
-    <string name="google_app_id">1:215566338319:android:e7f5b12ab101972b92d67a</string>
     <string name="google_folder_description">শ্রেণীবদ্ধ গুগল অ্যাপস ফোল্ডার</string>
     <string name="google_search_bar_description">দ্রুত অ্যাক্সেস গুগল সার্চ বার</string>
-    <string name="google_storage_bucket">minimal-widgets-582c0.firebasestorage.app</string>
     <string name="google_widget_description">গুগল উইজেট</string>
     <string name="grok_widget_description">গ্রক এআই অ্যাসিস্ট্যান্ট</string>
     <string name="hybrid_clock10_description">সেন্টার্ড টাইম ডিসপ্লে সহ আধুনিক হাইব্রিড ঘড়ি ১০</string>

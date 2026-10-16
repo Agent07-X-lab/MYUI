@@ -36,7 +36,7 @@
     <string name="app_icon">ایپ آئیکن</string>
     <string name="app_launcher_2_widget_description">حسب ضرورت متن کے ساتھ 2x1 ایپ لانچر</string>
     <string name="app_launcher_widget_description">اپنی مرضی کے ایموجی کے ساتھ ایپ لانچر</string>
-    <string name="app_name">Minimal Widgets</string>
+    <string name="app_name">MyUI</string>
     <string name="app_text">ایپ کا حسب ضرورت متن</string>
     <string name="battery5_description">بولڈ ٹائپوگرافی اور چارجنگ اسٹیٹس ٹیکسٹ کے ساتھ نتھنگ اسٹائلڈ بیٹری ویجیٹ</string>
     <string name="battery_glass_widget_description">بیٹری فیصد پر مبنی گلاس فل اپ کے ساتھ بیٹری گلاس ویجیٹ</string>
@@ -135,12 +135,8 @@
     <string name="error_icon_content_description">خرابی</string>
     <string name="exposed_dropdown_menu_content_description">ڈراپ ڈاؤن مینیو دکھائیں</string>
     <string name="game_snake_description">آپ کی ہوم اسکرین پر کلاسک سانپ کا کھیل</string>
-    <string name="gcm_defaultSenderId">215566338319</string>
-    <string name="google_api_key">AIzaSyC6QuOrqpYV9Wd1TOJ2dbchfTeRLzVotBE</string>
-    <string name="google_app_id">1:215566338319:android:e7f5b12ab101972b92d67a</string>
     <string name="google_folder_description">درجہ بند گوگل ایپس فولڈر</string>
     <string name="google_search_bar_description">فوری رسائی والی گوگل سرچ بار</string>
-    <string name="google_storage_bucket">minimal-widgets-582c0.firebasestorage.app</string>
     <string name="google_widget_description">گوگل ویجیٹ</string>
     <string name="grok_widget_description">گروک (Grok) اے آئی اسسٹنٹ</string>
     <string name="hybrid_clock10_description">مرکزی ٹائم ڈسپلے کے ساتھ جدید ہائبرڈ کلاک 10</string>
@@ -267,7 +263,7 @@
     <string name="previous_month">پچھلا مہینہ</string>
     <string name="project_id">minimal-widgets-582c0</string>
     <string name="reconfigure_widget">ویجیٹ کو دوبارہ ترتیب دیں</string>
-    <string name="restriction_warning_dialog_body_1">Minimal Widgets کو آپ کے ویجٹس کو اپ ڈیٹ کرنے کے لیے پس منظر میں چلنے کی ضرورت ہے۔ یہ صرف ضرورت پڑنے پر چلتا ہے، لیکن اگر بیٹری کے استعمال کو \'آپٹمائزڈ\' پر سیٹ کیا گیا ہو تو اینڈرائیڈ ایپ کو روک سکتا ہے، جس کی وجہ سے ویجٹس صحیح طریقے سے کام کرنا بند کر سکتے ہیں۔</string>
+    <string name="restriction_warning_dialog_body_1">MyUI کو آپ کے ویجٹس کو اپ ڈیٹ کرنے کے لیے پس منظر میں چلنے کی ضرورت ہے۔ یہ صرف ضرورت پڑنے پر چلتا ہے، لیکن اگر بیٹری کے استعمال کو \'آپٹمائزڈ\' پر سیٹ کیا گیا ہو تو اینڈرائیڈ ایپ کو روک سکتا ہے، جس کی وجہ سے ویجٹس صحیح طریقے سے کام کرنا بند کر سکتے ہیں۔</string>
     <string name="restriction_warning_dialog_body_2">ایپ کی ترتیبات کھولیں اور بیٹری کے استعمال کو غیر محدود (Unrestricted) پر تبدیل کریں۔ اگر یہ آپشن دستیاب نہیں ہے تو، فون کی پاور سیٹنگز چیک کریں۔</string>
     <string name="restriction_warning_dialog_body_3">کچھ فونز زیادہ پابندی والے ہوتے ہیں اور ری اسٹارٹ کے بعد ایپ کو خود بخود شروع ہونے سے روک سکتے ہیں۔ ترتیبات ڈیوائس کے لحاظ سے مختلف ہوتی ہیں — مخصوص ہدایات کے لیے https://dontkillmyapp.com ملاحظہ کریں۔</string>
     <string name="restriction_warning_dialog_title">پس منظر میں کام کرنے کی پابندیاں اور بیٹری کی اصلاح</string>

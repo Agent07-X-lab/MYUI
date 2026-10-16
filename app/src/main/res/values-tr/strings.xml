@@ -36,7 +36,7 @@
     <string name="app_icon">Uygulama Simgesi</string>
     <string name="app_launcher_2_widget_description">Özel Metinli 2x1 Uygulama Başlatıcı</string>
     <string name="app_launcher_widget_description">Özel Emojili Uygulama Başlatıcı</string>
-    <string name="app_name">Minimal Widget\'lar</string>
+    <string name="app_name">MyUI</string>
     <string name="app_text">Uygulama Özel Metni</string>
     <string name="battery5_description">Kalın tipografi ve şarj durumu metni içeren Nothing tarzı pil widget\'ı</string>
     <string name="battery_glass_widget_description">Pil Yüzdesine Göre Cam Dolum Özellikli Pil Cam Widget\'ı</string>
@@ -135,12 +135,8 @@
     <string name="error_icon_content_description">Hata</string>
     <string name="exposed_dropdown_menu_content_description">Açılır menüyü göster</string>
     <string name="game_snake_description">Ana ekranınızda klasik Yılan oyunu</string>
-    <string name="gcm_defaultSenderId">215566338319</string>
-    <string name="google_api_key">AIzaSyC6QuOrqpYV9Wd1TOJ2dbchfTeRLzVotBE</string>
-    <string name="google_app_id">1:215566338319:android:e7f5b12ab101972b92d67a</string>
     <string name="google_folder_description">Kategorize edilmiş Google uygulamaları klasörü</string>
     <string name="google_search_bar_description">Hızlı erişim Google arama çubuğu</string>
-    <string name="google_storage_bucket">minimal-widgets-582c0.firebasestorage.app</string>
     <string name="google_widget_description">Google Widget\'ı</string>
     <string name="grok_widget_description">Grok Yapay Zeka Asistanı</string>
     <string name="hybrid_clock10_description">Ortalanmış zaman göstergeli modern Hibrit Saat 10</string>
@@ -267,7 +263,7 @@
     <string name="previous_month">Geçen ay</string>
     <string name="project_id">minimal-widgets-582c0</string>
     <string name="reconfigure_widget">Widget\'ı Yeniden Yapılandır</string>
-    <string name="restriction_warning_dialog_body_1">Minimal Widgets\'ın widget\'larınızı güncellemek için arka planda çalışması gerekir. Yalnızca gerektiğinde çalışır, ancak pil kullanımı optimize edilmiş olarak ayarlanırsa Android uygulamayı durdurabilir ve bu da widget\'ların düzgün çalışmamasına neden olabilir.</string>
+    <string name="restriction_warning_dialog_body_1">MyUI\'ın widget\'larınızı güncellemek için arka planda çalışması gerekir. Yalnızca gerektiğinde çalışır, ancak pil kullanımı optimize edilmiş olarak ayarlanırsa Android uygulamayı durdurabilir ve bu da widget\'ların düzgün çalışmamasına neden olabilir.</string>
     <string name="restriction_warning_dialog_body_2">Uygulama ayarlarını açın ve pil kullanımını Kısıtlanmamış olarak değiştirin. Bu seçenek mevcut değilse, telefonun güç ayarlarını kontrol edin.</string>
     <string name="restriction_warning_dialog_body_3">Bazı telefonlar daha da kısıtlayıcıdır ve uygulamanın yeniden başlatmanın ardından otomatik olarak başlamasını engelleyebilir. Ayarlar cihaza göre değişir; özel talimatlar için https://dontkillmyapp.com adresini ziyaret edin.</string>
     <string name="restriction_warning_dialog_title">Arka plan çalışma kısıtlamaları ve pil optimizasyonu</string>

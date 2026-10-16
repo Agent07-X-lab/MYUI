@@ -36,7 +36,7 @@
     <string name="app_icon">Pictogramă aplicație</string>
     <string name="app_launcher_2_widget_description">Lansator de aplicații 2x1 cu text personalizat</string>
     <string name="app_launcher_widget_description">Lansator de aplicații cu emoji personalizat</string>
-    <string name="app_name">Minimal Widgets</string>
+    <string name="app_name">MyUI</string>
     <string name="app_text">Text personalizat aplicație</string>
     <string name="battery5_description">Widget de baterie în stil Nothing cu tipografie îngroșată și text pentru starea de încărcare</string>
     <string name="battery_glass_widget_description">Widget Battery Glass cu umplere de sticlă bazată pe procentajul bateriei</string>
@@ -135,12 +135,8 @@
     <string name="error_icon_content_description">Eroare</string>
     <string name="exposed_dropdown_menu_content_description">Afișați meniul drop-down</string>
     <string name="game_snake_description">Jocul clasic Snake pe ecranul de pornire</string>
-    <string name="gcm_defaultSenderId">215566338319</string>
-    <string name="google_api_key">AIzaSyC6QuOrqpYV9Wd1TOJ2dbchfTeRLzVotBE</string>
-    <string name="google_app_id">1:215566338319:android:e7f5b12ab101972b92d67a</string>
     <string name="google_folder_description">Dosar cu aplicații Google categorisite</string>
     <string name="google_search_bar_description">Bară de căutare Google cu acces rapid</string>
-    <string name="google_storage_bucket">minimal-widgets-582c0.firebasestorage.app</string>
     <string name="google_widget_description">Widget Google</string>
     <string name="grok_widget_description">Asistent AI Grok</string>
     <string name="hybrid_clock10_description">Ceas hibrid modern 10 cu afișaj central al orei</string>
@@ -267,7 +263,7 @@
     <string name="previous_month">Luna anterioară</string>
     <string name="project_id">minimal-widgets-582c0</string>
     <string name="reconfigure_widget">Reconfigurați widgetul</string>
-    <string name="restriction_warning_dialog_body_1">Minimal Widgets trebuie să ruleze în fundal pentru a vă actualiza widgeturile. Rulează doar când este necesar, dar dacă utilizarea bateriei este setată pe optimizat, Android poate opri aplicația, cauzând nefuncționarea corectă a widgeturilor.</string>
+    <string name="restriction_warning_dialog_body_1">MyUI trebuie să ruleze în fundal pentru a vă actualiza widgeturile. Rulează doar când este necesar, dar dacă utilizarea bateriei este setată pe optimizat, Android poate opri aplicația, cauzând nefuncționarea corectă a widgeturilor.</string>
     <string name="restriction_warning_dialog_body_2">Deschide setările aplicației și schimbă utilizarea bateriei pe Nerestrictionat. Dacă această opțiune nu este disponibilă, verifică setările de alimentare ale telefonului.</string>
     <string name="restriction_warning_dialog_body_3">Unele telefoane sunt și mai restrictive și pot bloca pornirea automată a aplicației după o repornire. Setările variază în funcție de dispozitiv — vizitați https://dontkillmyapp.com pentru instrucțiuni specifice.</string>
     <string name="restriction_warning_dialog_title">Restricții privind activitatea în fundal și optimizarea bateriei</string>

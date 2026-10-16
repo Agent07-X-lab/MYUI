@@ -36,7 +36,7 @@
     <string name="app_icon">Icona app</string>
     <string name="app_launcher_2_widget_description">Avvio app 2x1 con testo personalizzato</string>
     <string name="app_launcher_widget_description">Avvio app con emoji personalizzata</string>
-    <string name="app_name">Minimal Widgets</string>
+    <string name="app_name">MyUI</string>
     <string name="app_text">Testo personalizzato app</string>
     <string name="battery5_description">Widget batteria in stile Nothing con tipografia in grassetto e testo dello stato di ricarica</string>
     <string name="battery_glass_widget_description">Widget batteria in vetro con riempimento basato sulla percentuale della batteria</string>
@@ -135,12 +135,8 @@
     <string name="error_icon_content_description">Errore</string>
     <string name="exposed_dropdown_menu_content_description">Mostra il menu a discesa</string>
     <string name="game_snake_description">Classico gioco Snake sulla schermata home</string>
-    <string name="gcm_defaultSenderId">215566338319</string>
-    <string name="google_api_key">AIzaSyC6QuOrqpYV9Wd1TOJ2dbchfTeRLzVotBE</string>
-    <string name="google_app_id">1:215566338319:android:e7f5b12ab101972b92d67a</string>
     <string name="google_folder_description">Cartella app Google categorizzate</string>
     <string name="google_search_bar_description">Barra di ricerca Google ad accesso rapido</string>
-    <string name="google_storage_bucket">minimal-widgets-582c0.firebasestorage.app</string>
     <string name="google_widget_description">Widget Google</string>
     <string name="grok_widget_description">Assistente AI Grok</string>
     <string name="hybrid_clock10_description">Orologio ibrido moderno 10 con visualizzazione dell\'ora centrata</string>
@@ -267,7 +263,7 @@
     <string name="previous_month">Mese precedente</string>
     <string name="project_id">minimal-widgets-582c0</string>
     <string name="reconfigure_widget">Riconfigura widget</string>
-    <string name="restriction_warning_dialog_body_1">Minimal Widgets deve essere eseguito in background per aggiornare i widget. Viene eseguito solo quando necessario, ma se l\'utilizzo della batteria è impostato su ottimizzato, Android potrebbe interrompere l\'app, causando il malfunzionamento dei widget.</string>
+    <string name="restriction_warning_dialog_body_1">MyUI deve essere eseguito in background per aggiornare i widget. Viene eseguito solo quando necessario, ma se l\'utilizzo della batteria è impostato su ottimizzato, Android potrebbe interrompere l\'app, causando il malfunzionamento dei widget.</string>
     <string name="restriction_warning_dialog_body_2">Apri le impostazioni dell\'app e cambia l\'utilizzo della batteria in Non limitato. Se questa opzione non è disponibile, controlla le impostazioni di risparmio energetico del telefono.</string>
     <string name="restriction_warning_dialog_body_3">Alcuni telefoni sono ancora più restrittivi e potrebbero impedire all\'app di avviarsi automaticamente dopo un riavvio. Le impostazioni variano in base al dispositivo: visita https://dontkillmyapp.com per istruzioni specifiche.</string>
     <string name="restriction_warning_dialog_title">Restrizioni lavoro in background e ottimizzazione batteria</string>

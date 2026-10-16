@@ -36,7 +36,7 @@
     <string name="app_icon">செயலி ஐகான்</string>
     <string name="app_launcher_2_widget_description">தனிப்பயன் உரையுடன் கூடிய 2x1 ஆப் லான்ச்சர்</string>
     <string name="app_launcher_widget_description">தனிப்பயன் ஈமோஜியுடன் கூடிய ஆப் லான்ச்சர்</string>
-    <string name="app_name">மினிமல் விட்ஜெட்டுகள்</string>
+    <string name="app_name">MyUI</string>
     <string name="app_text">ஆப் தனிப்பயன் உரை</string>
     <string name="battery5_description">தடிமனான எழுத்துரு மற்றும் சார்ஜிங் நிலை உரையுடன் கூடிய நத்திங்-ஸ்டைல் பேட்டரி விட்ஜெட்</string>
     <string name="battery_glass_widget_description">பேட்டரி சதவீதத்தின் அடிப்படையில் கண்ணாடி நிரப்பப்பட்ட பேட்டரி கிளாஸ் விட்ஜெட்</string>
@@ -135,12 +135,8 @@
     <string name="error_icon_content_description">பிழை</string>
     <string name="exposed_dropdown_menu_content_description">கீழ் தோன்றல் மெனுவைக் காட்டும் பட்டன்</string>
     <string name="game_snake_description">உங்கள் முகப்புத் திரையில் கிளாசிக் ஸ்நேக் கேம்</string>
-    <string name="gcm_defaultSenderId">215566338319</string>
-    <string name="google_api_key">AIzaSyC6QuOrqpYV9Wd1TOJ2dbchfTeRLzVotBE</string>
-    <string name="google_app_id">1:215566338319:android:e7f5b12ab101972b92d67a</string>
     <string name="google_folder_description">வகைப்படுத்தப்பட்ட Google ஆப்ஸ் கோப்புறை</string>
     <string name="google_search_bar_description">விரைவான அணுகல் Google தேடல் பட்டி</string>
-    <string name="google_storage_bucket">minimal-widgets-582c0.firebasestorage.app</string>
     <string name="google_widget_description">கூகுள் விட்ஜெட்</string>
     <string name="grok_widget_description">Grok AI உதவியாளர்</string>
     <string name="hybrid_clock10_description">மையப்படுத்தப்பட்ட நேரக் காட்சியைக் கொண்ட நவீன ஹைப்ரிட் கடிகாரம் 10</string>
@@ -267,7 +263,7 @@
     <string name="previous_month">முந்தைய மாதம்</string>
     <string name="project_id">minimal-widgets-582c0</string>
     <string name="reconfigure_widget">விட்ஜெட்டை மறுசீரமைக்கவும்</string>
-    <string name="restriction_warning_dialog_body_1">உங்கள் விட்ஜெட்களைப் புதுப்பிக்க Minimal Widgets பின்னணியில் இயங்க வேண்டும். இது தேவைப்படும்போது மட்டுமே இயங்கும், ஆனால் பேட்டரி பயன்பாடு உகந்ததாக (optimized) அமைக்கப்பட்டிருந்தால், ஆண்ட்ராய்டு செயலியை நிறுத்திவிடலாம், இதனால் விட்ஜெட்டுகள் சரியாக வேலை செய்யாமல் போகலாம்.</string>
+    <string name="restriction_warning_dialog_body_1">உங்கள் விட்ஜெட்களைப் புதுப்பிக்க MyUI பின்னணியில் இயங்க வேண்டும். இது தேவைப்படும்போது மட்டுமே இயங்கும், ஆனால் பேட்டரி பயன்பாடு உகந்ததாக (optimized) அமைக்கப்பட்டிருந்தால், ஆண்ட்ராய்டு செயலியை நிறுத்திவிடலாம், இதனால் விட்ஜெட்டுகள் சரியாக வேலை செய்யாமல் போகலாம்.</string>
     <string name="restriction_warning_dialog_body_2">செயலி அமைப்புகளைத் திறந்து, பேட்டரி பயன்பாட்டை \'கட்டுப்பாடற்றது\' (Unrestricted) என மாற்றவும். இந்த விருப்பம் கிடைக்கவில்லை என்றால், தொலைபேசியின் ஆற்றல் அமைப்புகளைச் சரிபார்க்கவும்.</string>
     <string name="restriction_warning_dialog_body_3">சில போன்கள் இன்னும் கட்டுப்பாட்டுடன் இருக்கும், மேலும் மறுதொடக்கம் செய்த பிறகு ஆப்ஸ் தானாகத் தொடங்குவதைத் தடுக்கலாம். அமைப்புகள் சாதனத்திற்கு ஏற்ப மாறுபடும் — குறிப்பிட்ட வழிமுறைகளுக்கு https://dontkillmyapp.com ஐப் பார்வையிடவும்.</string>
     <string name="restriction_warning_dialog_title">பின்னணி வேலை கட்டுப்பாடுகள் மற்றும் பேட்டரி மேம்படுத்தல்</string>

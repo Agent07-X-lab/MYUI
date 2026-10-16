@@ -36,7 +36,7 @@
     <string name="app_icon">Programos piktograma</string>
     <string name="app_launcher_2_widget_description">2x1 programų paleidimo priemonė su pasirinktiniu tekstu</string>
     <string name="app_launcher_widget_description">Programėlių paleidimo priemonė su pasirinktiniu jaustuku</string>
-    <string name="app_name">Minimalūs valdikliai</string>
+    <string name="app_name">MyUI</string>
     <string name="app_text">Programėlės pasirinktinis tekstas</string>
     <string name="battery5_description">„Nothing“ stiliaus akumuliatoriaus valdiklis su ryškia tipografija ir įkrovimo būsenos tekstu</string>
     <string name="battery_glass_widget_description">„Battery Glass“ valdiklis su stikliniu užpildu, pagrįstu akumuliatoriaus procentais</string>
@@ -135,12 +135,8 @@
     <string name="error_icon_content_description">Klaida</string>
     <string name="exposed_dropdown_menu_content_description">Rodyti išskleidžiamąjį meniu</string>
     <string name="game_snake_description">Klasikinis „Gyvatėlės“ žaidimas jūsų pagrindiniame ekrane</string>
-    <string name="gcm_defaultSenderId">215566338319</string>
-    <string name="google_api_key">AIzaSyC6QuOrqpYV9Wd1TOJ2dbchfTeRLzVotBE</string>
-    <string name="google_app_id">1:215566338319:android:e7f5b12ab101972b92d67a</string>
     <string name="google_folder_description">Suskirstytas „Google“ programų aplankas</string>
     <string name="google_search_bar_description">Greitos prieigos „Google“ paieškos juosta</string>
-    <string name="google_storage_bucket">minimal-widgets-582c0.firebasestorage.app</string>
     <string name="google_widget_description">„Google“ valdiklis</string>
     <string name="grok_widget_description">„Grok“ DI asistentas</string>
     <string name="hybrid_clock10_description">Modernus hibridinis laikrodis 10 su centruotu laiko rodymu</string>
@@ -267,7 +263,7 @@
     <string name="previous_month">Praėjęs mėnuo</string>
     <string name="project_id">minimal-widgets-582c0</string>
     <string name="reconfigure_widget">Konfigūruoti valdiklį iš naujo</string>
-    <string name="restriction_warning_dialog_body_1">„Minimal Widgets“ turi veikti fone, kad atnaujintų jūsų valdiklius. Ji veikia tik tada, kai reikia, tačiau jei akumuliatoriaus naudojimas nustatytas kaip optimizuotas, „Android“ gali sustabdyti programėlę, todėl valdikliai gali nustoti tinkamai veikti.</string>
+    <string name="restriction_warning_dialog_body_1">„MyUI“ turi veikti fone, kad atnaujintų jūsų valdiklius. Ji veikia tik tada, kai reikia, tačiau jei akumuliatoriaus naudojimas nustatytas kaip optimizuotas, „Android“ gali sustabdyti programėlę, todėl valdikliai gali nustoti tinkamai veikti.</string>
     <string name="restriction_warning_dialog_body_2">Atidarykite programėlės nustatymus ir pakeiskite akumuliatoriaus naudojimą į „Neribojama“. Jei ši parinktis nepasiekiama, patikrinkite telefono energijos taupymo nustatymus.</string>
     <string name="restriction_warning_dialog_body_3">Kai kurie telefonai yra dar labiau ribojantys ir gali neleisti programai automatiškai pasileisti po paleidimo iš naujo. Nustatymai skiriasi priklausomai nuo įrenginio – apsilankykite https://dontkillmyapp.com, kur rasite konkrečias instrukcijas.</string>
     <string name="restriction_warning_dialog_title">Fono veiklos apribojimai ir akumuliatoriaus optimizavimas</string>

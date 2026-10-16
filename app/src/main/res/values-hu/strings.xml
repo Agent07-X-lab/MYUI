@@ -36,7 +36,7 @@
     <string name="app_icon">Alkalmazásikon</string>
     <string name="app_launcher_2_widget_description">2x1 alkalmazásindító egyedi szöveggel</string>
     <string name="app_launcher_widget_description">Alkalmazásindító egyedi emojival</string>
-    <string name="app_name">Minimalista widgetek</string>
+    <string name="app_name">MyUI</string>
     <string name="app_text">Alkalmazás egyéni szövege</string>
     <string name="battery5_description">Nothing stílusú akkumulátor widget félkövér tipográfiával és töltöttségi állapotot jelző szöveggel</string>
     <string name="battery_glass_widget_description">Akkumulátor üveg widget, az akkumulátor töltöttségi szintjén alapuló üvegkitöltéssel</string>
@@ -135,12 +135,8 @@
     <string name="error_icon_content_description">Hiba</string>
     <string name="exposed_dropdown_menu_content_description">Legördülő menü megjelenítése</string>
     <string name="game_snake_description">Klasszikus Snake játék a kezdőképernyőn</string>
-    <string name="gcm_defaultSenderId">215566338319</string>
-    <string name="google_api_key">AIzaSyC6QuOrqpYV9Wd1TOJ2dbchfTeRLzVotBE</string>
-    <string name="google_app_id">1:215566338319:android:e7f5b12ab101972b92d67a</string>
     <string name="google_folder_description">Kategorizált Google-alkalmazások mappája</string>
     <string name="google_search_bar_description">Gyorselérésű Google keresősáv</string>
-    <string name="google_storage_bucket">minimal-widgets-582c0.firebasestorage.app</string>
     <string name="google_widget_description">Google widget</string>
     <string name="grok_widget_description">Grok AI asszisztens</string>
     <string name="hybrid_clock10_description">Modern hibrid óra 10 középre igazított időkijelzéssel</string>
@@ -267,7 +263,7 @@
     <string name="previous_month">Előző hónap</string>
     <string name="project_id">minimal-widgets-582c0</string>
     <string name="reconfigure_widget">Widget újrakonfigurálása</string>
-    <string name="restriction_warning_dialog_body_1">A Minimal Widgets alkalmazásnak a háttérben kell futnia a widgetek frissítéséhez. Csak akkor fut, amikor szükséges, de ha az akkumulátorhasználat optimalizálva van, az Android leállíthatja az alkalmazást, ami miatt a widgetek nem fognak megfelelően működni.</string>
+    <string name="restriction_warning_dialog_body_1">A MyUI alkalmazásnak a háttérben kell futnia a widgetek frissítéséhez. Csak akkor fut, amikor szükséges, de ha az akkumulátorhasználat optimalizálva van, az Android leállíthatja az alkalmazást, ami miatt a widgetek nem fognak megfelelően működni.</string>
     <string name="restriction_warning_dialog_body_2">Nyissa meg az alkalmazásbeállításokat, és módosítsa az akkumulátorhasználatot Korlátlanra. Ha ez a lehetőség nem érhető el, ellenőrizze a telefon energiagazdálkodási beállításait.</string>
     <string name="restriction_warning_dialog_body_3">Egyes telefonok még korlátozóbbak, és megakadályozhatják az alkalmazás automatikus elindulását újraindítás után. A beállítások eszközönként eltérőek – látogasson el a https://dontkillmyapp.com oldalra a konkrét utasításokért.</string>
     <string name="restriction_warning_dialog_title">Háttérfolyamatok korlátozása és akkumulátor-optimalizálás</string>

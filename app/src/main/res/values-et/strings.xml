@@ -36,7 +36,7 @@
     <string name="app_icon">Rakenduse ikoon</string>
     <string name="app_launcher_2_widget_description">2x1 rakenduste käivitaja kohandatud tekstiga</string>
     <string name="app_launcher_widget_description">Rakenduste käivitaja kohandatud emotikonidega</string>
-    <string name="app_name">Minimal Widgets</string>
+    <string name="app_name">MyUI</string>
     <string name="app_text">Rakenduse kohandatud tekst</string>
     <string name="battery5_description">Nothing-stiilis aku vidin paksu tüpograafia ja laadimisoleku tekstiga</string>
     <string name="battery_glass_widget_description">Aku klaasvidin, mille täituvus põhineb aku protsendil</string>
@@ -135,12 +135,8 @@
     <string name="error_icon_content_description">Viga</string>
     <string name="exposed_dropdown_menu_content_description">Kuva rippmenüü</string>
     <string name="game_snake_description">Klassikaline ussimäng sinu avakuval</string>
-    <string name="gcm_defaultSenderId">215566338319</string>
-    <string name="google_api_key">AIzaSyC6QuOrqpYV9Wd1TOJ2dbchfTeRLzVotBE</string>
-    <string name="google_app_id">1:215566338319:android:e7f5b12ab101972b92d67a</string>
     <string name="google_folder_description">Kategoriseeritud Google\'i rakenduste kaust</string>
     <string name="google_search_bar_description">Kiire juurdepääsuga Google\'i otsinguriba</string>
-    <string name="google_storage_bucket">minimal-widgets-582c0.firebasestorage.app</string>
     <string name="google_widget_description">Google\'i vidin</string>
     <string name="grok_widget_description">Grok AI assistent</string>
     <string name="hybrid_clock10_description">Moodne hübriidkell 10 keskele joondatud kellaajaga</string>
@@ -267,7 +263,7 @@
     <string name="previous_month">Eelmine kuu</string>
     <string name="project_id">minimal-widgets-582c0</string>
     <string name="reconfigure_widget">Konfigureeri vidin ümber</string>
-    <string name="restriction_warning_dialog_body_1">Minimal Widgets peab vidinate värskendamiseks taustal töötama. See töötab ainult vajaduse korral, kuid kui aku kasutamine on seatud optimeerituks, võib Android rakenduse peatada, mistõttu vidinad ei pruugi enam õigesti töötada.</string>
+    <string name="restriction_warning_dialog_body_1">MyUI peab vidinate värskendamiseks taustal töötama. See töötab ainult vajaduse korral, kuid kui aku kasutamine on seatud optimeerituks, võib Android rakenduse peatada, mistõttu vidinad ei pruugi enam õigesti töötada.</string>
     <string name="restriction_warning_dialog_body_2">Avage rakenduse seaded ja muutke aku kasutamine piiranguteta olekusse. Kui see valik pole saadaval, kontrollige telefoni toiteseadeid.</string>
     <string name="restriction_warning_dialog_body_3">Mõned telefonid on veelgi piiravamad ja võivad takistada rakenduse automaatset käivitumist pärast taaskäivitamist. Seaded erinevad seadmeti – külastage veebisaiti https://dontkillmyapp.com konkreetsete juhiste saamiseks.</string>
     <string name="restriction_warning_dialog_title">Tausttöö piirangud ja aku optimeerimine</string>

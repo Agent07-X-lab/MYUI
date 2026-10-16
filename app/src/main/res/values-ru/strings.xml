@@ -36,7 +36,7 @@
     <string name="app_icon">Значок приложения</string>
     <string name="app_launcher_2_widget_description">Средство запуска приложений 2x1 с пользовательским текстом</string>
     <string name="app_launcher_widget_description">Средство запуска приложений с пользовательскими эмодзи</string>
-    <string name="app_name">Minimal Widgets</string>
+    <string name="app_name">MyUI</string>
     <string name="app_text">Пользовательский текст приложения</string>
     <string name="battery5_description">Виджет батареи в стиле Nothing с жирным шрифтом и индикацией статуса зарядки</string>
     <string name="battery_glass_widget_description">Стеклянный виджет батареи с заполнением на основе процента заряда</string>
@@ -135,12 +135,8 @@
     <string name="error_icon_content_description">Ошибка</string>
     <string name="exposed_dropdown_menu_content_description">Показать раскрывающееся меню</string>
     <string name="game_snake_description">Классическая игра «Змейка» на главном экране</string>
-    <string name="gcm_defaultSenderId">215566338319</string>
-    <string name="google_api_key">AIzaSyC6QuOrqpYV9Wd1TOJ2dbchfTeRLzVotBE</string>
-    <string name="google_app_id">1:215566338319:android:e7f5b12ab101972b92d67a</string>
     <string name="google_folder_description">Папка с категоризированными приложениями Google</string>
     <string name="google_search_bar_description">Панель быстрого поиска Google</string>
-    <string name="google_storage_bucket">minimal-widgets-582c0.firebasestorage.app</string>
     <string name="google_widget_description">Виджет Google</string>
     <string name="grok_widget_description">ИИ-ассистент Grok</string>
     <string name="hybrid_clock10_description">Современные гибридные часы 10 с отображением времени по центру</string>
@@ -267,7 +263,7 @@
     <string name="previous_month">Предыдущий месяц</string>
     <string name="project_id">minimal-widgets-582c0</string>
     <string name="reconfigure_widget">Перенастроить виджет</string>
-    <string name="restriction_warning_dialog_body_1">Minimal Widgets должен работать в фоновом режиме для обновления виджетов. Он запускается только при необходимости, но если для приложения установлен оптимизированный режим использования батареи, Android может остановить его, из-за чего виджеты перестанут работать корректно.</string>
+    <string name="restriction_warning_dialog_body_1">MyUI должен работать в фоновом режиме для обновления виджетов. Он запускается только при необходимости, но если для приложения установлен оптимизированный режим использования батареи, Android может остановить его, из-за чего виджеты перестанут работать корректно.</string>
     <string name="restriction_warning_dialog_body_2">Откройте настройки приложения и измените использование батареи на «Без ограничений». Если эта опция недоступна, проверьте настройки питания телефона.</string>
     <string name="restriction_warning_dialog_body_3">Некоторые телефоны имеют более строгие ограничения и могут блокировать автоматический запуск приложения после перезагрузки. Настройки зависят от устройства — посетите https://dontkillmyapp.com для получения конкретных инструкций.</string>
     <string name="restriction_warning_dialog_title">Ограничения фоновой работы и оптимизация батареи</string>

@@ -36,7 +36,7 @@
     <string name="app_icon">Ikoni ya Programu</string>
     <string name="app_launcher_2_widget_description">Kizindua Programu cha 2x1 chenye Maandishi Maalum</string>
     <string name="app_launcher_widget_description">Kizindua Programu chenye Emoji Maalum</string>
-    <string name="app_name">Wijeti Ndogo</string>
+    <string name="app_name">MyUI</string>
     <string name="app_text">Maandishi Maalum ya Programu</string>
     <string name="battery5_description">Wijeti ya betri ya mtindo wa Nothing yenye chapa nzito na maandishi ya hali ya kuchaji</string>
     <string name="battery_glass_widget_description">Wijeti ya Betri ya Kioo yenye Kioo cha Kujaza Kulingana na Asilimia ya Betri</string>
@@ -135,12 +135,8 @@
     <string name="error_icon_content_description">Hitilafu</string>
     <string name="exposed_dropdown_menu_content_description">Onyesha menyu kunjuzi</string>
     <string name="game_snake_description">Mchezo wa kawaida wa Nyoka kwenye skrini yako ya nyumbani</string>
-    <string name="gcm_defaultSenderId">215566338319</string>
-    <string name="google_api_key">AIzaSyC6QuOrqpYV9Wd1TOJ2dbchfTeRLzVotBE</string>
-    <string name="google_app_id">1:215566338319:android:e7f5b12ab101972b92d67a</string>
     <string name="google_folder_description">Folda ya programu za Google zilizopangwa</string>
     <string name="google_search_bar_description">Upau wa utafutaji wa Google wa kufikia haraka</string>
-    <string name="google_storage_bucket">minimal-widgets-582c0.firebasestorage.app</string>
     <string name="google_widget_description">Wijeti ya Google</string>
     <string name="grok_widget_description">Msaidizi wa AI wa Grok</string>
     <string name="hybrid_clock10_description">Saa ya Kisasa ya Mseto 10 yenye onyesho la saa lililokaa katikati</string>
@@ -267,7 +263,7 @@
     <string name="previous_month">Mwezi uliopita</string>
     <string name="project_id">minimal-widgets-582c0</string>
     <string name="reconfigure_widget">Sanidi upya Wijeti</string>
-    <string name="restriction_warning_dialog_body_1">Minimal Widgets inahitaji kufanya kazi chinichini ili kusasisha wijeti zako. Inafanya kazi tu inapohitajika, lakini ikiwa matumizi ya betri yamewekwa kuwa yaliyoboreshwa, Android inaweza kusimamisha programu, na kusababisha wijeti kuacha kufanya kazi ipasavyo.</string>
+    <string name="restriction_warning_dialog_body_1">MyUI inahitaji kufanya kazi chinichini ili kusasisha wijeti zako. Inafanya kazi tu inapohitajika, lakini ikiwa matumizi ya betri yamewekwa kuwa yaliyoboreshwa, Android inaweza kusimamisha programu, na kusababisha wijeti kuacha kufanya kazi ipasavyo.</string>
     <string name="restriction_warning_dialog_body_2">Fungua mipangilio ya programu na ubadilishe matumizi ya betri kuwa Bila Vizuizi. Ikiwa chaguo hili halipatikani, angalia mipangilio ya nishati ya simu.</string>
     <string name="restriction_warning_dialog_body_3">Baadhi ya simu zina vizuizi zaidi na zinaweza kuzuia programu kuanza kiotomatiki baada ya kuwasha upya. Mipangilio hutofautiana kulingana na kifaa — tembelea https://dontkillmyapp.com kwa maelekezo mahususi.</string>
     <string name="restriction_warning_dialog_title">Vizuizi vya kazi ya usuli na uboreshaji wa betri</string>

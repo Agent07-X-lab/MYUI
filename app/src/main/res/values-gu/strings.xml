@@ -36,7 +36,7 @@
     <string name="app_icon">એપ આઇકન</string>
     <string name="app_launcher_2_widget_description">કસ્ટમ ટેક્સ્ટ સાથે 2x1 એપ લોન્ચર</string>
     <string name="app_launcher_widget_description">કસ્ટમ ઇમોજી સાથે એપ લોન્ચર</string>
-    <string name="app_name">Minimal Widgets</string>
+    <string name="app_name">MyUI</string>
     <string name="app_text">એપ કસ્ટમ ટેક્સ્ટ</string>
     <string name="battery5_description">બોલ્ડ ટાઇપોગ્રાફી અને ચાર્જિંગ સ્ટેટસ ટેક્સ્ટ સાથેનું નથિંગ-સ્ટાઇલ બેટરી વિજેટ</string>
     <string name="battery_glass_widget_description">બેટરીની ટકાવારી પર આધારિત ગ્લાસ ફિલઅપ સાથેનું બેટરી ગ્લાસ વિજેટ</string>
@@ -135,12 +135,8 @@
     <string name="error_icon_content_description">ભૂલ</string>
     <string name="exposed_dropdown_menu_content_description">ડ્રૉપડાઉન મેનૂ બતાવો</string>
     <string name="game_snake_description">તમારી હોમ સ્ક્રીન પર ક્લાસિક સ્નેક ગેમ</string>
-    <string name="gcm_defaultSenderId">215566338319</string>
-    <string name="google_api_key">AIzaSyC6QuOrqpYV9Wd1TOJ2dbchfTeRLzVotBE</string>
-    <string name="google_app_id">1:215566338319:android:e7f5b12ab101972b92d67a</string>
     <string name="google_folder_description">વર્ગીકૃત Google એપ્સ ફોલ્ડર</string>
     <string name="google_search_bar_description">ઝડપી એક્સેસ ગૂગલ સર્ચ બાર</string>
-    <string name="google_storage_bucket">minimal-widgets-582c0.firebasestorage.app</string>
     <string name="google_widget_description">Google વિજેટ</string>
     <string name="grok_widget_description">Grok AI આસિસ્ટન્ટ</string>
     <string name="hybrid_clock10_description">કેન્દ્રિત સમય ડિસ્પ્લે સાથેનું આધુનિક હાઇબ્રિડ ક્લોક 10</string>
@@ -267,7 +263,7 @@
     <string name="previous_month">પાછલો મહિનો</string>
     <string name="project_id">minimal-widgets-582c0</string>
     <string name="reconfigure_widget">વિજેટ ફરીથી ગોઠવો</string>
-    <string name="restriction_warning_dialog_body_1">તમારા વિજેટ્સને અપડેટ કરવા માટે Minimal Widgets ને બેકગ્રાઉન્ડમાં ચાલવાની જરૂર છે. તે ફક્ત જરૂર પડે ત્યારે જ ચાલે છે, પરંતુ જો બેટરી વપરાશ ઓપ્ટિમાઇઝ્ડ પર સેટ કરેલ હોય, તો Android એપને બંધ કરી શકે છે, જેના કારણે વિજેટ્સ યોગ્ય રીતે કામ કરવાનું બંધ કરી શકે છે.</string>
+    <string name="restriction_warning_dialog_body_1">તમારા વિજેટ્સને અપડેટ કરવા માટે MyUI ને બેકગ્રાઉન્ડમાં ચાલવાની જરૂર છે. તે ફક્ત જરૂર પડે ત્યારે જ ચાલે છે, પરંતુ જો બેટરી વપરાશ ઓપ્ટિમાઇઝ્ડ પર સેટ કરેલ હોય, તો Android એપને બંધ કરી શકે છે, જેના કારણે વિજેટ્સ યોગ્ય રીતે કામ કરવાનું બંધ કરી શકે છે.</string>
     <string name="restriction_warning_dialog_body_2">એપ સેટિંગ્સ ખોલો અને બેટરી વપરાશને \'અનરિસ્ટ્રિક્ટેડ\' (પ્રતિબંધિત નથી) પર બદલો. જો આ વિકલ્પ ઉપલબ્ધ ન હોય, તો ફોનના પાવર સેટિંગ્સ તપાસો.</string>
     <string name="restriction_warning_dialog_body_3">કેટલાક ફોન વધુ પ્રતિબંધિત હોય છે અને રીસ્ટાર્ટ કર્યા પછી એપને આપમેળે શરૂ થતી અટકાવી શકે છે. સેટિંગ્સ ઉપકરણ મુજબ અલગ-અલગ હોય છે — ચોક્કસ સૂચનાઓ માટે https://dontkillmyapp.com ની મુલાકાત લો.</string>
     <string name="restriction_warning_dialog_title">બેકગ્રાઉન્ડ વર્ક પ્રતિબંધો અને બેટરી ઓપ્ટિમાઇઝેશન</string>

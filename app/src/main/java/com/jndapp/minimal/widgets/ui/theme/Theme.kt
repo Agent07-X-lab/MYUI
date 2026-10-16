@@ -1,7 +1,7 @@
 package com.jndapp.minimal.widgets.ui.theme
 
 import android.app.Activity
-import androidx.compose.foundation.isSystemInDarkTheme
+import androidx.compose.ui.graphics.Color
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.darkColorScheme
 import androidx.compose.material3.lightColorScheme
@@ -11,36 +11,44 @@ import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.platform.LocalView
 import androidx.core.view.WindowCompat
 
-private val DarkColorScheme = darkColorScheme(
-    primary = AccentAmber,
-    secondary = AccentBlue,
-    tertiary = AccentRed,
-    background = DarkBackground,
-    surface = DarkSurface,
-    surfaceVariant = DarkSurfaceVariant,
-    onBackground = DarkOnBackground,
-    onSurface = DarkOnSurface,
-    onSurfaceVariant = DarkOnSurfaceVariant
+private val MyUIDarkColorScheme = darkColorScheme(
+    primary = MyUIPrimary,
+    onPrimary = MyUIBackground,
+    primaryContainer = MyUISurfaceVariant,
+    onPrimaryContainer = MyUIPrimary,
+    secondary = MyUIPrimary,
+    onSecondary = MyUIBackground,
+    background = MyUIBackground,
+    surface = MyUISurface,
+    surfaceVariant = MyUISurfaceVariant,
+    onBackground = MyUITextPrimary,
+    onSurface = MyUITextPrimary,
+    onSurfaceVariant = MyUITextSecondary,
+    outline = MyUIBorder,
+    outlineVariant = MyUIBorder
 )
 
-private val LightColorScheme = lightColorScheme(
-    primary = AccentAmber,
+private val MyUILightColorScheme = lightColorScheme(
+    primary = MyUIPrimary,
+    onPrimary = MyUIBackground,
+    primaryContainer = LightSurfaceVariant,
+    onPrimaryContainer = Color(0xFF6B5300),
     secondary = AccentBlue,
-    tertiary = AccentRed,
     background = LightBackground,
     surface = LightSurface,
     surfaceVariant = LightSurfaceVariant,
     onBackground = LightOnBackground,
     onSurface = LightOnSurface,
-    onSurfaceVariant = LightOnSurfaceVariant
+    onSurfaceVariant = LightOnSurfaceVariant,
+    outline = Color(0xFFD8D8DF)
 )
 
 @Composable
-fun MinimalWidgetsTheme(
+fun MyUITheme(
     darkTheme: Boolean = true,
     content: @Composable () -> Unit
 ) {
-    val colorScheme = if (darkTheme) DarkColorScheme else LightColorScheme
+    val colorScheme = if (darkTheme) MyUIDarkColorScheme else MyUILightColorScheme
     val view = LocalView.current
     if (!view.isInEditMode) {
         SideEffect {
@@ -57,3 +65,10 @@ fun MinimalWidgetsTheme(
         content = content
     )
 }
+
+// Backwards compatibility alias
+@Composable
+fun MinimalWidgetsTheme(
+    darkTheme: Boolean = true,
+    content: @Composable () -> Unit
+) = MyUITheme(darkTheme = darkTheme, content = content)

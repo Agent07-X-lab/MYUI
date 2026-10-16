@@ -22,16 +22,18 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.core.content.ContextCompat
+import android.content.Context
 import com.google.android.play.core.appupdate.AppUpdateManager
 import com.google.android.play.core.appupdate.AppUpdateManagerFactory
 import com.google.android.play.core.install.model.AppUpdateType
 import com.google.android.play.core.install.model.UpdateAvailability
 import com.jndapp.minimal.widgets.services.WidgetKeepAliveService
+import com.jndapp.minimal.widgets.ui.screens.OnboardingScreen
 import com.jndapp.minimal.widgets.ui.screens.SettingsScreen
 import com.jndapp.minimal.widgets.ui.screens.StudioScreen
 import com.jndapp.minimal.widgets.ui.screens.WallpapersScreen
 import com.jndapp.minimal.widgets.ui.screens.WidgetsScreen
-import com.jndapp.minimal.widgets.ui.theme.MinimalWidgetsTheme
+import com.jndapp.minimal.widgets.ui.theme.MyUITheme
 
 sealed class Screen(val title: String, val icon: ImageVector) {
     object Widgets : Screen("Widgets", Icons.Rounded.Widgets)
@@ -75,52 +77,66 @@ class MainActivity : ComponentActivity() {
         checkStepSensorPermission()
 
         setContent {
-            MinimalWidgetsTheme(darkTheme = true) {
-                var selectedTabIndex by remember { mutableIntStateOf(0) }
-                val screens = listOf(Screen.Widgets, Screen.Wallpapers, Screen.Studio, Screen.Settings)
+            MyUITheme(darkTheme = true) {
+                val prefs = remember { getSharedPreferences("myui_settings", Context.MODE_PRIVATE) }
+                var hasCompletedOnboarding by remember {
+                    mutableStateOf(prefs.getBoolean("has_completed_onboarding", false))
+                }
 
-                Scaffold(
-                    modifier = Modifier.fillMaxSize(),
-                    bottomBar = {
-                        NavigationBar(
-                            modifier = Modifier.navigationBarsPadding(),
-                            containerColor = MaterialTheme.colorScheme.surface,
-                            contentColor = MaterialTheme.colorScheme.primary
-                        ) {
-                            screens.forEachIndexed { index, screen ->
-                                val selected = selectedTabIndex == index
-                                NavigationBarItem(
-                                    selected = selected,
-                                    onClick = { selectedTabIndex = index },
-                                    icon = { Icon(screen.icon, contentDescription = screen.title) },
-                                    label = { Text(screen.title) },
-                                    colors = NavigationBarItemDefaults.colors(
-                                        selectedIconColor = MaterialTheme.colorScheme.primary,
-                                        selectedTextColor = MaterialTheme.colorScheme.primary,
-                                        indicatorColor = MaterialTheme.colorScheme.primary.copy(alpha = 0.15f),
-                                        unselectedIconColor = MaterialTheme.colorScheme.onSurfaceVariant,
-                                        unselectedTextColor = MaterialTheme.colorScheme.onSurfaceVariant
+                if (!hasCompletedOnboarding) {
+                    OnboardingScreen(
+                        onFinish = {
+                            prefs.edit().putBoolean("has_completed_onboarding", true).apply()
+                            hasCompletedOnboarding = true
+                        }
+                    )
+                } else {
+                    var selectedTabIndex by remember { mutableIntStateOf(0) }
+                    val screens = listOf(Screen.Widgets, Screen.Wallpapers, Screen.Studio, Screen.Settings)
+
+                    Scaffold(
+                        modifier = Modifier.fillMaxSize(),
+                        bottomBar = {
+                            NavigationBar(
+                                modifier = Modifier.navigationBarsPadding(),
+                                containerColor = MaterialTheme.colorScheme.surface,
+                                contentColor = MaterialTheme.colorScheme.primary
+                            ) {
+                                screens.forEachIndexed { index, screen ->
+                                    val selected = selectedTabIndex == index
+                                    NavigationBarItem(
+                                        selected = selected,
+                                        onClick = { selectedTabIndex = index },
+                                        icon = { Icon(screen.icon, contentDescription = screen.title) },
+                                        label = { Text(screen.title) },
+                                        colors = NavigationBarItemDefaults.colors(
+                                            selectedIconColor = MaterialTheme.colorScheme.primary,
+                                            selectedTextColor = MaterialTheme.colorScheme.primary,
+                                            indicatorColor = MaterialTheme.colorScheme.primary.copy(alpha = 0.15f),
+                                            unselectedIconColor = MaterialTheme.colorScheme.onSurfaceVariant,
+                                            unselectedTextColor = MaterialTheme.colorScheme.onSurfaceVariant
+                                        )
                                     )
-                                )
+                                }
                             }
                         }
-                    }
-                ) { innerPadding ->
-                    AnimatedContent(
-                        targetState = selectedTabIndex,
-                        label = "screen_transition",
-                        transitionSpec = {
-                            fadeIn() togetherWith fadeOut()
-                        }
-                    ) { targetIndex ->
-                        when (targetIndex) {
-                            0 -> WidgetsScreen(paddingValues = innerPadding)
-                            1 -> WallpapersScreen(paddingValues = innerPadding)
-                            2 -> StudioScreen(paddingValues = innerPadding)
-                            3 -> SettingsScreen(
-                                paddingValues = innerPadding,
-                                onCheckUpdate = { checkForAppUpdates(silent = false) }
-                            )
+                    ) { innerPadding ->
+                        AnimatedContent(
+                            targetState = selectedTabIndex,
+                            label = "screen_transition",
+                            transitionSpec = {
+                                fadeIn() togetherWith fadeOut()
+                            }
+                        ) { targetIndex ->
+                            when (targetIndex) {
+                                0 -> WidgetsScreen(paddingValues = innerPadding)
+                                1 -> WallpapersScreen(paddingValues = innerPadding)
+                                2 -> StudioScreen(paddingValues = innerPadding)
+                                3 -> SettingsScreen(
+                                    paddingValues = innerPadding,
+                                    onCheckUpdate = { checkForAppUpdates(silent = false) }
+                                )
+                            }
                         }
                     }
                 }

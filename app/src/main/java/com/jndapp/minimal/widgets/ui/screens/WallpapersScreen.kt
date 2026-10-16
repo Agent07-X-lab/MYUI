@@ -45,7 +45,7 @@ fun WallpapersScreen(
         listOf(
             Wallpaper(
                 name = "Obsidian Waves",
-                author = "JustNewDesigns",
+                author = "MyUI Curation",
                 url = "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe",
                 thumbnail = "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=400",
                 collections = "Amoled, Minimal",
@@ -53,7 +53,7 @@ fun WallpapersScreen(
             ),
             Wallpaper(
                 name = "Amber Horizon",
-                author = "JustNewDesigns",
+                author = "MyUI Curation",
                 url = "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
                 thumbnail = "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400",
                 collections = "Minimal, Dark",
@@ -61,7 +61,7 @@ fun WallpapersScreen(
             ),
             Wallpaper(
                 name = "Neon Grid",
-                author = "JustNewDesigns",
+                author = "MyUI Curation",
                 url = "https://images.unsplash.com/photo-1550684848-fac1c5b4e853",
                 thumbnail = "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?w=400",
                 collections = "Abstract, Geometry",
@@ -69,7 +69,7 @@ fun WallpapersScreen(
             ),
             Wallpaper(
                 name = "Monochrome Sand",
-                author = "JustNewDesigns",
+                author = "MyUI Curation",
                 url = "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05",
                 thumbnail = "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=400",
                 collections = "Amoled, Minimal",
@@ -77,7 +77,7 @@ fun WallpapersScreen(
             ),
             Wallpaper(
                 name = "Pure Dark Minimal",
-                author = "JustNewDesigns",
+                author = "MyUI Curation",
                 url = "https://images.unsplash.com/photo-1579546929518-9e396f3cc809",
                 thumbnail = "https://images.unsplash.com/photo-1579546929518-9e396f3cc809?w=400",
                 collections = "Dark, Amoled",
@@ -85,7 +85,7 @@ fun WallpapersScreen(
             ),
             Wallpaper(
                 name = "Cyber Bloom",
-                author = "JustNewDesigns",
+                author = "MyUI Curation",
                 url = "https://images.unsplash.com/photo-1509198397868-475647b2a1e5",
                 thumbnail = "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=400",
                 collections = "Abstract, Dark",
