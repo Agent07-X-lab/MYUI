@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Color Tokens used by selectors -->
+    <attr name="colorContainer" format="reference|color" />
+    <attr name="colorContainerChecked" format="reference|color" />
+    <attr name="colorContainerUnchecked" format="reference|color" />
+    <attr name="colorOnContainer" format="reference|color" />
+    <attr name="colorOnContainerChecked" format="reference|color" />
+    <attr name="colorOnContainerUnchecked" format="reference|color" />
+
+    <!-- State flags -->
+    <attr name="state_indeterminate" format="boolean" />
+    <attr name="state_swiped" format="boolean" />
+    <attr name="state_with_icon" format="boolean" />
+
+    <!-- Size, layout & dimension attrs -->
+    <attr name="widthChange" format="fraction|dimension|float" />
+    <attr name="dropdownListPreferredItemHeight" format="dimension|reference" />
+
+    <!-- Shape appearance references -->
+    <attr name="containerShapeChecked" format="reference" />
+    <attr name="containerShapeDefault" format="reference" />
+    <attr name="containerShapePressed" format="reference" />
+    <attr name="listItemShapeAppearanceChecked" format="reference" />
+    <attr name="listItemShapeAppearanceFirst" format="reference" />
+    <attr name="listItemShapeAppearanceFocused" format="reference" />
+    <attr name="listItemShapeAppearanceHovered" format="reference" />
+    <attr name="listItemShapeAppearanceLast" format="reference" />
+    <attr name="listItemShapeAppearanceMiddle" format="reference" />
+    <attr name="listItemShapeAppearancePressed" format="reference" />
+    <attr name="listItemShapeAppearanceSingle" format="reference" />
+
+    <!-- Motion and Dialog references -->
+    <attr name="materialAlertDialogButtonSpacerVisibility" format="integer|reference" />
+    <attr name="motionDurationMedium4" format="integer|reference" />
+    <attr name="motionDurationShort3" format="integer|reference" />
+    <attr name="motionDurationShort4" format="integer|reference" />
+    <attr name="motionEasingEmphasizedAccelerateInterpolator" format="reference|string" />
+    <attr name="motionEasingEmphasizedDecelerateInterpolator" format="reference|string" />
+    <attr name="motionEasingEmphasizedInterpolator" format="reference|string" />
+    <attr name="motionEasingLinearInterpolator" format="reference|string" />
+    <attr name="motionEasingStandardInterpolator" format="reference|string" />
+
+    <!-- Typography & Text color references -->
+    <attr name="textAppearanceBodyLarge" format="reference" />
+    <attr name="textColorAlertDialogListItem" format="reference|color" />
+</resources>

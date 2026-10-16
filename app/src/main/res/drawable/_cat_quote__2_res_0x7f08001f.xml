@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <gradient xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
     android:type="linear"
-    android:startX="1,128.3"
+    android:startX="1128.3"
     android:startY="210.4"
-    android:endX="1,159.2"
+    android:endX="1159.2"
     android:endY="210.4">
     <item
         android:color="#ff6d6ea9"

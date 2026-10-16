@@ -3,7 +3,7 @@
     android:type="linear"
     android:startX="405"
     android:startY="354.7"
-    android:endX="1,240.1"
+    android:endX="1240.1"
     android:endY="354.7">
     <item
         android:color="#ff353a5a"
