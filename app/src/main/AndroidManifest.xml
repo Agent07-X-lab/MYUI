@@ -255,10 +255,6 @@
                 <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
             </intent-filter>
         </activity>
-        <activity
-            android:theme="@style/Theme.CalendarWidget.NoActionBar"
-            android:name="com.jndapp.minimal.widgets.widgets.photoframe.PhotoCropActivity"
-            android:exported="true"/>
         <provider
             android:name="androidx.core.content.FileProvider"
             android:exported="false"
@@ -6237,17 +6233,6 @@
             android:exported="true"
             android:excludeFromRecents="true"
             android:screenOrientation="portrait"/>
-        <provider
-            android:name="com.canhub.cropper.CropFileProvider"
-            android:exported="false"
-            android:authorities="com.jndapp.minimal.widgets.cropper.fileprovider"
-            android:grantUriPermissions="true">
-            <meta-data
-                android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/cropper_library_file_paths"/>
-        </provider>
-        <activity
-            android:name="com.canhub.cropper.CropImageActivity"
-            android:exported="true"/>
     </application>
 </manifest>
+
