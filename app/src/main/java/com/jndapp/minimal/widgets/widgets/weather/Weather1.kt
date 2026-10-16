@@ -12,7 +12,7 @@ import com.jndapp.minimal.widgets.R
 class Weather1 : WeatherBase() {
 
     override fun updateWeatherWidget(context: Context, appWidgetManager: AppWidgetManager, appWidgetId: Int) {
-        val views = RemoteViews(context.packageName, R.layout.weather1_layout)
+        val views = RemoteViews(context.packageName, R.layout.widget_weather_1)
         val studioPrefs = context.getSharedPreferences("studio_prefs", Context.MODE_PRIVATE)
         val widgetPrefs = context.getSharedPreferences("widget_settings", Context.MODE_PRIVATE)
 
@@ -33,11 +33,6 @@ class Weather1 : WeatherBase() {
         try {
             views.setTextColor(R.id.weather_condition, accentColor)
             views.setTextViewText(R.id.weather_condition, "Sunny")
-        } catch (_: Exception) {}
-
-        try {
-            views.setTextColor(R.id.high_low, Color.WHITE)
-            views.setTextViewText(R.id.high_low, "H: 26°  L: 18°")
         } catch (_: Exception) {}
 
         // Launch system weather / browser on tap
