@@ -12,7 +12,7 @@ android {
         applicationId = "com.jndapp.minimal.widgets"
         minSdk = 32
         targetSdk = 35
-        versionCode = 16
+        versionCode = 20
         versionName = "2.2.06"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
