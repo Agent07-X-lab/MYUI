@@ -78,65 +78,54 @@ class MainActivity : ComponentActivity() {
 
         setContent {
             MyUITheme(darkTheme = true) {
-                val prefs = remember { getSharedPreferences("myui_settings", Context.MODE_PRIVATE) }
-                var hasCompletedOnboarding by remember {
-                    mutableStateOf(prefs.getBoolean("has_completed_onboarding", false))
-                }
+                var selectedTabIndex by remember { mutableIntStateOf(0) }
+                val screens = listOf(Screen.Widgets, Screen.Studio, Screen.Wallpapers, Screen.Settings)
 
-                if (!hasCompletedOnboarding) {
-                    OnboardingScreen(
-                        onFinish = {
-                            prefs.edit().putBoolean("has_completed_onboarding", true).apply()
-                            hasCompletedOnboarding = true
-                        }
-                    )
-                } else {
-                    var selectedTabIndex by remember { mutableIntStateOf(0) }
-                    val screens = listOf(Screen.Widgets, Screen.Wallpapers, Screen.Studio, Screen.Settings)
-
-                    Scaffold(
-                        modifier = Modifier.fillMaxSize(),
-                        bottomBar = {
-                            NavigationBar(
-                                modifier = Modifier.navigationBarsPadding(),
-                                containerColor = MaterialTheme.colorScheme.surface,
-                                contentColor = MaterialTheme.colorScheme.primary
-                            ) {
-                                screens.forEachIndexed { index, screen ->
-                                    val selected = selectedTabIndex == index
-                                    NavigationBarItem(
-                                        selected = selected,
-                                        onClick = { selectedTabIndex = index },
-                                        icon = { Icon(screen.icon, contentDescription = screen.title) },
-                                        label = { Text(screen.title) },
-                                        colors = NavigationBarItemDefaults.colors(
-                                            selectedIconColor = MaterialTheme.colorScheme.primary,
-                                            selectedTextColor = MaterialTheme.colorScheme.primary,
-                                            indicatorColor = MaterialTheme.colorScheme.primary.copy(alpha = 0.15f),
-                                            unselectedIconColor = MaterialTheme.colorScheme.onSurfaceVariant,
-                                            unselectedTextColor = MaterialTheme.colorScheme.onSurfaceVariant
-                                        )
+                Scaffold(
+                    modifier = Modifier.fillMaxSize(),
+                    bottomBar = {
+                        NavigationBar(
+                            modifier = Modifier.navigationBarsPadding(),
+                            containerColor = MaterialTheme.colorScheme.surface,
+                            contentColor = MaterialTheme.colorScheme.primary
+                        ) {
+                            screens.forEachIndexed { index, screen ->
+                                val selected = selectedTabIndex == index
+                                NavigationBarItem(
+                                    selected = selected,
+                                    onClick = { selectedTabIndex = index },
+                                    icon = { Icon(screen.icon, contentDescription = screen.title) },
+                                    label = { Text(screen.title) },
+                                    colors = NavigationBarItemDefaults.colors(
+                                        selectedIconColor = MaterialTheme.colorScheme.primary,
+                                        selectedTextColor = MaterialTheme.colorScheme.primary,
+                                        indicatorColor = MaterialTheme.colorScheme.primary.copy(alpha = 0.15f),
+                                        unselectedIconColor = MaterialTheme.colorScheme.onSurfaceVariant,
+                                        unselectedTextColor = MaterialTheme.colorScheme.onSurfaceVariant
                                     )
-                                }
-                            }
-                        }
-                    ) { innerPadding ->
-                        AnimatedContent(
-                            targetState = selectedTabIndex,
-                            label = "screen_transition",
-                            transitionSpec = {
-                                fadeIn() togetherWith fadeOut()
-                            }
-                        ) { targetIndex ->
-                            when (targetIndex) {
-                                0 -> WidgetsScreen(paddingValues = innerPadding)
-                                1 -> WallpapersScreen(paddingValues = innerPadding)
-                                2 -> StudioScreen(paddingValues = innerPadding)
-                                3 -> SettingsScreen(
-                                    paddingValues = innerPadding,
-                                    onCheckUpdate = { checkForAppUpdates(silent = false) }
                                 )
                             }
+                        }
+                    }
+                ) { innerPadding ->
+                    AnimatedContent(
+                        targetState = selectedTabIndex,
+                        label = "screen_transition",
+                        transitionSpec = {
+                            fadeIn() togetherWith fadeOut()
+                        }
+                    ) { targetIndex ->
+                        when (targetIndex) {
+                            0 -> WidgetsScreen(
+                                paddingValues = innerPadding,
+                                onNavigateToStudio = { selectedTabIndex = 1 }
+                            )
+                            1 -> StudioScreen(paddingValues = innerPadding)
+                            2 -> WallpapersScreen(paddingValues = innerPadding)
+                            3 -> SettingsScreen(
+                                paddingValues = innerPadding,
+                                onCheckUpdate = { checkForAppUpdates(silent = false) }
+                            )
                         }
                     }
                 }

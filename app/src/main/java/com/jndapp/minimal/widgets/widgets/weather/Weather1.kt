@@ -4,6 +4,7 @@ import android.app.PendingIntent
 import android.appwidget.AppWidgetManager
 import android.content.Context
 import android.content.Intent
+import android.content.res.ColorStateList
 import android.graphics.Color
 import android.net.Uri
 import android.widget.RemoteViews
@@ -21,7 +22,11 @@ class Weather1 : WeatherBase() {
         val opacity = widgetPrefs.getFloat("widget_opacity", 1.0f)
 
         try {
+            views.setColorStateList(R.id.widget_container, "setBackgroundTintList", ColorStateList.valueOf(bgColor))
+        } catch (_: Exception) {
             views.setInt(R.id.widget_container, "setBackgroundColor", bgColor)
+        }
+        try {
             views.setFloat(R.id.widget_container, "setAlpha", opacity.coerceIn(0.0f, 1.0f))
         } catch (_: Exception) {}
 

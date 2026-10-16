@@ -18,13 +18,18 @@ open class GenericAnalogWidget(private val layoutResId: Int) : BaseAnalogWidget(
         val bgColor = studioPrefs.getInt("theme_background_color", Color.parseColor("#000000"))
         val opacity = widgetPrefs.getFloat("widget_opacity", 1.0f)
 
-        views.setInt(R.id.widget_container, "setBackgroundColor", bgColor)
+        try {
+            views.setColorStateList(R.id.widget_container, "setBackgroundTintList", ColorStateList.valueOf(bgColor))
+        } catch (_: Exception) {
+            views.setInt(R.id.widget_container, "setBackgroundColor", bgColor)
+        }
         views.setFloat(R.id.widget_container, "setAlpha", opacity.coerceIn(0.0f, 1.0f))
 
         val accentColorList = ColorStateList.valueOf(accentColor)
         val whiteColorList = ColorStateList.valueOf(Color.WHITE)
+        val dialTintList = ColorStateList.valueOf(Color.parseColor("#99FFFFFF"))
 
-        views.setColorStateList(R.id.analog_clock, "setDialTintList", accentColorList)
+        views.setColorStateList(R.id.analog_clock, "setDialTintList", dialTintList)
         views.setColorStateList(R.id.analog_clock, "setHourHandTintList", whiteColorList)
         views.setColorStateList(R.id.analog_clock, "setMinuteHandTintList", whiteColorList)
         views.setColorStateList(R.id.analog_clock, "setSecondHandTintList", accentColorList)

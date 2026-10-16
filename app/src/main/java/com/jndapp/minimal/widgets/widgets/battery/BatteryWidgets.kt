@@ -4,6 +4,7 @@ import android.app.PendingIntent
 import android.appwidget.AppWidgetManager
 import android.content.Context
 import android.content.Intent
+import android.content.res.ColorStateList
 import android.graphics.Color
 import android.widget.RemoteViews
 import com.jndapp.minimal.widgets.R
@@ -26,7 +27,11 @@ open class GenericBatteryWidget(private val layoutResId: Int) : BaseBatteryWidge
         val bgColor = studioPrefs.getInt("theme_background_color", Color.parseColor("#000000"))
         val opacity = widgetPrefs.getFloat("widget_opacity", 1.0f)
 
-        views.setInt(R.id.widget_container, "setBackgroundColor", bgColor)
+        try {
+            views.setColorStateList(R.id.widget_container, "setBackgroundTintList", ColorStateList.valueOf(bgColor))
+        } catch (_: Exception) {
+            views.setInt(R.id.widget_container, "setBackgroundColor", bgColor)
+        }
         views.setFloat(R.id.widget_container, "setAlpha", opacity.coerceIn(0.0f, 1.0f))
 
         try {

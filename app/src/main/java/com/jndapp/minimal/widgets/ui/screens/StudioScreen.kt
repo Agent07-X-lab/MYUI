@@ -63,7 +63,14 @@ fun StudioScreen(
             .putFloat("widget_opacity", widgetOpacity)
             .putInt("widget_accent_color", theme.accentColor.toArgb())
             .putInt("widget_background_color", theme.backgroundColor.toArgb())
+            .putInt("widget_color", theme.accentColor.toArgb())
+            .putInt("widget_background_tint_color", theme.backgroundColor.toArgb())
             .apply()
+
+        try {
+            val intent = android.content.Intent(android.appwidget.AppWidgetManager.ACTION_APPWIDGET_UPDATE)
+            context.sendBroadcast(intent)
+        } catch (_: Exception) {}
 
         Toast.makeText(context, "Theme '${theme.name}' applied to widgets!", Toast.LENGTH_SHORT).show()
     }

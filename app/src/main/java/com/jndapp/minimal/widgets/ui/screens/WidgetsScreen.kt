@@ -1,378 +1,561 @@
 package com.jndapp.minimal.widgets.ui.screens
 
+import android.app.PendingIntent
 import android.appwidget.AppWidgetManager
 import android.content.ComponentName
 import android.content.Context
 import android.content.Intent
-import android.net.Uri
 import android.os.Build
-import androidx.compose.animation.AnimatedVisibility
+import android.widget.Toast
+import androidx.compose.animation.*
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyRow
+import androidx.compose.foundation.lazy.grid.GridCells
+import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
+import androidx.compose.foundation.lazy.grid.items
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Close
 import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.material.icons.filled.FavoriteBorder
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.material.icons.rounded.Add
-import androidx.compose.material.icons.rounded.Apps
+import androidx.compose.material.icons.rounded.Check
+import androidx.compose.material.icons.rounded.Widgets
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
-import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.google.gson.Gson
-import com.google.gson.reflect.TypeToken
+import androidx.compose.ui.window.Dialog
 import com.jndapp.minimal.widgets.R
-import com.jndapp.minimal.widgets.models.MoreApp
-import com.jndapp.minimal.widgets.widgets.analog.analog1
-import com.jndapp.minimal.widgets.widgets.battery.Battery1
-import java.io.InputStreamReader
 
-data class WidgetItem(
+data class FullWidgetItem(
     val id: String,
     val title: String,
     val category: String,
-    val description: String,
-    val providerClass: Class<*>? = null,
-    val previewType: String = "analog"
+    val previewResId: Int,
+    val size: String,
+    val className: String
 )
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun WidgetsScreen(
     paddingValues: PaddingValues,
-    onWidgetClick: (WidgetItem) -> Unit = {}
+    onNavigateToStudio: () -> Unit = {}
 ) {
     val context = LocalContext.current
-    val prefs = remember { context.getSharedPreferences("widget_favorites_prefs", Context.MODE_PRIVATE) }
+    val favPrefs = remember { context.getSharedPreferences("myui_widget_favs", Context.MODE_PRIVATE) }
     var favoriteIds by remember {
-        mutableStateOf(prefs.getStringSet("favorite_widget_ids", emptySet()) ?: emptySet())
+        mutableStateOf(favPrefs.getStringSet("fav_ids", emptySet()) ?: emptySet())
     }
+
+    // Load full 422 widgets from resources
+    val allWidgets = remember {
+        val ids = context.resources.getStringArray(R.array.widget_ids)
+        val categories = context.resources.getStringArray(R.array.widget_category_names)
+        val titles = context.resources.getStringArray(R.array.widget_names)
+        val sizes = context.resources.getStringArray(R.array.widget_sizes)
+        val imagesTypedArray = context.resources.obtainTypedArray(R.array.widget_images)
+
+        val list = ArrayList<FullWidgetItem>(ids.size)
+        for (i in ids.indices) {
+            val id = ids[i]
+            val title = if (i < titles.size) titles[i] else id
+            val cat = if (i < categories.size) categories[i] else "General"
+            val size = if (i < sizes.size) sizes[i] else "4x2"
+            val imgResId = imagesTypedArray.getResourceId(i, 0)
+            list.add(FullWidgetItem(id, title, cat, imgResId, size, "com.jndapp.minimal.widgets.widgets.$id"))
+        }
+        imagesTypedArray.recycle()
+        list
+    }
+
+    // Category list derived from items
+    val categories = remember(allWidgets) {
+        listOf("All", "Favorites") + allWidgets.map { it.category }.distinct().sorted()
+    }
+
+    val sizes = listOf("All Sizes", "4x2", "4x1", "2x2", "1x1", "2x1")
 
     var selectedCategory by remember { mutableStateOf("All") }
+    var selectedSize by remember { mutableStateOf("All Sizes") }
     var searchQuery by remember { mutableStateOf("") }
+    var selectedWidgetForDetail by remember { mutableStateOf<FullWidgetItem?>(null) }
 
-    val categories = listOf("All", "Favorites", "Clock", "Battery", "Weather", "Calendar", "Notes", "Health")
-
-    val widgetList = remember {
-        listOf(
-            WidgetItem("analog1", "Minimal Mono 01", "Clock", "Classic analog clock with dynamic second hand", analog1::class.java, "analog"),
-            WidgetItem("analog2", "Minimal Mono 02", "Clock", "Subtle index hour ticks with warm amber accents", analog1::class.java, "analog"),
-            WidgetItem("analog3", "Nothing Dial", "Clock", "Dot-matrix inspired analog face with bold hands", analog1::class.java, "analog"),
-            WidgetItem("battery1", "Power Ring 01", "Battery", "Circular gradient battery progress ring with status text", Battery1::class.java, "battery"),
-            WidgetItem("battery2", "Power Ring 02", "Battery", "Minimal numeric level with charging indicator", Battery1::class.java, "battery"),
-            WidgetItem("weather1", "Atmosphere Mini", "Weather", "Current temperature, high/low, and conditions icon", null, "weather"),
-            WidgetItem("weather2", "Weather Forecast", "Weather", "5-day minimal vertical weather outlook", null, "weather"),
-            WidgetItem("calendar1", "Month Grid", "Calendar", "Clean modern month matrix with highlighted today", null, "calendar"),
-            WidgetItem("calendar2", "Agenda Bar", "Calendar", "Minimal day schedule and upcoming events list", null, "calendar"),
-            WidgetItem("notes1", "Quick Scratchpad", "Notes", "Tap-to-edit homescreen minimal post-it note", null, "notes"),
-            WidgetItem("pedometer1", "Daily Step Goal", "Health", "Step counter with radial goal completion arc", null, "health")
-        )
+    fun toggleFavorite(widgetId: String) {
+        val updated = favoriteIds.toMutableSet()
+        if (updated.contains(widgetId)) {
+            updated.remove(widgetId)
+        } else {
+            updated.add(widgetId)
+        }
+        favPrefs.edit().putStringSet("fav_ids", updated).apply()
+        favoriteIds = updated
     }
 
-    val moreApps = remember {
-        try {
-            val stream = context.assets.open("more_apps.json")
-            val type = object : TypeToken<List<MoreApp>>() {}.type
-            Gson().fromJson<List<MoreApp>>(InputStreamReader(stream), type) ?: emptyList()
-        } catch (e: Exception) {
-            emptyList<MoreApp>()
+    fun pinWidgetToHomeScreen(item: FullWidgetItem) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            val appWidgetManager = AppWidgetManager.getInstance(context)
+            if (appWidgetManager.isRequestPinAppWidgetSupported) {
+                try {
+                    val componentName = ComponentName(context, item.className)
+                    appWidgetManager.requestPinAppWidget(componentName, null, null)
+                    Toast.makeText(context, "Adding '${item.title}' to home screen...", Toast.LENGTH_SHORT).show()
+                } catch (e: Exception) {
+                    Toast.makeText(context, "Long-press your home screen > Widgets to place '${item.title}'", Toast.LENGTH_LONG).show()
+                }
+            } else {
+                Toast.makeText(context, "Long-press your home screen > Widgets to place '${item.title}'", Toast.LENGTH_LONG).show()
+            }
+        } else {
+            Toast.makeText(context, "Long-press your home screen > Widgets to place '${item.title}'", Toast.LENGTH_LONG).show()
         }
     }
 
-    val filteredWidgets = remember(selectedCategory, searchQuery, favoriteIds) {
-        widgetList.filter { widget ->
+    val filteredWidgets = remember(selectedCategory, selectedSize, searchQuery, favoriteIds, allWidgets) {
+        allWidgets.filter { widget ->
             val matchesCategory = when (selectedCategory) {
                 "All" -> true
                 "Favorites" -> favoriteIds.contains(widget.id)
                 else -> widget.category.equals(selectedCategory, ignoreCase = true)
             }
-            val matchesSearch = searchQuery.isEmpty() ||
-                    widget.title.contains(searchQuery, ignoreCase = true) ||
-                    widget.description.contains(searchQuery, ignoreCase = true)
-            matchesCategory && matchesSearch
-        }
-    }
-
-    fun toggleFavorite(id: String) {
-        val updated = favoriteIds.toMutableSet()
-        if (updated.contains(id)) updated.remove(id) else updated.add(id)
-        favoriteIds = updated
-        prefs.edit().putStringSet("favorite_widget_ids", updated).apply()
-    }
-
-    fun pinWidget(widget: WidgetItem) {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O && widget.providerClass != null) {
-            val appWidgetManager = AppWidgetManager.getInstance(context)
-            val myProvider = ComponentName(context, widget.providerClass)
-            if (appWidgetManager.isRequestPinAppWidgetSupported) {
-                appWidgetManager.requestPinAppWidget(myProvider, null, null)
+            val matchesSize = when (selectedSize) {
+                "All Sizes" -> true
+                else -> widget.size.equals(selectedSize, ignoreCase = true)
             }
+            val matchesSearch = if (searchQuery.isBlank()) true else {
+                widget.title.contains(searchQuery, ignoreCase = true) ||
+                        widget.category.contains(searchQuery, ignoreCase = true) ||
+                        widget.id.contains(searchQuery, ignoreCase = true)
+            }
+            matchesCategory && matchesSize && matchesSearch
         }
     }
 
-    LazyColumn(
+    Column(
         modifier = Modifier
             .fillMaxSize()
             .background(MaterialTheme.colorScheme.background)
-            .padding(paddingValues),
-        contentPadding = PaddingValues(16.dp),
-        verticalArrangement = Arrangement.spacedBy(16.dp)
+            .padding(paddingValues)
     ) {
-        item {
+        // App Bar & Title
+        Column(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(horizontal = 20.dp, vertical = 12.dp)
+        ) {
             Row(
-                verticalAlignment = Alignment.CenterVertically,
-                modifier = Modifier.padding(vertical = 10.dp)
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceBetween,
+                verticalAlignment = Alignment.CenterVertically
             ) {
-                Image(
-                    painter = painterResource(id = R.drawable.ic_myui_brand),
-                    contentDescription = "MyUI Logo",
-                    modifier = Modifier
-                        .size(48.dp)
-                        .clip(RoundedCornerShape(12.dp))
-                )
-                Spacer(modifier = Modifier.width(14.dp))
                 Column {
                     Text(
-                        text = "MyUI",
+                        text = "MyUI Widgets",
                         fontSize = 28.sp,
                         fontWeight = FontWeight.Bold,
                         color = MaterialTheme.colorScheme.onBackground
                     )
                     Text(
-                        text = "Refined widgets tailored for your home screen",
+                        text = "${filteredWidgets.size} of ${allWidgets.size} widgets available",
                         fontSize = 13.sp,
                         color = MaterialTheme.colorScheme.onSurfaceVariant
                     )
                 }
-            }
-        }
 
-        item {
+                FilledTonalIconButton(
+                    onClick = {
+                        selectedCategory = if (selectedCategory == "Favorites") "All" else "Favorites"
+                    },
+                    colors = IconButtonDefaults.filledTonalIconButtonColors(
+                        containerColor = if (selectedCategory == "Favorites") MaterialTheme.colorScheme.primaryContainer else MaterialTheme.colorScheme.surfaceVariant
+                    )
+                ) {
+                    Icon(
+                        imageVector = if (selectedCategory == "Favorites") Icons.Default.Favorite else Icons.Default.FavoriteBorder,
+                        contentDescription = "Favorites",
+                        tint = if (selectedCategory == "Favorites") MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.onSurfaceVariant
+                    )
+                }
+            }
+
+            Spacer(modifier = Modifier.height(12.dp))
+
+            // Search Field
             OutlinedTextField(
                 value = searchQuery,
                 onValueChange = { searchQuery = it },
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .clip(RoundedCornerShape(16.dp)),
-                placeholder = { Text("Search widgets by name or style…") },
-                leadingIcon = { Icon(Icons.Default.Search, contentDescription = null) },
-                singleLine = true,
+                modifier = Modifier.fillMaxWidth(),
+                placeholder = { Text("Search 400+ widgets...", fontSize = 14.sp) },
+                leadingIcon = {
+                    Icon(Icons.Default.Search, contentDescription = "Search", tint = MaterialTheme.colorScheme.onSurfaceVariant)
+                },
+                trailingIcon = {
+                    if (searchQuery.isNotEmpty()) {
+                        IconButton(onClick = { searchQuery = "" }) {
+                            Icon(Icons.Default.Close, contentDescription = "Clear", tint = MaterialTheme.colorScheme.onSurfaceVariant)
+                        }
+                    }
+                },
+                shape = RoundedCornerShape(16.dp),
                 colors = OutlinedTextFieldDefaults.colors(
                     focusedBorderColor = MaterialTheme.colorScheme.primary,
                     unfocusedBorderColor = MaterialTheme.colorScheme.surfaceVariant,
                     focusedContainerColor = MaterialTheme.colorScheme.surface,
                     unfocusedContainerColor = MaterialTheme.colorScheme.surface
-                )
+                ),
+                singleLine = true
             )
         }
 
-        item {
-            LazyRow(
-                horizontalArrangement = Arrangement.spacedBy(8.dp),
-                contentPadding = PaddingValues(horizontal = 2.dp)
+        // Category Filter Chips
+        LazyRow(
+            modifier = Modifier.fillMaxWidth(),
+            contentPadding = PaddingValues(horizontal = 20.dp),
+            horizontalArrangement = Arrangement.spacedBy(8.dp)
+        ) {
+            items(categories) { category ->
+                val isSelected = selectedCategory == category
+                FilterChip(
+                    selected = isSelected,
+                    onClick = { selectedCategory = category },
+                    label = { Text(category, fontSize = 13.sp) },
+                    leadingIcon = if (isSelected) {
+                        { Icon(Icons.Rounded.Check, contentDescription = null, modifier = Modifier.size(16.dp)) }
+                    } else null,
+                    shape = RoundedCornerShape(12.dp),
+                    colors = FilterChipDefaults.filterChipColors(
+                        selectedContainerColor = MaterialTheme.colorScheme.primary,
+                        selectedLabelColor = MaterialTheme.colorScheme.onPrimary,
+                        containerColor = MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.5f),
+                        labelColor = MaterialTheme.colorScheme.onSurfaceVariant
+                    )
+                )
+            }
+        }
+
+        Spacer(modifier = Modifier.height(6.dp))
+
+        // Size Filter Chips
+        LazyRow(
+            modifier = Modifier.fillMaxWidth(),
+            contentPadding = PaddingValues(horizontal = 20.dp),
+            horizontalArrangement = Arrangement.spacedBy(8.dp)
+        ) {
+            items(sizes) { sizeTag ->
+                val isSelected = selectedSize == sizeTag
+                SuggestionChip(
+                    onClick = { selectedSize = sizeTag },
+                    label = { Text(sizeTag, fontSize = 12.sp) },
+                    shape = RoundedCornerShape(10.dp),
+                    colors = SuggestionChipDefaults.suggestionChipColors(
+                        containerColor = if (isSelected) MaterialTheme.colorScheme.primaryContainer else MaterialTheme.colorScheme.surface,
+                        labelColor = if (isSelected) MaterialTheme.colorScheme.onPrimaryContainer else MaterialTheme.colorScheme.onSurfaceVariant
+                    )
+                )
+            }
+        }
+
+        Spacer(modifier = Modifier.height(8.dp))
+
+        // Widget Grid (Adaptive for tablets & phones)
+        if (filteredWidgets.isEmpty()) {
+            Box(
+                modifier = Modifier
+                    .fillMaxSize()
+                    .padding(32.dp),
+                contentAlignment = Alignment.Center
             ) {
-                items(categories) { category ->
-                    val isSelected = selectedCategory == category
-                    FilterChip(
-                        selected = isSelected,
-                        onClick = { selectedCategory = category },
-                        label = { Text(category) },
-                        shape = RoundedCornerShape(20.dp),
-                        colors = FilterChipDefaults.filterChipColors(
-                            selectedContainerColor = MaterialTheme.colorScheme.primary,
-                            selectedLabelColor = Color.Black
-                        )
+                Column(horizontalAlignment = Alignment.CenterHorizontally) {
+                    Icon(
+                        imageVector = Icons.Rounded.Widgets,
+                        contentDescription = null,
+                        modifier = Modifier.size(56.dp),
+                        tint = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.4f)
+                    )
+                    Spacer(modifier = Modifier.height(12.dp))
+                    Text(
+                        text = "No widgets found",
+                        fontSize = 16.sp,
+                        fontWeight = FontWeight.SemiBold,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant
+                    )
+                    Text(
+                        text = "Try adjusting your search or category filters",
+                        fontSize = 13.sp,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.7f)
+                    )
+                }
+            }
+        } else {
+            LazyVerticalGrid(
+                columns = GridCells.Adaptive(minSize = 165.dp),
+                modifier = Modifier.fillMaxSize(),
+                contentPadding = PaddingValues(start = 16.dp, end = 16.dp, top = 8.dp, bottom = 24.dp),
+                horizontalArrangement = Arrangement.spacedBy(14.dp),
+                verticalArrangement = Arrangement.spacedBy(14.dp)
+            ) {
+                items(filteredWidgets, key = { it.id }) { widget ->
+                    val isFav = favoriteIds.contains(widget.id)
+                    WidgetGridCard(
+                        widget = widget,
+                        isFavorite = isFav,
+                        onToggleFavorite = { toggleFavorite(widget.id) },
+                        onPin = { pinWidgetToHomeScreen(widget) },
+                        onClick = { selectedWidgetForDetail = widget }
                     )
                 }
             }
         }
+    }
 
-        items(filteredWidgets, key = { it.id }) { widget ->
-            val isFav = favoriteIds.contains(widget.id)
+    // Detail & Pin Dialog
+    selectedWidgetForDetail?.let { widget ->
+        val isFav = favoriteIds.contains(widget.id)
+        Dialog(onDismissRequest = { selectedWidgetForDetail = null }) {
             Card(
+                shape = RoundedCornerShape(24.dp),
+                colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface),
                 modifier = Modifier
                     .fillMaxWidth()
-                    .clickable { onWidgetClick(widget) },
-                shape = RoundedCornerShape(24.dp),
-                colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface)
+                    .padding(8.dp)
             ) {
-                Column(modifier = Modifier.padding(16.dp)) {
+                Column(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(20.dp),
+                    horizontalAlignment = Alignment.CenterHorizontally
+                ) {
+                    // Preview Container
                     Box(
                         modifier = Modifier
                             .fillMaxWidth()
-                            .height(140.dp)
-                            .clip(RoundedCornerShape(16.dp))
-                            .background(
-                                Brush.verticalGradient(
-                                    listOf(
-                                        MaterialTheme.colorScheme.surfaceVariant,
-                                        MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.5f)
-                                    )
-                                )
-                            ),
+                            .height(200.dp)
+                            .clip(RoundedCornerShape(18.dp))
+                            .background(Color(0xFF0F0F12))
+                            .padding(16.dp),
                         contentAlignment = Alignment.Center
                     ) {
-                        when (widget.previewType) {
-                            "analog" -> {
-                                Box(
-                                    modifier = Modifier
-                                        .size(90.dp)
-                                        .clip(CircleShape)
-                                        .background(Color.Black),
-                                    contentAlignment = Alignment.Center
-                                ) {
-                                    Box(
-                                        modifier = Modifier
-                                            .width(2.dp)
-                                            .height(30.dp)
-                                            .background(MaterialTheme.colorScheme.primary)
-                                            .align(Alignment.TopCenter)
-                                            .offset(y = 15.dp)
-                                    )
-                                    Box(
-                                        modifier = Modifier
-                                            .width(3.dp)
-                                            .height(20.dp)
-                                            .background(Color.White)
-                                            .align(Alignment.CenterEnd)
-                                            .offset(x = (-25).dp)
-                                    )
-                                    Box(
-                                        modifier = Modifier
-                                            .size(8.dp)
-                                            .clip(CircleShape)
-                                            .background(MaterialTheme.colorScheme.primary)
-                                    )
-                                }
-                            }
-                            "battery" -> {
-                                Column(horizontalAlignment = Alignment.CenterHorizontally) {
-                                    CircularProgressIndicator(
-                                        progress = { 0.84f },
-                                        modifier = Modifier.size(70.dp),
-                                        color = MaterialTheme.colorScheme.primary,
-                                        strokeWidth = 6.dp,
-                                        trackColor = MaterialTheme.colorScheme.surfaceVariant
-                                    )
-                                    Spacer(modifier = Modifier.height(4.dp))
-                                    Text("84%", fontWeight = FontWeight.Bold, color = Color.White)
-                                }
-                            }
-                            "weather" -> {
-                                Column(horizontalAlignment = Alignment.CenterHorizontally) {
-                                    Text("24°", fontSize = 36.sp, fontWeight = FontWeight.Light, color = Color.White)
-                                    Text("Sunny • H:26° L:18°", fontSize = 12.sp, color = MaterialTheme.colorScheme.primary)
-                                }
-                            }
-                            else -> {
-                                Text(
-                                    text = widget.category.uppercase(),
-                                    fontSize = 18.sp,
-                                    fontWeight = FontWeight.Bold,
-                                    color = MaterialTheme.colorScheme.primary
-                                )
-                            }
+                        if (widget.previewResId != 0) {
+                            Image(
+                                painter = painterResource(id = widget.previewResId),
+                                contentDescription = widget.title,
+                                modifier = Modifier.fillMaxSize(),
+                                contentScale = ContentScale.Fit
+                            )
+                        } else {
+                            Icon(
+                                Icons.Rounded.Widgets,
+                                contentDescription = null,
+                                modifier = Modifier.size(64.dp),
+                                tint = MaterialTheme.colorScheme.primary
+                            )
                         }
                     }
 
-                    Spacer(modifier = Modifier.height(12.dp))
+                    Spacer(modifier = Modifier.height(16.dp))
 
                     Row(
                         modifier = Modifier.fillMaxWidth(),
-                        verticalAlignment = Alignment.CenterVertically,
-                        horizontalArrangement = Arrangement.SpaceBetween
+                        horizontalArrangement = Arrangement.SpaceBetween,
+                        verticalAlignment = Alignment.CenterVertically
                     ) {
                         Column(modifier = Modifier.weight(1f)) {
                             Text(
                                 text = widget.title,
+                                fontSize = 20.sp,
                                 fontWeight = FontWeight.Bold,
-                                fontSize = 16.sp,
                                 color = MaterialTheme.colorScheme.onSurface
                             )
                             Text(
-                                text = widget.description,
-                                fontSize = 12.sp,
+                                text = "${widget.category} • Size ${widget.size}",
+                                fontSize = 13.sp,
                                 color = MaterialTheme.colorScheme.onSurfaceVariant
                             )
                         }
 
-                        Row(verticalAlignment = Alignment.CenterVertically) {
-                            IconButton(onClick = { toggleFavorite(widget.id) }) {
-                                Icon(
-                                    imageVector = if (isFav) Icons.Default.Favorite else Icons.Default.FavoriteBorder,
-                                    contentDescription = "Favorite",
-                                    tint = if (isFav) Color(0xFFE91E63) else MaterialTheme.colorScheme.onSurfaceVariant
-                                )
-                            }
-                            FilledTonalIconButton(
-                                onClick = { pinWidget(widget) },
-                                colors = IconButtonDefaults.filledTonalIconButtonColors(
-                                    containerColor = MaterialTheme.colorScheme.primary.copy(alpha = 0.2f),
-                                    contentColor = MaterialTheme.colorScheme.primary
-                                )
-                            ) {
-                                Icon(Icons.Rounded.Add, contentDescription = "Add Widget")
-                            }
+                        IconButton(onClick = { toggleFavorite(widget.id) }) {
+                            Icon(
+                                imageVector = if (isFav) Icons.Default.Favorite else Icons.Default.FavoriteBorder,
+                                contentDescription = "Favorite",
+                                tint = if (isFav) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.onSurfaceVariant
+                            )
+                        }
+                    }
+
+                    Spacer(modifier = Modifier.height(20.dp))
+
+                    Row(
+                        modifier = Modifier.fillMaxWidth(),
+                        horizontalArrangement = Arrangement.spacedBy(10.dp)
+                    ) {
+                        OutlinedButton(
+                            onClick = {
+                                selectedWidgetForDetail = null
+                                onNavigateToStudio()
+                            },
+                            shape = RoundedCornerShape(14.dp),
+                            modifier = Modifier.weight(1f)
+                        ) {
+                            Text("Studio", fontSize = 14.sp)
+                        }
+
+                        Button(
+                            onClick = {
+                                pinWidgetToHomeScreen(widget)
+                                selectedWidgetForDetail = null
+                            },
+                            shape = RoundedCornerShape(14.dp),
+                            modifier = Modifier.weight(1f),
+                            colors = ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.primary)
+                        ) {
+                            Icon(Icons.Rounded.Add, contentDescription = null, modifier = Modifier.size(18.dp))
+                            Spacer(modifier = Modifier.width(4.dp))
+                            Text("Add to Home", fontSize = 14.sp)
                         }
                     }
                 }
             }
         }
+    }
+}
 
-        if (moreApps.isNotEmpty()) {
-            item {
-                Spacer(modifier = Modifier.height(8.dp))
-                Text(
-                    text = "MORE MINIMAL EXPERIENCES",
-                    fontSize = 12.sp,
-                    fontWeight = FontWeight.Bold,
-                    letterSpacing = 1.2.sp,
-                    color = MaterialTheme.colorScheme.primary
-                )
+@Composable
+fun WidgetGridCard(
+    widget: FullWidgetItem,
+    isFavorite: Boolean,
+    onToggleFavorite: () -> Unit,
+    onPin: () -> Unit,
+    onClick: () -> Unit
+) {
+    Card(
+        modifier = Modifier
+            .fillMaxWidth()
+            .clip(RoundedCornerShape(18.dp))
+            .clickable(onClick = onClick),
+        shape = RoundedCornerShape(18.dp),
+        colors = CardDefaults.cardColors(
+            containerColor = MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.45f)
+        )
+    ) {
+        Column(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(10.dp)
+        ) {
+            // Preview Image Box
+            Box(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(130.dp)
+                    .clip(RoundedCornerShape(14.dp))
+                    .background(Color(0xFF0D0D10))
+                    .padding(8.dp),
+                contentAlignment = Alignment.Center
+            ) {
+                if (widget.previewResId != 0) {
+                    Image(
+                        painter = painterResource(id = widget.previewResId),
+                        contentDescription = widget.title,
+                        modifier = Modifier.fillMaxSize(),
+                        contentScale = ContentScale.Fit
+                    )
+                } else {
+                    Icon(
+                        Icons.Rounded.Widgets,
+                        contentDescription = null,
+                        modifier = Modifier.size(40.dp),
+                        tint = MaterialTheme.colorScheme.primary
+                    )
+                }
+
+                // Size Badge
+                Surface(
+                    modifier = Modifier
+                        .align(Alignment.TopStart)
+                        .padding(4.dp),
+                    shape = RoundedCornerShape(6.dp),
+                    color = Color.Black.copy(alpha = 0.65f)
+                ) {
+                    Text(
+                        text = widget.size,
+                        fontSize = 10.sp,
+                        fontWeight = FontWeight.Bold,
+                        color = Color.White,
+                        modifier = Modifier.padding(horizontal = 6.dp, vertical = 2.dp)
+                    )
+                }
+
+                // Favorite Icon
+                IconButton(
+                    onClick = onToggleFavorite,
+                    modifier = Modifier
+                        .align(Alignment.TopEnd)
+                        .size(28.dp)
+                ) {
+                    Icon(
+                        imageVector = if (isFavorite) Icons.Default.Favorite else Icons.Default.FavoriteBorder,
+                        contentDescription = null,
+                        modifier = Modifier.size(16.dp),
+                        tint = if (isFavorite) MaterialTheme.colorScheme.primary else Color.White.copy(alpha = 0.7f)
+                    )
+                }
             }
 
-            items(moreApps) { app ->
-                Card(
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .clickable {
-                            val intent = Intent(Intent.ACTION_VIEW, Uri.parse(app.play_store_url))
-                            context.startActivity(intent)
-                        },
-                    shape = RoundedCornerShape(18.dp),
-                    colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface)
+            Spacer(modifier = Modifier.height(10.dp))
+
+            // Widget Info
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceBetween,
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Column(modifier = Modifier.weight(1f)) {
+                    Text(
+                        text = widget.title,
+                        fontSize = 14.sp,
+                        fontWeight = FontWeight.Bold,
+                        color = MaterialTheme.colorScheme.onSurface,
+                        maxLines = 1,
+                        overflow = TextOverflow.Ellipsis
+                    )
+                    Text(
+                        text = widget.category,
+                        fontSize = 11.sp,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                        maxLines = 1,
+                        overflow = TextOverflow.Ellipsis
+                    )
+                }
+
+                FilledIconButton(
+                    onClick = onPin,
+                    modifier = Modifier.size(32.dp),
+                    colors = IconButtonDefaults.filledIconButtonColors(
+                        containerColor = MaterialTheme.colorScheme.primary
+                    )
                 ) {
-                    Row(
-                        modifier = Modifier.padding(16.dp),
-                        verticalAlignment = Alignment.CenterVertically
-                    ) {
-                        Icon(
-                            imageVector = Icons.Rounded.Apps,
-                            contentDescription = null,
-                            tint = MaterialTheme.colorScheme.primary,
-                            modifier = Modifier.size(32.dp)
-                        )
-                        Spacer(modifier = Modifier.width(16.dp))
-                        Column(modifier = Modifier.weight(1f)) {
-                            Text(text = app.name, fontWeight = FontWeight.Bold, fontSize = 15.sp)
-                            Text(text = app.description, fontSize = 12.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
-                        }
-                    }
+                    Icon(
+                        Icons.Rounded.Add,
+                        contentDescription = "Add Widget",
+                        modifier = Modifier.size(18.dp),
+                        tint = MaterialTheme.colorScheme.onPrimary
+                    )
                 }
             }
         }
