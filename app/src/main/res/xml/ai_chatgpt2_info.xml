@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:description="@string/chatgpt_widget_description"
+    android:minWidth="72dp"
+    android:minHeight="72dp"
+    android:updatePeriodMillis="86400000"
+    android:initialLayout="@layout/widget_chatgpt_2"
+    android:configure="com.jndapp.minimal.widgets.billing.PremiumGateConfigActivity"
+    android:previewImage="@drawable/widget_chatgpt_2p"
+    android:resizeMode="vertical|horizontal"
+    android:initialKeyguardLayout="@layout/widget_chatgpt_2"
+    android:widgetCategory="keyguard|home_screen"
+    android:targetCellWidth="2"
+    android:targetCellHeight="2"/>

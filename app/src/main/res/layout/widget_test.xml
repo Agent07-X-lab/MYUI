@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_root"
+    android:padding="0dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:id="@+id/widget_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/widget_background"
+            android:scaleType="fitXY"/>
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:id="@+id/text_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Test Widget"/>
+            <TextView
+                android:textSize="12sp"
+                android:textColor="#ffffff"
+                android:id="@+id/text_widget_width"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Widget Width: --"/>
+            <TextView
+                android:textSize="12sp"
+                android:textColor="#ffffff"
+                android:id="@+id/text_widget_height"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Widget Height: --"/>
+            <TextView
+                android:textSize="12sp"
+                android:textColor="#ffff00"
+                android:id="@+id/text_container_width"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Container Width: --"/>
+            <TextView
+                android:textSize="12sp"
+                android:textColor="#ffff00"
+                android:id="@+id/text_container_height"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Container Height: --"/>
+            <TextView
+                android:textSize="11sp"
+                android:textColor="#00ff00"
+                android:id="@+id/text_padding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Padding: --"/>
+            <TextView
+                android:textSize="11sp"
+                android:textColor="#00ffff"
+                android:id="@+id/text_ratio_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Mode: --"/>
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

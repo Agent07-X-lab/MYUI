@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="152dp"
+    android:width="152dp"
+    android:viewportWidth="152"
+    android:viewportHeight="152">
+    <path
+        android:fillColor="@color/widget_background"
+        android:pathData="M132,0H20C8.9,0 0,8.9 0,20v112c0,11.1 8.9,20 20,20h112c11.1,0 20,-8.9 20,-20V20c0,-11.1 -8.9,-20 -20,-20Z"
+        android:fillAlpha="0.9"/>
+    <path
+        android:fillColor="@color/widget_text"
+        android:pathData="M18,122.4c0,-6.4 5.2,-11.6 11.6,-11.6s11.6,5.2 11.6,11.6h0c0,6.4 -5.2,11.6 -11.6,11.6s-11.6,-5.2 -11.6,-11.6h0"
+        android:strokeAlpha="0.1"
+        android:fillAlpha="0.1"/>
+    <path
+        android:fillColor="@color/widget_text"
+        android:pathData="M41.2,122.4c0,-6.4 5.2,-11.6 11.6,-11.6s11.6,5.2 11.6,11.6h0c0,6.4 -5.2,11.6 -11.6,11.6s-11.6,-5.2 -11.6,-11.6h0"
+        android:strokeAlpha="0.1"
+        android:fillAlpha="0.1"/>
+    <path
+        android:fillColor="@color/widget_text"
+        android:pathData="M64.4,122.4c0,-6.4 5.2,-11.6 11.6,-11.6s11.6,5.2 11.6,11.6 -5.2,11.6 -11.6,11.6 -11.6,-5.2 -11.6,-11.6h0"
+        android:strokeAlpha="0.1"
+        android:fillAlpha="0.1"/>
+    <path
+        android:fillColor="@color/widget_text"
+        android:pathData="M87.6,122.4c0,-6.4 5.2,-11.6 11.6,-11.6s11.6,5.2 11.6,11.6 -5.2,11.6 -11.6,11.6 -11.6,-5.2 -11.6,-11.6h0"
+        android:strokeAlpha="0.1"
+        android:fillAlpha="0.1"/>
+    <path
+        android:fillColor="@color/widget_text"
+        android:pathData="M110.8,122.4c0,-6.4 5.2,-11.6 11.6,-11.6s11.6,5.2 11.6,11.6h0c0,6.4 -5.2,11.6 -11.6,11.6s-11.6,-5.2 -11.6,-11.6h0"
+        android:strokeAlpha="0.1"
+        android:fillAlpha="0.1"/>
+    <path
+        android:fillColor="@color/widget_accent"
+        android:pathData="M18,76c0,-6.4 5.2,-11.6 11.6,-11.6s11.6,5.2 11.6,11.6h0c0,6.4 -5.2,11.6 -11.6,11.6s-11.6,-5.2 -11.6,-11.6h0"/>
+    <path
+        android:fillColor="@color/widget_accent"
+        android:pathData="M41.2,76c0,-6.4 5.2,-11.6 11.6,-11.6s11.6,5.2 11.6,11.6h0c0,6.4 -5.2,11.6 -11.6,11.6s-11.6,-5.2 -11.6,-11.6h0"/>
+    <path
+        android:fillColor="@color/widget_accent"
+        android:pathData="M64.4,76c0,-6.4 5.2,-11.6 11.6,-11.6s11.6,5.2 11.6,11.6 -5.2,11.6 -11.6,11.6 -11.6,-5.2 -11.6,-11.6h0"/>
+    <path
+        android:fillColor="@color/widget_accent"
+        android:pathData="M87.6,76c0,-6.4 5.2,-11.6 11.6,-11.6s11.6,5.2 11.6,11.6 -5.2,11.6 -11.6,11.6 -11.6,-5.2 -11.6,-11.6h0"/>
+    <path
+        android:fillColor="@color/widget_accent"
+        android:pathData="M110.8,76c0,-6.4 5.2,-11.6 11.6,-11.6s11.6,5.2 11.6,11.6h0c0,6.4 -5.2,11.6 -11.6,11.6s-11.6,-5.2 -11.6,-11.6h0"/>
+    <path
+        android:fillColor="@color/widget_accent"
+        android:pathData="M18,52.8c0,-6.4 5.2,-11.6 11.6,-11.6s11.6,5.2 11.6,11.6h0c0,6.4 -5.2,11.6 -11.6,11.6s-11.6,-5.2 -11.6,-11.6h0"/>
+    <path
+        android:fillColor="@color/widget_accent"
+        android:pathData="M41.2,52.8c0,-6.4 5.2,-11.6 11.6,-11.6s11.6,5.2 11.6,11.6h0c0,6.4 -5.2,11.6 -11.6,11.6s-11.6,-5.2 -11.6,-11.6h0"/>
+    <path
+        android:fillColor="@color/widget_accent"
+        android:pathData="M64.4,52.8c0,-6.4 5.2,-11.6 11.6,-11.6s11.6,5.2 11.6,11.6 -5.2,11.6 -11.6,11.6 -11.6,-5.2 -11.6,-11.6h0"/>
+    <path
+        android:fillColor="@color/widget_accent"
+        android:pathData="M87.6,52.8c0,-6.4 5.2,-11.6 11.6,-11.6s11.6,5.2 11.6,11.6 -5.2,11.6 -11.6,11.6 -11.6,-5.2 -11.6,-11.6h0"/>
+    <path
+        android:fillColor="@color/widget_accent"
+        android:pathData="M110.8,52.8c0,-6.4 5.2,-11.6 11.6,-11.6s11.6,5.2 11.6,11.6h0c0,6.4 -5.2,11.6 -11.6,11.6s-11.6,-5.2 -11.6,-11.6h0"/>
+    <path
+        android:fillColor="@color/widget_accent"
+        android:pathData="M18,29.6c0,-6.4 5.2,-11.6 11.6,-11.6s11.6,5.2 11.6,11.6h0c0,6.4 -5.2,11.6 -11.6,11.6s-11.6,-5.2 -11.6,-11.6h0"/>
+    <path
+        android:fillColor="@color/widget_accent"
+        android:pathData="M41.2,29.6c0,-6.4 5.2,-11.6 11.6,-11.6s11.6,5.2 11.6,11.6h0c0,6.4 -5.2,11.6 -11.6,11.6s-11.6,-5.2 -11.6,-11.6h0"/>
+    <path
+        android:fillColor="@color/widget_accent"
+        android:pathData="M64.4,29.6c0,-6.4 5.2,-11.6 11.6,-11.6s11.6,5.2 11.6,11.6 -5.2,11.6 -11.6,11.6 -11.6,-5.2 -11.6,-11.6h0"/>
+    <path
+        android:fillColor="@color/widget_accent"
+        android:pathData="M87.6,29.6c0,-6.4 5.2,-11.6 11.6,-11.6s11.6,5.2 11.6,11.6 -5.2,11.6 -11.6,11.6 -11.6,-5.2 -11.6,-11.6h0"/>
+    <path
+        android:fillColor="@color/widget_accent"
+        android:pathData="M110.8,29.6c0,-6.4 5.2,-11.6 11.6,-11.6s11.6,5.2 11.6,11.6h0c0,6.4 -5.2,11.6 -11.6,11.6s-11.6,-5.2 -11.6,-11.6h0"/>
+    <path
+        android:fillColor="@color/widget_text"
+        android:pathData="M18,99.2c0,-6.4 5.2,-11.6 11.6,-11.6s11.6,5.2 11.6,11.6h0c0,6.4 -5.2,11.6 -11.6,11.6s-11.6,-5.2 -11.6,-11.6h0"
+        android:strokeAlpha="0.1"
+        android:fillAlpha="0.1"/>
+    <path
+        android:fillColor="@color/widget_text"
+        android:pathData="M41.2,99.2c0,-6.4 5.2,-11.6 11.6,-11.6s11.6,5.2 11.6,11.6h0c0,6.4 -5.2,11.6 -11.6,11.6s-11.6,-5.2 -11.6,-11.6h0"
+        android:strokeAlpha="0.1"
+        android:fillAlpha="0.1"/>
+    <path
+        android:fillColor="@color/widget_text"
+        android:pathData="M64.4,99.2c0,-6.4 5.2,-11.6 11.6,-11.6s11.6,5.2 11.6,11.6 -5.2,11.6 -11.6,11.6 -11.6,-5.2 -11.6,-11.6h0"
+        android:strokeAlpha="0.1"
+        android:fillAlpha="0.1"/>
+    <path
+        android:fillColor="@color/widget_text"
+        android:pathData="M87.6,99.2c0,-6.4 5.2,-11.6 11.6,-11.6s11.6,5.2 11.6,11.6 -5.2,11.6 -11.6,11.6 -11.6,-5.2 -11.6,-11.6h0"
+        android:strokeAlpha="0.1"
+        android:fillAlpha="0.1"/>
+    <path
+        android:fillColor="@color/widget_text"
+        android:pathData="M110.8,99.2c0,-6.4 5.2,-11.6 11.6,-11.6s11.6,5.2 11.6,11.6h0c0,6.4 -5.2,11.6 -11.6,11.6s-11.6,-5.2 -11.6,-11.6h0"
+        android:strokeAlpha="0.1"
+        android:fillAlpha="0.1"/>
+</vector>

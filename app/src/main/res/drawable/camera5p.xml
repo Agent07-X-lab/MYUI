@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="152dp"
+    android:width="303.2969dp"
+    android:viewportWidth="303.3"
+    android:viewportHeight="152">
+    <path
+        android:fillColor="#f1f0f6"
+        android:pathData="M20.3,0L283.6,0A20,20 0,0 1,303.6 20L303.6,132A20,20 0,0 1,283.6 152L20.3,152A20,20 0,0 1,0.3 132L0.3,20A20,20 0,0 1,20.3 0z"/>
+    <path
+        android:fillColor="#50e6ff"
+        android:pathData="M20.3,0L283.6,0A20,20 0,0 1,303.6 20L303.6,132A20,20 0,0 1,283.6 152L20.3,152A20,20 0,0 1,0.3 132L0.3,20A20,20 0,0 1,20.3 0z"/>
+    <path
+        android:fillColor="@drawable/_camera5p__0_res_0x7f08000f"
+        android:pathData="M46.5,152l67.5,-67.5c8.4,-8.4 21.9,-8.5 30.5,-0.4l14.5,13.7 57.2,54.2H46.5Z"/>
+    <path
+        android:fillColor="#fff8de"
+        android:pathData="M50.3,49m-25.5,0a25.5,25.5 0,1 1,51 0a25.5,25.5 0,1 1,-51 0"/>
+    <path
+        android:fillColor="@drawable/_camera5p__1_res_0x7f080010"
+        android:pathData="M303.7,123.1v8.9c0,11 -9,20 -20,20H104.7l54.2,-54.2 42.4,-42.4c8.4,-8.4 21.9,-8.5 30.5,-0.4l71.9,68.1Z"/>
+</vector>

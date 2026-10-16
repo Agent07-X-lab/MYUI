@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:description="@string/google_search_bar_description"
+    android:minWidth="294dp"
+    android:minHeight="72dp"
+    android:updatePeriodMillis="0"
+    android:initialLayout="@layout/googlebar6_layout"
+    android:configure="com.jndapp.minimal.widgets.billing.PremiumGateConfigActivity"
+    android:previewImage="@drawable/google_bar6p"
+    android:resizeMode="horizontal"
+    android:widgetCategory="keyguard|home_screen"
+    android:widgetFeatures="reconfigurable"
+    android:targetCellWidth="4"
+    android:targetCellHeight="1"/>

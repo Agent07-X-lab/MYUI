@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:description="@string/device_info_description"
+    android:minWidth="146dp"
+    android:minHeight="72dp"
+    android:updatePeriodMillis="0"
+    android:initialLayout="@layout/widget_other_layout"
+    android:configure="com.jndapp.minimal.widgets.billing.PremiumGateConfigActivity"
+    android:previewImage="@drawable/other_datausage"
+    android:resizeMode="vertical|horizontal"
+    android:widgetCategory="keyguard|home_screen"
+    android:targetCellWidth="2"
+    android:targetCellHeight="1"/>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="355.0938dp"
+    android:width="757.8984dp"
+    android:viewportWidth="757.9"
+    android:viewportHeight="355.1">
+    <path
+        android:fillColor="@color/cat_background"
+        android:pathData="M0,0h757.9v355.1h-757.9z"/>
+    <path
+        android:fillColor="@color/widget_background"
+        android:pathData="M757.9,93.5v261.6h-492.29v-168.5c0,-32.82 0,-49.23 6.33,-61.74 5.53,-10.89 14.46,-19.83 25.51,-25.51 12.51,-6.34 28.92,-6.34 61.75,-6.34h46.47c6.66,0 12.99,-2.6 17.71,-7.31l34.77,-34.77c7.8,-7.8 18.52,-12.19 29.57,-12.19h103.34c11.05,0 21.77,4.39 29.57,12.19l34.77,34.77c4.71,4.71 11.05,7.31 17.71,7.31h50.69c14.05,0 25.08,0 34.1,0.49Z"/>
+    <path
+        android:fillColor="@color/widget_accent_yellow"
+        android:pathData="M321.36,165.41c0,-13.82 11.2,-25.02 25.02,-25.02s25.02,11.2 25.02,25.02 -11.2,25.02 -25.02,25.02 -25.02,-11.2 -25.02,-25.02h0Z"/>
+    <path
+        android:fillColor="@drawable/_cat_camera__0_res_0x7f080011"
+        android:pathData="M541.5,151.67c-69.22,0 -125.44,56.21 -125.44,125.43 0,29.47 10.19,56.58 27.23,78h196.42c17.04,-21.42 27.23,-48.53 27.23,-78 0,-69.22 -56.22,-125.43 -125.44,-125.43ZM541.5,354.66c-42.89,0 -77.72,-34.83 -77.72,-77.72s34.83,-77.72 77.72,-77.72 77.72,34.83 77.72,77.72 -34.83,77.72 -77.72,77.72Z"
+        android:fillType="evenOdd"/>
+</vector>

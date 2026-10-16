@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:description="@string/compass_widget_4_description"
+    android:minWidth="146dp"
+    android:minHeight="72dp"
+    android:updatePeriodMillis="0"
+    android:initialLayout="@layout/compass4_layout"
+    android:previewImage="@drawable/compass4p"
+    android:resizeMode="vertical|horizontal"
+    android:widgetCategory="keyguard|home_screen"
+    android:targetCellWidth="2"
+    android:targetCellHeight="1"/>

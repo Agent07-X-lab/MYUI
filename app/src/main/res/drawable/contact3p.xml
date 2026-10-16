@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="180dp"
+    android:width="180dp"
+    android:viewportWidth="180"
+    android:viewportHeight="180">
+    <path
+        android:fillColor="@color/widget_background"
+        android:pathData="M26.6,0L153.4,0A26.6,26.6 0,0 1,180 26.6L180,153.4A26.6,26.6 0,0 1,153.4 180L26.6,180A26.6,26.6 0,0 1,0 153.4L0,26.6A26.6,26.6 0,0 1,26.6 0z"/>
+    <path
+        android:fillColor="@color/widget_background_light"
+        android:pathData="M131.5,96.9c16.7,0 30.2,13.5 30.2,30.2s-13.5,30.2 -30.2,30.2 -30.2,-13.5 -30.2,-30.2 13.5,-30.2 30.2,-30.2h0Z"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="#ffcca9"
+        android:pathData="M139.1,128.2l0,0l0,0l0,0z"/>
+    <path
+        android:fillColor="#36393a"
+        android:pathData="M146.1,135.4h0Z"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="#36393a"
+        android:pathData="M119.1,134.7h0Z"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="@drawable/_contact3p__0_res_0x7f080022"
+        android:pathData="M142.9,133.8c-1.2,-0.6 -3.8,-1.4 -4,-3.2 -0.2,-1.1 -0.2,-2.1 -0.2,-2.4 0,-1 0,-2.1 0.1,-3.2 -1.4,2.6 -3.6,4.2 -7,4.1 -2.3,0 -4.4,-2 -5.7,-4.5 0.2,1.3 0.3,2.6 0.3,3.9v0.9c0,1.9 -2.1,3.2 -4,3.9 4.7,8.2 15.3,8.4 20.4,0.5h0Z"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="#fff"
+        android:pathData="M139.7,110.5h0Z"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="#fff"
+        android:pathData="M139,111.2h0Z"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="#fff"
+        android:pathData="M125.1,114.1h0Z"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="@drawable/_contact3p__1_res_0x7f080023"
+        android:pathData="M141.9,115.6h-0.1c-0.5,0 -0.9,0.5 -1.2,1.4h0c-0.1,-2.2 -0.9,-6.3 -1.3,-7.3 -0.7,-0.6 -1.7,-1.9 -9.5,-1.7 -0.9,-0.3 -3.4,1.6 -3.5,1.7 -0.3,0.4 -0.7,1.3 -0.9,2.6 -0.8,4.3 -0.4,3.1 -0.6,4.7l-0.2,-0.2v-0.2c-0.2,-0.7 -0.6,-1.2 -1.1,-1.2s-0.2,0 -0.3,0c-0.7,0.4 -0.9,2.1 -0.4,3.7 0.6,1.8 1,3.4 1.9,3.4s0.6,-0.3 0.5,-0.9c0.3,1 0.6,2 1.1,2.8 1.3,2.6 3.4,4.5 5.7,4.5 3.3,0 5.6,-1.6 7,-4.1 0.5,-0.9 0.8,-1.9 1.1,-3 0,0.4 0.1,0.7 0.5,0.7 0.9,0 1.3,-1.6 1.9,-3.4 0.6,-1.7 0.3,-3.5 -0.5,-3.8v0.2Z"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="#6ab3f2"
+        android:pathData="M156.9,143.3c-0.4,-2.1 -1.2,-3.9 -3.3,-5.3 -3.6,-2.4 -10.6,-4.1 -13.2,-5.7 -2.8,8.6 -14.7,6.8 -16.2,-0.1 -3.1,1.1 -11.3,3.1 -14.4,5.9 -0.8,0.7 -1.5,2.9 -1.7,3.8l-0.5,3.5c5.5,7.2 14.2,11.8 23.9,11.8s20.1,-5.5 25.4,-13.9h0Z"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="@drawable/_contact3p__2_res_0x7f08002c"
+        android:pathData="M124.4,116.7h0c0,0.2 0.2,0.3 0.3,0.3 0.3,-1.6 0,-0.4 0.6,-4.7 0.2,-1.3 0.6,-2.2 0.9,-2.6 0.5,-0.8 12.8,1.5 12.8,1.5 0.3,1 1,3.8 1.4,5.8h0c0.3,-1 0.6,-1.5 1.2,-1.5h0.1c0.2,-1.8 0.1,-3.6 0,-5.6 0,-5.6 -6.2,-7.8 -10.7,-7.5 -7.9,0.5 -9.3,5.9 -8.1,13.1 0.7,0 1,0.5 1.2,1.1h0.3Z"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="@color/widget_background_light"
+        android:pathData="M48.5,96.9c16.7,0 30.2,13.5 30.2,30.2s-13.5,30.2 -30.2,30.2 -30.2,-13.5 -30.2,-30.2 13.5,-30.2 30.2,-30.2h0Z"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="@drawable/_contact3p__3_res_0x7f08002d"
+        android:pathData="M39,129.2c-2.8,-10.8 0.8,-27 8.4,-25.8 11,-3.4 15,13.6 11.2,25.1 -0.3,0 -12.2,-4.7 -19.6,0.7h0Z"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="@drawable/_contact3p__4_res_0x7f08002e"
+        android:pathData="M44.1,122.1s1,7 -0.2,9c-1.9,2.5 -5.2,3.2 -9.8,5.4 9.9,23.1 23,17.9 30,0.3 -7.1,-4 -7.5,-3.8 -9.3,-5.7 -1,-1 -1.3,-3.7 -1.5,-9.4l-9.3,0.4h0Z"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="@drawable/_contact3p__5_res_0x7f08002f"
+        android:pathData="M57.2,115.3h0c-0.3,0 -0.5,0.2 -0.7,0.6 0,-5.8 0,-9.9 -7.3,-9.9s-2.2,0 -3.3,0.5c-3.1,1.5 -3.8,5.1 -3.9,9.4 -0.2,-0.4 -0.4,-0.6 -0.7,-0.6 -0.7,0 -1.1,1.6 -0.7,3.1 0.4,1.5 0.6,2.9 1.3,2.9s0.4,-0.2 0.4,-0.5c1.2,4.5 4.5,7 6.7,7.1 2.4,0.2 5.9,-2.7 7,-7.3 0,0.5 0,0.7 0.5,0.7 0.7,0 0.9,-1.4 1.3,-2.9 0.4,-1.5 0,-3.1 -0.7,-3.1h0.1Z"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="@drawable/_contact3p__6_res_0x7f080030"
+        android:pathData="M41.7,115.3c2.4,0 6.4,-0.5 11.3,-0.2 0.2,-0.7 0,-0.4 0.2,-1.5q0,0.8 0.2,1.5c0.8,0 2.4,0.2 3.3,0.3 1,-5.1 -1.5,-10.7 -8.2,-10.7 -6.8,1.2 -6.9,3.2 -6.8,10.6h0Z"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="@drawable/_contact3p__7_res_0x7f080031"
+        android:pathData="M70.3,148l-1.3,-7.1c-0.4,-1.9 -2.5,-3.9 -4.4,-4.7 -2.6,-1.3 -4.5,-1.7 -6.9,-3.1 -2.9,11.9 -15.9,8.4 -16.4,0 -3.4,1.3 -3.9,1.6 -7.5,3 0,0 -3.8,1.2 -4.8,5l-1.7,7.2c5.5,5.4 13,8.8 21.3,8.8s16.3,-3.6 21.7,-9.3h0v0.2Z"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="@color/widget_background_light"
+        android:pathData="M48.5,22.8c16.7,0 30.2,13.5 30.2,30.2s-13.5,30.2 -30.2,30.2 -30.2,-13.5 -30.2,-30.2 13.5,-30.2 30.2,-30.2h0Z"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="@drawable/_contact3p__8_res_0x7f080032"
+        android:pathData="M47.4,77.7c-11,-0.9 -10.6,-22.3 -9.9,-31.7 0.7,-8.9 4.5,-17.5 10,-16.6 8.1,-2.5 12.7,6.7 13.3,16.3 0.6,9.5 3.4,33 -13.4,32h0Z"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="@drawable/_contact3p__9_res_0x7f080033"
+        android:pathData="M44.1,48s1,7 -0.2,9c-1.9,2.5 -5.2,3.2 -9.8,5.4 9.9,23.1 23,17.9 30,0.3 -7.1,-4 -7.5,-3.8 -9.3,-5.7 -1,-1 -1.3,-3.7 -1.5,-9.4l-9.3,0.4h0Z"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="@drawable/_contact3p__10_res_0x7f080024"
+        android:pathData="M57.2,41.2c-0.3,0 -0.5,0.2 -0.7,0.6 0,-5.8 0,-9.9 -7.3,-9.9s-3.3,0.3 -4.4,0.8c-3.1,1.5 -3,4.8 -2.9,9 -0.2,-0.3 -0.4,-0.5 -0.6,-0.5 -0.7,0 -1.1,1.6 -0.7,3.1 0.4,1.5 0.6,2.9 1.3,2.9s0.4,-0.2 0.4,-0.5c1.2,4.5 4.5,7 6.7,7.1 2.4,0.2 5.9,-2.7 7,-7.3 0,0.5 0,0.7 0.5,0.7 0.7,0 0.9,-1.4 1.3,-2.9 0.4,-1.5 0,-3.1 -0.7,-3.1h0.1Z"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="@drawable/_contact3p__11_res_0x7f080025"
+        android:pathData="M41.9,42c1,-3.9 0.9,-5.2 4.6,-8.1 4.3,4.7 9.3,3.1 10.2,8.8 1.1,-0.8 0.7,-2.7 0.7,-3.6 0,-4.3 -4.1,-9 -8.1,-8.5 -5.7,1.1 -6.7,2.8 -8.5,9.7l1.2,1.7h-0.1Z"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="@drawable/_contact3p__12_res_0x7f080026"
+        android:pathData="M70.3,73.9l-1.3,-7.1c-0.4,-1.9 -2.5,-3.9 -4.4,-4.7 -2.6,-1.3 -4.5,-1.7 -6.9,-3.1 -2.9,11.9 -15.9,8.4 -16.4,0 -3.4,1.3 -3.9,1.6 -7.5,3 0,0 -3.8,1.2 -4.8,5l-1.7,7.2c5.5,5.4 13,8.8 21.3,8.8s16.3,-3.6 21.7,-9.3h0v0.2Z"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="@color/widget_background_light"
+        android:pathData="M131.5,22.8c16.7,0 30.2,13.5 30.2,30.2s-13.5,30.2 -30.2,30.2 -30.2,-13.5 -30.2,-30.2 13.5,-30.2 30.2,-30.2h0Z"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="@drawable/_contact3p__13_res_0x7f080027"
+        android:pathData="M156.9,69.3c0,-2.6 -0.3,-6 -1.1,-7 -1,-1.3 -14.6,-5.4 -17.3,-7 -2.8,8.6 -12.6,7.2 -14,0.3 -3.1,1.1 -11.8,4 -16.6,6.5 -1,0.5 -1.5,7.5 -1.5,7.5 5.4,8.2 14.7,13.5 25.2,13.5s19.9,-5.4 25.3,-13.7h0Z"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="#ffcca9"
+        android:pathData="M137.6,52.6l0,0l0,0l0,0z"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="@drawable/_contact3p__14_res_0x7f080028"
+        android:pathData="M130.3,59.7c0.9,0 1.9,0.3 2.7,0 6.7,-1.8 4.6,-6.1 4.6,-6.1v-1c0,-1 0,-2.1 0.1,-3.2 -1.4,2.6 -3.6,4.2 -7,4.1 -2.3,0 -4.4,-2 -5.7,-4.5 0.2,1.3 0,2.9 0,4.2v3.2c1.5,2.8 3.3,2.9 5,3.3h0.2Z"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="#fff"
+        android:pathData="M126.9,77c0.5,-2.8 3.5,-13.2 3.5,-13.2l-1.4,-2.4 1.1,-1.5h2.5l1.2,1.5 -1.4,2.4c0.7,3.9 2.2,9.1 3,13.2 1.8,-6.2 3,-7.9 3.4,-16.1l0.7,-4.2c-0.9,-1.2 -1.8,-3.2 -1.8,-3.2 0,0 -3.2,4.8 -5,6.2h-2.7c-2.1,-1.8 -4.7,-6 -4.7,-6l-2.4,3.4s1.9,10.9 4,19.9h0Z"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="#6ab3f2"
+        android:pathData="M133.7,61.4l-1.2,-1.4h-2.5l-1.1,1.5 1.4,2.4s-3,10.4 -3.5,13.2v0.6c0,1 0.7,3 1.6,5.3 1,0 2.1,0.2 3.1,0.2h2.2c0.7,-1.9 1.3,-3.8 1.7,-5.5v-0.5c-0.8,-4 -2.2,-9.2 -3,-13.2l1.4,-2.4h0v-0.2Z"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="#fff"
+        android:pathData="M137.6,35.7"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="#fff"
+        android:pathData="M123.6,38.5h0Z"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="@drawable/_contact3p__15_res_0x7f080029"
+        android:pathData="M140.8,40h-0.1c-0.5,0 -0.9,0.5 -1.2,1.4h0c-0.1,-2.2 -0.9,-6.3 -1.3,-7.3 -0.7,-0.6 -1.7,-1.9 -9.5,-1.7 -0.9,-0.3 -3.4,1.6 -3.5,1.7 -0.3,0.4 -0.7,1.3 -0.9,2.6 -0.8,4.3 -0.4,3.1 -0.6,4.7h0c0,0 0,-0.2 0,-0.3 -0.2,-0.8 -0.6,-1.2 -1.1,-1.2s-0.2,0 -0.3,0c-0.7,0.4 -0.9,2.1 -0.4,3.7 0.6,1.8 1,3.4 1.9,3.4s0.5,-0.2 0.5,-0.6c0.3,0.9 0.6,1.7 1,2.6 1.3,2.6 3.4,4.5 5.7,4.5 3.3,0 5.6,-1.6 7,-4.1 0.5,-0.9 0.8,-1.9 1.1,-3 0,0.4 0.1,0.7 0.5,0.7 0.9,0 1.3,-1.6 1.9,-3.4 0.6,-1.7 0.3,-3.5 -0.5,-3.8h0Z"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="@drawable/_contact3p__16_res_0x7f08002a"
+        android:pathData="M143.6,66.8l-2.3,-2.7 2.8,-1.4s-5.7,-8.2 -6.4,-9.1c-0.3,8.2 -0.9,17.2 -2.3,23.5 0,0.3 -0.9,4.2 -1.6,6 1.1,0 2.2,-0.2 3.2,-0.4 0.8,-1.1 4.9,-10.6 6.8,-15.6h0l-0.2,-0.3ZM128.4,83c-0.9,0 -1.9,-0.2 -2.8,-0.4 -2.8,-5.7 -6.1,-12.6 -7,-16.2l2.2,-2.6 0.4,-0.4h-0.5l-2.5,-0.5 7.2,-9.1s-0.3,14.3 1.6,23.3c0,0.4 0.9,3.5 1.5,5.9h0Z"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="@drawable/_contact3p__17_res_0x7f08002b"
+        android:pathData="M123.2,41.1h0c0,0.2 0.2,0.3 0.3,0.3 0.3,-1.6 0,-0.4 0.6,-4.7 0.2,-1.3 0.6,-2.2 0.9,-2.6 0.5,-0.8 12.8,1.5 12.8,1.5 0.3,1 1,3.8 1.4,5.8h0c0.3,-1 0.6,-1.5 1.2,-1.5h0.1c0.2,-1.8 0.1,-3.6 0,-5.6 0,-5.6 -6.2,-7.8 -10.7,-7.5 -7.9,0.5 -9.3,5.9 -8.1,13.1 0.7,0 1,0.5 1.2,1.1h0.3Z"
+        android:fillType="evenOdd"/>
+</vector>

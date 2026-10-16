@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:id="@+id/locked_root"
+    android:background="@color/widget_background_light"
+    android:padding="12dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/locked_icon"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@drawable/ic_lock"
+        android:tint="@color/widget_text"
+        android:contentDescription="@null"/>
+    <TextView
+        android:textSize="9sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:id="@+id/locked_pro_label"
+        android:background="@drawable/badge_pro_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="PRO"
+        android:paddingHorizontal="6dp"
+        android:paddingVertical="2dp"/>
+    <TextView
+        android:textSize="10sp"
+        android:textColor="@color/widget_text"
+        android:id="@+id/locked_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="Tap to unlock"
+        android:alpha="0.7"/>
+</LinearLayout>

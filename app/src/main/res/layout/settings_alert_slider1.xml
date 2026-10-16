@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_root"
+    android:padding="0dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/widget_container"
+        android:background="@drawable/widget_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:contentDescription="@null"
+        android:backgroundTint="@color/widget_background_light"/>
+    <FrameLayout
+        android:id="@+id/widget_content"
+        android:padding="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/widget_sound_three_state_description">
+        <FrameLayout
+            android:layout_gravity="start|center_vertical"
+            android:id="@+id/silent_button"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:contentDescription="Silent mode toggle">
+            <FrameLayout
+                android:layout_gravity="center"
+                android:id="@+id/silent_icon_container"
+                android:background="@drawable/ic_dot"
+                android:padding="0dp"
+                android:layout_width="44dp"
+                android:layout_height="44dp">
+                <ImageView
+                    android:layout_gravity="center"
+                    android:id="@+id/silent_icon"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="Silent mode indicator"/>
+            </FrameLayout>
+        </FrameLayout>
+        <FrameLayout
+            android:layout_gravity="center"
+            android:id="@+id/vibrate_button"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:contentDescription="Vibrate mode toggle">
+            <FrameLayout
+                android:layout_gravity="center"
+                android:id="@+id/vibrate_icon_container"
+                android:background="@drawable/ic_dot"
+                android:padding="0dp"
+                android:layout_width="44dp"
+                android:layout_height="44dp">
+                <ImageView
+                    android:layout_gravity="center"
+                    android:id="@+id/vibrate_icon"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="Vibrate mode indicator"/>
+            </FrameLayout>
+        </FrameLayout>
+        <FrameLayout
+            android:layout_gravity="end|center_vertical"
+            android:id="@+id/general_button"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:contentDescription="General mode toggle">
+            <FrameLayout
+                android:layout_gravity="center"
+                android:id="@+id/general_icon_container"
+                android:background="@drawable/ic_dot"
+                android:padding="0dp"
+                android:layout_width="44dp"
+                android:layout_height="44dp">
+                <ImageView
+                    android:layout_gravity="center"
+                    android:id="@+id/general_icon"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="General mode indicator"/>
+            </FrameLayout>
+        </FrameLayout>
+    </FrameLayout>
+</FrameLayout>

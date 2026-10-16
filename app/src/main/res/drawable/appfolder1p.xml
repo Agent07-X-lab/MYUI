@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="152dp"
+    android:width="152.1dp"
+    android:viewportWidth="152.1"
+    android:viewportHeight="152">
+    <path
+        android:fillColor="@color/widget_background"
+        android:pathData="M152.1,20v112c0,11 -9,20 -20,20H21.9c-10.7,0 -19.8,-7.8 -21.6,-18.3 -0.2,-1.2 -0.3,-2.3 -0.3,-3.5V21.8c0,-1.2 0,-2.3 0.3,-3.5C2.1,7.8 11.2,0 21.9,0h110.2c11,0 20,9 20,20Z"/>
+    <path
+        android:fillColor="@color/widget_background_light"
+        android:pathData="M23.3,14.1L42,14.1A9,9 0,0 1,51 23.1L51,41.6A9,9 0,0 1,42 50.6L23.3,50.6A9,9 0,0 1,14.3 41.6L14.3,23.1A9,9 0,0 1,23.3 14.1z"/>
+    <path
+        android:fillColor="@color/widget_background_light"
+        android:pathData="M66.5,14.1L85.2,14.1A9,9 0,0 1,94.2 23.1L94.2,41.6A9,9 0,0 1,85.2 50.6L66.5,50.6A9,9 0,0 1,57.5 41.6L57.5,23.1A9,9 0,0 1,66.5 14.1z"/>
+    <path
+        android:fillColor="@color/widget_background_light"
+        android:pathData="M110.2,14.1L128.9,14.1A9,9 0,0 1,137.9 23.1L137.9,41.6A9,9 0,0 1,128.9 50.6L110.2,50.6A9,9 0,0 1,101.2 41.6L101.2,23.1A9,9 0,0 1,110.2 14.1z"/>
+    <path
+        android:fillColor="@color/widget_background_light"
+        android:pathData="M23.3,57.9L42,57.9A9,9 0,0 1,51 66.9L51,85.4A9,9 0,0 1,42 94.4L23.3,94.4A9,9 0,0 1,14.3 85.4L14.3,66.9A9,9 0,0 1,23.3 57.9z"/>
+    <path
+        android:fillColor="@color/widget_background_light"
+        android:pathData="M66.5,57.9L85.2,57.9A9,9 0,0 1,94.2 66.9L94.2,85.4A9,9 0,0 1,85.2 94.4L66.5,94.4A9,9 0,0 1,57.5 85.4L57.5,66.9A9,9 0,0 1,66.5 57.9z"/>
+    <path
+        android:fillColor="@color/widget_background_light"
+        android:pathData="M110.2,57.9L128.9,57.9A9,9 0,0 1,137.9 66.9L137.9,85.4A9,9 0,0 1,128.9 94.4L110.2,94.4A9,9 0,0 1,101.2 85.4L101.2,66.9A9,9 0,0 1,110.2 57.9z"/>
+    <path
+        android:fillColor="@color/widget_background_light"
+        android:pathData="M23.3,101.2L42,101.2A9,9 0,0 1,51 110.2L51,128.7A9,9 0,0 1,42 137.7L23.3,137.7A9,9 0,0 1,14.3 128.7L14.3,110.2A9,9 0,0 1,23.3 101.2z"/>
+    <path
+        android:fillColor="@color/widget_background_light"
+        android:pathData="M66.5,101.2L85.2,101.2A9,9 0,0 1,94.2 110.2L94.2,128.7A9,9 0,0 1,85.2 137.7L66.5,137.7A9,9 0,0 1,57.5 128.7L57.5,110.2A9,9 0,0 1,66.5 101.2z"/>
+    <path
+        android:fillColor="@color/widget_background_light"
+        android:pathData="M110.2,101.2L128.9,101.2A9,9 0,0 1,137.9 110.2L137.9,128.7A9,9 0,0 1,128.9 137.7L110.2,137.7A9,9 0,0 1,101.2 128.7L101.2,110.2A9,9 0,0 1,110.2 101.2z"/>
+</vector>

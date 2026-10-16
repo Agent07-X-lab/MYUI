@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_root"
+    android:padding="0dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/widget_container"
+        android:background="@drawable/widget_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"/>
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:id="@+id/widget_content"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/widget_text"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:id="@+id/tv_setup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tap to get a joke!"
+            android:maxLines="4"/>
+        <TextView
+            android:textSize="20sp"
+            android:textStyle="normal"
+            android:textColor="@color/widget_accent"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:id="@+id/tv_delivery"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:maxLines="4"/>
+    </LinearLayout>
+</FrameLayout>

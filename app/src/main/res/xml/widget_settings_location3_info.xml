@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:label="Location 3"
+    android:minWidth="35dp"
+    android:minHeight="35dp"
+    android:updatePeriodMillis="30000"
+    android:initialLayout="@drawable/settings_location3"
+    android:configure="com.jndapp.minimal.widgets.billing.PremiumGateConfigActivity"
+    android:previewImage="@drawable/settings3_location"
+    android:resizeMode="vertical|horizontal"
+    android:widgetCategory="home_screen"
+    android:targetCellWidth="1"
+    android:targetCellHeight="1"/>

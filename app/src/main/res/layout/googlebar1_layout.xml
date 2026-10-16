@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:padding="0dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/widget_container"
+        android:background="@drawable/widget_background"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:backgroundTint="@color/widget_background">
+        <ImageView
+            android:id="@+id/google_icon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_google_color"
+            android:scaleType="fitCenter"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/google_widget_description"
+            android:layout_marginStart="25dp"
+            android:layout_alignParentStart="true"/>
+        <ImageView
+            android:id="@+id/assistant_icon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_assistant"
+            android:scaleType="fitCenter"
+            android:layout_centerVertical="true"
+            android:contentDescription="Google Assistant"
+            android:layout_marginEnd="25dp"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+</RelativeLayout>

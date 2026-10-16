@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_root"
+    android:padding="0dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/widget_container"
+        android:background="@drawable/widget_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:backgroundTint="@color/widget_background_light"/>
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/iv_snake"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_game_snake"
+        android:scaleType="fitCenter"
+        android:contentDescription="Snake Game"/>
+    <ImageView
+        android:layout_gravity="end|bottom"
+        android:id="@+id/iv_high_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="High Score"/>
+</FrameLayout>

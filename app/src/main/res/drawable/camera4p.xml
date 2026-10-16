@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="69.1dp"
+    android:width="152.6dp"
+    android:viewportWidth="152.6"
+    android:viewportHeight="69.1">
+    <path
+        android:fillColor="#f1f0f6"
+        android:pathData="M153,18.2v32.7c0,1.5 -0.2,3 -0.5,4.4 -1.5,6.2 -6.2,11.2 -12.3,13 -1.7,0.5 -3.5,0.8 -5.4,0.8H18.4c-9,0 -16.4,-6.5 -17.9,-15 -0.2,-1 -0.3,-2.1 -0.3,-3.2V18.2C0.2,8.2 8.3,0 18.4,0h116.4C143.3,0 150.5,5.9 152.5,13.8c0.4,1.4 0.5,2.9 0.5,4.4Z"/>
+    <path
+        android:fillColor="#50e6ff"
+        android:pathData="M152.5,13.8v41.5c-1.5,6.2 -6.2,11.2 -12.3,13 -1.7,0.5 -3.5,0.8 -5.4,0.8H18.4c-9,0 -16.4,-6.5 -17.9,-15 -0.2,-1 -0.3,-2.1 -0.3,-3.2V18.2C0.2,8.2 8.3,0 18.4,0h116.4C143.3,0 150.5,5.9 152.5,13.8Z"/>
+    <path
+        android:fillColor="@drawable/_camera4p__0_res_0x7f08000d"
+        android:pathData="M56,69.2l25.5,-24.2 8.8,-8.3c5.2,-4.9 13.4,-4.8 18.4,0.2l31.4,31.4c-1.7,0.5 -3.5,0.8 -5.4,0.8H56Z"/>
+    <path
+        android:fillColor="#fff8de"
+        android:pathData="M122.3,21.3a11,10.9 0,1 0,22 0a11,10.9 0,1 0,-22 0z"/>
+    <path
+        android:fillColor="@drawable/_camera4p__1_res_0x7f08000e"
+        android:pathData="M0.5,54.2L37.5,19.2c5.2,-4.9 13.4,-4.8 18.4,0.2l25.7,25.6 24.2,24.2H18.4c-9,0 -16.4,-6.5 -17.9,-15Z"/>
+</vector>

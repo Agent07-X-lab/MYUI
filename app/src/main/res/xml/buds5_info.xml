@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:description="@string/bluetooth_buds5_widget_description"
+    android:minWidth="146dp"
+    android:minHeight="146dp"
+    android:updatePeriodMillis="1800000"
+    android:initialLayout="@layout/buds5_layout"
+    android:configure="com.jndapp.minimal.widgets.billing.PremiumGateConfigActivity"
+    android:previewImage="@drawable/ic_buds3"
+    android:resizeMode="vertical|horizontal"
+    android:widgetCategory="keyguard|home_screen"
+    android:targetCellWidth="2"
+    android:targetCellHeight="2"/>

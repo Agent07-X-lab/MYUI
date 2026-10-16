@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="app_background">#101010</color>
+    <color name="app_settings_card">#18191f</color>
+    <color name="black_transparent">#c3000000</color>
+    <color name="cat_background">#18191f</color>
+    <color name="search_card_bg">#28292f</color>
+    <color name="widget_accent">#ffbf00</color>
+    <color name="widget_accent_blue">#3e9aff</color>
+    <color name="widget_accent_green">#4cf455</color>
+    <color name="widget_background">#f7000000</color>
+    <color name="widget_background_light">#232323</color>
+    <color name="widget_category_bg">#2b2b38</color>
+    <color name="widget_folder">#1a1b20</color>
+    <color name="widget_text">#f1f0f7</color>
+    <color name="widget_text_secondary">#909097</color>
+</resources>

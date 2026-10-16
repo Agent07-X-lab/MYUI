@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:description="@string/music_widget_11_description"
+    android:minWidth="146dp"
+    android:minHeight="146dp"
+    android:updatePeriodMillis="0"
+    android:initialLayout="@layout/widget_music_11"
+    android:configure="com.jndapp.minimal.widgets.billing.PremiumGateConfigActivity"
+    android:previewImage="@drawable/music11p"
+    android:resizeMode="vertical|horizontal"
+    android:widgetCategory="keyguard|home_screen"
+    android:widgetFeatures="reconfigurable"
+    android:targetCellWidth="2"
+    android:targetCellHeight="2"/>

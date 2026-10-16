@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:description="@string/dots_storage_description"
+    android:minWidth="146dp"
+    android:minHeight="146dp"
+    android:updatePeriodMillis="0"
+    android:initialLayout="@layout/dots_storage_layout"
+    android:previewImage="@drawable/ic_dots_storage"
+    android:resizeMode="vertical|horizontal"
+    android:widgetCategory="keyguard|home_screen"
+    android:targetCellWidth="2"
+    android:targetCellHeight="2"/>

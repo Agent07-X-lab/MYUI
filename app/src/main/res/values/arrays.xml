@@ -1,0 +1,2207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="category_icons">
+        <item>@drawable/ic_wallpaper</item>
+        <item>@drawable/ic_wallpaper</item>
+        <item>@drawable/ic_wallpaper</item>
+        <item>@drawable/ic_wallpaper</item>
+        <item>@drawable/ic_wallpaper</item>
+        <item>@drawable/ic_wallpaper</item>
+        <item>@drawable/ic_wallpaper</item>
+        <item>@drawable/ic_wallpaper</item>
+        <item>@drawable/ic_wallpaper</item>
+        <item>@drawable/ic_wallpaper</item>
+        <item>@drawable/ic_wallpaper</item>
+        <item>@drawable/ic_wallpaper</item>
+        <item>@drawable/ic_wallpaper</item>
+        <item>@drawable/ic_wallpaper</item>
+        <item>@drawable/ic_wallpaper</item>
+        <item>@drawable/ic_wallpaper</item>
+        <item>@drawable/ic_wallpaper</item>
+        <item>@drawable/ic_wallpaper</item>
+        <item>@drawable/ic_wallpaper</item>
+        <item>@drawable/ic_wallpaper</item>
+        <item>@drawable/ic_wallpaper</item>
+        <item>@drawable/ic_wallpaper</item>
+        <item>@drawable/ic_wallpaper</item>
+        <item>@drawable/ic_wallpaper</item>
+        <item>@drawable/ic_wallpaper</item>
+        <item>@drawable/ic_wallpaper</item>
+    </array>
+    <array name="category_images">
+        <item>@drawable/cat_ai</item>
+        <item>@drawable/cat_applauncher</item>
+        <item>@drawable/cat_battery</item>
+        <item>@drawable/cat_bluetooth</item>
+        <item>@drawable/cat_calc</item>
+        <item>@drawable/cat_calendar</item>
+        <item>@drawable/cat_camera</item>
+        <item>@drawable/cat_analog</item>
+        <item>@drawable/cat_digital</item>
+        <item>@drawable/cat_hybrid</item>
+        <item>@drawable/cat_compass</item>
+        <item>@drawable/cat_contacts</item>
+        <item>@drawable/cat_devices</item>
+        <item>@drawable/cat_apps</item>
+        <item>@drawable/cat_games</item>
+        <item>@drawable/cat_google</item>
+        <item>@drawable/cat_music</item>
+        <item>@drawable/cat_notes</item>
+        <item>@drawable/cat_health</item>
+        <item>@drawable/cat_personalise</item>
+        <item>@drawable/cat_photos</item>
+        <item>@drawable/cat_productivity</item>
+        <item>@drawable/cat_quick_settings</item>
+        <item>@drawable/cat_quote</item>
+        <item>@drawable/cat_quote</item>
+        <item>@drawable/cat_weather</item>
+    </array>
+    <array name="category_names">
+        <item>Ai</item>
+        <item>App Launcher</item>
+        <item>Battery</item>
+        <item>Bluetooth</item>
+        <item>Calculator</item>
+        <item>Calendar</item>
+        <item>Camera</item>
+        <item>Clock Analog</item>
+        <item>Clock Digital</item>
+        <item>Clock Hybrid</item>
+        <item>Compass</item>
+        <item>Contacts</item>
+        <item>Device</item>
+        <item>Folder Apps</item>
+        <item>Games</item>
+        <item>Google</item>
+        <item>Music</item>
+        <item>Notes/ToDo</item>
+        <item>Health</item>
+        <item>Personalise</item>
+        <item>Photo</item>
+        <item>Productivity</item>
+        <item>Quick Settings</item>
+        <item>Quotes</item>
+        <item>Social</item>
+        <item>Weather</item>
+    </array>
+    <array name="widget_category_names">
+        <item>New</item>
+        <item>Ai</item>
+        <item>Ai</item>
+        <item>Ai</item>
+        <item>Ai</item>
+        <item>Ai</item>
+        <item>Ai</item>
+        <item>Ai</item>
+        <item>Ai</item>
+        <item>Ai</item>
+        <item>Ai</item>
+        <item>Ai</item>
+        <item>Ai</item>
+        <item>Ai</item>
+        <item>App Launcher</item>
+        <item>App Launcher</item>
+        <item>App Launcher</item>
+        <item>App Launcher</item>
+        <item>App Launcher</item>
+        <item>App Launcher</item>
+        <item>App Launcher</item>
+        <item>App Launcher</item>
+        <item>App Launcher</item>
+        <item>App Launcher</item>
+        <item>App Launcher</item>
+        <item>App Launcher</item>
+        <item>App Launcher</item>
+        <item>Battery</item>
+        <item>Battery</item>
+        <item>Battery</item>
+        <item>Battery</item>
+        <item>Battery</item>
+        <item>Battery</item>
+        <item>Battery</item>
+        <item>Battery</item>
+        <item>Battery</item>
+        <item>Battery</item>
+        <item>Battery</item>
+        <item>Battery</item>
+        <item>Battery</item>
+        <item>Battery</item>
+        <item>Battery</item>
+        <item>Battery</item>
+        <item>Battery</item>
+        <item>Battery</item>
+        <item>Battery</item>
+        <item>Bluetooth</item>
+        <item>Bluetooth</item>
+        <item>Bluetooth</item>
+        <item>Bluetooth</item>
+        <item>Bluetooth</item>
+        <item>Bluetooth</item>
+        <item>Bluetooth</item>
+        <item>Bluetooth</item>
+        <item>Calculator</item>
+        <item>Calculator</item>
+        <item>Calculator</item>
+        <item>Calculator</item>
+        <item>Calendar</item>
+        <item>Calendar</item>
+        <item>Calendar</item>
+        <item>Calendar</item>
+        <item>Calendar</item>
+        <item>Calendar</item>
+        <item>Calendar</item>
+        <item>Calendar</item>
+        <item>Calendar</item>
+        <item>Calendar</item>
+        <item>Calendar</item>
+        <item>Calendar</item>
+        <item>Calendar</item>
+        <item>Calendar</item>
+        <item>Calendar</item>
+        <item>Camera</item>
+        <item>Camera</item>
+        <item>Camera</item>
+        <item>Camera</item>
+        <item>Camera</item>
+        <item>Clock Analog</item>
+        <item>Clock Analog</item>
+        <item>Clock Analog</item>
+        <item>Clock Analog</item>
+        <item>Clock Analog</item>
+        <item>Clock Analog</item>
+        <item>Clock Analog</item>
+        <item>Clock Analog</item>
+        <item>Clock Analog</item>
+        <item>Clock Analog</item>
+        <item>Clock Analog</item>
+        <item>Clock Analog</item>
+        <item>Clock Analog</item>
+        <item>Clock Analog</item>
+        <item>Clock Analog</item>
+        <item>Clock Analog</item>
+        <item>Clock Analog</item>
+        <item>Clock Analog</item>
+        <item>Clock Digital</item>
+        <item>Clock Digital</item>
+        <item>Clock Digital</item>
+        <item>Clock Digital</item>
+        <item>Clock Digital</item>
+        <item>Clock Digital</item>
+        <item>Clock Digital</item>
+        <item>Clock Digital</item>
+        <item>Clock Digital</item>
+        <item>Clock Digital</item>
+        <item>Clock Digital</item>
+        <item>Clock Digital</item>
+        <item>Clock Digital</item>
+        <item>Clock Digital</item>
+        <item>Clock Digital</item>
+        <item>Clock Digital</item>
+        <item>Clock Digital</item>
+        <item>Clock Digital</item>
+        <item>Clock Digital</item>
+        <item>Clock Digital</item>
+        <item>Clock Digital</item>
+        <item>Clock Digital</item>
+        <item>Clock Digital</item>
+        <item>Clock Digital</item>
+        <item>Clock Digital</item>
+        <item>Clock Digital</item>
+        <item>Clock Digital</item>
+        <item>Clock Digital</item>
+        <item>Clock Digital</item>
+        <item>Clock Digital</item>
+        <item>Clock Digital</item>
+        <item>Clock Digital</item>
+        <item>Clock Digital</item>
+        <item>Clock Digital</item>
+        <item>Clock Digital</item>
+        <item>Clock Hybrid</item>
+        <item>Clock Hybrid</item>
+        <item>Clock Hybrid</item>
+        <item>Clock Hybrid</item>
+        <item>Clock Hybrid</item>
+        <item>Clock Hybrid</item>
+        <item>Clock Hybrid</item>
+        <item>Clock Hybrid</item>
+        <item>Clock Hybrid</item>
+        <item>Clock Hybrid</item>
+        <item>Clock Hybrid</item>
+        <item>Compass</item>
+        <item>Compass</item>
+        <item>Compass</item>
+        <item>Compass</item>
+        <item>Contacts</item>
+        <item>Contacts</item>
+        <item>Contacts</item>
+        <item>Contacts</item>
+        <item>Contacts</item>
+        <item>Contacts</item>
+        <item>Contacts</item>
+        <item>Contacts</item>
+        <item>Contacts</item>
+        <item>Contacts</item>
+        <item>Contacts</item>
+        <item>Contacts</item>
+        <item>Contacts</item>
+        <item>Contacts</item>
+        <item>Device</item>
+        <item>Device</item>
+        <item>Device</item>
+        <item>Device</item>
+        <item>Device</item>
+        <item>Device</item>
+        <item>Device</item>
+        <item>Device</item>
+        <item>Device</item>
+        <item>Device</item>
+        <item>Device</item>
+        <item>Device</item>
+        <item>Device</item>
+        <item>Device</item>
+        <item>Device</item>
+        <item>Device</item>
+        <item>Device</item>
+        <item>Device</item>
+        <item>Device</item>
+        <item>Device</item>
+        <item>Device</item>
+        <item>Device</item>
+        <item>Folder Apps</item>
+        <item>Folder Apps</item>
+        <item>Folder Apps</item>
+        <item>Folder Apps</item>
+        <item>Folder Apps</item>
+        <item>Folder Apps</item>
+        <item>Games</item>
+        <item>Games</item>
+        <item>Games</item>
+        <item>Games</item>
+        <item>Games</item>
+        <item>Games</item>
+        <item>Google</item>
+        <item>Google</item>
+        <item>Google</item>
+        <item>Google</item>
+        <item>Google</item>
+        <item>Google</item>
+        <item>Google</item>
+        <item>Google</item>
+        <item>Google</item>
+        <item>Google</item>
+        <item>Google</item>
+        <item>Google</item>
+        <item>Google</item>
+        <item>Google</item>
+        <item>Google</item>
+        <item>Google</item>
+        <item>Google</item>
+        <item>Google</item>
+        <item>Google</item>
+        <item>Google</item>
+        <item>Google</item>
+        <item>Google</item>
+        <item>Google</item>
+        <item>Google</item>
+        <item>Google</item>
+        <item>Google</item>
+        <item>Google</item>
+        <item>Google</item>
+        <item>Google</item>
+        <item>Google</item>
+        <item>Google</item>
+        <item>Google</item>
+        <item>Google</item>
+        <item>Google</item>
+        <item>Google</item>
+        <item>Google</item>
+        <item>Google</item>
+        <item>Google</item>
+        <item>Google</item>
+        <item>Google</item>
+        <item>Google</item>
+        <item>Google</item>
+        <item>Google</item>
+        <item>Google</item>
+        <item>Google</item>
+        <item>Google</item>
+        <item>Health</item>
+        <item>Health</item>
+        <item>Health</item>
+        <item>Health</item>
+        <item>Health</item>
+        <item>Health</item>
+        <item>Health</item>
+        <item>Health</item>
+        <item>Health</item>
+        <item>Music</item>
+        <item>Music</item>
+        <item>Music</item>
+        <item>Music</item>
+        <item>Music</item>
+        <item>Music</item>
+        <item>Music</item>
+        <item>Music</item>
+        <item>Music</item>
+        <item>Music</item>
+        <item>Music</item>
+        <item>Music</item>
+        <item>Notes/ToDo</item>
+        <item>Notes/ToDo</item>
+        <item>Notes/ToDo</item>
+        <item>Notes/ToDo</item>
+        <item>Notes/ToDo</item>
+        <item>Notes/ToDo</item>
+        <item>Notes/ToDo</item>
+        <item>Personalise</item>
+        <item>Personalise</item>
+        <item>Personalise</item>
+        <item>Personalise</item>
+        <item>Personalise</item>
+        <item>Personalise</item>
+        <item>Personalise</item>
+        <item>Personalise</item>
+        <item>Personalise</item>
+        <item>Personalise</item>
+        <item>Personalise</item>
+        <item>Personalise</item>
+        <item>Photo</item>
+        <item>Photo</item>
+        <item>Photo</item>
+        <item>Photo</item>
+        <item>Photo</item>
+        <item>Photo</item>
+        <item>Photo</item>
+        <item>Photo</item>
+        <item>Photo</item>
+        <item>Photo</item>
+        <item>Photo</item>
+        <item>Photo</item>
+        <item>Photo</item>
+        <item>Photo</item>
+        <item>Photo</item>
+        <item>Photo</item>
+        <item>Photo</item>
+        <item>Photo</item>
+        <item>Photo</item>
+        <item>Photo</item>
+        <item>Photo</item>
+        <item>Photo</item>
+        <item>Photo</item>
+        <item>Photo</item>
+        <item>Photo</item>
+        <item>Photo</item>
+        <item>Photo</item>
+        <item>Photo</item>
+        <item>Photo</item>
+        <item>Photo</item>
+        <item>Photo</item>
+        <item>Photo</item>
+        <item>Photo</item>
+        <item>Photo</item>
+        <item>Photo</item>
+        <item>Photo</item>
+        <item>Photo</item>
+        <item>Photo</item>
+        <item>Photo</item>
+        <item>Photo</item>
+        <item>Photo</item>
+        <item>Photo</item>
+        <item>Photo</item>
+        <item>Productivity</item>
+        <item>Productivity</item>
+        <item>Productivity</item>
+        <item>Productivity</item>
+        <item>Productivity</item>
+        <item>Productivity</item>
+        <item>Productivity</item>
+        <item>Quick Settings</item>
+        <item>Quick Settings</item>
+        <item>Quick Settings</item>
+        <item>Quick Settings</item>
+        <item>Quick Settings</item>
+        <item>Quick Settings</item>
+        <item>Quick Settings</item>
+        <item>Quick Settings</item>
+        <item>Quick Settings</item>
+        <item>Quick Settings</item>
+        <item>Quick Settings</item>
+        <item>Quick Settings</item>
+        <item>Quick Settings</item>
+        <item>Quick Settings</item>
+        <item>Quick Settings</item>
+        <item>Quick Settings</item>
+        <item>Quick Settings</item>
+        <item>Quick Settings</item>
+        <item>Quick Settings</item>
+        <item>Quick Settings</item>
+        <item>Quick Settings</item>
+        <item>Quick Settings</item>
+        <item>Quick Settings</item>
+        <item>Quick Settings</item>
+        <item>Quick Settings</item>
+        <item>Quick Settings</item>
+        <item>Quick Settings</item>
+        <item>Quick Settings</item>
+        <item>Quick Settings</item>
+        <item>Quick Settings</item>
+        <item>Quick Settings</item>
+        <item>Quick Settings</item>
+        <item>Quick Settings</item>
+        <item>Quick Settings</item>
+        <item>Quick Settings</item>
+        <item>Quick Settings</item>
+        <item>Quick Settings</item>
+        <item>Quick Settings</item>
+        <item>Quick Settings</item>
+        <item>Quick Settings</item>
+        <item>Quick Settings</item>
+        <item>Quick Settings</item>
+        <item>Quick Settings</item>
+        <item>Quick Settings</item>
+        <item>Quick Settings</item>
+        <item>Quick Settings</item>
+        <item>Quick Settings</item>
+        <item>Quick Settings</item>
+        <item>Quick Settings</item>
+        <item>Quick Settings</item>
+        <item>Quick Settings</item>
+        <item>Quick Settings</item>
+        <item>Quick Settings</item>
+        <item>Quick Settings</item>
+        <item>Quick Settings</item>
+        <item>Quotes</item>
+        <item>Quotes</item>
+        <item>Quotes</item>
+        <item>Quotes</item>
+        <item>Quotes</item>
+        <item>Quotes</item>
+        <item>Quotes</item>
+        <item>Social</item>
+        <item>Social</item>
+        <item>Social</item>
+        <item>Social</item>
+        <item>Social</item>
+        <item>Social</item>
+        <item>Weather</item>
+        <item>Weather</item>
+        <item>Weather</item>
+        <item>Weather</item>
+        <item>Weather</item>
+        <item>Weather</item>
+        <item>Weather</item>
+        <item>Weather</item>
+        <item>Weather</item>
+        <item>Weather</item>
+        <item>Weather</item>
+        <item>Weather</item>
+        <item>Weather</item>
+        <item>Weather</item>
+        <item>Weather</item>
+        <item>Weather</item>
+        <item>Weather</item>
+        <item>Weather</item>
+        <item>Weather</item>
+        <item>Weather</item>
+        <item>Weather</item>
+        <item>Weather</item>
+        <item>Weather</item>
+        <item>Weather</item>
+    </array>
+    <array name="widget_ids">
+        <item>Update</item>
+        <item>ai.AiBar</item>
+        <item>ai.AiFolder1</item>
+        <item>ai.AiFolder5</item>
+        <item>ai.ChatGPT1</item>
+        <item>ai.ChatGPT2</item>
+        <item>ai.Claude</item>
+        <item>ai.AiBar2</item>
+        <item>ai.Deepseek</item>
+        <item>ai.Grok</item>
+        <item>ai.Perplexity</item>
+        <item>ai.AiFolder2</item>
+        <item>ai.AiFolder3</item>
+        <item>ai.AiFolder4</item>
+        <item>applauncher.launcher1</item>
+        <item>applauncher.launcher2</item>
+        <item>applauncher.launcher13</item>
+        <item>applauncher.launcher12</item>
+        <item>applauncher.launcher11</item>
+        <item>applauncher.launcher10</item>
+        <item>applauncher.launcher9</item>
+        <item>applauncher.launcher8</item>
+        <item>applauncher.launcher7</item>
+        <item>applauncher.launcher6</item>
+        <item>applauncher.launcher5</item>
+        <item>applauncher.launcher4</item>
+        <item>applauncher.launcher3</item>
+        <item>battery.Battery1</item>
+        <item>battery.Battery2</item>
+        <item>battery.Battery3</item>
+        <item>battery.Battery4</item>
+        <item>battery.Battery5</item>
+        <item>battery.Battery6</item>
+        <item>battery.Battery7</item>
+        <item>battery.Battery8</item>
+        <item>battery.Battery9</item>
+        <item>battery.Battery10</item>
+        <item>battery.Battery11</item>
+        <item>battery.Battery12</item>
+        <item>battery.Battery13</item>
+        <item>battery.Battery14</item>
+        <item>battery.Battery15</item>
+        <item>battery.Battery16</item>
+        <item>battery.Battery17</item>
+        <item>battery.Battery18</item>
+        <item>battery.Battery19</item>
+        <item>bluetooth.Buds8</item>
+        <item>bluetooth.Buds1</item>
+        <item>bluetooth.Buds2</item>
+        <item>bluetooth.Buds3</item>
+        <item>bluetooth.Buds4</item>
+        <item>bluetooth.Buds5</item>
+        <item>bluetooth.Buds6</item>
+        <item>bluetooth.Buds7</item>
+        <item>calculator.Calc4</item>
+        <item>calculator.Calc3</item>
+        <item>calculator.Calc</item>
+        <item>calculator.Calc2</item>
+        <item>calendar.Calendar1</item>
+        <item>calendar.Calendar2</item>
+        <item>calendar.Calendar3</item>
+        <item>calendar.Calendar4</item>
+        <item>calendar.Calendar5</item>
+        <item>calendar.Calendar6</item>
+        <item>calendar.Calendar7</item>
+        <item>calendar.Calendar8</item>
+        <item>calendar.Calendar9</item>
+        <item>calendar.Calendar10</item>
+        <item>calendar.Calendar11</item>
+        <item>calendar.Calendar12</item>
+        <item>calendar.Calendar13</item>
+        <item>calendar.Calendar14</item>
+        <item>calendar.Calendar15</item>
+        <item>camera.Camera1</item>
+        <item>camera.Camera2</item>
+        <item>camera.Camera3</item>
+        <item>camera.Camera4</item>
+        <item>camera.Camera5</item>
+        <item>analog.analog1</item>
+        <item>analog.analog2</item>
+        <item>analog.analog3</item>
+        <item>analog.analog4</item>
+        <item>analog.analog5</item>
+        <item>analog.analog6</item>
+        <item>analog.analog7</item>
+        <item>analog.analog8</item>
+        <item>analog.analog9</item>
+        <item>analog.analog10</item>
+        <item>analog.analog11</item>
+        <item>analog.analog12</item>
+        <item>analog.analog13</item>
+        <item>analog.analog14</item>
+        <item>analog.analog15</item>
+        <item>analog.analog16</item>
+        <item>analog.analog17</item>
+        <item>analog.analog18</item>
+        <item>digital.digital35</item>
+        <item>digital.digital34</item>
+        <item>digital.digital33</item>
+        <item>digital.digital20</item>
+        <item>digital.digital31</item>
+        <item>digital.svg.digitalsvg1</item>
+        <item>digital.digital30</item>
+        <item>digital.digital29</item>
+        <item>digital.digital28</item>
+        <item>digital.digital27</item>
+        <item>digital.digital26</item>
+        <item>digital.digital25</item>
+        <item>digital.digital24</item>
+        <item>digital.digital23</item>
+        <item>digital.digital22</item>
+        <item>digital.digital21</item>
+        <item>digital.digital19</item>
+        <item>digital.digital18</item>
+        <item>digital.digital17</item>
+        <item>digital.digital16</item>
+        <item>digital.digital15</item>
+        <item>digital.digital14</item>
+        <item>digital.digital13</item>
+        <item>digital.digital12</item>
+        <item>digital.digital11</item>
+        <item>digital.digital10</item>
+        <item>digital.digital9</item>
+        <item>digital.digital8</item>
+        <item>digital.digital7</item>
+        <item>digital.digital6</item>
+        <item>digital.digital5</item>
+        <item>digital.digital4</item>
+        <item>digital.digital3</item>
+        <item>digital.digital2</item>
+        <item>digital.digital1</item>
+        <item>hybrid.Clock1</item>
+        <item>hybrid.Clock2</item>
+        <item>hybrid.Clock3</item>
+        <item>hybrid.Clock4</item>
+        <item>hybrid.Clock5</item>
+        <item>hybrid.Clock6</item>
+        <item>hybrid.Clock7</item>
+        <item>hybrid.Clock8</item>
+        <item>hybrid.Clock9</item>
+        <item>hybrid.Clock10</item>
+        <item>hybrid.Clock11</item>
+        <item>compass.Compass4</item>
+        <item>compass.Compass1</item>
+        <item>compass.Compass3</item>
+        <item>compass.Compass2</item>
+        <item>contacts.Contact1</item>
+        <item>contacts.Contact2</item>
+        <item>contacts.Contact3</item>
+        <item>contacts.Contact5</item>
+        <item>contacts.Contact6</item>
+        <item>contacts.Contact4</item>
+        <item>contacts.Contact7</item>
+        <item>contacts.Contact8</item>
+        <item>contacts.Contact9</item>
+        <item>contacts.Contact10</item>
+        <item>contacts.Contact11</item>
+        <item>contacts.Contact12</item>
+        <item>contacts.ContactTelegram</item>
+        <item>contacts.ContactWhatsapp</item>
+        <item>device.DeviceUptime</item>
+        <item>device.DeviceBatteryTemp</item>
+        <item>device.DotsVolume</item>
+        <item>device.DotsStorage</item>
+        <item>device.DotsTemp</item>
+        <item>device.DotsRam</item>
+        <item>device.DeviceBatteryVoltage</item>
+        <item>device.DeviceChargeStatus</item>
+        <item>device.DeviceCPU</item>
+        <item>device.DeviceDataUsage</item>
+        <item>device.DeviceIP</item>
+        <item>device.DeviceSpeedTest</item>
+        <item>device.DeviceLastBoot</item>
+        <item>device.DeviceTimeToCharge</item>
+        <item>device.DeviceName</item>
+        <item>device.DeviceNetwork</item>
+        <item>device.DeviceOS</item>
+        <item>device.DeviceRAM</item>
+        <item>device.DeviceRefreshRate</item>
+        <item>device.DeviceResolution</item>
+        <item>device.DeviceStorageRemain</item>
+        <item>device.DeviceStorage</item>
+        <item>folder.AppFolder3</item>
+        <item>folder.AppFolder1</item>
+        <item>folder.AppFolder2</item>
+        <item>folder.AppFolder4</item>
+        <item>folder.AppFolder5</item>
+        <item>folder.AppFolder6</item>
+        <item>games.TicTac</item>
+        <item>games.Dice</item>
+        <item>games.Breakout</item>
+        <item>games.Snake</item>
+        <item>games.SlidingPuzzle</item>
+        <item>games.Dino</item>
+        <item>google.GoogleBar1</item>
+        <item>google.Google2</item>
+        <item>google.Google3</item>
+        <item>google.GoogleBar6</item>
+        <item>google.GoogleFolder1</item>
+        <item>google.GoogleFolder3</item>
+        <item>google.GoogleFolder2</item>
+        <item>google.GoogleFolder4</item>
+        <item>google.GoogleFolder5</item>
+        <item>google.OneGoogleAssistant</item>
+        <item>google.OneGoogleChrome</item>
+        <item>google.OneGoogleGmail</item>
+        <item>google.OneGoogleKeep</item>
+        <item>google.OneGoogleMap</item>
+        <item>google.OneGoogleMeet</item>
+        <item>google.OneGooglePay</item>
+        <item>google.OneGooglePhotos</item>
+        <item>google.OneGoogleScan</item>
+        <item>google.OneGoogleSearch</item>
+        <item>google.OneGoogleSheet</item>
+        <item>google.OneGoogleYoutube</item>
+        <item>google.OneGoogle2</item>
+        <item>google.OneGoogle1</item>
+        <item>google.GoogleBar2</item>
+        <item>google.GoogleBar3</item>
+        <item>google.GoogleBar4</item>
+        <item>google.GoogleBar5</item>
+        <item>google.OneGoogle12</item>
+        <item>google.OneGoogle11</item>
+        <item>google.Google4</item>
+        <item>google.Google5</item>
+        <item>google.Google6</item>
+        <item>google.Google1</item>
+        <item>google.GoogleChromeig</item>
+        <item>google.GoogleAssistant</item>
+        <item>google.GoogleChrome</item>
+        <item>google.GoogleDocs</item>
+        <item>google.GoogleGmail</item>
+        <item>google.GoogleKeep</item>
+        <item>google.GoogleLens</item>
+        <item>google.GoogleMaps</item>
+        <item>google.GoogleMeet</item>
+        <item>google.GooglePay</item>
+        <item>google.GooglePhotos</item>
+        <item>google.GoogleSheets</item>
+        <item>google.GoogleYoutube</item>
+        <item>health.Pedometer5</item>
+        <item>health.Pedometer1</item>
+        <item>health.Pedometer2</item>
+        <item>health.Pedometer3</item>
+        <item>health.Pedometer4</item>
+        <item>health.Water1</item>
+        <item>health.Water2</item>
+        <item>health.Water3</item>
+        <item>health.Water4</item>
+        <item>music.Music12</item>
+        <item>music.Music9</item>
+        <item>music.Music2</item>
+        <item>music.Music11</item>
+        <item>music.Music8</item>
+        <item>music.Music4</item>
+        <item>music.Music1</item>
+        <item>music.Music3</item>
+        <item>music.Music5</item>
+        <item>music.Music6</item>
+        <item>music.Music7</item>
+        <item>music.Music10</item>
+        <item>notes.Reminders2</item>
+        <item>notes.Notes2</item>
+        <item>notes.Notes4</item>
+        <item>notes.Notes1</item>
+        <item>notes.OneLineNote</item>
+        <item>notes.Reminders1</item>
+        <item>notes.Notes3</item>
+        <item>personalise.PersonalCard3</item>
+        <item>personalise.PersonalCard2</item>
+        <item>personalise.PersonalCard4</item>
+        <item>personalise.PersonalCard1</item>
+        <item>personalise.Countdown2</item>
+        <item>personalise.Countdown1</item>
+        <item>personalise.Countdown3</item>
+        <item>personalise.WidgetText1</item>
+        <item>personalise.WidgetText2</item>
+        <item>personalise.AgeCounter</item>
+        <item>personalise.WidgetPhotoFrame1</item>
+        <item>personalise.WidgetPhotoFrame2</item>
+        <item>photoframe.Frame40</item>
+        <item>photoframe.Frame39</item>
+        <item>photoframe.Frame38</item>
+        <item>photoframe.Frame37</item>
+        <item>photoframe.Frame36</item>
+        <item>photoframe.Frame35</item>
+        <item>photoframe.Frame34</item>
+        <item>photoframe.Frame33</item>
+        <item>photoframe.Frame32</item>
+        <item>photoframe.Frame31</item>
+        <item>photoframe.Frame30</item>
+        <item>photoframe.Frame29</item>
+        <item>photoframe.Frame28</item>
+        <item>photoframe.Frame27</item>
+        <item>photoframe.Frame26</item>
+        <item>photoframe.Frame25</item>
+        <item>photoframe.Frame24</item>
+        <item>photoframe.Frame23</item>
+        <item>photoframe.Frame22</item>
+        <item>photoframe.Frame21</item>
+        <item>photoframe.Frame20</item>
+        <item>photoframe.Frame19</item>
+        <item>photoframe.Frame18</item>
+        <item>photoframe.Frame17</item>
+        <item>photoframe.Frame16</item>
+        <item>photoframe.Frame15</item>
+        <item>photoframe.Frame14</item>
+        <item>photoframe.Frame13</item>
+        <item>photoframe.Frame12</item>
+        <item>photoframe.Frame11</item>
+        <item>photoframe.Frame10</item>
+        <item>photoframe.Frame9</item>
+        <item>photoframe.Frame8</item>
+        <item>photoframe.Frame7</item>
+        <item>photoframe.Frame6</item>
+        <item>photoframe.Frame5</item>
+        <item>photoframe.PhotoWidget2</item>
+        <item>photoframe.PhotoWidget</item>
+        <item>photoframe.PhotoWidget3</item>
+        <item>photoframe.Frame4</item>
+        <item>photoframe.Frame3</item>
+        <item>photoframe.Frame2</item>
+        <item>photoframe.Frame1</item>
+        <item>productivity.Bookmark1</item>
+        <item>productivity.Bookmark2</item>
+        <item>productivity.Pomodoro</item>
+        <item>productivity.Screentime1</item>
+        <item>productivity.Screentime2</item>
+        <item>productivity.Screentime3</item>
+        <item>productivity.Clipboard</item>
+        <item>settings.Wifi1</item>
+        <item>settings.Airplane1</item>
+        <item>settings.Alarm1</item>
+        <item>settings.Bluetooth1</item>
+        <item>settings.DarkMode1</item>
+        <item>settings.Data1</item>
+        <item>settings.DND1</item>
+        <item>settings.Hotspot1</item>
+        <item>settings.Location1</item>
+        <item>settings.Autorotate1</item>
+        <item>settings.Sound1</item>
+        <item>settings.Light1</item>
+        <item>settings.Vibrate1</item>
+        <item>settings.AlertSlider1</item>
+        <item>settings.AlertSlider2</item>
+        <item>settings.AlertSlider3</item>
+        <item>settings.Airplane2</item>
+        <item>settings.Alarm2</item>
+        <item>settings.Autorotate2</item>
+        <item>settings.Bluetooth2</item>
+        <item>settings.DarkMode2</item>
+        <item>settings.Data2</item>
+        <item>settings.DND2</item>
+        <item>settings.Hotspot2</item>
+        <item>settings.Light2</item>
+        <item>settings.Location2</item>
+        <item>settings.Sound2</item>
+        <item>settings.Vibrate2</item>
+        <item>settings.Wifi2</item>
+        <item>settings.Airplane3</item>
+        <item>settings.Alarm3</item>
+        <item>settings.Autorotate3</item>
+        <item>settings.Bluetooth3</item>
+        <item>settings.DarkMode3</item>
+        <item>settings.Data3</item>
+        <item>settings.DND3</item>
+        <item>settings.Hotspot3</item>
+        <item>settings.Location3</item>
+        <item>settings.Sound3</item>
+        <item>settings.Vibrate3</item>
+        <item>settings.Light3</item>
+        <item>settings.Wifi3</item>
+        <item>settings.Airplane4</item>
+        <item>settings.Alarm4</item>
+        <item>settings.Autorotate4</item>
+        <item>settings.Bluetooth4</item>
+        <item>settings.DarkMode4</item>
+        <item>settings.Data4</item>
+        <item>settings.DND4</item>
+        <item>settings.Hotspot4</item>
+        <item>settings.Light4</item>
+        <item>settings.Location4</item>
+        <item>settings.Sound4</item>
+        <item>settings.Vibrate4</item>
+        <item>settings.Wifi4</item>
+        <item>quotes.Advice1</item>
+        <item>quotes.Joke1</item>
+        <item>quotes.Quotes1</item>
+        <item>quotes.Quotes3</item>
+        <item>quotes.Quotes2</item>
+        <item>quotes.Quotes5</item>
+        <item>quotes.Quotes6</item>
+        <item>social.SocialFolderBar</item>
+        <item>social.SocialFolder1</item>
+        <item>social.SocialFolder3</item>
+        <item>social.SocialFolder2</item>
+        <item>social.SocialFolder4</item>
+        <item>social.SocialFolder5</item>
+        <item>weather.WeatherForecast6</item>
+        <item>weather.WeatherForecast2</item>
+        <item>weather.WeatherForecast3</item>
+        <item>weather.WeatherForecast4</item>
+        <item>weather.WeatherForecast5</item>
+        <item>weather.WeatherForecast1</item>
+        <item>weather.Weather1</item>
+        <item>weather.Weather2</item>
+        <item>weather.Weather3</item>
+        <item>weather.Weather5</item>
+        <item>weather.Weather6</item>
+        <item>weather.WeatherBar1</item>
+        <item>weather.WeatherAirQ2</item>
+        <item>weather.WeatherUV2</item>
+        <item>weather.WeatherUV1</item>
+        <item>weather.WeatherAirQ</item>
+        <item>weather.Sunrise</item>
+        <item>weather.Sunset</item>
+        <item>weather.Moonphase</item>
+        <item>weather.Moonphase2</item>
+        <item>weather.SunSetRise</item>
+        <item>weather.SunSetRise2</item>
+        <item>weather.Wind1</item>
+        <item>weather.Wind2</item>
+    </array>
+    <array name="widget_images">
+        <item>@drawable/ic_update21</item>
+        <item>@drawable/widget_ai_bar1p</item>
+        <item>@drawable/widget_ai_folder1</item>
+        <item>@drawable/widget_ai_folder5</item>
+        <item>@drawable/widget_chatgpt_1p</item>
+        <item>@drawable/widget_chatgpt_2p</item>
+        <item>@drawable/ai_claude1_p</item>
+        <item>@drawable/widget_ai_bar2p</item>
+        <item>@drawable/widget_deepseek</item>
+        <item>@drawable/widget_grok</item>
+        <item>@drawable/ai_perplexity_p</item>
+        <item>@drawable/widget_ai_folder2</item>
+        <item>@drawable/widget_ai_folder3</item>
+        <item>@drawable/widget_ai_folder4</item>
+        <item>@drawable/applauncher1p</item>
+        <item>@drawable/applauncher2p_text</item>
+        <item>@drawable/applauncher13p</item>
+        <item>@drawable/applauncher12p</item>
+        <item>@drawable/applauncher11p</item>
+        <item>@drawable/applauncher10p</item>
+        <item>@drawable/applauncher9p</item>
+        <item>@drawable/applauncher8p</item>
+        <item>@drawable/applauncher7p</item>
+        <item>@drawable/applauncher6p</item>
+        <item>@drawable/applauncher5p</item>
+        <item>@drawable/applauncher4p</item>
+        <item>@drawable/applauncher3p</item>
+        <item>@drawable/battery1p</item>
+        <item>@drawable/battery2p</item>
+        <item>@drawable/battery3p</item>
+        <item>@drawable/battery4p</item>
+        <item>@drawable/battery5p</item>
+        <item>@drawable/battery6p</item>
+        <item>@drawable/battery7p</item>
+        <item>@drawable/battery8p</item>
+        <item>@drawable/battery9p</item>
+        <item>@drawable/battery10p</item>
+        <item>@drawable/battery11p</item>
+        <item>@drawable/battery12p</item>
+        <item>@drawable/battery13p</item>
+        <item>@drawable/battery14p</item>
+        <item>@drawable/battery14p</item>
+        <item>@drawable/battery16p</item>
+        <item>@drawable/battery17p</item>
+        <item>@drawable/battery18p</item>
+        <item>@drawable/battery19p</item>
+        <item>@drawable/buds8p</item>
+        <item>@drawable/buds1p</item>
+        <item>@drawable/buds2p</item>
+        <item>@drawable/buds3p</item>
+        <item>@drawable/buds4p</item>
+        <item>@drawable/ic_buds3</item>
+        <item>@drawable/buds6p</item>
+        <item>@drawable/buds7p</item>
+        <item>@drawable/calc2p</item>
+        <item>@drawable/calc3p</item>
+        <item>@drawable/calc1p</item>
+        <item>@drawable/calc2p</item>
+        <item>@drawable/calendar1p</item>
+        <item>@drawable/calendar2p</item>
+        <item>@drawable/calendar3p</item>
+        <item>@drawable/calendar4p</item>
+        <item>@drawable/calendar5p</item>
+        <item>@drawable/calendar6p</item>
+        <item>@drawable/calendar7p</item>
+        <item>@drawable/calendar8p</item>
+        <item>@drawable/calendar9p</item>
+        <item>@drawable/calendar10p</item>
+        <item>@drawable/calendar11p</item>
+        <item>@drawable/calendar12p</item>
+        <item>@drawable/calendar13p</item>
+        <item>@drawable/calendar14p</item>
+        <item>@drawable/calendar15p</item>
+        <item>@drawable/camera1p</item>
+        <item>@drawable/camera2p</item>
+        <item>@drawable/camera3p</item>
+        <item>@drawable/camera4p</item>
+        <item>@drawable/camera5p</item>
+        <item>@drawable/analog1p</item>
+        <item>@drawable/analog2p</item>
+        <item>@drawable/analog3p</item>
+        <item>@drawable/analog4p</item>
+        <item>@drawable/analog5p</item>
+        <item>@drawable/analog6p</item>
+        <item>@drawable/analog7p</item>
+        <item>@drawable/analog8p</item>
+        <item>@drawable/analog9p</item>
+        <item>@drawable/analog10p</item>
+        <item>@drawable/analog11p</item>
+        <item>@drawable/analog12p</item>
+        <item>@drawable/analog13p</item>
+        <item>@drawable/analog14p</item>
+        <item>@drawable/analog15p</item>
+        <item>@drawable/analog16p</item>
+        <item>@drawable/analog17p</item>
+        <item>@drawable/analog18p</item>
+        <item>@drawable/digital35p</item>
+        <item>@drawable/digital34p</item>
+        <item>@drawable/digital33p</item>
+        <item>@drawable/digital20p</item>
+        <item>@drawable/digital31p</item>
+        <item>@drawable/digital_svg1</item>
+        <item>@drawable/digital30p</item>
+        <item>@drawable/digital29p</item>
+        <item>@drawable/digital28p</item>
+        <item>@drawable/digital27p</item>
+        <item>@drawable/digital26p</item>
+        <item>@drawable/digital25p</item>
+        <item>@drawable/digital24p</item>
+        <item>@drawable/digital23p</item>
+        <item>@drawable/digital22p</item>
+        <item>@drawable/digital21p</item>
+        <item>@drawable/digital19p</item>
+        <item>@drawable/digital18p</item>
+        <item>@drawable/digital17p</item>
+        <item>@drawable/digital16p</item>
+        <item>@drawable/digital15p</item>
+        <item>@drawable/digital14p</item>
+        <item>@drawable/digital13p</item>
+        <item>@drawable/digital12p</item>
+        <item>@drawable/digital11p</item>
+        <item>@drawable/digital10p</item>
+        <item>@drawable/digital9p</item>
+        <item>@drawable/digital8p</item>
+        <item>@drawable/digital7p</item>
+        <item>@drawable/digital6p</item>
+        <item>@drawable/digital5p</item>
+        <item>@drawable/digital4p</item>
+        <item>@drawable/digital3p</item>
+        <item>@drawable/digital2p</item>
+        <item>@drawable/digital1p</item>
+        <item>@drawable/hybrid_clock1</item>
+        <item>@drawable/hybrid_clock2</item>
+        <item>@drawable/hybrid_clock3</item>
+        <item>@drawable/hybrid_clock4</item>
+        <item>@drawable/hybrid_clock5</item>
+        <item>@drawable/hybrid_clock6</item>
+        <item>@drawable/hybrid_clock7</item>
+        <item>@drawable/hybrid_clock8</item>
+        <item>@drawable/hybrid_clock9</item>
+        <item>@drawable/hybrid_clock10</item>
+        <item>@drawable/hybrid_clock11</item>
+        <item>@drawable/compass4p</item>
+        <item>@drawable/compass1p</item>
+        <item>@drawable/compass3p</item>
+        <item>@drawable/compass2p</item>
+        <item>@drawable/contact1p</item>
+        <item>@drawable/contact2p</item>
+        <item>@drawable/contact3p</item>
+        <item>@drawable/contact5p</item>
+        <item>@drawable/contact6p</item>
+        <item>@drawable/contact4p</item>
+        <item>@drawable/contact7p</item>
+        <item>@drawable/contact8p</item>
+        <item>@drawable/contact9p</item>
+        <item>@drawable/contact10p</item>
+        <item>@drawable/contact11p</item>
+        <item>@drawable/contact12p</item>
+        <item>@drawable/contact_telegram</item>
+        <item>@drawable/contact_whatsapp</item>
+        <item>@drawable/other_uptime</item>
+        <item>@drawable/other_batterytemp</item>
+        <item>@drawable/ic_dots_volume</item>
+        <item>@drawable/ic_dots_storage</item>
+        <item>@drawable/ic_dots_temp</item>
+        <item>@drawable/ic_dots_ram</item>
+        <item>@drawable/other_batteryvoltage</item>
+        <item>@drawable/other_chargestatus</item>
+        <item>@drawable/other_cpu</item>
+        <item>@drawable/other_datausage</item>
+        <item>@drawable/ic_other_ip</item>
+        <item>@drawable/ic_other_internetspeed</item>
+        <item>@drawable/ic_other_lastboot</item>
+        <item>@drawable/other_timetocharge</item>
+        <item>@drawable/ic_other_devicename</item>
+        <item>@drawable/ic_other_network</item>
+        <item>@drawable/ic_other_os</item>
+        <item>@drawable/ic_other_ram</item>
+        <item>@drawable/other_refreshrate</item>
+        <item>@drawable/other_resolution</item>
+        <item>@drawable/ic_other_storageremains</item>
+        <item>@drawable/ic_other_storage</item>
+        <item>@drawable/appfolder3p</item>
+        <item>@drawable/appfolder1p</item>
+        <item>@drawable/appfolder2p</item>
+        <item>@drawable/appfolder4p</item>
+        <item>@drawable/appfolder5p</item>
+        <item>@drawable/appfolder6p</item>
+        <item>@drawable/widget_game_tictac</item>
+        <item>@drawable/widget_game_dice</item>
+        <item>@drawable/widget_game_breakout</item>
+        <item>@drawable/widget_game_snake</item>
+        <item>@drawable/widget_game_slide</item>
+        <item>@drawable/widget_game_dino</item>
+        <item>@drawable/widget_google_bar1</item>
+        <item>@drawable/widget_google2</item>
+        <item>@drawable/widget_google3</item>
+        <item>@drawable/google_bar6p</item>
+        <item>@drawable/google_folder1p</item>
+        <item>@drawable/google_folder3p</item>
+        <item>@drawable/google_folder2p</item>
+        <item>@drawable/google_folder4p</item>
+        <item>@drawable/google_folder5p</item>
+        <item>@drawable/one_google4_p</item>
+        <item>@drawable/one_google5_p</item>
+        <item>@drawable/one_google7_p</item>
+        <item>@drawable/widget_keep</item>
+        <item>@drawable/widget_map</item>
+        <item>@drawable/one_google10_p</item>
+        <item>@drawable/widget_pay</item>
+        <item>@drawable/one_google6_p</item>
+        <item>@drawable/one_google9_p</item>
+        <item>@drawable/one_google3_p</item>
+        <item>@drawable/widget_sheet</item>
+        <item>@drawable/one_google8_p</item>
+        <item>@drawable/one_google2_p</item>
+        <item>@drawable/one_google1_p</item>
+        <item>@drawable/widget_google_bar2</item>
+        <item>@drawable/widget_google_bar3_p</item>
+        <item>@drawable/widget_google_bar4_p</item>
+        <item>@drawable/widget_google_bar5_p</item>
+        <item>@drawable/one_google12_p</item>
+        <item>@drawable/one_google11_p</item>
+        <item>@drawable/widget_google4</item>
+        <item>@drawable/widget_google5</item>
+        <item>@drawable/widget_google6</item>
+        <item>@drawable/widget_google</item>
+        <item>@drawable/widget_incognito</item>
+        <item>@drawable/widget_google_assistant</item>
+        <item>@drawable/widget_chrome</item>
+        <item>@drawable/widget_google_docs</item>
+        <item>@drawable/widget_gmail</item>
+        <item>@drawable/widget_google_keep</item>
+        <item>@drawable/widget_google_lens</item>
+        <item>@drawable/widget_google_maps</item>
+        <item>@drawable/widget_google_meet</item>
+        <item>@drawable/widget_google_pay</item>
+        <item>@drawable/widget_google_photos</item>
+        <item>@drawable/widget_google_sheets</item>
+        <item>@drawable/widget_youtube</item>
+        <item>@drawable/pedometer5p</item>
+        <item>@drawable/pedometer1p</item>
+        <item>@drawable/pedometer2p</item>
+        <item>@drawable/pedometer3p</item>
+        <item>@drawable/pedometer4p</item>
+        <item>@drawable/water1p</item>
+        <item>@drawable/water2p</item>
+        <item>@drawable/water3p</item>
+        <item>@drawable/water4p</item>
+        <item>@drawable/music12p</item>
+        <item>@drawable/music9p</item>
+        <item>@drawable/music2p</item>
+        <item>@drawable/music11p</item>
+        <item>@drawable/music8p</item>
+        <item>@drawable/music4p</item>
+        <item>@drawable/music1p</item>
+        <item>@drawable/music3p</item>
+        <item>@drawable/music5p</item>
+        <item>@drawable/music6p</item>
+        <item>@drawable/music7p</item>
+        <item>@drawable/music10p</item>
+        <item>@drawable/reminder2p</item>
+        <item>@drawable/notes2p</item>
+        <item>@drawable/note4p</item>
+        <item>@drawable/notes1p</item>
+        <item>@drawable/stickynote1p</item>
+        <item>@drawable/reminder1p</item>
+        <item>@drawable/note3p</item>
+        <item>@drawable/personalcard3p</item>
+        <item>@drawable/personalcard2p</item>
+        <item>@drawable/personalcard4p</item>
+        <item>@drawable/personalcard1p</item>
+        <item>@drawable/countdown2p</item>
+        <item>@drawable/countdown1p</item>
+        <item>@drawable/countdown3p</item>
+        <item>@drawable/widget_text1</item>
+        <item>@drawable/widget_text2</item>
+        <item>@drawable/agecounter_p</item>
+        <item>@drawable/widget_photoframe</item>
+        <item>@drawable/widget_couple_photo</item>
+        <item>@drawable/ic_photoframe40</item>
+        <item>@drawable/ic_photoframe39</item>
+        <item>@drawable/ic_photoframe38</item>
+        <item>@drawable/ic_photoframe37</item>
+        <item>@drawable/ic_photoframe36</item>
+        <item>@drawable/ic_photoframe35</item>
+        <item>@drawable/ic_photoframe34</item>
+        <item>@drawable/ic_photoframe33</item>
+        <item>@drawable/ic_photoframe32</item>
+        <item>@drawable/ic_photoframe31</item>
+        <item>@drawable/ic_photoframe30</item>
+        <item>@drawable/ic_photoframe29</item>
+        <item>@drawable/ic_photoframe28</item>
+        <item>@drawable/ic_photoframe27</item>
+        <item>@drawable/ic_photoframe26</item>
+        <item>@drawable/ic_photoframe25</item>
+        <item>@drawable/ic_photoframe24</item>
+        <item>@drawable/ic_photoframe23</item>
+        <item>@drawable/ic_photoframe22</item>
+        <item>@drawable/ic_photoframe21</item>
+        <item>@drawable/ic_photoframe20</item>
+        <item>@drawable/ic_photoframe19</item>
+        <item>@drawable/ic_photoframe18</item>
+        <item>@drawable/ic_photoframe17</item>
+        <item>@drawable/ic_photoframe16</item>
+        <item>@drawable/ic_photoframe15</item>
+        <item>@drawable/ic_photoframe14</item>
+        <item>@drawable/ic_photoframe13</item>
+        <item>@drawable/ic_photoframe12</item>
+        <item>@drawable/ic_photoframe11</item>
+        <item>@drawable/ic_photoframe10</item>
+        <item>@drawable/ic_photoframe9</item>
+        <item>@drawable/ic_photoframe8</item>
+        <item>@drawable/ic_photoframe7</item>
+        <item>@drawable/ic_photoframe6</item>
+        <item>@drawable/ic_photoframe5</item>
+        <item>@drawable/widget_photo2</item>
+        <item>@drawable/widget_photo1</item>
+        <item>@drawable/widget_photo3</item>
+        <item>@drawable/ic_photoframe4</item>
+        <item>@drawable/ic_photoframe3</item>
+        <item>@drawable/ic_photoframe2</item>
+        <item>@drawable/ic_photoframe1</item>
+        <item>@drawable/bookmark1p</item>
+        <item>@drawable/bookmark2p</item>
+        <item>@drawable/widget_pomodoro</item>
+        <item>@drawable/screentime1p</item>
+        <item>@drawable/screentime2p</item>
+        <item>@drawable/screentime3p</item>
+        <item>@drawable/clipboard1p</item>
+        <item>@drawable/settings1_wifi</item>
+        <item>@drawable/settings1_aeroplane</item>
+        <item>@drawable/settings1_alarm</item>
+        <item>@drawable/settings1_bluetooth</item>
+        <item>@drawable/settings1_darkmode</item>
+        <item>@drawable/settings1_data</item>
+        <item>@drawable/settings1_dnd</item>
+        <item>@drawable/settings1_hotspot</item>
+        <item>@drawable/settings1_location</item>
+        <item>@drawable/settings1_rotate</item>
+        <item>@drawable/settings1_sound</item>
+        <item>@drawable/settings1_torch</item>
+        <item>@drawable/settings1_vibrate</item>
+        <item>@drawable/settings_sound_profile</item>
+        <item>@drawable/settings_sound_profile2</item>
+        <item>@drawable/settings_sound_profile3</item>
+        <item>@drawable/settings2_airplane</item>
+        <item>@drawable/settings2_alarm</item>
+        <item>@drawable/settings2_rotate</item>
+        <item>@drawable/settings2_bluetooth</item>
+        <item>@drawable/settings2_darkmode</item>
+        <item>@drawable/settings2_data</item>
+        <item>@drawable/settings2_dnd</item>
+        <item>@drawable/settings2_hotspot</item>
+        <item>@drawable/settings2_torch</item>
+        <item>@drawable/settings2_location</item>
+        <item>@drawable/settings2_sound</item>
+        <item>@drawable/settings2_vibrate</item>
+        <item>@drawable/settings2_wifi</item>
+        <item>@drawable/settings3_aeroplane</item>
+        <item>@drawable/settings3_alarm</item>
+        <item>@drawable/settings3_rotate</item>
+        <item>@drawable/settings3_bluetooth</item>
+        <item>@drawable/settings3_darkmode</item>
+        <item>@drawable/settings3_data</item>
+        <item>@drawable/settings3_dnd</item>
+        <item>@drawable/settings3_hotspot</item>
+        <item>@drawable/settings3_location</item>
+        <item>@drawable/settings3_sound</item>
+        <item>@drawable/settings3_vibrate</item>
+        <item>@drawable/settings3_torch</item>
+        <item>@drawable/settings3_wifi</item>
+        <item>@drawable/settings4_airplane</item>
+        <item>@drawable/settings4_alarm</item>
+        <item>@drawable/settings4_rotate</item>
+        <item>@drawable/settings4_bluetooth</item>
+        <item>@drawable/settings4_darkmode</item>
+        <item>@drawable/settings4_data</item>
+        <item>@drawable/settings4_dnd</item>
+        <item>@drawable/settings4_hotspot</item>
+        <item>@drawable/settings4_torch</item>
+        <item>@drawable/settings4_location</item>
+        <item>@drawable/settings4_sound</item>
+        <item>@drawable/settings4_vibrate</item>
+        <item>@drawable/settings4_wifi</item>
+        <item>@drawable/advice1p</item>
+        <item>@drawable/joke1p</item>
+        <item>@drawable/quote1p</item>
+        <item>@drawable/quote3p</item>
+        <item>@drawable/quote2p</item>
+        <item>@drawable/quote5p</item>
+        <item>@drawable/quote6p</item>
+        <item>@drawable/socialbar</item>
+        <item>@drawable/social_folder1</item>
+        <item>@drawable/social_folder3</item>
+        <item>@drawable/social_folder2</item>
+        <item>@drawable/social_folder4</item>
+        <item>@drawable/social_folder5</item>
+        <item>@drawable/weather_forecast_6</item>
+        <item>@drawable/widget_weather_forecast2</item>
+        <item>@drawable/widget_weather_hourly</item>
+        <item>@drawable/widget_weather_weekly</item>
+        <item>@drawable/widget_weather_forecast</item>
+        <item>@drawable/weather_widget_days2_p</item>
+        <item>@drawable/widget_weather_1</item>
+        <item>@drawable/widget_weather_2</item>
+        <item>@drawable/widget_weather_3</item>
+        <item>@drawable/weather5p</item>
+        <item>@drawable/weather6p</item>
+        <item>@drawable/weatherbar1p</item>
+        <item>@drawable/widget_weather_air2</item>
+        <item>@drawable/widget_weather_uv2</item>
+        <item>@drawable/widget_weather_uv</item>
+        <item>@drawable/widget_weather_air</item>
+        <item>@drawable/weather_sunrise</item>
+        <item>@drawable/weather_sunset</item>
+        <item>@drawable/widget_moonphase_1</item>
+        <item>@drawable/ic_full_moon</item>
+        <item>@drawable/widget_weather_sunset</item>
+        <item>@drawable/sunsetrise2p</item>
+        <item>@drawable/weather_wind</item>
+        <item>@drawable/weather_wind2</item>
+    </array>
+    <array name="widget_names">
+        <item>Update21</item>
+        <item>Ai Bar</item>
+        <item>Ai Folder 1 (Editable)</item>
+        <item>Ai Folder 5 (Editable)</item>
+        <item>Ai ChatGPT Text</item>
+        <item>ChatGPT Voice</item>
+        <item>Ai Claude</item>
+        <item>Ai Bar 2 (Editable)</item>
+        <item>DeepSeek</item>
+        <item>Grok</item>
+        <item>Perplexity</item>
+        <item>Ai Folder 2 (Editable)</item>
+        <item>Ai Folder 3 (Editable)</item>
+        <item>Ai Folder 4 (Editable)</item>
+        <item>App Launcher Adaptive</item>
+        <item>App Launcher + Custom Text</item>
+        <item>App Launcher - M3-13</item>
+        <item>App Launcher - M3-12</item>
+        <item>App Launcher - M3-11</item>
+        <item>App Launcher - M3-10</item>
+        <item>App Launcher - M3-9</item>
+        <item>App Launcher - M3-8</item>
+        <item>App Launcher - M3-7</item>
+        <item>App Launcher - M3-6</item>
+        <item>App Launcher - M3-5</item>
+        <item>App Launcher - M3-4</item>
+        <item>App Launcher - M3-3</item>
+        <item>Battery Widget 1</item>
+        <item>Battery Widget 2</item>
+        <item>Battery Widget 3</item>
+        <item>Battery Widget 4</item>
+        <item>Battery Widget 5</item>
+        <item>Battery Widget 6</item>
+        <item>Battery Widget 7</item>
+        <item>Battery Widget 8</item>
+        <item>Battery Widget 9</item>
+        <item>Battery Widget 10</item>
+        <item>Battery Widget 11</item>
+        <item>Battery Widget 12</item>
+        <item>Battery Widget 13</item>
+        <item>Battery Widget 14</item>
+        <item>Battery Widget 15</item>
+        <item>Battery Widget 16</item>
+        <item>Battery Widget 17</item>
+        <item>Battery Widget 18</item>
+        <item>Battery Widget 19</item>
+        <item>Buds 8</item>
+        <item>Buds 1</item>
+        <item>Buds 2</item>
+        <item>Buds 3</item>
+        <item>Buds 4</item>
+        <item>Buds 5</item>
+        <item>Buds 6</item>
+        <item>Buds 7 With Volume Control</item>
+        <item>Calculator Large</item>
+        <item>Calculator 3</item>
+        <item>Calculator</item>
+        <item>Calculator Minimal</item>
+        <item>Calendar1</item>
+        <item>Calendar2</item>
+        <item>Calendar3</item>
+        <item>Calendar4</item>
+        <item>Calendar5</item>
+        <item>Calendar6</item>
+        <item>Calendar7</item>
+        <item>Calendar8</item>
+        <item>Calendar9</item>
+        <item>Calendar10</item>
+        <item>Calendar11</item>
+        <item>Calendar12</item>
+        <item>Calendar13</item>
+        <item>Calendar14</item>
+        <item>Calendar15</item>
+        <item>Camera 1</item>
+        <item>Camera 2</item>
+        <item>Camera 3</item>
+        <item>Camera 4</item>
+        <item>Camera 5</item>
+        <item>Analog Clock 1</item>
+        <item>Analog Clock 2</item>
+        <item>Analog Clock 3</item>
+        <item>Analog Clock 4</item>
+        <item>Analog Clock 5</item>
+        <item>Analog Clock 6</item>
+        <item>Analog Clock 7</item>
+        <item>Analog Clock 8</item>
+        <item>Analog Clock 9</item>
+        <item>Analog Clock 10</item>
+        <item>Analog Clock 11</item>
+        <item>Analog Clock 12</item>
+        <item>Analog Clock 13</item>
+        <item>Analog Clock 14</item>
+        <item>Analog Clock 15</item>
+        <item>Analog Clock 16</item>
+        <item>Analog Clock 17</item>
+        <item>Analog Clock 18</item>
+        <item>Digital Clock (Recommended)</item>
+        <item>Digital Clock 34</item>
+        <item>Digital Clock 33</item>
+        <item>Digital Clock 20</item>
+        <item>Digital Clock 31</item>
+        <item>Digital Clock 32</item>
+        <item>Digital Clock 30</item>
+        <item>Digital Clock 29</item>
+        <item>Digital Clock 28</item>
+        <item>Digital Clock 27</item>
+        <item>Digital Clock 26</item>
+        <item>Digital Clock 25</item>
+        <item>Digital Clock 24</item>
+        <item>Digital Clock 23</item>
+        <item>Digital Clock 22</item>
+        <item>Digital Clock 21</item>
+        <item>Digital Clock 19</item>
+        <item>Digital Clock 18</item>
+        <item>Digital Clock 17</item>
+        <item>Digital Clock 16</item>
+        <item>Digital Clock 15</item>
+        <item>Digital Clock 14</item>
+        <item>Digital Clock 13</item>
+        <item>Digital Clock 12</item>
+        <item>Digital Clock 11</item>
+        <item>Digital Clock 10</item>
+        <item>Digital Clock 9</item>
+        <item>Digital Clock 8</item>
+        <item>Digital Clock 7</item>
+        <item>Digital Clock 6</item>
+        <item>Digital Clock 5</item>
+        <item>Digital Clock 4</item>
+        <item>Digital Clock 3</item>
+        <item>Digital Clock 2</item>
+        <item>Digital Clock 1</item>
+        <item>Clock Hybrid #1</item>
+        <item>Clock Hybrid #2</item>
+        <item>Clock Hybrid #3</item>
+        <item>Clock Hybrid #4</item>
+        <item>Clock Hybrid #5</item>
+        <item>Clock Hybrid #6</item>
+        <item>Clock Hybrid #7</item>
+        <item>Clock Hybrid #8</item>
+        <item>Clock Hybrid #9</item>
+        <item>Clock Hybrid #10</item>
+        <item>Clock Hybrid #11</item>
+        <item>Compass 4</item>
+        <item>Compass 1</item>
+        <item>Compass 3</item>
+        <item>Compass 2 mini</item>
+        <item>Contact 1</item>
+        <item>Contact 2</item>
+        <item>Contact 3</item>
+        <item>Contact 5</item>
+        <item>Contact 6</item>
+        <item>Contact 4</item>
+        <item>Contact 7</item>
+        <item>Contact 8</item>
+        <item>Contact 9</item>
+        <item>Contact 10</item>
+        <item>Contact 11 Click To Call</item>
+        <item>Contact 12 Click To Chat</item>
+        <item>One Click Telegram</item>
+        <item>One Click Whatsapp</item>
+        <item>Device Up Time</item>
+        <item>Device Battery Temp</item>
+        <item>Dots Volume</item>
+        <item>Dots Storage</item>
+        <item>Dots Temp</item>
+        <item>Dots Ram</item>
+        <item>Device Battery Voltage</item>
+        <item>Device Charge Status</item>
+        <item>Device CPU</item>
+        <item>Device Data Usage</item>
+        <item>Device IP</item>
+        <item>Internet SpeedTest</item>
+        <item>Device LastBoot</item>
+        <item>Device Time To Charge</item>
+        <item>Device Name</item>
+        <item>Device Network</item>
+        <item>Device OS</item>
+        <item>Device Ram</item>
+        <item>Device Refresh Rate</item>
+        <item>Device Resolution</item>
+        <item>Device Storage Remains</item>
+        <item>Device Storage</item>
+        <item>Apps Folder 3 2x2</item>
+        <item>Apps Folder 7x3</item>
+        <item>Apps Folder 2</item>
+        <item>Apps Folder 4 4x1</item>
+        <item>Apps Folder 5</item>
+        <item>Apps Folder 6</item>
+        <item>Tic</item>
+        <item>Dice</item>
+        <item>Breakout</item>
+        <item>Snake</item>
+        <item>SlidingPuzzle</item>
+        <item>Dino</item>
+        <item>Google Bar</item>
+        <item>Google 2</item>
+        <item>Google 3</item>
+        <item>Google Bar 6</item>
+        <item>Google Folder 1</item>
+        <item>Google Folder 3</item>
+        <item>Google Folder 2</item>
+        <item>Google Folder 4</item>
+        <item>Google Folder 5</item>
+        <item>Google Assistant</item>
+        <item>Google Chrome</item>
+        <item>Google Gmail</item>
+        <item>Google Keep</item>
+        <item>Google Map</item>
+        <item>Google Meet</item>
+        <item>Google Pay</item>
+        <item>Google Photos</item>
+        <item>Google Scan</item>
+        <item>Google Search</item>
+        <item>Google Sheet</item>
+        <item>Google Youtube</item>
+        <item>Google 2</item>
+        <item>Google 1</item>
+        <item>Google Bar 2</item>
+        <item>Google Bar 3</item>
+        <item>Google Bar 4</item>
+        <item>Google Bar 5</item>
+        <item>Google 12</item>
+        <item>Google 11</item>
+        <item>Google 4</item>
+        <item>Google 5</item>
+        <item>Google 6</item>
+        <item>Google</item>
+        <item>Chrome Incognito</item>
+        <item>Google Assistant/Gemini</item>
+        <item>Google Chrome</item>
+        <item>Google Docs</item>
+        <item>Google Gmail</item>
+        <item>Google Keep</item>
+        <item>Google Lens</item>
+        <item>Google Maps</item>
+        <item>Google Meet</item>
+        <item>Google Pay</item>
+        <item>Google Photos</item>
+        <item>Google Sheets</item>
+        <item>Google Youtube</item>
+        <item>Pedometer 5</item>
+        <item>Pedometer 1</item>
+        <item>Pedometer 2</item>
+        <item>Pedometer (Beta)</item>
+        <item>Pedometer (Beta)</item>
+        <item>Water 1</item>
+        <item>Water Reminder 2</item>
+        <item>Water Reminder 3</item>
+        <item>Water Reminder 4</item>
+        <item>Music 12</item>
+        <item>Music 9</item>
+        <item>Music 2</item>
+        <item>Music 11</item>
+        <item>Music 8</item>
+        <item>Music 4</item>
+        <item>Music 1</item>
+        <item>Music 3</item>
+        <item>Music 5</item>
+        <item>Music 6</item>
+        <item>Music 7</item>
+        <item>Music 10</item>
+        <item>RemindersWidget 2</item>
+        <item>Notes 2</item>
+        <item>Notes 4</item>
+        <item>Notes 1</item>
+        <item>OneLine Sticky Note</item>
+        <item>RemindersWidget 1</item>
+        <item>Single Note Large</item>
+        <item>Personal Card 2</item>
+        <item>Personal Card 2</item>
+        <item>Personal Card 4</item>
+        <item>Personal Card 1</item>
+        <item>Countdown</item>
+        <item>Countdown</item>
+        <item>Countdown</item>
+        <item>Name/Text Plate</item>
+        <item>Name/Text Plate Square</item>
+        <item>Age Counter</item>
+        <item>Photo Frame</item>
+        <item>Couple Frame</item>
+        <item>PhotoFrame40</item>
+        <item>PhotoFrame39</item>
+        <item>PhotoFrame38</item>
+        <item>PhotoFrame37</item>
+        <item>PhotoFrame36</item>
+        <item>PhotoFrame35</item>
+        <item>PhotoFrame34</item>
+        <item>PhotoFrame33</item>
+        <item>PhotoFrame32</item>
+        <item>PhotoFrame31</item>
+        <item>PhotoFrame30</item>
+        <item>PhotoFrame29</item>
+        <item>PhotoFrame28</item>
+        <item>PhotoFrame27</item>
+        <item>PhotoFrame26</item>
+        <item>PhotoFrame25</item>
+        <item>PhotoFrame24</item>
+        <item>PhotoFrame23</item>
+        <item>PhotoFrame22</item>
+        <item>PhotoFrame21</item>
+        <item>PhotoFrame20</item>
+        <item>PhotoFrame19</item>
+        <item>PhotoFrame18</item>
+        <item>PhotoFrame17</item>
+        <item>PhotoFrame16</item>
+        <item>PhotoFrame15</item>
+        <item>PhotoFrame14</item>
+        <item>PhotoFrame13</item>
+        <item>PhotoFrame12</item>
+        <item>PhotoFrame11</item>
+        <item>PhotoFrame10</item>
+        <item>PhotoFrame9</item>
+        <item>PhotoFrame8</item>
+        <item>PhotoFrame7</item>
+        <item>PhotoFrame6</item>
+        <item>PhotoFrame5</item>
+        <item>Photo Slider Circle</item>
+        <item>Photo Slider Square</item>
+        <item>Photo Slider Rectangle</item>
+        <item>PhotoFrame4</item>
+        <item>PhotoFrame3</item>
+        <item>PhotoFrame2</item>
+        <item>PhotoFrame1</item>
+        <item>Bookmark List 1</item>
+        <item>Bookmark List 2</item>
+        <item>PomodoroWidget</item>
+        <item>Screentime1</item>
+        <item>Screentime2</item>
+        <item>Screentime3</item>
+        <item>Clipboard Widget</item>
+        <item>Wifi 1</item>
+        <item>Airplane 1</item>
+        <item>Alarm 1</item>
+        <item>Bluetooth1</item>
+        <item>DarkMode 1</item>
+        <item>Data 1</item>
+        <item>DND1</item>
+        <item>Hotspot 1</item>
+        <item>Location 1</item>
+        <item>Rotate 1</item>
+        <item>Sound 1</item>
+        <item>Torch 1</item>
+        <item>Vibrate 1</item>
+        <item>Alert Slider 1</item>
+        <item>Alert Slider 2</item>
+        <item>Alert Slider 3</item>
+        <item>Airplane 2</item>
+        <item>Alarm 2</item>
+        <item>Auto-rotate2</item>
+        <item>Bluetooth2</item>
+        <item>Dark Mode2</item>
+        <item>Data 2</item>
+        <item>DND2</item>
+        <item>Hotspot 2</item>
+        <item>Light 2</item>
+        <item>Location 2</item>
+        <item>Sound 2</item>
+        <item>Vibrate 2</item>
+        <item>Wi-Fi 2</item>
+        <item>Airplane 3</item>
+        <item>Alarm 3</item>
+        <item>Auto-rotate3</item>
+        <item>Bluetooth3</item>
+        <item>Dark Mode3</item>
+        <item>Data 3</item>
+        <item>DND3</item>
+        <item>Hotspot 3</item>
+        <item>Location 3</item>
+        <item>Sound 3</item>
+        <item>Vibrate 3</item>
+        <item>Light</item>
+        <item>Wi-Fi 3</item>
+        <item>Airplane 4</item>
+        <item>Alarm 4</item>
+        <item>Auto-rotate 4</item>
+        <item>Bluetooth 4</item>
+        <item>Dark Mode 4</item>
+        <item>Data 4</item>
+        <item>DND 4</item>
+        <item>Hotspot 4</item>
+        <item>Light 4</item>
+        <item>Location 4</item>
+        <item>Sound 4</item>
+        <item>Vibrate 4</item>
+        <item>Wi-Fi 4</item>
+        <item>Advice 1</item>
+        <item>Joke</item>
+        <item>Quotes 1</item>
+        <item>Quotes 3</item>
+        <item>Quotes 2</item>
+        <item>Quotes 5</item>
+        <item>Quotes 6</item>
+        <item>Social Bar</item>
+        <item>Social Folder 1</item>
+        <item>Social Folder 3</item>
+        <item>Social Folder 2</item>
+        <item>Social Folder 4</item>
+        <item>Social Folder 5</item>
+        <item>Weather Forecast 6</item>
+        <item>Weather Forecast 2</item>
+        <item>Weather Forecast 3</item>
+        <item>Weather Forecast 4</item>
+        <item>Weather Forecast 5</item>
+        <item>Weather Forecast 1</item>
+        <item>weather.Weather1</item>
+        <item>weather.Weather2</item>
+        <item>weather.Weather3</item>
+        <item>weather.Weather5</item>
+        <item>weather.Weather6</item>
+        <item>weather.WeatherBar1</item>
+        <item>weather.WeatherAirQ2</item>
+        <item>weather.WeatherUV2</item>
+        <item>weather.WeatherUV1</item>
+        <item>weather.WeatherAirQ</item>
+        <item>Sunrise</item>
+        <item>Sunset</item>
+        <item>Moonphase</item>
+        <item>Moonphase Icon</item>
+        <item>Sunset-Sunrise</item>
+        <item>Sunset-Sunrise 2</item>
+        <item>Wind Speed-Direction</item>
+        <item>Weather Wind 2</item>
+    </array>
+    <array name="widget_sizes">
+        <item>4x1</item>
+        <item>4x1</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>1x1</item>
+        <item>1x1</item>
+        <item>1x1</item>
+        <item>4x1</item>
+        <item>1x1</item>
+        <item>1x1</item>
+        <item>1x1</item>
+        <item>4x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>1x1</item>
+        <item>1x1</item>
+        <item>1x1</item>
+        <item>1x1</item>
+        <item>1x1</item>
+        <item>1x1</item>
+        <item>1x1</item>
+        <item>1x1</item>
+        <item>1x1</item>
+        <item>1x1</item>
+        <item>1x1</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>4x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>4x2</item>
+        <item>4x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>4x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>4x2</item>
+        <item>4x2</item>
+        <item>4x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>4x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>4x1</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>4x2</item>
+        <item>4x2</item>
+        <item>4x2</item>
+        <item>4x2</item>
+        <item>4x2</item>
+        <item>4x2</item>
+        <item>4x2</item>
+        <item>4x2</item>
+        <item>4x2</item>
+        <item>4x2</item>
+        <item>4x2</item>
+        <item>4x2</item>
+        <item>4x2</item>
+        <item>4x2</item>
+        <item>4x2</item>
+        <item>4x2</item>
+        <item>4x2</item>
+        <item>4x2</item>
+        <item>4x2</item>
+        <item>4x2</item>
+        <item>4x2</item>
+        <item>4x2</item>
+        <item>4x2</item>
+        <item>4x2</item>
+        <item>4x2</item>
+        <item>4x2</item>
+        <item>4x2</item>
+        <item>4x2</item>
+        <item>4x2</item>
+        <item>4x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>4x1</item>
+        <item>4x1</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>4x1</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>4x2</item>
+        <item>4x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x1</item>
+        <item>2x1</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x1</item>
+        <item>2x1</item>
+        <item>2x1</item>
+        <item>2x1</item>
+        <item>2x1</item>
+        <item>2x1</item>
+        <item>2x1</item>
+        <item>2x1</item>
+        <item>2x1</item>
+        <item>2x1</item>
+        <item>2x1</item>
+        <item>2x1</item>
+        <item>2x1</item>
+        <item>2x1</item>
+        <item>2x1</item>
+        <item>2x1</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>4x2</item>
+        <item>4x1</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>4x1</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>4x1</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>4x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x1</item>
+        <item>2x1</item>
+        <item>2x1</item>
+        <item>2x1</item>
+        <item>2x1</item>
+        <item>2x1</item>
+        <item>2x1</item>
+        <item>2x1</item>
+        <item>2x1</item>
+        <item>2x1</item>
+        <item>2x1</item>
+        <item>2x1</item>
+        <item>4x2</item>
+        <item>4x2</item>
+        <item>4x1</item>
+        <item>4x1</item>
+        <item>4x1</item>
+        <item>4x1</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>4x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>1x1</item>
+        <item>1x1</item>
+        <item>1x1</item>
+        <item>1x1</item>
+        <item>1x1</item>
+        <item>1x1</item>
+        <item>1x1</item>
+        <item>1x1</item>
+        <item>1x1</item>
+        <item>1x1</item>
+        <item>1x1</item>
+        <item>1x1</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>4x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>4x2</item>
+        <item>4x1</item>
+        <item>4x2</item>
+        <item>2x1</item>
+        <item>2x1</item>
+        <item>4x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>4x2</item>
+        <item>4x1</item>
+        <item>2x2</item>
+        <item>4x2</item>
+        <item>4x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>4x1</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>4x1</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>4x2</item>
+        <item>1x1</item>
+        <item>1x1</item>
+        <item>1x1</item>
+        <item>1x1</item>
+        <item>1x1</item>
+        <item>1x1</item>
+        <item>1x1</item>
+        <item>1x1</item>
+        <item>1x1</item>
+        <item>1x1</item>
+        <item>1x1</item>
+        <item>1x1</item>
+        <item>1x1</item>
+        <item>1x1</item>
+        <item>1x1</item>
+        <item>1x1</item>
+        <item>1x1</item>
+        <item>1x1</item>
+        <item>1x1</item>
+        <item>1x1</item>
+        <item>1x1</item>
+        <item>1x1</item>
+        <item>1x1</item>
+        <item>1x1</item>
+        <item>1x1</item>
+        <item>1x1</item>
+        <item>1x1</item>
+        <item>1x1</item>
+        <item>1x1</item>
+        <item>1x1</item>
+        <item>1x1</item>
+        <item>1x1</item>
+        <item>1x1</item>
+        <item>1x1</item>
+        <item>1x1</item>
+        <item>1x1</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>4x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>4x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>4x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>4x2</item>
+        <item>2x1</item>
+        <item>2x1</item>
+        <item>2x1</item>
+        <item>2x1</item>
+        <item>2x1</item>
+        <item>2x1</item>
+        <item>2x1</item>
+        <item>2x1</item>
+        <item>2x1</item>
+        <item>2x1</item>
+        <item>2x1</item>
+        <item>2x1</item>
+        <item>2x1</item>
+        <item>2x1</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>4x2</item>
+        <item>1x1</item>
+        <item>1x1</item>
+        <item>1x1</item>
+        <item>1x1</item>
+        <item>1x1</item>
+        <item>1x1</item>
+        <item>1x1</item>
+        <item>1x1</item>
+        <item>1x1</item>
+        <item>1x1</item>
+        <item>1x1</item>
+        <item>1x1</item>
+        <item>2x1</item>
+        <item>2x1</item>
+        <item>2x1</item>
+        <item>2x1</item>
+        <item>2x1</item>
+        <item>2x1</item>
+        <item>2x1</item>
+        <item>2x1</item>
+        <item>2x1</item>
+        <item>2x1</item>
+        <item>2x1</item>
+        <item>2x1</item>
+        <item>2x1</item>
+        <item>2x1</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>4x1</item>
+        <item>4x2</item>
+        <item>4x2</item>
+        <item>4x1</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>4x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>4x2</item>
+        <item>4x2</item>
+        <item>4x2</item>
+        <item>4x2</item>
+        <item>4x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>4x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>4x1</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+        <item>2x2</item>
+    </array>
+</resources>

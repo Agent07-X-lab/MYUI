@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="152dp"
+    android:width="152.1dp"
+    android:viewportWidth="152.1"
+    android:viewportHeight="152">
+    <path
+        android:fillColor="@color/widget_background"
+        android:pathData="M152.1,20v112c0,11 -9,20 -20,20H21.9c-10.7,0 -19.8,-7.8 -21.6,-18.3 -0.2,-1.2 -0.3,-2.3 -0.3,-3.5V21.8c0,-1.2 0,-2.3 0.3,-3.5C2.1,7.8 11.2,0 21.9,0h110.2c11,0 20,9 20,20Z"/>
+    <path
+        android:fillColor="@color/widget_background_light"
+        android:pathData="M23.92,14.89L61.78,14.89A9,9 0,0 1,70.78 23.89L70.78,61.44A9,9 0,0 1,61.78 70.44L23.92,70.44A9,9 0,0 1,14.92 61.44L14.92,23.89A9,9 0,0 1,23.92 14.89z"/>
+    <path
+        android:fillColor="@color/widget_background_light"
+        android:pathData="M90.43,14.89L128.29,14.89A9,9 0,0 1,137.29 23.89L137.29,61.44A9,9 0,0 1,128.29 70.44L90.43,70.44A9,9 0,0 1,81.43 61.44L81.43,23.89A9,9 0,0 1,90.43 14.89z"/>
+    <path
+        android:fillColor="@color/widget_background_light"
+        android:pathData="M20.92,77.19L35.42,77.19A6,6 0,0 1,41.42 83.19L41.42,97.54A6,6 0,0 1,35.42 103.54L20.92,103.54A6,6 0,0 1,14.92 97.54L14.92,83.19A6,6 0,0 1,20.92 77.19z"/>
+    <path
+        android:fillColor="@color/widget_background_light"
+        android:pathData="M52.11,77.19L66.61,77.19A6,6 0,0 1,72.61 83.19L72.61,97.54A6,6 0,0 1,66.61 103.54L52.11,103.54A6,6 0,0 1,46.11 97.54L46.11,83.19A6,6 0,0 1,52.11 77.19z"/>
+    <path
+        android:fillColor="@color/widget_background_light"
+        android:pathData="M83.65,77.19L98.15,77.19A6,6 0,0 1,104.15 83.19L104.15,97.54A6,6 0,0 1,98.15 103.54L83.65,103.54A6,6 0,0 1,77.65 97.54L77.65,83.19A6,6 0,0 1,83.65 77.19z"/>
+    <path
+        android:fillColor="@color/widget_background_light"
+        android:pathData="M20.92,108.45L35.42,108.45A6,6 0,0 1,41.42 114.45L41.42,128.8A6,6 0,0 1,35.42 134.8L20.92,134.8A6,6 0,0 1,14.92 128.8L14.92,114.45A6,6 0,0 1,20.92 108.45z"/>
+    <path
+        android:fillColor="@color/widget_background_light"
+        android:pathData="M52.11,108.45L66.61,108.45A6,6 0,0 1,72.61 114.45L72.61,128.8A6,6 0,0 1,66.61 134.8L52.11,134.8A6,6 0,0 1,46.11 128.8L46.11,114.45A6,6 0,0 1,52.11 108.45z"/>
+    <path
+        android:fillColor="@color/widget_background_light"
+        android:pathData="M83.65,108.45L98.15,108.45A6,6 0,0 1,104.15 114.45L104.15,128.8A6,6 0,0 1,98.15 134.8L83.65,134.8A6,6 0,0 1,77.65 128.8L77.65,114.45A6,6 0,0 1,83.65 108.45z"/>
+    <path
+        android:fillColor="@color/widget_background_light"
+        android:pathData="M116.79,77.19L131.29,77.19A6,6 0,0 1,137.29 83.19L137.29,97.54A6,6 0,0 1,131.29 103.54L116.79,103.54A6,6 0,0 1,110.79 97.54L110.79,83.19A6,6 0,0 1,116.79 77.19z"/>
+    <path
+        android:fillColor="@color/widget_background_light"
+        android:pathData="M116.79,108.45L131.29,108.45A6,6 0,0 1,137.29 114.45L137.29,128.8A6,6 0,0 1,131.29 134.8L116.79,134.8A6,6 0,0 1,110.79 128.8L110.79,114.45A6,6 0,0 1,116.79 108.45z"/>
+</vector>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_container"
+    android:padding="0dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:id="@+id/app_launcher_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/applauncher7p"
+            android:tint="@color/widget_background"/>
+        <TextView
+            android:textSize="30dp"
+            android:textColor="@color/widget_text"
+            android:gravity="center"
+            android:id="@+id/app_launcher_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="♥"/>
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/app_launcher_icon"
+            android:padding="4dp"
+            android:visibility="gone"
+            android:layout_width="@dimen/widget_icon_size"
+            android:layout_height="@dimen/widget_icon_size"
+            android:scaleType="fitCenter"
+            android:contentDescription="@string/app_icon"/>
+    </FrameLayout>
+</FrameLayout>

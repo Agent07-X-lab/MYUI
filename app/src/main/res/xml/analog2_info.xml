@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt"
+    android:description="@string/analog_clock_widget_description"
+    android:minWidth="72dp"
+    android:minHeight="72dp"
+    android:updatePeriodMillis="0"
+    android:initialLayout="@layout/analog2_layout"
+    android:previewImage="@drawable/analog2p"
+    android:resizeMode="vertical|horizontal"
+    android:initialKeyguardLayout="@layout/analog2_layout"
+    android:widgetCategory="keyguard|home_screen"
+    android:targetCellWidth="2"
+    android:targetCellHeight="2"/>

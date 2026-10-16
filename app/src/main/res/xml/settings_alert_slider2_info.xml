@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:description="@string/widget_sound_three_state_vertical_description"
+    android:minWidth="72dp"
+    android:minHeight="146dp"
+    android:updatePeriodMillis="0"
+    android:initialLayout="@drawable/settings_sound_profile2"
+    android:configure="com.jndapp.minimal.widgets.billing.PremiumGateConfigActivity"
+    android:previewImage="@drawable/settings_sound_profile2"
+    android:resizeMode="vertical|horizontal"
+    android:widgetCategory="home_screen"
+    android:targetCellWidth="1"
+    android:targetCellHeight="2"/>

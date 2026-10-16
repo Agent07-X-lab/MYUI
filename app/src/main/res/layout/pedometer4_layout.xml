@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_root"
+    android:padding="0dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/widget_container"
+        android:background="@drawable/widget_background"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ProgressBar
+            android:id="@+id/steps_progress"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:max="100"
+            android:progress="0"
+            android:indeterminate="false"
+            android:layout_alignParentBottom="true"
+            android:backgroundTint="@android:color/transparent"
+            style="@android:style/Widget.ProgressBar.Horizontal"/>
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:id="@+id/steps_info_group"
+            android:padding="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/steps_progress"
+            android:layout_alignParentTop="true">
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/steps_count"
+                android:tag="font/mainb.otf"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginBottom="5dp"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:tint="@color/widget_text"
+                android:contentDescription="Steps count"/>
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/steps_label"
+                android:tag="font/mainb.otf"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:tint="@color/widget_text"
+                android:contentDescription="Steps label"
+                android:alpha="0.4"/>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

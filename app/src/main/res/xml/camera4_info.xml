@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minWidth="146dp"
+    android:minHeight="72dp"
+    android:updatePeriodMillis="0"
+    android:initialLayout="@layout/one_camera_layout4"
+    android:configure="com.jndapp.minimal.widgets.billing.PremiumGateConfigActivity"
+    android:previewImage="@drawable/camera4p"
+    android:resizeMode="vertical|horizontal"
+    android:initialKeyguardLayout="@layout/one_camera_layout4"
+    android:widgetCategory="home_screen"
+    android:widgetFeatures="reconfigurable"
+    android:targetCellWidth="2"
+    android:targetCellHeight="1"/>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:description="@string/app_launcher_widget_description"
+    android:minWidth="72dp"
+    android:minHeight="72dp"
+    android:updatePeriodMillis="86400000"
+    android:initialLayout="@layout/widget_app_launcher_10"
+    android:configure="com.jndapp.minimal.widgets.billing.PremiumGateConfigActivity"
+    android:previewImage="@drawable/applauncher10p"
+    android:resizeMode="vertical|horizontal"
+    android:initialKeyguardLayout="@layout/widget_app_launcher_10"
+    android:widgetCategory="keyguard|home_screen"
+    android:widgetFeatures="reconfigurable"
+    android:targetCellWidth="1"
+    android:targetCellHeight="1"/>

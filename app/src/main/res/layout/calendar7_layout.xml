@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_root"
+    android:padding="0dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/widget_container"
+        android:background="@drawable/widget_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="Widget background"
+        android:backgroundTint="@color/widget_background_light"
+        android:clipToOutline="true"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp">
+            <ImageView
+                android:id="@+id/day_name_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:scaleType="fitStart"
+                android:layout_weight="1"
+                android:contentDescription="Day name"/>
+            <ImageView
+                android:id="@+id/day_number_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:scaleType="fitEnd"
+                android:layout_weight="1"
+                android:contentDescription="Day number"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingStart="0dp"
+            android:paddingEnd="0dp">
+            <ImageView
+                android:id="@+id/circle_1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                android:layout_weight="1"
+                android:contentDescription="Day 1"/>
+            <ImageView
+                android:id="@+id/circle_2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                android:layout_weight="1"
+                android:contentDescription="Day 2"/>
+            <ImageView
+                android:id="@+id/circle_3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                android:layout_weight="1"
+                android:contentDescription="Day 3"/>
+            <ImageView
+                android:id="@+id/circle_4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                android:layout_weight="1"
+                android:contentDescription="Day 4"/>
+            <ImageView
+                android:id="@+id/circle_5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                android:layout_weight="1"
+                android:contentDescription="Day 5"/>
+            <ImageView
+                android:id="@+id/circle_6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                android:layout_weight="1"
+                android:contentDescription="Day 6"/>
+            <ImageView
+                android:id="@+id/circle_7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                android:layout_weight="1"
+                android:contentDescription="Day 7"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingStart="0dp"
+            android:paddingEnd="0dp">
+            <ImageView
+                android:id="@+id/circle_8"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                android:layout_weight="1"
+                android:contentDescription="Day 8"/>
+            <ImageView
+                android:id="@+id/circle_9"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                android:layout_weight="1"
+                android:contentDescription="Day 9"/>
+            <ImageView
+                android:id="@+id/circle_10"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                android:layout_weight="1"
+                android:contentDescription="Day 10"/>
+            <ImageView
+                android:id="@+id/circle_11"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                android:layout_weight="1"
+                android:contentDescription="Day 11"/>
+            <ImageView
+                android:id="@+id/circle_12"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                android:layout_weight="1"
+                android:contentDescription="Day 12"/>
+            <ImageView
+                android:id="@+id/circle_13"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                android:layout_weight="1"
+                android:contentDescription="Day 13"/>
+            <ImageView
+                android:id="@+id/circle_14"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                android:layout_weight="1"
+                android:contentDescription="Day 14"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingStart="0dp"
+            android:paddingEnd="0dp">
+            <ImageView
+                android:id="@+id/circle_15"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                android:layout_weight="1"
+                android:contentDescription="Day 15"/>
+            <ImageView
+                android:id="@+id/circle_16"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                android:layout_weight="1"
+                android:contentDescription="Day 16"/>
+            <ImageView
+                android:id="@+id/circle_17"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                android:layout_weight="1"
+                android:contentDescription="Day 17"/>
+            <ImageView
+                android:id="@+id/circle_18"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                android:layout_weight="1"
+                android:contentDescription="Day 18"/>
+            <ImageView
+                android:id="@+id/circle_19"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                android:layout_weight="1"
+                android:contentDescription="Day 19"/>
+            <ImageView
+                android:id="@+id/circle_20"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                android:layout_weight="1"
+                android:contentDescription="Day 20"/>
+            <ImageView
+                android:id="@+id/circle_21"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                android:layout_weight="1"
+                android:contentDescription="Day 21"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingStart="0dp"
+            android:paddingEnd="0dp">
+            <ImageView
+                android:id="@+id/circle_22"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                android:layout_weight="1"
+                android:contentDescription="Day 22"/>
+            <ImageView
+                android:id="@+id/circle_23"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                android:layout_weight="1"
+                android:contentDescription="Day 23"/>
+            <ImageView
+                android:id="@+id/circle_24"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                android:layout_weight="1"
+                android:contentDescription="Day 24"/>
+            <ImageView
+                android:id="@+id/circle_25"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                android:layout_weight="1"
+                android:contentDescription="Day 25"/>
+            <ImageView
+                android:id="@+id/circle_26"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                android:layout_weight="1"
+                android:contentDescription="Day 26"/>
+            <ImageView
+                android:id="@+id/circle_27"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                android:layout_weight="1"
+                android:contentDescription="Day 27"/>
+            <ImageView
+                android:id="@+id/circle_28"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                android:layout_weight="1"
+                android:contentDescription="Day 28"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingStart="0dp"
+            android:paddingEnd="0dp">
+            <ImageView
+                android:id="@+id/circle_29"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                android:layout_weight="1"
+                android:contentDescription="Day 29"/>
+            <ImageView
+                android:id="@+id/circle_30"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                android:layout_weight="1"
+                android:contentDescription="Day 30"/>
+            <ImageView
+                android:id="@+id/circle_31"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                android:layout_weight="1"
+                android:contentDescription="Day 31"/>
+            <ImageView
+                android:id="@+id/circle_32"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                android:layout_weight="1"
+                android:contentDescription="Day 32"/>
+            <ImageView
+                android:id="@+id/circle_33"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                android:layout_weight="1"
+                android:contentDescription="Day 33"/>
+            <ImageView
+                android:id="@+id/circle_34"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                android:layout_weight="1"
+                android:contentDescription="Day 34"/>
+            <ImageView
+                android:id="@+id/circle_35"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:scaleType="centerInside"
+                android:layout_weight="1"
+                android:contentDescription="Day 35"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

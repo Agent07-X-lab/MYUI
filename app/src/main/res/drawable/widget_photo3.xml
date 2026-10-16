@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="152dp"
+    android:width="304dp"
+    android:viewportWidth="304"
+    android:viewportHeight="152">
+    <path
+        android:fillColor="@color/widget_background"
+        android:pathData="M20,0L284,0A20,20 0,0 1,304 20L304,132A20,20 0,0 1,284 152L20,152A20,20 0,0 1,0 132L0,20A20,20 0,0 1,20 0z"/>
+    <path
+        android:fillColor="@color/widget_accent_yellow"
+        android:pathData="M23.65,10.81L280.35,10.81A12.65,12.65 0,0 1,293 23.46L293,128.54A12.65,12.65 0,0 1,280.35 141.19L23.65,141.19A12.65,12.65 0,0 1,11 128.54L11,23.46A12.65,12.65 0,0 1,23.65 10.81z"/>
+    <path
+        android:fillColor="@color/widget_text"
+        android:pathData="M253.67,141.19H101.11V100.31l37.71,-35.72 9.51,-9a14.34,14.34 0,0 1,20 0.27Z"/>
+    <path
+        android:fillColor="@color/widget_background_light"
+        android:pathData="M214.94,140.71c-0.08,0.16 -0.15,0.32 -0.24,0.48H44.83a9.45,9.45 0,0 1,-1.08 -4.4V81.2L54.91,70.63l36.06,-34.17a14.35,14.35 0,0 1,20 0.26l27.84,27.85Z"/>
+    <path
+        android:fillColor="@color/widget_background"
+        android:pathData="M124.48,142.19H22.65A12.65,12.65 0,0 1,10 129.54V78.69L26.04,63.49a14.34,14.34 0,0 1,19.99 0.27l7.87,7.87L100.11,117.83Z"/>
+    <path
+        android:fillColor="@color/widget_text"
+        android:pathData="M238.39,51.33m-14.15,0a14.15,14.15 0,1 1,28.29 0a14.15,14.15 0,1 1,-28.29 0"/>
+</vector>

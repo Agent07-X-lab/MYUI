@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:label="Flashlight"
+    android:description="@string/app_name"
+    android:minWidth="146dp"
+    android:minHeight="72dp"
+    android:updatePeriodMillis="30000"
+    android:initialLayout="@drawable/settings4_torch"
+    android:configure="com.jndapp.minimal.widgets.billing.PremiumGateConfigActivity"
+    android:previewImage="@drawable/settings4_torch"
+    android:resizeMode="vertical|horizontal"
+    android:widgetCategory="home_screen"
+    android:targetCellWidth="2"
+    android:targetCellHeight="1"/>

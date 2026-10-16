@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="152dp"
+    android:width="152dp"
+    android:viewportWidth="152"
+    android:viewportHeight="152">
+    <path
+        android:fillColor="@color/widget_background"
+        android:pathData="M20,0L132,0A20,20 0,0 1,152 20L152,132A20,20 0,0 1,132 152L20,152A20,20 0,0 1,0 132L0,20A20,20 0,0 1,20 0z"/>
+    <path
+        android:fillColor="@color/widget_accent"
+        android:pathData="M66.1,46.3h29.7c5.5,0 9.9,4.4 9.9,9.9v39.5c0,5.5 -4.4,9.9 -9.9,9.9h-39.5c-5.5,0 -9.9,-4.4 -9.9,-9.9v-29.7s19.8,-19.8 19.8,-19.8Z"/>
+    <path
+        android:fillColor="@color/widget_alt"
+        android:pathData="M66.1,46.3v9.9c0,5.5 -4.4,9.9 -9.9,9.9h-9.9l19.8,-19.8Z"/>
+    <path
+        android:fillColor="@color/widget_background"
+        android:pathData="M79.5,76h14.9c1.9,0 3.5,1.6 3.5,3.5h0c0,1.9 -1.6,3.5 -3.5,3.5h-14.9c-1.9,0 -3.5,-1.6 -3.5,-3.5h0c0,-1.9 1.6,-3.5 3.5,-3.5Z"/>
+    <path
+        android:fillColor="@color/widget_background"
+        android:pathData="M59.8,88.5h34.7c1.9,0 3.5,1.6 3.5,3.5h0c0,1.9 -1.6,3.5 -3.5,3.5h-34.7c-1.9,0 -3.5,-1.6 -3.5,-3.5h0c0,-1.9 1.6,-3.5 3.5,-3.5h0Z"/>
+</vector>

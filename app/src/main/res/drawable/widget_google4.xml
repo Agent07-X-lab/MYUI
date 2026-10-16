@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="152dp"
+    android:width="152dp"
+    android:viewportWidth="152"
+    android:viewportHeight="152">
+    <path
+        android:fillColor="@color/widget_background"
+        android:pathData="M152,20v112c0,11 -9,20 -20,20H20c-0.7,0 -1.5,0 -2.2,-0.1 -10,-1.1 -17.8,-9.6 -17.8,-19.9V20C0,8.9 9,0 20,0h112C143,0 152,9 152,20h0Z"/>
+    <path
+        android:fillColor="@color/widget_accent_blue"
+        android:pathData="M130.3,11H21.7c-5.9,0 -10.6,4.8 -10.6,10.6v39.6c0,5.9 4.8,10.6 10.6,10.6h108.5c5.9,0 10.6,-4.8 10.6,-10.6V21.6c0,-5.9 -4.8,-10.6 -10.6,-10.6h0.1Z"/>
+    <path
+        android:fillColor="@color/widget_background_light"
+        android:pathData="M61.5,81.3H20.4c-5.4,0 -9.8,4.4 -9.8,9.8v41.2c0,5.4 4.4,9.8 9.8,9.8h41.2c5.4,0 9.8,-4.4 9.8,-9.8v-41.2c0,-5.4 -4.4,-9.8 -9.8,-9.8h-0.1Z"/>
+    <path
+        android:fillColor="@color/widget_background_light"
+        android:pathData="M130.8,81.3h-41.2c-5.4,0 -9.8,4.4 -9.8,9.8v41.2c0,5.4 4.4,9.8 9.8,9.8h41.2c5.4,0 9.8,-4.4 9.8,-9.8v-41.2c0,-5.4 -4.4,-9.8 -9.8,-9.8Z"/>
+    <path
+        android:fillColor="@color/widget_white"
+        android:pathData="M69.9,43.6c0,3.8 -3,6.7 -6.7,6.8 -3.8,0 -6.7,-3 -6.8,-6.7 0,-3.8 3,-6.7 6.7,-6.8h0c3.7,0 6.7,2.9 6.7,6.6v0.2h0.1ZM66.9,43.6c0.2,-2.1 -1.4,-3.9 -3.6,-4.1 -2.1,-0.2 -3.9,1.4 -4.1,3.6v0.5c-0.2,2.1 1.4,3.9 3.6,4.1 2.1,0.2 3.9,-1.4 4.1,-3.6v-0.5Z"/>
+    <path
+        android:fillColor="@color/widget_white"
+        android:pathData="M84.6,43.6c0,3.8 -3,6.7 -6.7,6.8 -3.8,0 -6.7,-3 -6.8,-6.7s3,-6.7 6.7,-6.8h0c3.7,0 6.7,2.9 6.7,6.6v0.2h0.1ZM81.5,43.6c0.2,-2.1 -1.4,-3.9 -3.6,-4.1 -2.1,-0.2 -3.9,1.4 -4.1,3.6v0.5c-0.2,2.1 1.4,3.9 3.6,4.1 2.1,0.2 3.9,-1.4 4.1,-3.6v-0.5Z"/>
+    <path
+        android:fillColor="@color/widget_white"
+        android:pathData="M98.6,37.2v12.2c0,5 -2.9,7 -6.5,7s-5,-1.6 -6,-3.9l2.6,-1.1c0.5,1.4 1.8,2.4 3.4,2.5 2.3,0 3.6,-1.4 3.6,-3.9v-1h0c-1,1.1 -2.3,1.6 -3.6,1.5 -3.8,0 -6.7,-3.3 -6.5,-7 0,-3.6 3,-6.4 6.5,-6.5 1.3,0 2.6,0.5 3.6,1.5h0v-1.1h2.9v-0.3ZM96,43.6c0,-2.4 -1.6,-4.1 -3.6,-4.1s-3.9,1.8 -3.8,4h0c0,2.2 1.5,3.9 3.7,4h0c2.1,0 3.6,-1.7 3.6,-4h0.1Z"/>
+    <path
+        android:fillColor="@color/widget_white"
+        android:pathData="M103.2,30v19.8h-2.9v-19.8h2.9Z"/>
+    <path
+        android:fillColor="@color/widget_white"
+        android:pathData="M114.6,45.7l2.4,1.5c-1.2,1.8 -3.4,3 -5.6,3 -3.7,0 -6.7,-2.9 -6.7,-6.6v-0.3c-0.2,-3.6 2.5,-6.6 6.1,-6.7h0.3c2.6,0 5,1.7 5.9,4.3l0.3,0.8 -9.1,3.8c0.5,1.3 1.8,2.1 3.3,2.1s2.6,-0.8 3.4,-1.8h-0.1ZM107.4,43.3l6,-2.5c-0.4,-1 -1.5,-1.5 -2.5,-1.4 -2.1,0 -3.7,1.8 -3.6,3.9h0.1Z"/>
+    <path
+        android:fillColor="@color/widget_white"
+        android:pathData="M45.3,41.8v-2.9h9.6c0,0.5 0.2,1.1 0.2,1.7 0,2.5 -0.9,4.9 -2.5,6.7 -1.8,2 -4.6,3.1 -7.4,2.9 -5.9,0 -10.5,-4.7 -10.5,-10.5s4.7,-10.5 10.5,-10.5 5.3,1.1 7.3,2.9l-2.1,2.1c-1.4,-1.3 -3.3,-2.1 -5.2,-2.1 -4.2,0.2 -7.5,3.7 -7.4,7.9 0,4 3.4,7.3 7.4,7.4 2,0 3.9,-0.7 5.3,-2.1s1.4,-2.3 1.6,-3.6c0,0 -6.9,0 -6.9,0Z"/>
+    <path
+        android:fillColor="@color/widget_text"
+        android:pathData="M110.2,97c-0.5,7.9 -6.8,14.1 -14.6,14.6h0c7.9,0.5 14.1,6.8 14.6,14.6h0c0.5,-7.9 6.8,-14.1 14.6,-14.6h0c-7.9,-0.5 -14.1,-6.8 -14.6,-14.6h0Z"/>
+    <path
+        android:fillColor="@color/widget_text"
+        android:pathData="M35.5,100.7c-1.4,0.2 -2.9,0.6 -3.9,1.6s-1.7,2.5 -1.7,4.1v2.6h3v-1.6c0,-0.5 0,-1.1 0.2,-1.6 0.3,-0.8 0.8,-1.5 1.6,-1.8 0.4,-0.3 0.9,-0.3 1.4,-0.3h2.3v-3s-2.9,0 -2.9,0Z"/>
+    <path
+        android:fillColor="@color/widget_text"
+        android:pathData="M43.4,100.7h2.7c2,0 3.8,1.1 4.9,2.9s0.9,1.8 1,2.9v2.8h-3v-2.6c-0.2,-1.5 -1.3,-2.7 -2.8,-2.9h-2.7v-2.9h0v-0.2s0,0 -0.1,0Z"/>
+    <path
+        android:fillColor="@color/widget_text"
+        android:pathData="M40.3,107.5h1.2c1.3,0.2 2.3,0.9 3,1.9 0.3,0.5 0.5,1.1 0.6,1.7v1.1c-0.3,2.3 -2.4,4 -4.8,3.7 -1.9,-0.3 -3.5,-1.7 -3.7,-3.6v-1.1c0.3,-1.9 1.7,-3.4 3.6,-3.7h0.1Z"/>
+    <path
+        android:fillColor="@color/widget_text"
+        android:pathData="M30.1,114.1h3v2.6c0,1.6 1.3,2.8 2.9,2.9h2.6v3h-2.5c-3.2,0 -5.8,-2.5 -6,-5.6 0,0 0,-2.9 0,-2.9Z"/>
+    <path
+        android:fillColor="@color/widget_text"
+        android:pathData="M47.7,116.6h0.8c1.3,0.2 2.3,1.4 2,2.7s-1.4,2.3 -2.7,2c-1.3,-0.2 -2.3,-1.4 -2,-2.7 0.2,-1 0.9,-1.8 1.9,-2Z"/>
+</vector>
