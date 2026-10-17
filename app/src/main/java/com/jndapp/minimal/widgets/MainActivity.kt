@@ -50,19 +50,6 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        // Keep widget services alive
-        try {
-            val keepAliveIntent = Intent(this, WidgetKeepAliveService::class.java)
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-                startForegroundService(keepAliveIntent)
-            } else {
-                startService(keepAliveIntent)
-            }
-        } catch (_: Exception) {}
-
-        // Check activity recognition permission for health widgets
-        checkStepSensorPermission()
-
         setContent {
             MyUITheme(darkTheme = true) {
                 var selectedTabIndex by remember { mutableIntStateOf(0) }
