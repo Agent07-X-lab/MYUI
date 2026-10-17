@@ -75,7 +75,7 @@ abstract class DigitalBase : AppWidgetProvider() {
         super.onReceive(context, intent)
         val action = intent.action ?: return
         if (action == Intent.ACTION_TIME_TICK ||
-            action == Intent.ACTION_TIME_SET ||
+            action == Intent.ACTION_TIME_CHANGED ||
             action == Intent.ACTION_TIMEZONE_CHANGED ||
             action == Intent.ACTION_DATE_CHANGED ||
             action == Intent.ACTION_USER_PRESENT ||

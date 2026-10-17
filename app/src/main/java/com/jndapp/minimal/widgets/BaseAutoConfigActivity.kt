@@ -33,7 +33,4 @@ open class BaseAutoConfigActivity : Activity() {
     }
 }
 
-class AppFolderWidgetConfigActivity : BaseAutoConfigActivity()
-class TextWidgetConfigActivity : BaseAutoConfigActivity()
-class PedometerConfigActivity : BaseAutoConfigActivity()
 class QuickNoteEditActivity7 : BaseAutoConfigActivity()
