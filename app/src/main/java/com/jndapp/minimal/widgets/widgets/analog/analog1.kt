@@ -6,12 +6,18 @@ import android.content.res.ColorStateList
 import android.graphics.Color
 import android.widget.RemoteViews
 import com.jndapp.minimal.widgets.R
+import com.jndapp.minimal.widgets.widgets.WidgetDimensions
 
 class analog1 : BaseAnalogWidget() {
 
     override fun getLayoutId(): Int = R.layout.analog1_layout
 
-    override fun configureViews(context: Context, views: RemoteViews, appWidgetManager: AppWidgetManager) {
+    override fun configureViews(
+        context: Context,
+        views: RemoteViews,
+        appWidgetManager: AppWidgetManager,
+        dimensions: WidgetDimensions
+    ) {
         val studioPrefs = context.getSharedPreferences("studio_prefs", Context.MODE_PRIVATE)
         val widgetPrefs = context.getSharedPreferences("widget_settings", Context.MODE_PRIVATE)
 
@@ -19,7 +25,11 @@ class analog1 : BaseAnalogWidget() {
         val bgColor = studioPrefs.getInt("theme_background_color", Color.parseColor("#000000"))
         val opacity = widgetPrefs.getFloat("widget_opacity", 1.0f)
 
-        views.setInt(R.id.widget_container, "setBackgroundColor", bgColor)
+        try {
+            views.setColorStateList(R.id.widget_container, "setBackgroundTintList", ColorStateList.valueOf(bgColor))
+        } catch (_: Exception) {
+            views.setInt(R.id.widget_container, "setBackgroundColor", bgColor)
+        }
         views.setFloat(R.id.widget_container, "setAlpha", opacity.coerceIn(0.0f, 1.0f))
 
         val accentColorList = ColorStateList.valueOf(accentColor)

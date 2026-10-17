@@ -1,12 +1,13 @@
 package com.jndapp.minimal.widgets.widgets.battery
 
-import android.app.PendingIntent
 import android.appwidget.AppWidgetManager
 import android.content.Context
-import android.content.Intent
+import android.content.res.ColorStateList
 import android.graphics.Color
 import android.widget.RemoteViews
 import com.jndapp.minimal.widgets.R
+import com.jndapp.minimal.widgets.widgets.WidgetDimensions
+import com.jndapp.minimal.widgets.widgets.WidgetScaleHelper
 
 class Battery1 : BaseBatteryWidget() {
 
@@ -14,12 +15,13 @@ class Battery1 : BaseBatteryWidget() {
 
     override fun updateBatteryViews(
         context: Context,
+        views: RemoteViews,
         appWidgetManager: AppWidgetManager,
         appWidgetId: Int,
         batteryPercent: Int,
-        isCharging: Boolean
+        isCharging: Boolean,
+        dimensions: WidgetDimensions
     ) {
-        val views = RemoteViews(context.packageName, getLayoutId())
         val studioPrefs = context.getSharedPreferences("studio_prefs", Context.MODE_PRIVATE)
         val widgetPrefs = context.getSharedPreferences("widget_settings", Context.MODE_PRIVATE)
 
@@ -27,39 +29,41 @@ class Battery1 : BaseBatteryWidget() {
         val bgColor = studioPrefs.getInt("theme_background_color", Color.parseColor("#000000"))
         val opacity = widgetPrefs.getFloat("widget_opacity", 1.0f)
 
-        views.setInt(R.id.widget_container, "setBackgroundColor", bgColor)
+        try {
+            views.setColorStateList(R.id.widget_container, "setBackgroundTintList", ColorStateList.valueOf(bgColor))
+        } catch (_: Exception) {
+            views.setInt(R.id.widget_container, "setBackgroundColor", bgColor)
+        }
         views.setFloat(R.id.widget_container, "setAlpha", opacity.coerceIn(0.0f, 1.0f))
 
-        views.setProgressBar(R.id.circular_progress, 100, batteryPercent, false)
+        // Dynamically scale inner ring container so the circular progress bar fits any cell dimension
+        val targetPx = dimensions.targetDimensionPx
+        val innerRingPx = (0.78f * targetPx).toInt()
+        WidgetScaleHelper.setViewSizePx(views, R.id.ring_container_inner, innerRingPx.toFloat())
 
+        try {
+            views.setProgressBar(R.id.circular_progress, 100, batteryPercent, false)
+        } catch (_: Exception) {}
+
+        val textSizePct = (innerRingPx * 0.32f).coerceAtLeast(18f)
         val percentBitmap = drawTextBitmap(
             context = context,
             text = "$batteryPercent%",
-            textSize = 34f,
+            textSize = textSizePct,
             textColor = Color.WHITE,
             fontPath = "font/mainb.otf"
         )
         views.setImageViewBitmap(R.id.battery_percentage_image, percentBitmap)
 
+        val textSizeStatus = (innerRingPx * 0.14f).coerceIn(10f, 22f)
         val statusText = if (isCharging) "CHARGING" else "BATTERY"
         val statusBitmap = drawTextBitmap(
             context = context,
             text = statusText,
-            textSize = 14f,
+            textSize = textSizeStatus,
             textColor = accentColor,
             fontPath = "font/mainr.otf"
         )
         views.setImageViewBitmap(R.id.battery_status_image, statusBitmap)
-
-        val powerIntent = Intent(Intent.ACTION_POWER_USAGE_SUMMARY)
-        val pendingIntent = PendingIntent.getActivity(
-            context,
-            appWidgetId,
-            powerIntent,
-            PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
-        )
-        views.setOnClickPendingIntent(R.id.widget_root, pendingIntent)
-
-        appWidgetManager.updateAppWidget(appWidgetId, views)
     }
 }

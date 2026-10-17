@@ -1,0 +1,27 @@
+package com.jndapp.minimal.widgets.widgets.weather
+
+import com.jndapp.minimal.widgets.widgets.UniversalWidgetProvider
+
+class Moonphase : UniversalWidgetProvider()
+class Moonphase2 : UniversalWidgetProvider()
+class SunSetRise : UniversalWidgetProvider()
+class SunSetRise2 : UniversalWidgetProvider()
+class Sunrise : UniversalWidgetProvider()
+class Sunset : UniversalWidgetProvider()
+class Weather2 : UniversalWidgetProvider()
+class Weather3 : UniversalWidgetProvider()
+class Weather5 : UniversalWidgetProvider()
+class Weather6 : UniversalWidgetProvider()
+class WeatherAirQ : UniversalWidgetProvider()
+class WeatherAirQ2 : UniversalWidgetProvider()
+class WeatherBar1 : UniversalWidgetProvider()
+class WeatherForecast1 : UniversalWidgetProvider()
+class WeatherForecast2 : UniversalWidgetProvider()
+class WeatherForecast3 : UniversalWidgetProvider()
+class WeatherForecast4 : UniversalWidgetProvider()
+class WeatherForecast5 : UniversalWidgetProvider()
+class WeatherForecast6 : UniversalWidgetProvider()
+class WeatherUV1 : UniversalWidgetProvider()
+class WeatherUV2 : UniversalWidgetProvider()
+class Wind1 : UniversalWidgetProvider()
+class Wind2 : UniversalWidgetProvider()

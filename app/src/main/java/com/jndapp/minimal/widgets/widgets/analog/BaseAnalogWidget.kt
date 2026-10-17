@@ -6,11 +6,12 @@ import android.appwidget.AppWidgetProvider
 import android.content.ComponentName
 import android.content.Context
 import android.content.Intent
-import android.content.res.ColorStateList
-import android.graphics.Color
 import android.os.Bundle
 import android.widget.RemoteViews
 import com.jndapp.minimal.widgets.R
+import com.jndapp.minimal.widgets.widgets.WidgetDimensions
+import com.jndapp.minimal.widgets.widgets.WidgetRatio
+import com.jndapp.minimal.widgets.widgets.WidgetScaleHelper
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 import java.util.Locale
@@ -19,11 +20,27 @@ abstract class BaseAnalogWidget : AppWidgetProvider() {
 
     abstract fun getLayoutId(): Int
 
-    abstract fun configureViews(context: Context, views: RemoteViews, appWidgetManager: AppWidgetManager)
+    abstract fun configureViews(
+        context: Context,
+        views: RemoteViews,
+        appWidgetManager: AppWidgetManager,
+        dimensions: WidgetDimensions
+    )
 
     fun updateWidget(context: Context, appWidgetManager: AppWidgetManager, appWidgetId: Int) {
         val views = RemoteViews(context.packageName, getLayoutId())
-        configureViews(context, views, appWidgetManager)
+
+        // Calculate and apply scaling / padding based on launcher cell bounds
+        val dimensions = WidgetScaleHelper.applyWidgetScale(
+            context = context,
+            views = views,
+            appWidgetManager = appWidgetManager,
+            appWidgetId = appWidgetId,
+            rootViewId = R.id.widget_root,
+            ratio = WidgetRatio.SQUARE
+        )
+
+        configureViews(context, views, appWidgetManager, dimensions)
 
         // Launch system clock / alarms on tap
         val clockIntent = Intent(Intent.ACTION_MAIN).apply {
@@ -38,6 +55,10 @@ abstract class BaseAnalogWidget : AppWidgetProvider() {
             PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
         )
         views.setOnClickPendingIntent(R.id.widget_root, pendingIntent)
+        try {
+            views.setOnClickPendingIntent(R.id.widget_container, pendingIntent)
+            views.setOnClickPendingIntent(R.id.analog_clock, pendingIntent)
+        } catch (_: Exception) {}
 
         appWidgetManager.updateAppWidget(appWidgetId, views)
     }
@@ -57,6 +78,15 @@ abstract class BaseAnalogWidget : AppWidgetProvider() {
     ) {
         super.onAppWidgetOptionsChanged(context, appWidgetManager, appWidgetId, newOptions)
         updateWidget(context, appWidgetManager, appWidgetId)
+    }
+
+    override fun onDeleted(context: Context, appWidgetIds: IntArray) {
+        super.onDeleted(context, appWidgetIds)
+        val editor = context.getSharedPreferences("widget_ratio_preferences", Context.MODE_PRIVATE).edit()
+        for (id in appWidgetIds) {
+            editor.remove("widget_fixed_ratio_$id")
+        }
+        editor.apply()
     }
 
     companion object {

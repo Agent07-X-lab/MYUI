@@ -1,0 +1,26 @@
+package com.jndapp.minimal.widgets.widgets.device
+
+import com.jndapp.minimal.widgets.widgets.UniversalWidgetProvider
+
+class DeviceBatteryTemp : UniversalWidgetProvider()
+class DeviceBatteryVoltage : UniversalWidgetProvider()
+class DeviceCPU : UniversalWidgetProvider()
+class DeviceChargeStatus : UniversalWidgetProvider()
+class DeviceDataUsage : UniversalWidgetProvider()
+class DeviceIP : UniversalWidgetProvider()
+class DeviceLastBoot : UniversalWidgetProvider()
+class DeviceName : UniversalWidgetProvider()
+class DeviceNetwork : UniversalWidgetProvider()
+class DeviceOS : UniversalWidgetProvider()
+class DeviceRAM : UniversalWidgetProvider()
+class DeviceRefreshRate : UniversalWidgetProvider()
+class DeviceResolution : UniversalWidgetProvider()
+class DeviceSpeedTest : UniversalWidgetProvider()
+class DeviceStorage : UniversalWidgetProvider()
+class DeviceStorageRemain : UniversalWidgetProvider()
+class DeviceTimeToCharge : UniversalWidgetProvider()
+class DeviceUptime : UniversalWidgetProvider()
+class DotsRam : UniversalWidgetProvider()
+class DotsStorage : UniversalWidgetProvider()
+class DotsTemp : UniversalWidgetProvider()
+class DotsVolume : UniversalWidgetProvider()

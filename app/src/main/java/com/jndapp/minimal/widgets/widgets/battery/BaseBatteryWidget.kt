@@ -3,7 +3,6 @@ package com.jndapp.minimal.widgets.widgets.battery
 import android.app.PendingIntent
 import android.appwidget.AppWidgetManager
 import android.appwidget.AppWidgetProvider
-import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
@@ -12,17 +11,24 @@ import android.os.BatteryManager
 import android.os.Bundle
 import android.widget.RemoteViews
 import com.jndapp.minimal.widgets.R
+import com.jndapp.minimal.widgets.widgets.WidgetDimensions
+import com.jndapp.minimal.widgets.widgets.WidgetRatio
+import com.jndapp.minimal.widgets.widgets.WidgetScaleHelper
 
 abstract class BaseBatteryWidget : AppWidgetProvider() {
 
     abstract fun getLayoutId(): Int
 
+    open fun getWidgetRatio(): WidgetRatio = WidgetRatio.SQUARE
+
     abstract fun updateBatteryViews(
         context: Context,
+        views: RemoteViews,
         appWidgetManager: AppWidgetManager,
         appWidgetId: Int,
         batteryPercent: Int,
-        isCharging: Boolean
+        isCharging: Boolean,
+        dimensions: WidgetDimensions
     )
 
     fun updateWidget(context: Context, appWidgetManager: AppWidgetManager, appWidgetId: Int) {
@@ -35,7 +41,32 @@ abstract class BaseBatteryWidget : AppWidgetProvider() {
         val isCharging = status == BatteryManager.BATTERY_STATUS_CHARGING ||
                 status == BatteryManager.BATTERY_STATUS_FULL
 
-        updateBatteryViews(context, appWidgetManager, appWidgetId, batteryPct, isCharging)
+        val views = RemoteViews(context.packageName, getLayoutId())
+
+        val dimensions = WidgetScaleHelper.applyWidgetScale(
+            context = context,
+            views = views,
+            appWidgetManager = appWidgetManager,
+            appWidgetId = appWidgetId,
+            rootViewId = R.id.widget_root,
+            ratio = getWidgetRatio()
+        )
+
+        updateBatteryViews(context, views, appWidgetManager, appWidgetId, batteryPct, isCharging, dimensions)
+
+        val powerIntent = Intent(Intent.ACTION_POWER_USAGE_SUMMARY)
+        val pendingIntent = PendingIntent.getActivity(
+            context,
+            appWidgetId,
+            powerIntent,
+            PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
+        )
+        views.setOnClickPendingIntent(R.id.widget_root, pendingIntent)
+        try {
+            views.setOnClickPendingIntent(R.id.widget_container, pendingIntent)
+        } catch (_: Exception) {}
+
+        appWidgetManager.updateAppWidget(appWidgetId, views)
     }
 
     override fun onUpdate(context: Context, appWidgetManager: AppWidgetManager, appWidgetIds: IntArray) {
@@ -55,6 +86,15 @@ abstract class BaseBatteryWidget : AppWidgetProvider() {
         updateWidget(context, appWidgetManager, appWidgetId)
     }
 
+    override fun onDeleted(context: Context, appWidgetIds: IntArray) {
+        super.onDeleted(context, appWidgetIds)
+        val editor = context.getSharedPreferences("widget_ratio_preferences", Context.MODE_PRIVATE).edit()
+        for (id in appWidgetIds) {
+            editor.remove("widget_fixed_ratio_$id")
+        }
+        editor.apply()
+    }
+
     companion object {
         fun drawTextBitmap(
             context: Context,
@@ -64,7 +104,7 @@ abstract class BaseBatteryWidget : AppWidgetProvider() {
             fontPath: String = "font/mainb.otf"
         ): Bitmap {
             val paint = Paint(Paint.ANTI_ALIAS_FLAG).apply {
-                this.textSize = textSize
+                this.textSize = textSize.coerceAtLeast(10f)
                 color = textColor
                 textAlign = Paint.Align.CENTER
                 try {
@@ -74,8 +114,8 @@ abstract class BaseBatteryWidget : AppWidgetProvider() {
 
             val bounds = Rect()
             paint.getTextBounds(text, 0, text.length, bounds)
-            val width = (bounds.width() + 16).coerceAtLeast(1)
-            val height = (bounds.height() + 16).coerceAtLeast(1)
+            val width = (bounds.width() + 24).coerceAtLeast(1)
+            val height = (bounds.height() + 24).coerceAtLeast(1)
 
             val bitmap = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888)
             val canvas = Canvas(bitmap)

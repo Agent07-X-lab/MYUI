@@ -6,11 +6,17 @@ import android.content.res.ColorStateList
 import android.graphics.Color
 import android.widget.RemoteViews
 import com.jndapp.minimal.widgets.R
+import com.jndapp.minimal.widgets.widgets.WidgetDimensions
 
 open class GenericAnalogWidget(private val layoutResId: Int) : BaseAnalogWidget() {
     override fun getLayoutId(): Int = layoutResId
 
-    override fun configureViews(context: Context, views: RemoteViews, appWidgetManager: AppWidgetManager) {
+    override fun configureViews(
+        context: Context,
+        views: RemoteViews,
+        appWidgetManager: AppWidgetManager,
+        dimensions: WidgetDimensions
+    ) {
         val studioPrefs = context.getSharedPreferences("studio_prefs", Context.MODE_PRIVATE)
         val widgetPrefs = context.getSharedPreferences("widget_settings", Context.MODE_PRIVATE)
 
