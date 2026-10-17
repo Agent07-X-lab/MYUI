@@ -3,6 +3,7 @@ package com.jndapp.minimal.widgets
 import android.Manifest
 import android.content.Intent
 import android.content.pm.PackageManager
+import android.net.Uri
 import android.os.Build
 import android.os.Bundle
 import android.widget.Toast
@@ -22,13 +23,7 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.core.content.ContextCompat
-import android.content.Context
-import com.google.android.play.core.appupdate.AppUpdateManager
-import com.google.android.play.core.appupdate.AppUpdateManagerFactory
-import com.google.android.play.core.install.model.AppUpdateType
-import com.google.android.play.core.install.model.UpdateAvailability
 import com.jndapp.minimal.widgets.services.WidgetKeepAliveService
-import com.jndapp.minimal.widgets.ui.screens.OnboardingScreen
 import com.jndapp.minimal.widgets.ui.screens.SettingsScreen
 import com.jndapp.minimal.widgets.ui.screens.StudioScreen
 import com.jndapp.minimal.widgets.ui.screens.WallpapersScreen
@@ -37,14 +32,12 @@ import com.jndapp.minimal.widgets.ui.theme.MyUITheme
 
 sealed class Screen(val title: String, val icon: ImageVector) {
     object Widgets : Screen("Widgets", Icons.Rounded.Widgets)
-    object Wallpapers : Screen("Wallpapers", Icons.Rounded.Wallpaper)
     object Studio : Screen("Studio", Icons.Rounded.Palette)
+    object Wallpapers : Screen("Wallpapers", Icons.Rounded.Wallpaper)
     object Settings : Screen("Settings", Icons.Rounded.Settings)
 }
 
 class MainActivity : ComponentActivity() {
-
-    private var appUpdateManager: AppUpdateManager? = null
 
     private val requestPermissionLauncher = registerForActivityResult(
         ActivityResultContracts.RequestPermission()
@@ -56,12 +49,6 @@ class MainActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        // Initialize update manager
-        try {
-            appUpdateManager = AppUpdateManagerFactory.create(this)
-            checkForAppUpdates(silent = true)
-        } catch (_: Exception) {}
 
         // Keep widget services alive
         try {
@@ -124,7 +111,17 @@ class MainActivity : ComponentActivity() {
                             2 -> WallpapersScreen(paddingValues = innerPadding)
                             3 -> SettingsScreen(
                                 paddingValues = innerPadding,
-                                onCheckUpdate = { checkForAppUpdates(silent = false) }
+                                onCheckUpdate = {
+                                    try {
+                                        val intent = Intent(
+                                            Intent.ACTION_VIEW,
+                                            Uri.parse("https://github.com/Agent07-X-lab/MYUI/releases")
+                                        )
+                                        this@MainActivity.startActivity(intent)
+                                    } catch (_: Exception) {
+                                        Toast.makeText(this@MainActivity, "MyUI v2.2.06-foss (Latest FOSS Release)", Toast.LENGTH_SHORT).show()
+                                    }
+                                }
                             )
                         }
                     }
@@ -141,27 +138,6 @@ class MainActivity : ComponentActivity() {
             ) == PackageManager.PERMISSION_GRANTED
             if (!hasPermission) {
                 requestPermissionLauncher.launch(Manifest.permission.ACTIVITY_RECOGNITION)
-            }
-        }
-    }
-
-    private fun checkForAppUpdates(silent: Boolean) {
-        appUpdateManager?.appUpdateInfo?.addOnSuccessListener { appUpdateInfo ->
-            if (appUpdateInfo.updateAvailability() == UpdateAvailability.UPDATE_AVAILABLE &&
-                appUpdateInfo.isUpdateTypeAllowed(AppUpdateType.FLEXIBLE)
-            ) {
-                appUpdateManager?.startUpdateFlowForResult(
-                    appUpdateInfo,
-                    AppUpdateType.FLEXIBLE,
-                    this,
-                    100
-                )
-            } else if (!silent) {
-                Toast.makeText(this, "App is up to date!", Toast.LENGTH_SHORT).show()
-            }
-        }?.addOnFailureListener {
-            if (!silent) {
-                Toast.makeText(this, "Unable to check for updates", Toast.LENGTH_SHORT).show()
             }
         }
     }

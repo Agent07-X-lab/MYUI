@@ -8,6 +8,13 @@ import android.util.Log
 import com.jndapp.minimal.widgets.QuickNoteEditActivity
 import com.jndapp.minimal.widgets.widgets.weather.WeatherWidgetConfigActivity
 
+/**
+ * Open-Source Widget Auto-Configurator
+ *
+ * In commercial builds, this activity served as a paywall gate requiring in-app purchases.
+ * In this Free & Open Source edition, all pro subscriptions and paywalls are completely cut:
+ * every widget is 100% unlocked, immediately placed, and rendered with zero purchase or license checks.
+ */
 class PremiumGateConfigActivity : Activity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {

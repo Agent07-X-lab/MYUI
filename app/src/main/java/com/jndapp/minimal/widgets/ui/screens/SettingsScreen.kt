@@ -71,17 +71,71 @@ fun SettingsScreen(
                 )
                 Spacer(modifier = Modifier.width(16.dp))
                 Column {
+                    Row(verticalAlignment = Alignment.CenterVertically) {
+                        Text(
+                            text = "MyUI",
+                            fontSize = 28.sp,
+                            fontWeight = FontWeight.Bold,
+                            color = MaterialTheme.colorScheme.onBackground
+                        )
+                        Spacer(modifier = Modifier.width(8.dp))
+                        Surface(
+                            color = MaterialTheme.colorScheme.primary.copy(alpha = 0.2f),
+                            shape = RoundedCornerShape(6.dp)
+                        ) {
+                            Text(
+                                text = "OPEN SOURCE",
+                                fontSize = 10.sp,
+                                fontWeight = FontWeight.Bold,
+                                color = MaterialTheme.colorScheme.primary,
+                                modifier = Modifier.padding(horizontal = 6.dp, vertical = 2.dp)
+                            )
+                        }
+                    }
                     Text(
-                        text = "MyUI",
-                        fontSize = 28.sp,
-                        fontWeight = FontWeight.Bold,
-                        color = MaterialTheme.colorScheme.onBackground
-                    )
-                    Text(
-                        text = "Version 2.2.06 (Reconstructed)",
+                        text = "Version 2.2.06-foss (Free & Open Source)",
                         fontSize = 13.sp,
                         color = MaterialTheme.colorScheme.onSurfaceVariant
                     )
+                }
+            }
+        }
+
+        // Open Source Freedom Highlights Card
+        item {
+            Card(
+                modifier = Modifier.fillMaxWidth(),
+                shape = RoundedCornerShape(20.dp),
+                colors = CardDefaults.cardColors(
+                    containerColor = MaterialTheme.colorScheme.primaryContainer.copy(alpha = 0.35f)
+                )
+            ) {
+                Row(
+                    modifier = Modifier.padding(16.dp),
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Icon(
+                        imageVector = Icons.Rounded.LockOpen,
+                        contentDescription = "Unlocked",
+                        tint = MaterialTheme.colorScheme.primary,
+                        modifier = Modifier.size(28.dp)
+                    )
+                    Spacer(modifier = Modifier.width(14.dp))
+                    Column {
+                        Text(
+                            text = "100% Free & Fully Unlocked",
+                            fontWeight = FontWeight.Bold,
+                            fontSize = 14.sp,
+                            color = MaterialTheme.colorScheme.onBackground
+                        )
+                        Spacer(modifier = Modifier.height(2.dp))
+                        Text(
+                            text = "No Pro subscriptions, no billing gates, no tracking ads. All 422 widgets & 41 studio themes are free forever.",
+                            fontSize = 12.sp,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant,
+                            lineHeight = 16.sp
+                        )
+                    }
                 }
             }
         }
@@ -169,16 +223,23 @@ fun SettingsScreen(
                     )
                     Divider(color = MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.5f))
                     SettingsRow(
+                        icon = Icons.Rounded.SystemUpdate,
+                        title = "Releases & Updates",
+                        subtitle = "Check for new open-source releases on GitHub",
+                        onClick = onCheckUpdate
+                    )
+                    Divider(color = MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.5f))
+                    SettingsRow(
                         icon = Icons.Rounded.NewReleases,
                         title = "What's New in MyUI",
-                        subtitle = "Complete rebrand, clean dark UI, and modern Compose architecture",
+                        subtitle = "100% Free & Open Source, zero paywalls, modern Compose architecture",
                         onClick = { showWhatsNewDialog = true }
                     )
                     Divider(color = MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.5f))
                     SettingsRow(
                         icon = Icons.Rounded.Article,
                         title = "Open Source Licenses",
-                        subtitle = "AndroidX, Jetpack Compose, Coil, Lottie, Material 3",
+                        subtitle = "Apache 2.0, MIT, Jetpack Compose, Material 3",
                         onClick = { showLicensesDialog = true }
                     )
                 }
@@ -210,7 +271,7 @@ fun SettingsScreen(
                     color = MaterialTheme.colorScheme.onSurface
                 )
                 Text(
-                    text = "Minimalist focus engineered for Android",
+                    text = "Free & Open Source Widgets for Android",
                     fontSize = 12.sp,
                     color = MaterialTheme.colorScheme.onSurfaceVariant
                 )
@@ -230,11 +291,11 @@ fun SettingsScreen(
             title = { Text("What's New in MyUI", fontWeight = FontWeight.Bold) },
             text = {
                 Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
-                    Text("• Fresh MyUI brand identity with approved geometric clock logo.")
-                    Text("• Near-black (#0B0C0F) and warm yellow (#FFD600) premium design system.")
-                    Text("• Removed legacy AdMob tracking and obsolete background hooks.")
-                    Text("• Integrated first-launch onboarding walkthrough.")
-                    Text("• Full compatibility with Android 12L through Android 15+.")
+                    Text("• 100% Free & Open Source: No subscriptions, no in-app purchases, no paywalls.")
+                    Text("• Full 422 Widget Suite: Clocks, Weather, Battery, Health, Notes, App Folders, and more.")
+                    Text("• Unlocked 41 Studio Themes: All Dark, Light, Pastel, and Muted themes free for everyone.")
+                    Text("• Zero Trackers & Zero Ads: Stripped Google Play billing APIs and advertising trackers.")
+                    Text("• Modern Architecture: Native Jetpack Compose, Material 3, and full Android 12L-15+ support.")
                 }
             },
             confirmButton = {
@@ -254,6 +315,7 @@ fun SettingsScreen(
             title = { Text("Open Source Licenses", fontWeight = FontWeight.Bold) },
             text = {
                 Column(verticalArrangement = Arrangement.spacedBy(6.dp)) {
+                    Text("• MyUI - Minimal Widgets (Apache License 2.0)", fontSize = 13.sp, fontWeight = FontWeight.SemiBold)
                     Text("• Android Jetpack & Jetpack Compose (Apache 2.0)", fontSize = 13.sp)
                     Text("• Material Components for Android (Apache 2.0)", fontSize = 13.sp)
                     Text("• Coil Image Loading Library (Apache 2.0)", fontSize = 13.sp)

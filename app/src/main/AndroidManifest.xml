@@ -20,7 +20,6 @@
     <uses-permission android:name="android.permission.FLASHLIGHT"/>
     <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
     <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY"/>
-    <uses-permission android:name="com.android.vending.BILLING"/>
     <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS"/>
     <uses-feature
         android:name="android.hardware.sensor.accelerometer"
@@ -85,18 +84,7 @@
             <action android:name="android.intent.action.DIAL"/>
             <data android:path="tel:"/>
         </intent>
-        <package android:name="com.android.vending"/>
-        <intent>
-            <action android:name="com.android.vending.billing.InAppBillingService.BIND"/>
-        </intent>
-        <intent>
-            <action android:name="com.google.android.apps.play.billingtestcompanion.BillingOverrideService.BIND"/>
-        </intent>
     </queries>
-    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
-    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID"/>
-    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION"/>
-    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_TOPICS"/>
     <permission
         android:name="com.jndapp.minimal.widgets.permission.C2D_MESSAGE"
         android:protectionLevel="signature"/>
@@ -119,7 +107,6 @@
     <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS"/>
     <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ"/>
     <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE"/>
-    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
     <permission
         android:name="com.jndapp.minimal.widgets.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
         android:protectionLevel="signature"/>

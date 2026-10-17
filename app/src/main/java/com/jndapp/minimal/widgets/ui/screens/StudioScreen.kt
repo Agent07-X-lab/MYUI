@@ -292,28 +292,11 @@ fun StudioScreen(
                     Spacer(modifier = Modifier.width(16.dp))
 
                     Column(modifier = Modifier.weight(1f)) {
-                        Row(verticalAlignment = Alignment.CenterVertically) {
-                            Text(
-                                text = theme.name,
-                                fontWeight = FontWeight.Bold,
-                                fontSize = 16.sp
-                            )
-                            if (theme.isPro) {
-                                Spacer(modifier = Modifier.width(8.dp))
-                                Surface(
-                                    color = MaterialTheme.colorScheme.primary.copy(alpha = 0.2f),
-                                    shape = RoundedCornerShape(6.dp)
-                                ) {
-                                    Text(
-                                        text = "PRO",
-                                        fontSize = 10.sp,
-                                        fontWeight = FontWeight.Bold,
-                                        color = MaterialTheme.colorScheme.primary,
-                                        modifier = Modifier.padding(horizontal = 6.dp, vertical = 2.dp)
-                                    )
-                                }
-                            }
-                        }
+                        Text(
+                            text = theme.name,
+                            fontWeight = FontWeight.Bold,
+                            fontSize = 16.sp
+                        )
                         Text(
                             text = theme.description,
                             fontSize = 12.sp,

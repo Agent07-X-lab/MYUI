@@ -13,7 +13,7 @@ android {
         minSdk = 32
         targetSdk = 35
         versionCode = 22
-        versionName = "2.2.06"
+        versionName = "2.2.06-foss"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -54,8 +54,6 @@ dependencies {
     implementation(libs.androidx.material.icons.extended)
     implementation(libs.lottie.compose)
     implementation(libs.coil.compose)
-    implementation(libs.play.app.update)
-    implementation(libs.play.app.update.ktx)
     implementation(libs.gson)
     implementation(libs.google.material)
     implementation(libs.androidx.constraintlayout)

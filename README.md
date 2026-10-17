@@ -1,13 +1,28 @@
-# Minimal Widgets — Android Source Reconstruction
+# MyUI — Minimal Widgets (Free & Open Source Edition)
 
-Reconstructed modern Android Studio project for **Minimal Widgets v2.2.06** by JustNewDesigns.
+100% Free & Open Source Software (FOSS) modern Android widget suite engineered in **Jetpack Compose** and the native **Android AppWidget framework**.
+
+Licensed under the **Apache License 2.0**.
+
+---
+
+## 🌟 Open Source & Free Community Edition Features
+
+- **No Pro Subscriptions / No Paywalls:** All commercial in-app purchase gates, subscription requirements, and billing checks have been completely stripped out.
+- **422 Widgets Fully Unlocked:** All widgets (Analog Clocks, Digital Clocks, Weather, Calendar, Health/Pedometer, Battery, App Folders, Quotes, Music, System Monitors) are available to place immediately with zero restrictions.
+- **41 Studio Custom Themes Unlocked:** Complete theme engine with all Dark, Light, Pastel, and Muted themes unlocked with no "PRO" locks or badges.
+- **Zero Proprietary Google Play SDKs:** Removed proprietary Google Play Billing (`com.android.vending.BILLING`) and Play In-App Updates. Releases and updates link directly to GitHub Releases.
+- **Zero Ads & Zero Trackers:** All Google AdMob (`AD_ID`, `AdServices`) and install referrer trackers have been completely excised.
+- **Native Android Standards:** Built with Jetpack Compose (Material 3), Kotlin 2.0, and modern RemoteViews architecture compatible with Android 12L (SDK 32) through Android 15+ (SDK 35/36).
+
+---
 
 ## 📱 Project Architecture
 
-- **UI Framework:** 100% Jetpack Compose (Material 3) with dynamic animated transitions.
-- **Widgets:** Android Native AppWidget Framework (`RemoteViews`) supporting dynamic theme tinting, opacity blending, and real-time sensor/battery binding.
+- **UI Framework:** 100% Jetpack Compose (Material 3) with animated tab transitions.
+- **Widgets:** Android Native AppWidget Framework (`RemoteViews`) supporting dynamic theme tinting, background opacity blending, and real-time sensor/battery binding.
 - **Language:** Kotlin 2.0 with Jetpack Compose Compiler plugin.
-- **Build System:** Gradle with Version Catalog (`gradle/libs.versions.toml`) and Kotlin DSL (`build.gradle.kts`).
+- **Build System:** Gradle 8.10.2 with Version Catalog (`gradle/libs.versions.toml`) and Kotlin DSL (`build.gradle.kts`).
 - **Target SDK:** 35 / 36 | **Min SDK:** 32
 
 ---
@@ -16,38 +31,29 @@ Reconstructed modern Android Studio project for **Minimal Widgets v2.2.06** by J
 
 ```
 MinimalWidgets_Reconstructed/
+├── LICENSE                            # Apache License 2.0
 ├── gradle/
-│   ├── libs.versions.toml             # Standard Gradle Version Catalog
+│   ├── libs.versions.toml             # Standard Gradle Version Catalog (FOSS dependencies)
 │   └── wrapper/
 │       └── gradle-wrapper.properties  # Gradle 8.10.2 configuration
 ├── app/
-│   ├── build.gradle.kts               # Module build configuration with Compose dependencies
+│   ├── build.gradle.kts               # Module build configuration (FOSS dependencies)
 │   ├── proguard-rules.pro             # Proguard & R8 keep rules
 │   └── src/
 │       └── main/
-│           ├── AndroidManifest.xml    # Component declarations, permissions & widget receivers
+│           ├── AndroidManifest.xml    # Component declarations, permissions & 422 widget receivers
 │           ├── assets/
 │           │   ├── font/              # 43 custom typefaces (Bebas, gobold, iwidget_01-31, mainb/m/r)
-│           │   ├── icons/             # Phosphor icons JSON definitions
-│           │   ├── more_apps.json     # App directory catalogue
-│           │   └── *.json             # Lottie animations (panda, confetti, loading, etc.)
+│           │   └── icons/             # Phosphor icons JSON definitions
 │           ├── res/                   # 2,140+ XML layouts, drawables, styles, and dimensions
 │           └── java/com/jndapp/minimal/widgets/
 │               ├── ApplicationClass.kt       # Application entry point & notification channels
 │               ├── MainActivity.kt           # Compose root activity with BottomNavigation
-│               ├── ConfigActivities.kt      # Widget configuration dialogs
-│               ├── BluetoothPermissionDialog.kt
-│               ├── NotificationAccessDialog.kt
-│               ├── NotificationListener.kt
-│               ├── AutorotatePermissionActivity.kt
-│               ├── QuickNoteEditActivity.kt
-│               ├── BatteryMonitorService.kt
+│               ├── ConfigActivities.kt      # Widget configuration dialogs (Compose)
+│               ├── QuickNoteEditActivity.kt  # Note widget editor
 │               ├── model/
 │               │   ├── Wallpaper.kt          # Wallpaper model with collection parsing
-│               │   ├── CustomQuote.kt        # User custom quote model
-│               │   └── ThemeModel.kt         # 50+ Studio color themes (Dark, Light, Pastel, Muted)
-│               ├── models/
-│               │   └── MoreApp.kt            # Cross-promotion app model
+│               │   └── ThemeModel.kt         # 41 Studio color themes (Dark, Light, Pastel, Muted)
 │               ├── services/
 │               │   ├── WidgetKeepAliveService.kt  # Foreground keep-alive service
 │               │   ├── PedometerService.kt        # Hardware step counter service
@@ -58,78 +64,47 @@ MinimalWidgets_Reconstructed/
 │               ├── ui/
 │               │   ├── theme/
 │               │   │   ├── Color.kt          # Curated color tokens
-│               │   │   └── Theme.kt          # MinimalWidgetsTheme with Material 3 Dark/Light
+│               │   │   └── Theme.kt          # MyUITheme with Material 3 Dark/Light
 │               │   └── screens/
-│               │       ├── WidgetsScreen.kt   # Widget catalog, search, category chips, favorites
+│               │       ├── WidgetsScreen.kt   # Full widget gallery, search, category chips, favorites
 │               │       ├── WallpapersScreen.kt# High-res wallpaper grid and preview modal
 │               │       ├── StudioScreen.kt    # Widget customization studio with live preview
-│               │       └── SettingsScreen.kt  # Version info, updater, What's New, Lottie mascot
-│               └── widgets/
-│                   ├── analog/
-│                   │   ├── BaseAnalogWidget.kt# Abstract base analog clock provider
-│                   │   ├── analog1.kt         # Concrete Analog 1 provider
-│                   │   └── AnalogWidgets.kt   # Concrete providers analog2 through analog31
-│                   ├── battery/
-│                   │   ├── BaseBatteryWidget.kt# Abstract base battery ring provider
-│                   │   ├── Battery1.kt        # Concrete Battery 1 provider
-│                   │   └── BatteryWidgets.kt  # Concrete providers Battery2 through Battery20
-│                   └── weather/
-│                       ├── WeatherBase.kt     # Abstract base weather provider
-│                       ├── Weather1.kt        # Concrete Weather 1 provider
-│                       └── WeatherWidgetConfigActivity.kt
+│               │       └── SettingsScreen.kt  # Version info, GitHub releases, FOSS highlights
+│               └── widgets/                  # Native AppWidgetProvider implementations
 ```
 
 ---
 
-## 🚀 How to Open and Build in Android Studio
+## 🚀 How to Build & Install
 
 ### Prerequisites
-- **Android Studio:** Ladybug (2024.2.1) or newer recommended.
-- **JDK:** Java 17 or Java 21 (bundled with Android Studio).
-- **Android SDK:** Platforms 34, 35, or 36 installed via SDK Manager.
+- **JDK:** Java 17 or Java 21 (Eclipse Adoptium OpenJDK 21 or Android Studio JBR).
+- **Android SDK:** Platforms 34 or 35 installed.
 
-### Step-by-Step Instructions
-1. Open **Android Studio**.
-2. Select **File > Open…** and browse to:
-   ```
-   MinimalWidgets_Reconstructed
-   ```
-3. Allow Gradle to perform the initial sync. Android Studio will automatically resolve all dependencies declared in `gradle/libs.versions.toml`.
-4. To build debug APK via terminal:
-   ```bash
-   ./gradlew assembleDebug
-   ```
-5. To install directly to a connected Android device or emulator:
-   ```bash
-   ./gradlew installDebug
-   ```
-6. Alternatively, click the green **Run (Shift+F10)** button in the Android Studio toolbar.
+### Build via Gradle
+```bash
+# Build the open-source debug APK
+./gradlew assembleDebug
+```
+The generated APK will be at:
+`app/build/outputs/apk/debug/app-debug.apk`
+
+### Install directly to Device / Tablet via ADB
+Double click `install_v22_to_tablet.bat` or run:
+```bash
+adb install -r MyUI-v22-Fixed.apk
+```
 
 ---
 
-## 🔍 Features Recovered from Evidence
+## 📄 License
 
-1. **4-Tab Navigation & Screens:**
-   - **Widgets:** Dynamic browsing, category filtering, search, favorite toggling persisted in `widget_favorites_prefs`, and `AppWidgetManager.requestPinAppWidget` shortcuts.
-   - **Wallpapers:** Categorized wallpaper grid matching original model fields (`name`, `author`, `url`, `thumbnail`, `collections`, `dimensions`).
-   - **Studio:** Color theming system with over 50 verified color palettes across Dark, Light, Pastel, and Muted themes recovered from `hg0.java`. Live widget preview card with interactive opacity slider persisted in `widget_settings`.
-   - **Settings:** App version `V2.2.06 (16)`, Google Play In-App Updates, What's New dialog, restored purchase actions, verified social links, and Lottie `panda_animation.json` mascot.
-2. **Assets & Resources:**
-   - 43 authentic typography files (`assets/font/`).
-   - 6 Lottie animation JSONs.
-   - 2,142 XML layouts, drawables, and widget receiver configurations.
-   - Cross-promotion catalogue (`more_apps.json`).
-3. **Background Services & Receivers:**
-   - `WidgetKeepAliveService` with notification channel `"widget_keep_alive_channel"`.
-   - `PedometerService` reading hardware step counter sensors.
-   - `CompassSensorService` reading rotation vector & orientation.
-   - `ConnectivityMonitorService` monitoring network state.
-   - `BootCompletedReceiver` ensuring widgets persist across device reboots.
+```
+Copyright 2026 Agent07-X-lab & Community Contributors
 
----
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
 
-## ⚠️ Notes & Limitations
-
-- **Ad Units & Analytics:** Decompiled Google Ad units and Crashlytics tracking IDs have been decoupled to maintain clean, buildable open-source code without proprietary credentials.
-- **Billing Bypass:** In-app purchase gates (`PremiumGateConfigActivity`) default to verified unlocked state in preferences without bypassing Google Play licensing security.
-- **Smali / Dex Obfuscation:** Decompiled classes in `defpackage` containing inlined synthetic Compose lambdas were completely re-engineered into clean, idiomatic Kotlin composables.
+    http://www.apache.org/licenses/LICENSE-2.0
+```
