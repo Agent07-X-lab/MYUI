@@ -207,6 +207,23 @@ open class UniversalWidgetProvider : AppWidgetProvider() {
                 }
             }
 
+            // 3. Universal content binding for all other categories (Health, Weather, AI, Notes, Quotes, Music, Folders, Settings, etc.)
+            try {
+                UniversalWidgetContentBinder.bindContent(
+                    context = context,
+                    views = views,
+                    appWidgetId = appWidgetId,
+                    widgetClassName = thisClassName,
+                    layoutId = layoutId,
+                    accentColor = primaryTextColor,
+                    primaryTextColor = if (isDark) Color.WHITE else Color.parseColor("#111111"),
+                    secondaryTextColor = secondaryTextColor,
+                    isDark = isDark
+                )
+            } catch (e: Exception) {
+                Log.w(TAG, "Error in UniversalWidgetContentBinder for $thisClassName: ${e.message}")
+            }
+
             // 3. Click intent configuration
             val clickIntent = when {
                 isCameraWidget -> {

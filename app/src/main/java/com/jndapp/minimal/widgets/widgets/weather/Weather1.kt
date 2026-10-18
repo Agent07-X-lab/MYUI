@@ -41,10 +41,10 @@ class Weather1 : WeatherBase() {
         views.setFloat(R.id.widget_container, "setAlpha", opacity.coerceIn(0.0f, 1.0f))
 
         val cityName = weatherPrefs.getString("city_$appWidgetId", null)
-        val isConfigured = !cityName.isNullOrBlank()
+        val effectiveCity = if (!cityName.isNullOrBlank()) cityName else "San Francisco"
 
-        val tempText = if (isConfigured) "24°" else "Config"
-        val locationText = if (isConfigured) "in ${cityName?.lowercase()}" else "tap to setup"
+        val tempText = "24°"
+        val locationText = "in ${effectiveCity.lowercase()}"
 
         val targetPx = dimensions.targetDimensionPx
         val tempSize = (targetPx * 0.22f).coerceIn(24f, 54f)
