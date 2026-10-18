@@ -2,6 +2,7 @@ package com.jndapp.minimal.widgets.widgets.personalise
 
 import com.jndapp.minimal.widgets.widgets.UniversalWidgetProvider
 
+class AgeCounter : UniversalWidgetProvider()
 class Countdown1 : UniversalWidgetProvider()
 class Countdown2 : UniversalWidgetProvider()
 class Countdown3 : UniversalWidgetProvider()

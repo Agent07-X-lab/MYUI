@@ -81,12 +81,26 @@ open class UniversalWidgetProvider : AppWidgetProvider() {
                     android.content.res.Configuration.UI_MODE_NIGHT_MASK) ==
                     android.content.res.Configuration.UI_MODE_NIGHT_YES
 
-            val bgColor = if (isDark) Color.parseColor("#1E1E1E") else Color.parseColor("#F5F5F7")
-            val primaryTextColor = if (isDark) Color.WHITE else Color.parseColor("#111111")
+            val studioPrefs = context.getSharedPreferences("studio_prefs", Context.MODE_PRIVATE)
+            val widgetPrefs = context.getSharedPreferences("widget_settings", Context.MODE_PRIVATE)
+
+            val customBg = studioPrefs.getInt("theme_background_color", 0)
+            val customAccent = studioPrefs.getInt("theme_accent_color", 0)
+            val opacity = widgetPrefs.getFloat("widget_opacity", 1.0f).coerceIn(0.1f, 1.0f)
+
+            val baseBgColor = if (customBg != 0) customBg else (if (isDark) Color.parseColor("#1E1E1E") else Color.parseColor("#F5F5F7"))
+            val alpha = (opacity * 255).toInt()
+            val bgColor = Color.argb(alpha, Color.red(baseBgColor), Color.green(baseBgColor), Color.blue(baseBgColor))
+
+            val primaryTextColor = if (customAccent != 0) customAccent else (if (isDark) Color.WHITE else Color.parseColor("#111111"))
             val secondaryTextColor = if (isDark) Color.parseColor("#B0B0B0") else Color.parseColor("#666666")
 
             try {
                 views.setColorStateList(R.id.widget_container, "setBackgroundTintList", ColorStateList.valueOf(bgColor))
+            } catch (ignored: Exception) {
+            }
+            try {
+                views.setColorStateList(R.id.widget_root, "setBackgroundTintList", ColorStateList.valueOf(bgColor))
             } catch (ignored: Exception) {
             }
 

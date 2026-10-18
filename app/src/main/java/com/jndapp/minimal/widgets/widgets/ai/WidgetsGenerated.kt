@@ -2,6 +2,8 @@ package com.jndapp.minimal.widgets.widgets.ai
 
 import com.jndapp.minimal.widgets.widgets.UniversalWidgetProvider
 
+class AiBar : UniversalWidgetProvider()
+class AiBar2 : UniversalWidgetProvider()
 class AiFolder1 : UniversalWidgetProvider()
 class AiFolder2 : UniversalWidgetProvider()
 class AiFolder3 : UniversalWidgetProvider()
