@@ -15,6 +15,8 @@ import com.jndapp.minimal.widgets.MainActivity
 import com.jndapp.minimal.widgets.R
 import android.provider.ContactsContract
 import android.provider.MediaStore
+import com.jndapp.minimal.widgets.ContactWidgetConfigActivity
+import com.jndapp.minimal.widgets.widgets.contacts.ContactWidgetHelper
 import com.jndapp.minimal.widgets.widgets.device.DeviceMetricsRenderer
 import java.text.SimpleDateFormat
 import java.util.Calendar
@@ -155,53 +157,171 @@ open class UniversalWidgetProvider : AppWidgetProvider() {
             // 2. Contact widgets binding
             if (isContactWidget) {
                 try {
-                    views.setTextViewText(R.id.contact_name, "Favorite Contact")
-                    views.setTextColor(R.id.contact_name, primaryTextColor)
-                    views.setImageViewResource(R.id.contact_image, R.drawable.default_contact_image)
+                    val contactPrefs = context.getSharedPreferences("contact_prefs", Context.MODE_PRIVATE)
+                    val contactName = contactPrefs.getString("name_$appWidgetId", null)?.takeIf { it.isNotBlank() } ?: "Tap to Set Contact"
+                    val contactNumber = contactPrefs.getString("number_$appWidgetId", "") ?: ""
 
+                    views.setTextViewText(R.id.contact_name, contactName)
+                    views.setTextColor(R.id.contact_name, primaryTextColor)
+
+                    // Setup Intent to open ContactWidgetConfigActivity
+                    val configIntent = Intent(context, ContactWidgetConfigActivity::class.java).apply {
+                        flags = Intent.FLAG_ACTIVITY_NEW_TASK
+                        putExtra(AppWidgetManager.EXTRA_APPWIDGET_ID, appWidgetId)
+                    }
+                    val configPending = PendingIntent.getActivity(
+                        context,
+                        appWidgetId * 100 + 10,
+                        configIntent,
+                        PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
+                    )
+
+                    // Load photo / avatar
+                    val photoBitmap = ContactWidgetHelper.getContactPhotoBitmap(context, appWidgetId, 0)
+                    if (photoBitmap != null) {
+                        views.setImageViewBitmap(R.id.contact_image, photoBitmap)
+                        try {
+                            val rawPhoto = ContactWidgetHelper.getRawContactPhotoBitmap(context, appWidgetId, 0) ?: photoBitmap
+                            views.setImageViewBitmap(R.id.contact_background_image, rawPhoto)
+                        } catch (_: Exception) {}
+                    } else if (contactName != "Tap to Set Contact") {
+                        val initialBmp = ContactWidgetHelper.createInitialAvatarBitmap(
+                            contactName,
+                            primaryTextColor,
+                            if (isDark) Color.BLACK else Color.WHITE
+                        )
+                        views.setImageViewBitmap(R.id.contact_image, initialBmp)
+                    } else {
+                        views.setImageViewResource(R.id.contact_image, R.drawable.default_contact_image)
+                    }
+
+                    // Multi-contact slots (Contact 3 with 4 slots, Contact 4 with 8 slots)
                     for (i in 1..8) {
+                        val slotIndex = i - 1
+                        val slotName = contactPrefs.getString("name_${appWidgetId}_$slotIndex", null)?.takeIf { it.isNotBlank() }
+                            ?: if (i == 1 && contactName != "Tap to Set Contact") contactName else "Contact $i"
+                        val slotNumber = contactPrefs.getString("number_${appWidgetId}_$slotIndex", "")?.takeIf { it.isNotBlank() }
+                            ?: if (i == 1) contactNumber else ""
+
                         val nameRes = context.resources.getIdentifier("contact_name_$i", "id", context.packageName)
                         val imgRes = context.resources.getIdentifier("contact_image_$i", "id", context.packageName)
+                        val containerRes = context.resources.getIdentifier("contact_container_$i", "id", context.packageName)
+
                         if (nameRes != 0) {
-                            views.setTextViewText(nameRes, "Contact $i")
+                            views.setTextViewText(nameRes, slotName)
                             views.setTextColor(nameRes, primaryTextColor)
                         }
                         if (imgRes != 0) {
-                            views.setImageViewResource(imgRes, R.drawable.default_contact_image)
+                            val slotPhoto = ContactWidgetHelper.getContactPhotoBitmap(context, appWidgetId, slotIndex)
+                            if (slotPhoto != null) {
+                                views.setImageViewBitmap(imgRes, slotPhoto)
+                            } else if (slotName != "Contact $i") {
+                                val slotInitial = ContactWidgetHelper.createInitialAvatarBitmap(
+                                    slotName,
+                                    primaryTextColor,
+                                    if (isDark) Color.BLACK else Color.WHITE
+                                )
+                                views.setImageViewBitmap(imgRes, slotInitial)
+                            } else {
+                                views.setImageViewResource(imgRes, R.drawable.default_contact_image)
+                            }
+                        }
+                        if (containerRes != 0) {
+                            val slotIntent = if (slotNumber.isNotBlank()) {
+                                Intent(Intent.ACTION_DIAL, Uri.parse("tel:$slotNumber")).apply {
+                                    flags = Intent.FLAG_ACTIVITY_NEW_TASK
+                                }
+                            } else {
+                                configIntent
+                            }
+                            val slotPending = PendingIntent.getActivity(
+                                context,
+                                appWidgetId * 100 + 20 + i,
+                                slotIntent,
+                                PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
+                            )
+                            views.setOnClickPendingIntent(containerRes, slotPending)
                         }
                     }
 
                     // Call button intent
-                    val callIntent = Intent(Intent.ACTION_DIAL).apply { flags = Intent.FLAG_ACTIVITY_NEW_TASK }
+                    val callIntent = if (contactNumber.isNotBlank()) {
+                        Intent(Intent.ACTION_DIAL, Uri.parse("tel:$contactNumber")).apply {
+                            flags = Intent.FLAG_ACTIVITY_NEW_TASK
+                        }
+                    } else {
+                        configIntent
+                    }
                     val callPending = PendingIntent.getActivity(
                         context,
-                        appWidgetId * 10 + 1,
+                        appWidgetId * 100 + 1,
                         callIntent,
                         PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
                     )
                     views.setOnClickPendingIntent(R.id.call_button, callPending)
 
                     // Message button intent
-                    val smsIntent = Intent(Intent.ACTION_VIEW, Uri.parse("sms:")).apply { flags = Intent.FLAG_ACTIVITY_NEW_TASK }
+                    val smsIntent = if (contactNumber.isNotBlank()) {
+                        Intent(Intent.ACTION_SENDTO, Uri.parse("smsto:$contactNumber")).apply {
+                            flags = Intent.FLAG_ACTIVITY_NEW_TASK
+                        }
+                    } else {
+                        configIntent
+                    }
                     val smsPending = PendingIntent.getActivity(
                         context,
-                        appWidgetId * 10 + 2,
+                        appWidgetId * 100 + 2,
                         smsIntent,
                         PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
                     )
                     views.setOnClickPendingIntent(R.id.message_button, smsPending)
 
-                    // Contacts app intent
-                    val contactsIntent = Intent(Intent.ACTION_VIEW, ContactsContract.Contacts.CONTENT_URI).apply { flags = Intent.FLAG_ACTIVITY_NEW_TASK }
-                    val contactsPending = PendingIntent.getActivity(
+                    // WhatsApp intent
+                    val cleanNum = contactNumber.filter { it.isDigit() }
+                    val waIntent = if (cleanNum.isNotBlank()) {
+                        Intent(Intent.ACTION_VIEW, Uri.parse("https://api.whatsapp.com/send?phone=$cleanNum")).apply {
+                            flags = Intent.FLAG_ACTIVITY_NEW_TASK
+                        }
+                    } else {
+                        configIntent
+                    }
+                    val waPending = PendingIntent.getActivity(
                         context,
-                        appWidgetId * 10 + 3,
-                        contactsIntent,
+                        appWidgetId * 100 + 3,
+                        waIntent,
                         PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
                     )
-                    views.setOnClickPendingIntent(R.id.contact_container, contactsPending)
-                    views.setOnClickPendingIntent(R.id.widget_container, contactsPending)
-                    views.setOnClickPendingIntent(R.id.widget_root, contactsPending)
+
+                    // Telegram intent
+                    val tgIntent = if (cleanNum.isNotBlank()) {
+                        Intent(Intent.ACTION_VIEW, Uri.parse("https://t.me/+$cleanNum")).apply {
+                            flags = Intent.FLAG_ACTIVITY_NEW_TASK
+                        }
+                    } else {
+                        configIntent
+                    }
+                    val tgPending = PendingIntent.getActivity(
+                        context,
+                        appWidgetId * 100 + 4,
+                        tgIntent,
+                        PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
+                    )
+
+                    if (thisClassName.contains("Whatsapp", ignoreCase = true)) {
+                        views.setOnClickPendingIntent(R.id.contact_icon, waPending)
+                    } else if (thisClassName.contains("Telegram", ignoreCase = true)) {
+                        views.setOnClickPendingIntent(R.id.contact_icon, tgPending)
+                    }
+
+                    // Tapping reconfigure button, name, avatar, container opens Setup/Edit screen
+                    views.setOnClickPendingIntent(R.id.reconfigure_button, configPending)
+                    views.setOnClickPendingIntent(R.id.name_container, configPending)
+                    views.setOnClickPendingIntent(R.id.contact_name, configPending)
+                    views.setOnClickPendingIntent(R.id.contact_image, configPending)
+                    views.setOnClickPendingIntent(R.id.contact_background_image, configPending)
+                    views.setOnClickPendingIntent(R.id.contact_container, configPending)
+                    views.setOnClickPendingIntent(R.id.widget_container, configPending)
+                    views.setOnClickPendingIntent(R.id.widget_root, configPending)
                 } catch (e: Exception) {
                     Log.w(TAG, "Error setting contact views: ${e.message}")
                 }
@@ -232,8 +352,9 @@ open class UniversalWidgetProvider : AppWidgetProvider() {
                     }
                 }
                 isContactWidget -> {
-                    Intent(Intent.ACTION_VIEW, ContactsContract.Contacts.CONTENT_URI).apply {
+                    Intent(context, ContactWidgetConfigActivity::class.java).apply {
                         flags = Intent.FLAG_ACTIVITY_NEW_TASK
+                        putExtra(AppWidgetManager.EXTRA_APPWIDGET_ID, appWidgetId)
                     }
                 }
                 else -> {

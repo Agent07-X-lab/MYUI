@@ -141,7 +141,6 @@ open class BaseWidgetConfigActivity(private val configTitle: String) : Component
 }
 
 class PedometerConfigActivity : BaseWidgetConfigActivity("Pedometer Widget")
-class ContactWidgetConfigActivity : BaseWidgetConfigActivity("Contact Widget")
 class DigitalWidgetConfigActivity : BaseWidgetConfigActivity("Digital Clock Widget")
 class AppFolderWidgetConfigActivity : BaseWidgetConfigActivity("App Folder Widget")
 class TextWidgetConfigActivity : BaseWidgetConfigActivity("Custom Text Widget")

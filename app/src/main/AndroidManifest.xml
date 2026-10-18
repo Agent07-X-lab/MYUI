@@ -118,8 +118,9 @@
 
 
         <activity
-            android:theme="@style/Theme.Transparent"
+            android:theme="@style/Theme.CalendarWidget.NoActionBar"
             android:name="com.jndapp.minimal.widgets.ContactWidgetConfigActivity"
+            android:windowSoftInputMode="adjustResize"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
