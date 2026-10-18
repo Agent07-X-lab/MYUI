@@ -6,8 +6,13 @@
     android:updatePeriodMillis="0"
     android:initialLayout="@layout/analog1_layout"
     android:previewImage="@drawable/analog1p"
-    android:resizeMode="vertical|horizontal"
+    android:resizeMode="horizontal|vertical"
+    android:minResizeWidth="40dp"
+    android:minResizeHeight="40dp"
+    android:maxResizeWidth="1000dp"
+    android:maxResizeHeight="1000dp"
     android:initialKeyguardLayout="@layout/analog1_layout"
     android:widgetCategory="keyguard|home_screen"
     android:targetCellWidth="2"
-    android:targetCellHeight="2"/>
+    android:targetCellHeight="2"
+    android:widgetFeatures="reconfigurable"/>

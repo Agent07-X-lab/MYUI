@@ -4,9 +4,13 @@
     android:minHeight="72dp"
     android:updatePeriodMillis="0"
     android:initialLayout="@layout/compass2_layout"
-    android:configure="com.jndapp.minimal.widgets.billing.PremiumGateConfigActivity"
     android:previewImage="@drawable/compass2p"
-    android:resizeMode="vertical|horizontal"
+    android:resizeMode="horizontal|vertical"
+    android:minResizeWidth="40dp"
+    android:minResizeHeight="40dp"
+    android:maxResizeWidth="1000dp"
+    android:maxResizeHeight="1000dp"
     android:widgetCategory="home_screen"
     android:targetCellWidth="1"
-    android:targetCellHeight="1"/>
+    android:targetCellHeight="1"
+    android:widgetFeatures="reconfigurable"/>

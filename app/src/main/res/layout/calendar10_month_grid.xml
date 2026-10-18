@@ -327,7 +327,7 @@
         android:layout_weight="1">
         <TextView
             android:textSize="10sp"
-            android:textColor="@android:color/black"
+            android:textColor="@color/widget_text"
             android:gravity="center"
             android:id="@+id/day_36"
             android:layout_width="0dp"
@@ -335,7 +335,7 @@
             android:layout_weight="1"/>
         <TextView
             android:textSize="10sp"
-            android:textColor="@android:color/black"
+            android:textColor="@color/widget_text"
             android:gravity="center"
             android:id="@+id/day_37"
             android:layout_width="0dp"
@@ -343,7 +343,7 @@
             android:layout_weight="1"/>
         <TextView
             android:textSize="10sp"
-            android:textColor="@android:color/black"
+            android:textColor="@color/widget_text"
             android:gravity="center"
             android:id="@+id/day_38"
             android:layout_width="0dp"
@@ -351,7 +351,7 @@
             android:layout_weight="1"/>
         <TextView
             android:textSize="10sp"
-            android:textColor="@android:color/black"
+            android:textColor="@color/widget_text"
             android:gravity="center"
             android:id="@+id/day_39"
             android:layout_width="0dp"
@@ -359,7 +359,7 @@
             android:layout_weight="1"/>
         <TextView
             android:textSize="10sp"
-            android:textColor="@android:color/black"
+            android:textColor="@color/widget_text"
             android:gravity="center"
             android:id="@+id/day_40"
             android:layout_width="0dp"
@@ -367,7 +367,7 @@
             android:layout_weight="1"/>
         <TextView
             android:textSize="10sp"
-            android:textColor="@android:color/black"
+            android:textColor="@color/widget_text"
             android:gravity="center"
             android:id="@+id/day_41"
             android:layout_width="0dp"
@@ -375,7 +375,7 @@
             android:layout_weight="1"/>
         <TextView
             android:textSize="10sp"
-            android:textColor="@android:color/black"
+            android:textColor="@color/widget_text"
             android:gravity="center"
             android:id="@+id/day_42"
             android:layout_width="0dp"

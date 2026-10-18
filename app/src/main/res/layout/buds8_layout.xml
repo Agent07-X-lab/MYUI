@@ -22,17 +22,17 @@
         <LinearLayout
             android:gravity="start|top"
             android:orientation="horizontal"
-            android:padding="15dp"
-            android:paddingBottom="4dp"
+            android:padding="16dp"
+            android:paddingBottom="2dp"
             android:clipChildren="false"
             android:clipToPadding="false"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="3.5">
+            android:layout_weight="2.5">
             <ImageView
                 android:id="@+id/buds_icon"
-                android:layout_width="35dp"
-                android:layout_height="35dp"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
                 android:layout_marginTop="0dp"
                 android:src="@drawable/ic_buds2"
                 android:scaleType="fitCenter"
@@ -46,42 +46,42 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="4"
-            android:paddingStart="15dp"
-            android:paddingEnd="15dp">
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp">
             <ImageView
                 android:id="@+id/connected_text_image"
                 android:layout_width="wrap_content"
-                android:layout_height="20dp"
-                android:layout_marginBottom="5dp"
+                android:layout_height="24dp"
+                android:layout_marginBottom="4dp"
                 android:scaleType="fitStart"
                 android:adjustViewBounds="true"
-                android:maxHeight="42dp"
+                android:maxHeight="48dp"
                 android:contentDescription="@string/app_name"/>
             <ImageView
                 android:id="@+id/device_name_image"
                 android:layout_width="wrap_content"
-                android:layout_height="10dp"
-                android:layout_marginTop="3dp"
+                android:layout_height="14dp"
+                android:layout_marginTop="2dp"
                 android:layout_marginBottom="8dp"
                 android:scaleType="fitStart"
                 android:adjustViewBounds="true"
-                android:maxHeight="24dp"
+                android:maxHeight="28dp"
                 android:contentDescription="@string/app_name"
-                android:alpha="0.4"/>
+                android:alpha="0.6"/>
         </LinearLayout>
         <LinearLayout
             android:gravity="start|center_vertical"
             android:orientation="horizontal"
-            android:paddingBottom="15dp"
+            android:paddingBottom="16dp"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1"
-            android:paddingStart="15dp"
-            android:paddingEnd="15dp">
+            android:layout_weight="1.5"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp">
             <ProgressBar
                 android:id="@+id/progress_bar"
                 android:layout_width="match_parent"
-                android:layout_height="4dp"
+                android:layout_height="5dp"
                 android:max="100"
                 android:progress="0"
                 android:indeterminate="false"

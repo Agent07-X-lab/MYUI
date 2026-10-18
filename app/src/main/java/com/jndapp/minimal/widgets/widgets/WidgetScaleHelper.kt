@@ -48,15 +48,36 @@ object WidgetScaleHelper {
     ): WidgetDimensions {
         val options = appWidgetManager.getAppWidgetOptions(appWidgetId)
         val density = context.resources.displayMetrics.density
+        val isLandscape = context.resources.configuration.orientation ==
+                android.content.res.Configuration.ORIENTATION_LANDSCAPE
 
-        var minWidth = options?.getInt(AppWidgetManager.OPTION_APPWIDGET_MIN_WIDTH) ?: 0
-        var minHeight = options?.getInt(AppWidgetManager.OPTION_APPWIDGET_MIN_HEIGHT) ?: 0
+        var minWidth = 0
+        var minHeight = 0
+
+        if (options != null) {
+            val optMinW = options.getInt(AppWidgetManager.OPTION_APPWIDGET_MIN_WIDTH)
+            val optMaxW = options.getInt(AppWidgetManager.OPTION_APPWIDGET_MAX_WIDTH)
+            val optMinH = options.getInt(AppWidgetManager.OPTION_APPWIDGET_MIN_HEIGHT)
+            val optMaxH = options.getInt(AppWidgetManager.OPTION_APPWIDGET_MAX_HEIGHT)
+
+            minWidth = if (isLandscape) {
+                if (optMaxW > 0) optMaxW else optMinW
+            } else {
+                if (optMinW > 0) optMinW else optMaxW
+            }
+
+            minHeight = if (isLandscape) {
+                if (optMinH > 0) optMinH else optMaxH
+            } else {
+                if (optMaxH > 0) optMaxH else optMinH
+            }
+        }
 
         if (minWidth <= 0 || minHeight <= 0) {
             val info = appWidgetManager.getAppWidgetInfo(appWidgetId)
             if (info != null) {
-                minWidth = if (minWidth <= 0) (info.minWidth / density).toInt().coerceAtLeast(100) else minWidth
-                minHeight = if (minHeight <= 0) (info.minHeight / density).toInt().coerceAtLeast(100) else minHeight
+                minWidth = if (minWidth <= 0) info.minWidth.coerceAtLeast(140) else minWidth
+                minHeight = if (minHeight <= 0) info.minHeight.coerceAtLeast(100) else minHeight
             } else {
                 minWidth = 180
                 minHeight = 180

@@ -4,9 +4,13 @@
     android:minHeight="146dp"
     android:updatePeriodMillis="21600000"
     android:initialLayout="@drawable/widget_moonphase_1"
-    android:configure="com.jndapp.minimal.widgets.billing.PremiumGateConfigActivity"
     android:previewImage="@drawable/widget_moonphase_1"
-    android:resizeMode="vertical|horizontal"
+    android:resizeMode="horizontal|vertical"
+    android:minResizeWidth="40dp"
+    android:minResizeHeight="40dp"
+    android:maxResizeWidth="1000dp"
+    android:maxResizeHeight="1000dp"
     android:widgetCategory="home_screen"
     android:targetCellWidth="2"
-    android:targetCellHeight="2"/>
+    android:targetCellHeight="2"
+    android:widgetFeatures="reconfigurable"/>

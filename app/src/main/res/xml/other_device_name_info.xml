@@ -5,7 +5,12 @@
     android:updatePeriodMillis="86400000"
     android:initialLayout="@layout/widget_other_layout"
     android:previewImage="@drawable/ic_other_devicename"
-    android:resizeMode="vertical|horizontal"
+    android:resizeMode="horizontal|vertical"
+    android:minResizeWidth="40dp"
+    android:minResizeHeight="40dp"
+    android:maxResizeWidth="1000dp"
+    android:maxResizeHeight="1000dp"
     android:widgetCategory="home_screen"
     android:targetCellWidth="2"
-    android:targetCellHeight="1"/>
+    android:targetCellHeight="1"
+    android:widgetFeatures="reconfigurable"/>

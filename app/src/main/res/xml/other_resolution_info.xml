@@ -5,9 +5,13 @@
     android:minHeight="72dp"
     android:updatePeriodMillis="0"
     android:initialLayout="@layout/widget_other_layout"
-    android:configure="com.jndapp.minimal.widgets.billing.PremiumGateConfigActivity"
     android:previewImage="@drawable/other_resolution"
-    android:resizeMode="vertical|horizontal"
+    android:resizeMode="horizontal|vertical"
+    android:minResizeWidth="40dp"
+    android:minResizeHeight="40dp"
+    android:maxResizeWidth="1000dp"
+    android:maxResizeHeight="1000dp"
     android:widgetCategory="keyguard|home_screen"
     android:targetCellWidth="2"
-    android:targetCellHeight="1"/>
+    android:targetCellHeight="1"
+    android:widgetFeatures="reconfigurable"/>

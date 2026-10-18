@@ -265,16 +265,31 @@ abstract class BaseCalendarWidget : AppWidgetProvider() {
             views.setTextColor(R.id.current_day_number, primaryTextColor)
         } catch (ignored: Exception) {
         }
+        try {
+            val cDayNumBitmap = createTextBitmap(context, dayNumber, 320f, primaryTextColor)
+            views.setImageViewBitmap(R.id.current_day_number, cDayNumBitmap)
+        } catch (ignored: Exception) {
+        }
 
         try {
             views.setTextViewText(R.id.current_day_name, dayOfWeek)
             views.setTextColor(R.id.current_day_name, accentColor)
         } catch (ignored: Exception) {
         }
+        try {
+            val cDayNameBitmap = createTextBitmap(context, dayOfWeek, 110f, accentColor)
+            views.setImageViewBitmap(R.id.current_day_name, cDayNameBitmap)
+        } catch (ignored: Exception) {
+        }
 
         try {
             views.setTextViewText(R.id.current_month_name, monthName)
             views.setTextColor(R.id.current_month_name, primaryTextColor)
+        } catch (ignored: Exception) {
+        }
+        try {
+            val cMonthBitmap = createTextBitmap(context, monthName, 110f, primaryTextColor)
+            views.setImageViewBitmap(R.id.current_month_name, cMonthBitmap)
         } catch (ignored: Exception) {
         }
 
@@ -284,6 +299,53 @@ abstract class BaseCalendarWidget : AppWidgetProvider() {
             views.setImageViewBitmap(R.id.calendar_content_image, combinedBitmap)
         } catch (ignored: Exception) {
         }
+
+        // 4. Month Grid TextViews: header_day_0..6 and day_1..42 (Calendar10, Calendar11, etc.)
+        val todayDayOfMonth = calendar.get(Calendar.DAY_OF_MONTH)
+        val todayDayOfWeek = calendar.get(Calendar.DAY_OF_WEEK) // 1=Sun, 2=Mon...
+
+        val headerIds = intArrayOf(
+            R.id.header_day_0, R.id.header_day_1, R.id.header_day_2,
+            R.id.header_day_3, R.id.header_day_4, R.id.header_day_5, R.id.header_day_6
+        )
+        for (i in 0..6) {
+            val isTodayHeader = (todayDayOfWeek - 1) == i
+            val hColor = if (isTodayHeader) accentColor else primaryTextColor
+            try {
+                views.setTextColor(headerIds[i], hColor)
+            } catch (_: Exception) {}
+        }
+
+        val tempCal = calendar.clone() as Calendar
+        tempCal.set(Calendar.DAY_OF_MONTH, 1)
+        val firstDayOfWeek = tempCal.get(Calendar.DAY_OF_WEEK) // 1 (Sun) to 7 (Sat)
+        val daysInMonth = tempCal.getActualMaximum(Calendar.DAY_OF_MONTH)
+        val startOffset = firstDayOfWeek
+        var hasRow6 = false
+
+        for (cellIndex in 1..42) {
+            val dayIdName = "day_$cellIndex"
+            val resId = context.resources.getIdentifier(dayIdName, "id", context.packageName)
+            if (resId != 0) {
+                val dNum = cellIndex - startOffset + 1
+                if (dNum in 1..daysInMonth) {
+                    views.setTextViewText(resId, dNum.toString())
+                    if (dNum == todayDayOfMonth) {
+                        views.setTextColor(resId, accentColor)
+                    } else {
+                        views.setTextColor(resId, primaryTextColor)
+                    }
+                    if (cellIndex > 35) {
+                        hasRow6 = true
+                    }
+                } else {
+                    views.setTextViewText(resId, "")
+                }
+            }
+        }
+        try {
+            views.setViewVisibility(R.id.last_row, if (hasRow6) android.view.View.VISIBLE else android.view.View.GONE)
+        } catch (_: Exception) {}
     }
 
     private fun renderMonthGridBitmap(

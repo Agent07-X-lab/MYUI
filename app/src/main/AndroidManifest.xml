@@ -112,6 +112,7 @@
             </intent-filter>
         </activity>
 
+
         <activity
             android:theme="@style/Theme.Transparent"
             android:name="com.jndapp.minimal.widgets.ContactWidgetConfigActivity"

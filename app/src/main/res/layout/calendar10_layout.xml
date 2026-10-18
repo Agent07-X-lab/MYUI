@@ -14,16 +14,17 @@
         android:backgroundTint="@color/widget_background_light"/>
     <LinearLayout
         android:orientation="horizontal"
-        android:padding="10dp"
+        android:padding="12dp"
+        android:gravity="center_vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <LinearLayout
             android:gravity="center"
             android:orientation="vertical"
-            android:padding="10dp"
+            android:padding="6dp"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="0.7">
+            android:layout_weight="1">
             <ImageView
                 android:id="@+id/current_day_number"
                 android:paddingBottom="6dp"

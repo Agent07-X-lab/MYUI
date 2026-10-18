@@ -14,14 +14,15 @@
         android:backgroundTint="@color/widget_background_light"/>
     <LinearLayout
         android:orientation="horizontal"
-        android:padding="15dp"
+        android:padding="12dp"
+        android:gravity="center_vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <FrameLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="0.7"
-            android:foregroundGravity="center">
+            android:layout_weight="1"
+            android:layout_gravity="center">
             <AnalogClock
                 android:layout_gravity="center"
                 android:id="@+id/analog_clock"
@@ -31,13 +32,15 @@
                 android:hand_hour="@drawable/analog8h"
                 android:hand_minute="@drawable/analog8m"
                 android:hand_second="@drawable/analog8s"
-                android:dialTint="@color/widget_background_light"
+                android:dialTint="@color/widget_text_secondary"
                 android:hand_hourTint="@color/widget_text"
                 android:hand_minuteTint="@color/widget_text"
                 android:hand_secondTint="@color/widget_accent"/>
         </FrameLayout>
         <LinearLayout
             android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:paddingStart="8dp"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1">

@@ -5,7 +5,12 @@
     android:updatePeriodMillis="1800000"
     android:initialLayout="@drawable/settings4_location"
     android:previewImage="@drawable/settings4_location"
-    android:resizeMode="none"
+    android:resizeMode="horizontal|vertical"
+    android:minResizeWidth="40dp"
+    android:minResizeHeight="40dp"
+    android:maxResizeWidth="1000dp"
+    android:maxResizeHeight="1000dp"
     android:widgetCategory="home_screen"
     android:targetCellWidth="2"
-    android:targetCellHeight="1"/>
+    android:targetCellHeight="1"
+    android:widgetFeatures="reconfigurable"/>

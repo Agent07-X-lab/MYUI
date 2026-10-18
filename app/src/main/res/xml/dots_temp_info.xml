@@ -6,7 +6,12 @@
     android:updatePeriodMillis="0"
     android:initialLayout="@layout/dots_temp_layout"
     android:previewImage="@drawable/ic_dots_temp"
-    android:resizeMode="vertical|horizontal"
+    android:resizeMode="horizontal|vertical"
+    android:minResizeWidth="40dp"
+    android:minResizeHeight="40dp"
+    android:maxResizeWidth="1000dp"
+    android:maxResizeHeight="1000dp"
     android:widgetCategory="keyguard|home_screen"
     android:targetCellWidth="2"
-    android:targetCellHeight="2"/>
+    android:targetCellHeight="2"
+    android:widgetFeatures="reconfigurable"/>
