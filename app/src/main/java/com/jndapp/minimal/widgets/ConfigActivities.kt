@@ -113,6 +113,16 @@ open class BaseWidgetConfigActivity(private val configTitle: String) : Component
                                     putExtra(AppWidgetManager.EXTRA_APPWIDGET_ID, appWidgetId)
                                 }
                                 setResult(Activity.RESULT_OK, resultValue)
+
+                                val appWidgetManager = AppWidgetManager.getInstance(this@BaseWidgetConfigActivity)
+                                val info = appWidgetManager.getAppWidgetInfo(appWidgetId)
+                                if (info != null) {
+                                    val updateIntent = Intent(AppWidgetManager.ACTION_APPWIDGET_UPDATE).apply {
+                                        component = info.provider
+                                        putExtra(AppWidgetManager.EXTRA_APPWIDGET_IDS, intArrayOf(appWidgetId))
+                                    }
+                                    sendBroadcast(updateIntent)
+                                }
                                 finish()
                             },
                             modifier = Modifier

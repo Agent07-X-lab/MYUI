@@ -4,7 +4,7 @@
     android:minWidth="72dp"
     android:minHeight="72dp"
     android:updatePeriodMillis="0"
-    android:initialLayout="@drawable/settings3_dnd"
+    android:initialLayout="@layout/widget_settings_global_layout"
     android:previewImage="@drawable/settings3_dnd"
     android:resizeMode="horizontal|vertical"
     android:minResizeWidth="40dp"

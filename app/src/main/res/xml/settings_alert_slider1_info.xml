@@ -4,7 +4,7 @@
     android:minWidth="146dp"
     android:minHeight="72dp"
     android:updatePeriodMillis="0"
-    android:initialLayout="@drawable/settings_sound_profile"
+    android:initialLayout="@layout/settings_alert_slider1"
     android:previewImage="@drawable/settings_sound_profile"
     android:resizeMode="horizontal|vertical"
     android:minResizeWidth="40dp"

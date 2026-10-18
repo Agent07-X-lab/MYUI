@@ -302,12 +302,74 @@ abstract class BaseCalendarWidget : AppWidgetProvider() {
         } catch (ignored: Exception) {
         }
 
-        // 3. calendar_content_image (Calendar13, 14, 15)
+        // 3. calendar_content_image & widget_combined_img (Calendar8, 13, 14, 15)
         try {
             val combinedBitmap = renderMonthGridBitmap(context, calendar, primaryTextColor, accentColor)
             views.setImageViewBitmap(R.id.calendar_content_image, combinedBitmap)
+            views.setImageViewBitmap(R.id.widget_combined_img, combinedBitmap)
         } catch (ignored: Exception) {
         }
+
+        // Calendar 4: current_month_day
+        try {
+            val cMonthDayBitmap = createTextBitmap(context, "$monthName $dayNumber", 120f, primaryTextColor)
+            views.setImageViewBitmap(R.id.current_month_day, cMonthDayBitmap)
+            views.setTextViewText(R.id.current_month_day, "$monthName $dayNumber")
+            views.setTextColor(R.id.current_month_day, primaryTextColor)
+        } catch (ignored: Exception) {
+        }
+
+        // Calendar 5 & Calendar 12 metadata
+        val dayOfYear = calendar.get(Calendar.DAY_OF_YEAR)
+        val maxDays = calendar.getActualMaximum(Calendar.DAY_OF_YEAR)
+        val yearProgress = (dayOfYear * 100) / maxDays
+        val daysLeft = maxDays - dayOfYear
+        val currentYear = calendar.get(Calendar.YEAR)
+        val timeFormat = SimpleDateFormat("HH:mm", Locale.getDefault()).format(calendar.time)
+
+        try {
+            views.setTextViewText(R.id.tv_year_progress, "$yearProgress%")
+            views.setTextColor(R.id.tv_year_progress, accentColor)
+        } catch (_: Exception) {}
+
+        try {
+            views.setTextViewText(R.id.tv_current_time, timeFormat)
+            views.setTextColor(R.id.tv_current_time, primaryTextColor)
+        } catch (_: Exception) {}
+
+        try {
+            views.setTextViewText(R.id.days_left_text, "$daysLeft DAYS LEFT")
+        } catch (_: Exception) {}
+
+        try {
+            views.setTextViewText(R.id.until_year_text, "UNTIL ${currentYear + 1}")
+        } catch (_: Exception) {}
+
+        try {
+            views.setTextViewText(R.id.current_date_text, dayNumber)
+            views.setTextColor(R.id.current_date_text, primaryTextColor)
+        } catch (_: Exception) {}
+
+        try {
+            views.setTextViewText(R.id.day_month_text, "$dayOfWeek, $monthName")
+            views.setTextColor(R.id.day_month_text, accentColor)
+        } catch (_: Exception) {}
+
+        // Calendar 12 views
+        try {
+            views.setTextViewText(R.id.time_display, timeFormat)
+            views.setTextColor(R.id.time_display, primaryTextColor)
+        } catch (_: Exception) {}
+
+        try {
+            views.setTextViewText(R.id.date_day_display, dayOfWeek)
+            views.setTextColor(R.id.date_day_display, accentColor)
+        } catch (_: Exception) {}
+
+        try {
+            views.setTextViewText(R.id.date_month_display, "$monthName $dayNumber")
+            views.setTextColor(R.id.date_month_display, primaryTextColor)
+        } catch (_: Exception) {}
 
         // 4. Month Grid TextViews: header_day_0..6 and day_1..42 (Calendar10, Calendar11, etc.)
         val todayDayOfMonth = calendar.get(Calendar.DAY_OF_MONTH)

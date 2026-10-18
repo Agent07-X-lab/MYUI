@@ -37,11 +37,13 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.window.Dialog
 import com.jndapp.minimal.widgets.R
+import com.jndapp.minimal.widgets.widgets.WidgetPinnedReceiver
 
 data class FullWidgetItem(
     val id: String,
@@ -96,6 +98,7 @@ fun WidgetsScreen(
     var selectedSize by remember { mutableStateOf("All Sizes") }
     var searchQuery by remember { mutableStateOf("") }
     var selectedWidgetForDetail by remember { mutableStateOf<FullWidgetItem?>(null) }
+    var showManualPlacementDialog by remember { mutableStateOf<FullWidgetItem?>(null) }
 
     fun toggleFavorite(widgetId: String) {
         val updated = favoriteIds.toMutableSet()
@@ -114,16 +117,29 @@ fun WidgetsScreen(
             if (appWidgetManager.isRequestPinAppWidgetSupported) {
                 try {
                     val componentName = ComponentName(context, item.className)
-                    appWidgetManager.requestPinAppWidget(componentName, null, null)
-                    Toast.makeText(context, "Adding '${item.title}' to home screen...", Toast.LENGTH_SHORT).show()
+                    val callbackIntent = Intent(context, WidgetPinnedReceiver::class.java).apply {
+                        putExtra("pinned_widget_title", item.title)
+                    }
+                    val callbackPendingIntent = PendingIntent.getBroadcast(
+                        context,
+                        item.id.hashCode(),
+                        callbackIntent,
+                        PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_MUTABLE
+                    )
+                    val success = appWidgetManager.requestPinAppWidget(componentName, null, callbackPendingIntent)
+                    if (success) {
+                        Toast.makeText(context, "Adding '${item.title}' to home screen...", Toast.LENGTH_SHORT).show()
+                    } else {
+                        showManualPlacementDialog = item
+                    }
                 } catch (e: Exception) {
-                    Toast.makeText(context, "Long-press your home screen > Widgets to place '${item.title}'", Toast.LENGTH_LONG).show()
+                    showManualPlacementDialog = item
                 }
             } else {
-                Toast.makeText(context, "Long-press your home screen > Widgets to place '${item.title}'", Toast.LENGTH_LONG).show()
+                showManualPlacementDialog = item
             }
         } else {
-            Toast.makeText(context, "Long-press your home screen > Widgets to place '${item.title}'", Toast.LENGTH_LONG).show()
+            showManualPlacementDialog = item
         }
     }
 
@@ -432,6 +448,72 @@ fun WidgetsScreen(
                 }
             }
         }
+    }
+
+    if (showManualPlacementDialog != null) {
+        val widgetToPlace = showManualPlacementDialog!!
+        AlertDialog(
+            onDismissRequest = { showManualPlacementDialog = null },
+            icon = {
+                Icon(
+                    Icons.Rounded.Widgets,
+                    contentDescription = null,
+                    tint = MaterialTheme.colorScheme.primary,
+                    modifier = Modifier.size(36.dp)
+                )
+            },
+            title = {
+                Text(
+                    text = "Add to Home Screen",
+                    fontWeight = FontWeight.Bold,
+                    fontSize = 20.sp,
+                    textAlign = TextAlign.Center
+                )
+            },
+            text = {
+                Column(verticalArrangement = Arrangement.spacedBy(10.dp)) {
+                    Text(
+                        text = "Your device launcher requires adding '${widgetToPlace.title}' from your home screen:",
+                        fontSize = 14.sp,
+                        color = MaterialTheme.colorScheme.onSurface
+                    )
+                    Surface(
+                        color = MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.5f),
+                        shape = RoundedCornerShape(12.dp)
+                    ) {
+                        Column(
+                            modifier = Modifier.padding(14.dp),
+                            verticalArrangement = Arrangement.spacedBy(8.dp)
+                        ) {
+                            Text("1. Long-press an empty space on your Home Screen", fontSize = 13.sp)
+                            Text("2. Tap 'Widgets'", fontSize = 13.sp)
+                            Text("3. Scroll to 'MyUI' and pick '${widgetToPlace.title}'", fontSize = 13.sp, fontWeight = FontWeight.SemiBold)
+                            Text("4. Drag and drop onto your screen!", fontSize = 13.sp)
+                        }
+                    }
+                }
+            },
+            confirmButton = {
+                Button(
+                    onClick = {
+                        showManualPlacementDialog = null
+                        val homeIntent = Intent(Intent.ACTION_MAIN).apply {
+                            addCategory(Intent.CATEGORY_HOME)
+                            flags = Intent.FLAG_ACTIVITY_NEW_TASK
+                        }
+                        context.startActivity(homeIntent)
+                    },
+                    shape = RoundedCornerShape(12.dp)
+                ) {
+                    Text("Go to Home Screen")
+                }
+            },
+            dismissButton = {
+                TextButton(onClick = { showManualPlacementDialog = null }) {
+                    Text("Close")
+                }
+            }
+        )
     }
 }
 

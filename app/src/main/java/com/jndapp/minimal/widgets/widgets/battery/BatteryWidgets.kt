@@ -43,12 +43,63 @@ open class GenericBatteryWidget(
 
         val targetPx = dimensions.targetDimensionPx
         val innerRingPx = (0.78f * targetPx).toInt()
-        WidgetScaleHelper.setViewSizePx(views, R.id.ring_container_inner, innerRingPx.toFloat())
-
         try {
-            views.setProgressBar(R.id.circular_progress, 100, batteryPercent, false)
+            WidgetScaleHelper.setViewSizePx(views, R.id.ring_container_inner, innerRingPx.toFloat())
         } catch (_: Exception) {}
 
+        // 1. All progress bars across battery 1..19
+        try { views.setProgressBar(R.id.circular_progress, 100, batteryPercent, false) } catch (_: Exception) {}
+        try { views.setProgressBar(R.id.progress_bar, 100, batteryPercent, false) } catch (_: Exception) {}
+        try { views.setProgressBar(R.id.battery_progress, 100, batteryPercent, false) } catch (_: Exception) {}
+        try { views.setProgressBar(R.id.battery_progress_bar, 100, batteryPercent, false) } catch (_: Exception) {}
+        try { views.setProgressBar(R.id.apple_progress, 100, batteryPercent, false) } catch (_: Exception) {}
+        try { views.setProgressBar(R.id.battery_level_indicator, 100, batteryPercent, false) } catch (_: Exception) {}
+        try { views.setProgressBar(R.id.mobile_circular_progress, 100, batteryPercent, false) } catch (_: Exception) {}
+        try { views.setProgressBar(R.id.earbuds_circular_progress, 100, (batteryPercent - 5).coerceAtLeast(15), false) } catch (_: Exception) {}
+
+        // 2. Direct TextViews
+        val statusText = if (isCharging) "CHARGING" else "BATTERY"
+        try {
+            views.setTextViewText(R.id.battery_percentage, "$batteryPercent%")
+            views.setTextColor(R.id.battery_percentage, Color.WHITE)
+        } catch (_: Exception) {}
+
+        try {
+            views.setTextViewText(R.id.battery_percentage_text, "$batteryPercent%")
+            views.setTextColor(R.id.battery_percentage_text, Color.WHITE)
+        } catch (_: Exception) {}
+
+        try {
+            views.setTextViewText(R.id.battery_status, statusText)
+            views.setTextColor(R.id.battery_status, accentColor)
+        } catch (_: Exception) {}
+
+        try {
+            views.setTextViewText(R.id.battery_status_text, statusText)
+            views.setTextColor(R.id.battery_status_text, accentColor)
+        } catch (_: Exception) {}
+
+        try {
+            views.setTextViewText(R.id.status_text, statusText)
+            views.setTextColor(R.id.status_text, accentColor)
+        } catch (_: Exception) {}
+
+        try {
+            views.setTextViewText(R.id.battery_time_remaining, if (isCharging) "Fast Charging" else "Remaining")
+        } catch (_: Exception) {}
+
+        // 3. Digital Clock in Battery17
+        try {
+            val timeStr = java.text.SimpleDateFormat("HH:mm", java.util.Locale.getDefault()).format(java.util.Date())
+            views.setTextViewText(R.id.digital_clock, timeStr)
+        } catch (_: Exception) {}
+
+        // 4. Charge icon visibility
+        try {
+            views.setViewVisibility(R.id.charge_icon, if (isCharging) android.view.View.VISIBLE else android.view.View.GONE)
+        } catch (_: Exception) {}
+
+        // 5. Image-based text views
         val textSizePct = (innerRingPx * 0.32f).coerceAtLeast(18f)
         try {
             val percentBitmap = drawTextBitmap(
@@ -59,11 +110,22 @@ open class GenericBatteryWidget(
                 fontPath = "font/mainb.otf"
             )
             views.setImageViewBitmap(R.id.battery_percentage_image, percentBitmap)
+            views.setImageViewBitmap(R.id.mobile_percentage_image, percentBitmap)
+        } catch (_: Exception) {}
+
+        try {
+            val earbudsPctBitmap = drawTextBitmap(
+                context = context,
+                text = "${(batteryPercent - 5).coerceAtLeast(15)}%",
+                textSize = textSizePct * 0.85f,
+                textColor = Color.WHITE,
+                fontPath = "font/mainb.otf"
+            )
+            views.setImageViewBitmap(R.id.earbuds_percentage_image, earbudsPctBitmap)
         } catch (_: Exception) {}
 
         val textSizeStatus = (innerRingPx * 0.14f).coerceIn(10f, 22f)
         try {
-            val statusText = if (isCharging) "CHARGING" else "BATTERY"
             val statusBitmap = drawTextBitmap(
                 context = context,
                 text = statusText,
@@ -73,6 +135,72 @@ open class GenericBatteryWidget(
             )
             views.setImageViewBitmap(R.id.battery_status_image, statusBitmap)
         } catch (_: Exception) {}
+
+        // 6. Custom battery dial bitmap for Battery18 & Battery19
+        try {
+            val dialBitmap = drawBatteryDialBitmap(context, batteryPercent, isCharging, accentColor)
+            views.setImageViewBitmap(R.id.battery_content_image, dialBitmap)
+        } catch (_: Exception) {}
+    }
+
+    private fun drawBatteryDialBitmap(
+        context: Context,
+        percent: Int,
+        isCharging: Boolean,
+        accentColor: Int,
+        sizePx: Int = 360
+    ): android.graphics.Bitmap {
+        val bitmap = android.graphics.Bitmap.createBitmap(sizePx, sizePx, android.graphics.Bitmap.Config.ARGB_8888)
+        val canvas = android.graphics.Canvas(bitmap)
+        val cx = sizePx / 2f
+        val cy = sizePx / 2f
+        val radius = sizePx * 0.38f
+
+        // Background track
+        val trackPaint = android.graphics.Paint(android.graphics.Paint.ANTI_ALIAS_FLAG).apply {
+            style = android.graphics.Paint.Style.STROKE
+            strokeWidth = sizePx * 0.08f
+            strokeCap = android.graphics.Paint.Cap.ROUND
+            color = android.graphics.Color.argb(50, 255, 255, 255)
+        }
+        val rect = android.graphics.RectF(cx - radius, cy - radius, cx + radius, cy + radius)
+        canvas.drawArc(rect, 135f, 270f, false, trackPaint)
+
+        // Progress arc
+        val sweep = 270f * (percent.coerceIn(0, 100) / 100f)
+        val progressPaint = android.graphics.Paint(android.graphics.Paint.ANTI_ALIAS_FLAG).apply {
+            style = android.graphics.Paint.Style.STROKE
+            strokeWidth = sizePx * 0.08f
+            strokeCap = android.graphics.Paint.Cap.ROUND
+            color = accentColor
+        }
+        if (sweep > 0) {
+            canvas.drawArc(rect, 135f, sweep, false, progressPaint)
+        }
+
+        // Center text percentage
+        val textPaint = android.graphics.Paint(android.graphics.Paint.ANTI_ALIAS_FLAG).apply {
+            color = android.graphics.Color.WHITE
+            textSize = sizePx * 0.22f
+            textAlign = android.graphics.Paint.Align.CENTER
+            typeface = android.graphics.Typeface.DEFAULT_BOLD
+        }
+        val bounds = android.graphics.Rect()
+        val pctStr = "$percent%"
+        textPaint.getTextBounds(pctStr, 0, pctStr.length, bounds)
+        canvas.drawText(pctStr, cx, cy - bounds.exactCenterY() - (sizePx * 0.03f), textPaint)
+
+        // Subtext (CHARGING or BATTERY)
+        val subPaint = android.graphics.Paint(android.graphics.Paint.ANTI_ALIAS_FLAG).apply {
+            color = accentColor
+            textSize = sizePx * 0.09f
+            textAlign = android.graphics.Paint.Align.CENTER
+            typeface = android.graphics.Typeface.DEFAULT_BOLD
+        }
+        val subText = if (isCharging) "CHARGING" else "BATTERY"
+        canvas.drawText(subText, cx, cy + (sizePx * 0.18f), subPaint)
+
+        return bitmap
     }
 }
 

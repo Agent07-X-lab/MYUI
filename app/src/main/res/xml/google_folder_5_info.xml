@@ -4,7 +4,7 @@
     android:minWidth="146dp"
     android:minHeight="146dp"
     android:updatePeriodMillis="0"
-    android:initialLayout="@drawable/google_folder5p"
+    android:initialLayout="@layout/appfolder1_layout"
     android:previewImage="@drawable/google_folder5p"
     android:resizeMode="horizontal|vertical"
     android:minResizeWidth="40dp"

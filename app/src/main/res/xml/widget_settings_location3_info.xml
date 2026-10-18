@@ -4,7 +4,7 @@
     android:minWidth="35dp"
     android:minHeight="35dp"
     android:updatePeriodMillis="30000"
-    android:initialLayout="@drawable/settings_location3"
+    android:initialLayout="@layout/widget_settings_global_layout"
     android:previewImage="@drawable/settings3_location"
     android:resizeMode="horizontal|vertical"
     android:minResizeWidth="40dp"

@@ -3,7 +3,7 @@
     android:minWidth="70dp"
     android:minHeight="70dp"
     android:updatePeriodMillis="86400000"
-    android:initialLayout="@drawable/widget_google3"
+    android:initialLayout="@layout/widget_other_layout"
     android:previewImage="@drawable/widget_google3"
     android:resizeMode="horizontal|vertical"
     android:minResizeWidth="40dp"

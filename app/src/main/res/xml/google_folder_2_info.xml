@@ -4,7 +4,7 @@
     android:minWidth="294dp"
     android:minHeight="146dp"
     android:updatePeriodMillis="0"
-    android:initialLayout="@drawable/widget_google2"
+    android:initialLayout="@layout/appfolder1_layout"
     android:previewImage="@drawable/widget_google2"
     android:resizeMode="horizontal|vertical"
     android:minResizeWidth="40dp"

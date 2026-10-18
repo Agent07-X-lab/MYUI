@@ -3,7 +3,7 @@
     android:minWidth="146dp"
     android:minHeight="146dp"
     android:updatePeriodMillis="21600000"
-    android:initialLayout="@drawable/widget_moonphase_1"
+    android:initialLayout="@layout/widget_other_layout"
     android:previewImage="@drawable/widget_moonphase_1"
     android:resizeMode="horizontal|vertical"
     android:minResizeWidth="40dp"

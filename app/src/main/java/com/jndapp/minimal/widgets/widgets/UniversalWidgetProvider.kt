@@ -13,6 +13,9 @@ import android.util.Log
 import android.widget.RemoteViews
 import com.jndapp.minimal.widgets.MainActivity
 import com.jndapp.minimal.widgets.R
+import android.provider.ContactsContract
+import android.provider.MediaStore
+import com.jndapp.minimal.widgets.widgets.device.DeviceMetricsRenderer
 import java.text.SimpleDateFormat
 import java.util.Calendar
 import java.util.Locale
@@ -122,26 +125,125 @@ open class UniversalWidgetProvider : AppWidgetProvider() {
             } catch (ignored: Exception) {
             }
 
-            // Default click intent -> launch MainActivity or specialized action
-            val mainIntent = Intent(context, MainActivity::class.java).apply {
-                flags = Intent.FLAG_ACTIVITY_NEW_TASK
+            val thisClassName = javaClass.name
+            val isCameraWidget = thisClassName.contains("camera", ignoreCase = true)
+            val isContactWidget = thisClassName.contains("contact", ignoreCase = true)
+            val isDeviceWidget = thisClassName.contains("device", ignoreCase = true) ||
+                    thisClassName.contains("dots", ignoreCase = true) ||
+                    layoutId == R.layout.widget_other_layout ||
+                    layoutId == R.layout.dots_ram_layout ||
+                    layoutId == R.layout.dots_storage_layout ||
+                    layoutId == R.layout.dots_temp_layout ||
+                    layoutId == R.layout.dots_volume_layout
+
+            // 1. Device metrics rendering for all 22 device widgets
+            if (isDeviceWidget) {
+                try {
+                    val metricBitmap = DeviceMetricsRenderer.renderDeviceMetricBitmap(
+                        context = context,
+                        widgetClassName = thisClassName,
+                        accentColor = primaryTextColor,
+                        primaryTextColor = if (isDark) Color.WHITE else Color.parseColor("#111111")
+                    )
+                    views.setImageViewBitmap(R.id.iv_widget_other, metricBitmap)
+                    views.setImageViewBitmap(R.id.content_image, metricBitmap)
+                } catch (e: Exception) {
+                    Log.w(TAG, "Error rendering device metric for $thisClassName", e)
+                }
             }
+
+            // 2. Contact widgets binding
+            if (isContactWidget) {
+                try {
+                    views.setTextViewText(R.id.contact_name, "Favorite Contact")
+                    views.setTextColor(R.id.contact_name, primaryTextColor)
+                    views.setImageViewResource(R.id.contact_image, R.drawable.default_contact_image)
+
+                    for (i in 1..8) {
+                        val nameRes = context.resources.getIdentifier("contact_name_$i", "id", context.packageName)
+                        val imgRes = context.resources.getIdentifier("contact_image_$i", "id", context.packageName)
+                        if (nameRes != 0) {
+                            views.setTextViewText(nameRes, "Contact $i")
+                            views.setTextColor(nameRes, primaryTextColor)
+                        }
+                        if (imgRes != 0) {
+                            views.setImageViewResource(imgRes, R.drawable.default_contact_image)
+                        }
+                    }
+
+                    // Call button intent
+                    val callIntent = Intent(Intent.ACTION_DIAL).apply { flags = Intent.FLAG_ACTIVITY_NEW_TASK }
+                    val callPending = PendingIntent.getActivity(
+                        context,
+                        appWidgetId * 10 + 1,
+                        callIntent,
+                        PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
+                    )
+                    views.setOnClickPendingIntent(R.id.call_button, callPending)
+
+                    // Message button intent
+                    val smsIntent = Intent(Intent.ACTION_VIEW, Uri.parse("sms:")).apply { flags = Intent.FLAG_ACTIVITY_NEW_TASK }
+                    val smsPending = PendingIntent.getActivity(
+                        context,
+                        appWidgetId * 10 + 2,
+                        smsIntent,
+                        PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
+                    )
+                    views.setOnClickPendingIntent(R.id.message_button, smsPending)
+
+                    // Contacts app intent
+                    val contactsIntent = Intent(Intent.ACTION_VIEW, ContactsContract.Contacts.CONTENT_URI).apply { flags = Intent.FLAG_ACTIVITY_NEW_TASK }
+                    val contactsPending = PendingIntent.getActivity(
+                        context,
+                        appWidgetId * 10 + 3,
+                        contactsIntent,
+                        PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
+                    )
+                    views.setOnClickPendingIntent(R.id.contact_container, contactsPending)
+                    views.setOnClickPendingIntent(R.id.widget_container, contactsPending)
+                    views.setOnClickPendingIntent(R.id.widget_root, contactsPending)
+                } catch (e: Exception) {
+                    Log.w(TAG, "Error setting contact views: ${e.message}")
+                }
+            }
+
+            // 3. Click intent configuration
+            val clickIntent = when {
+                isCameraWidget -> {
+                    Intent(MediaStore.INTENT_ACTION_STILL_IMAGE_CAMERA).apply {
+                        flags = Intent.FLAG_ACTIVITY_NEW_TASK
+                    }
+                }
+                isContactWidget -> {
+                    Intent(Intent.ACTION_VIEW, ContactsContract.Contacts.CONTENT_URI).apply {
+                        flags = Intent.FLAG_ACTIVITY_NEW_TASK
+                    }
+                }
+                else -> {
+                    Intent(context, MainActivity::class.java).apply {
+                        flags = Intent.FLAG_ACTIVITY_NEW_TASK
+                    }
+                }
+            }
+
             val pendingIntent = PendingIntent.getActivity(
                 context,
                 appWidgetId,
-                mainIntent,
+                clickIntent,
                 PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
             )
 
             try {
                 views.setOnClickPendingIntent(R.id.widget_root, pendingIntent)
-            } catch (ignored: Exception) {
-            }
+            } catch (ignored: Exception) {}
 
             try {
                 views.setOnClickPendingIntent(R.id.widget_container, pendingIntent)
-            } catch (ignored: Exception) {
-            }
+            } catch (ignored: Exception) {}
+
+            try {
+                views.setOnClickPendingIntent(R.id.camera_icon, pendingIntent)
+            } catch (ignored: Exception) {}
 
             appWidgetManager.updateAppWidget(appWidgetId, views)
         } catch (e: Exception) {

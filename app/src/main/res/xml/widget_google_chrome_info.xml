@@ -3,7 +3,7 @@
     android:minWidth="72dp"
     android:minHeight="72dp"
     android:updatePeriodMillis="86400000"
-    android:initialLayout="@drawable/widget_chrome"
+    android:initialLayout="@layout/widget_other_layout"
     android:previewImage="@drawable/widget_chrome"
     android:resizeMode="horizontal|vertical"
     android:minResizeWidth="40dp"
